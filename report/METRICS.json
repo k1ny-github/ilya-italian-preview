@@ -1,0 +1,336 @@
+{
+  "period": {
+    "start": "2026-10-17",
+    "end": "2026-10-18",
+    "timezone": "Europe/Rome",
+    "cutoff": "До упаковки и публикации, начатой 18.10.2026 около 23:07"
+  },
+  "countingRules": {
+    "visualRound": "Отдельный сохранённый визуальный результат/проба либо внедрение выбранного результата; дизайн и его последующее внедрение — два раунда, не два новых концепта. Скриншоты и ширины не считаются итерациями.",
+    "scope": "30 подтверждённых раундов только 17–18 октября; это не полный счёт всего проекта с начала.",
+    "elapsed": "Длительности завершённых ходов трёх чатов по read_thread. Содержат ожидание инструментов и параллельность. Не часы человека, не счёт за API и не время непрерывной работы."
+  },
+  "verified": {
+    "sections": 13,
+    "responsiveWidths": [
+      320,
+      360,
+      480,
+      640,
+      960,
+      1200
+    ],
+    "quizQuestions": 20,
+    "cultureImages": 8,
+    "miroExercises": 6,
+    "audienceImages": 4,
+    "approachImages": 4,
+    "reviews": 3,
+    "learningSteps": 5,
+    "shortCtaUses": 5,
+    "visualRounds": 30,
+    "frontendImplementationRounds": 9,
+    "completedThreadTurns": 117,
+    "roleStats": [
+      {
+        "role": "architect",
+        "completedTurns": 61,
+        "elapsedMinutes": 128.5
+      },
+      {
+        "role": "frontend",
+        "completedTurns": 16,
+        "elapsedMinutes": 115
+      },
+      {
+        "role": "designer",
+        "completedTurns": 40,
+        "elapsedMinutes": 155
+      }
+    ],
+    "totalActorElapsedMinutes": 398.5,
+    "frontendImplementationTurnPrefixes": [
+      "01a14b77",
+      "01a14b96",
+      "01a14bc5",
+      "01a14bd2",
+      "01a14e64",
+      "01a15091",
+      "01a150a1",
+      "01a150bb",
+      "01a150cd"
+    ],
+    "uxVisualCyclesMinimum": 18
+  },
+  "notMeasured": [
+    "Конверсия в запись",
+    "Время/стоимость всего проекта с первого дня",
+    "Пользовательские тесты",
+    "Проверка физических iOS/Android устройств",
+    "Число реальных улучшений продаж",
+    "Все раунды фотографа/юриста/доводчика вне этой выборки"
+  ],
+  "iterations": [
+    {
+      "round": 1,
+      "date": "2026-10-17",
+      "title": "Первый экран: возврат композиции и зазоры",
+      "status": "implemented",
+      "evidence": "block-review-2026-10-17/hero-revision"
+    },
+    {
+      "round": 2,
+      "date": "2026-10-17",
+      "title": "Мобильная галерея Архитектора",
+      "status": "rejected",
+      "evidence": "block-review-2026-10-17/mobile-overview"
+    },
+    {
+      "round": 3,
+      "date": "2026-10-17",
+      "title": "Мобильная галерея frontend, 67 снимков",
+      "status": "rejected",
+      "evidence": "block-review-2026-10-17/frontend-mobile-review"
+    },
+    {
+      "round": 4,
+      "date": "2026-10-17",
+      "title": "Живой просмотр вместо статичных снимков",
+      "status": "implemented-review-tool",
+      "evidence": "block-review-2026-10-17/live-mobile-preview"
+    },
+    {
+      "round": 5,
+      "date": "2026-10-17",
+      "title": "Hero: шесть диапазонов, пункты над CTA и ветви",
+      "status": "implemented",
+      "evidence": "block-review-2026-10-17/hero-six-widths/frontend-result"
+    },
+    {
+      "round": 6,
+      "date": "2026-10-17",
+      "title": "Один фиксированный овал",
+      "status": "cancelled",
+      "evidence": "block-review-2026-10-17/hero-six-widths/oval-fixed-result"
+    },
+    {
+      "round": 7,
+      "date": "2026-10-17",
+      "title": "Пропорциональный овал",
+      "status": "implemented",
+      "evidence": "block-review-2026-10-17/hero-six-widths/oval-proportional-result"
+    },
+    {
+      "round": 8,
+      "date": "2026-10-17",
+      "title": "Двухстрочная CTA",
+      "status": "superseded",
+      "evidence": "block-review-2026-10-17/hero-button-two-lines"
+    },
+    {
+      "round": 9,
+      "date": "2026-10-17",
+      "title": "Короткая CTA, естественный intro и параметры hero",
+      "status": "implemented",
+      "evidence": "block-review-2026-10-17/hero-final-feedback"
+    },
+    {
+      "round": 10,
+      "date": "2026-10-17",
+      "title": "Ветви ПК и мобильные альтернативы",
+      "status": "implemented-partially-stopped",
+      "evidence": "block-review-2026-10-17/hero-foliage-correction"
+    },
+    {
+      "round": 11,
+      "date": "2026-10-17",
+      "title": "Позднее расширение мобильных ветвей",
+      "status": "stopped-not-installed",
+      "evidence": "block-review-2026-10-17/hero-foliage-correction/mobile-expansion-result"
+    },
+    {
+      "round": 12,
+      "date": "2026-10-18",
+      "title": "Аудитория: общие края фото и текста",
+      "status": "superseded-by-b2",
+      "evidence": "audience-alignment-2026-10-18/RESULT-v1.html"
+    },
+    {
+      "round": 13,
+      "date": "2026-10-18",
+      "title": "Аудитория: пять строк на ПК и мобильные варианты",
+      "status": "superseded-by-b2",
+      "evidence": "audience-alignment-2026-10-18/revision-02"
+    },
+    {
+      "round": 14,
+      "date": "2026-10-18",
+      "title": "Мобильные карточки: фото перед/после цельного текста",
+      "status": "selected-b",
+      "evidence": "audience-alignment-2026-10-18/revision-03"
+    },
+    {
+      "round": 15,
+      "date": "2026-10-18",
+      "title": "Б1 квадрат / Б2 4:3 внутри / Б3 до края",
+      "status": "selected-b2",
+      "evidence": "audience-alignment-2026-10-18/revision-04"
+    },
+    {
+      "round": 16,
+      "date": "2026-10-18",
+      "title": "Два блока: Б2 с полями18 / миниатюры / обтекание",
+      "status": "selected-large-only",
+      "evidence": "audience-alignment-2026-10-18/revision-05"
+    },
+    {
+      "round": 17,
+      "date": "2026-10-18",
+      "title": "Повторная frontend-проба, адресованная другому чату",
+      "status": "cancelled",
+      "evidence": "audience-alignment-2026-10-18/revision-05-two-sections"
+    },
+    {
+      "round": 18,
+      "date": "2026-10-18",
+      "title": "Внедрение Б2 и повторная UX-сверка",
+      "status": "implemented",
+      "evidence": "audience-alignment-2026-10-18/revision-05/frontend-result"
+    },
+    {
+      "round": 19,
+      "date": "2026-10-18",
+      "title": "Планшетный hero: первая проба",
+      "status": "superseded",
+      "evidence": "hero-tablet-exploration-2026-10-18/RESULT-v1.html"
+    },
+    {
+      "round": 20,
+      "date": "2026-10-18",
+      "title": "Планшетный hero: отступы и расположение ветвей",
+      "status": "superseded",
+      "evidence": "hero-tablet-exploration-2026-10-18/revision-02"
+    },
+    {
+      "round": 21,
+      "date": "2026-10-18",
+      "title": "Планшетный hero: новая компактнее",
+      "status": "selected-not-installed",
+      "evidence": "hero-tablet-exploration-2026-10-18/revision-03"
+    },
+    {
+      "round": 22,
+      "date": "2026-10-18",
+      "title": "Планшетный hero: симметрия полосы преимуществ",
+      "status": "selected-not-installed",
+      "evidence": "hero-tablet-exploration-2026-10-18/revision-04"
+    },
+    {
+      "round": 23,
+      "date": "2026-10-18",
+      "title": "Оболочка Miro: прежняя/обновлённая",
+      "status": "both-liked",
+      "evidence": "section-03-miro/ui-refresh-2026-10-18"
+    },
+    {
+      "round": 24,
+      "date": "2026-10-18",
+      "title": "Miro: общий просмотр с двумя оболочками",
+      "status": "implemented-review-only",
+      "evidence": "section-03-miro/ui-refresh-2026-10-18/frontend-result"
+    },
+    {
+      "round": 25,
+      "date": "2026-10-18",
+      "title": "Культура: первая адаптивная правка и max300 у Б2",
+      "status": "implemented-superseded-culture",
+      "evidence": "culture-responsive-2026-10-18/frontend-result"
+    },
+    {
+      "round": 26,
+      "date": "2026-10-18",
+      "title": "Культура: текущая/по общим краям",
+      "status": "selected-partially",
+      "evidence": "culture-responsive-2026-10-18/edge-alignment-preview/RESULT.md"
+    },
+    {
+      "round": 27,
+      "date": "2026-10-18",
+      "title": "Культура: комбинированная проба",
+      "status": "selected",
+      "evidence": "culture-responsive-2026-10-18/edge-alignment-preview/COMBINED-RESULT.md"
+    },
+    {
+      "round": 28,
+      "date": "2026-10-18",
+      "title": "Культура: выбранная комбинация и зазор1200",
+      "status": "implemented",
+      "evidence": "culture-responsive-2026-10-18/final-selection"
+    },
+    {
+      "round": 29,
+      "date": "2026-10-18",
+      "title": "Запись: ровная бумага/кнопка; зазор quiz→about",
+      "status": "implemented",
+      "evidence": "booking-quiz-review-2026-10-18/booking/frontend-result"
+    },
+    {
+      "round": 30,
+      "date": "2026-10-18",
+      "title": "Тест: три отдельных crop-варианта",
+      "status": "not-selected",
+      "evidence": "booking-quiz-review-2026-10-18/quiz-variants"
+    }
+  ],
+  "topicElapsedExcludingArchitect": [
+    {
+      "topic": "Первый экран",
+      "turns": 21,
+      "elapsedMinutes": 92.9
+    },
+    {
+      "topic": "Карточки аудитории и подхода",
+      "turns": 10,
+      "elapsedMinutes": 63.1
+    },
+    {
+      "topic": "Культура",
+      "turns": 7,
+      "elapsedMinutes": 45.8
+    },
+    {
+      "topic": "Miro",
+      "turns": 7,
+      "elapsedMinutes": 26.6
+    },
+    {
+      "topic": "Инструмент просмотра",
+      "turns": 4,
+      "elapsedMinutes": 20.8
+    },
+    {
+      "topic": "Запись, тест и стык",
+      "turns": 3,
+      "elapsedMinutes": 15.3
+    },
+    {
+      "topic": "Метод и skill Miro",
+      "turns": 2,
+      "elapsedMinutes": 4
+    },
+    {
+      "topic": "Координация",
+      "turns": 2,
+      "elapsedMinutes": 1.4
+    }
+  ],
+  "uxCountingRule": "Отдельные визуальные задачи/коррекции с результатом; дизайн, внедрение и QA одного решения объединены. Нижняя граница выбранного UX-корпуса; не суммировать с30раундами.",
+  "uxCyclesByTopic": {
+    "hero": 7,
+    "cards": 5,
+    "culture": 3,
+    "miro": 1,
+    "bookingAndGap": 1,
+    "quiz": 1
+  }
+}

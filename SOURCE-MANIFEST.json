@@ -1,0 +1,49 @@
+{
+  "currentLocalCheckpoint": "3f0455edd41f5d86b4d6c528e314a4df53c75488",
+  "localCheckpointTag": "review-2026-10-18-booking-gap",
+  "archivedPublicHead": "be39e02ab451ae96790c8c1398f7a8081946b4b8",
+  "versions": [
+    {
+      "name": "current",
+      "sourceRef": "3f0455edd41f5d86b4d6c528e314a4df53c75488",
+      "base": "/ilya-italian-preview/",
+      "heroOverlay": false,
+      "snapshotDifferences": {}
+    },
+    {
+      "name": "pre-final",
+      "sourceRef": "83535da",
+      "base": "/ilya-italian-preview/history/pre-final/",
+      "heroOverlay": false,
+      "snapshotDifferences": {}
+    },
+    {
+      "name": "polish",
+      "sourceRef": "4266ae3",
+      "base": "/ilya-italian-preview/history/polish/",
+      "heroOverlay": false,
+      "snapshotDifferences": {}
+    },
+    {
+      "name": "hero-approved",
+      "sourceRef": "81a3de5",
+      "base": "/ilya-italian-preview/history/hero-approved/",
+      "heroOverlay": true,
+      "snapshotDifferences": {}
+    },
+    {
+      "name": "final-2026-10-18",
+      "sourceRef": "3f0455e",
+      "base": "/ilya-italian-preview/history/final-2026-10-18/",
+      "heroOverlay": false,
+      "snapshotDifferences": {}
+    }
+  ],
+  "publicationOnlyChanges": [
+    "Project-base paths and Vite multipage entries for static hosting.",
+    "privacy.html replaced with the agreed review notice in builds and public source; local original remains unchanged.",
+    "Miro review controls normalized to six inspection widths; landing defaults and slider logic unchanged."
+  ],
+  "sourceReproduction": "source/current",
+  "existingPublicAssetsRetained": true
+}

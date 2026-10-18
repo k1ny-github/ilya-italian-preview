@@ -1,0 +1,174 @@
+/* Background details from Obsidian 1/2/3/7. Decoration stays in whitespace,
+   independent of layout, inaccessible to pointers and assistive technology. */
+.hero,.audience,.approach,.culture,.closing,.formats,.goal,.reviews { position:relative; isolation:isolate; }
+.background-details {
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:50%;
+  width:calc(100vw - 18px);
+  transform:translateX(-50%);
+  z-index:-1;
+  pointer-events:none;
+  overflow:clip;
+  color:#8baada;
+}
+.background-route {
+  position:absolute;
+  display:block;
+  border:1.5px solid #d6e2f3;
+  border-radius:50%;
+}
+.background-object {
+  position:absolute;
+  width:51px;height:56px;
+  display:grid;place-items:center;
+  color:#7194c9;
+  background:#edf3fd;
+  border:1px solid #d9e5f5;
+  border-radius:16px;
+  transform:rotate(-13deg);
+  box-shadow:0 7px 15px #284d8006;
+}
+.background-object svg { width:29px;height:29px; }
+.background-node {
+  position:absolute;
+  width:8px;height:8px;
+  background:#b4c9e9;
+  border-radius:50%;
+  box-shadow:0 0 0 6px #fcfcfd;
+}
+.node-b { width:6px;height:6px;background:#e7ad81; }
+.background-ticks { position:absolute;width:26px;height:25px;transform:rotate(20deg); }
+.background-ticks i { position:absolute;bottom:0;left:12px;height:9px;width:2px;background:#d9a479;border-radius:2px; }
+.background-ticks i:first-child { transform:rotate(-38deg);left:3px;height:7px;bottom:2px; }
+.background-ticks i:last-child { transform:rotate(38deg);left:21px;height:7px;bottom:2px; }
+
+/* A fine contour across the otherwise empty top margin; no line through copy. */
+.background-hero .route-a { width:850px;height:400px;left:-210px;top:-370px;transform:rotate(-10deg);border-color:#e0e8f4; }
+.background-hero .route-b { width:270px;height:620px;left:-255px;top:45px;transform:rotate(-9deg);border-color:#e2e9f4; }
+.background-hero .background-object { left:3%;top:25px;width:34px;height:36px;border-radius:11px;transform:rotate(-20deg); }
+.background-hero .background-object svg { width:20px;height:20px; }
+.background-hero .node-a { left:32%;top:10px; }
+.background-hero .node-b { left:2%;bottom:170px; }
+.background-hero .background-ticks { right:5.5%;bottom:89px;transform:rotate(40deg); }
+
+/* Large open loops frame the audience scene; cards remain opaque and clean. */
+.background-audience .route-a { width:365px;height:610px;left:-293px;top:130px;transform:rotate(-9deg); }
+.background-audience .route-b { width:460px;height:340px;right:-150px;top:43px;transform:rotate(25deg);border-bottom-color:transparent; }
+.background-audience .background-object { right:15%;top:66px;transform:rotate(15deg);width:54px;height:54px;border-radius:50%; }
+.background-audience .node-a { right:5%;top:205px; }
+.background-audience .node-b { left:2.5%;top:420px; }
+.background-audience .background-ticks { right:22%;top:136px;transform:rotate(-30deg); }
+.audience .section-heading>.heading-decoration { visibility:hidden; }
+
+/* A note at the end of a shallow line connects the method to the workspace. */
+.background-approach .route-a { width:500px;height:260px;right:-180px;top:-185px;transform:rotate(-16deg);border-color:#dce5f3; }
+.background-approach .route-b { width:390px;height:180px;left:-195px;bottom:-109px;transform:rotate(14deg);border-color:#dce5f3; }
+.background-approach .background-object { right:3%;top:20px;transform:rotate(11deg); }
+.background-approach .node-a { right:17%;top:12px; }
+.background-approach .node-b { left:9%;bottom:30px; }
+.background-approach .background-ticks { left:4%;bottom:80px; }
+
+/* Culture borrows the loose curves of the portrait, away from the paragraph. */
+.background-culture .route-a { width:640px;height:390px;left:-100px;top:52px;transform:rotate(-24deg);border-color:#d7e3f3; }
+.background-culture .route-b { width:320px;height:450px;right:-274px;top:20px;transform:rotate(12deg);border-color:#e7d6c9; }
+.background-culture .background-object { right:4%;top:7px;background:#fff0e5;border-color:#f3dfcf;color:#c68e62;transform:rotate(13deg);width:44px;height:48px; }
+.background-culture .background-object svg { width:25px;height:25px; }
+.background-culture .node-a { left:3.5%;bottom:90px; }
+.background-culture .node-b { right:1.5%;bottom:150px; }
+.background-culture .background-ticks { left:40%;top:7px;transform:rotate(35deg); }
+
+/* The final invitation has its own restrained flight path. */
+.background-closing .route-a { width:480px;height:210px;left:-190px;top:50px;border-radius:45% 55% 48% 52%;transform:rotate(-28deg);border-top-color:transparent; }
+.background-closing .route-b { width:560px;height:230px;right:-250px;top:70px;transform:rotate(-25deg);border-left-color:transparent;border-bottom-color:#e4d2c4; }
+.background-closing .background-object { right:13%;top:45px;width:57px;height:61px;border-radius:19px;transform:rotate(13deg); }
+.background-closing .node-a { left:16%;top:192px; }
+.background-closing .node-b { right:6%;bottom:60px; }
+.background-closing .background-ticks { left:8%;top:52px;transform:rotate(-30deg); }
+
+/* Continuing the same quiet detail language in the three requested sections. */
+.background-formats .route-a { width:480px;height:270px;right:-140px;top:-100px;transform:rotate(-18deg);border-left-color:transparent; }
+.background-formats .route-b { width:285px;height:350px;left:-238px;top:140px;transform:rotate(-16deg); }
+.background-formats .background-object { right:13%;top:30px;transform:rotate(11deg); }
+.background-formats .node-a { right:3%;top:107px; }
+.background-formats .node-b { left:2%;bottom:92px; }
+.background-formats .background-ticks { right:24%;top:86px;transform:rotate(-28deg); }
+.background-goal .route-a { width:365px;height:185px;left:-176px;bottom:15px;transform:rotate(18deg);border-top-color:transparent; }
+.background-goal .route-b { width:255px;height:425px;right:-235px;top:65px;transform:rotate(-10deg); }
+.background-goal .background-object { left:18%;bottom:43px;width:43px;height:43px;border-radius:50%;transform:rotate(-16deg); }
+.background-goal .background-object svg { width:25px;height:25px; }
+.background-goal .node-a { left:7%;bottom:93px; }
+.background-goal .node-b { right:1%;top:245px; }
+.background-goal .background-ticks { left:25%;bottom:76px;transform:rotate(28deg); }
+.background-reviews .route-a { width:425px;height:275px;right:-111px;top:-53px;transform:rotate(15deg);border-bottom-color:transparent; }
+.background-reviews .route-b { width:360px;height:240px;left:-216px;bottom:-93px;transform:rotate(-20deg); }
+.background-reviews .background-object { right:13%;top:46px;background:#fff0e5;border-color:#f3dfcf;color:#c68e62;transform:rotate(12deg); }
+.background-reviews .node-a { right:4%;top:183px; }
+.background-reviews .node-b { left:6%;bottom:46px; }
+.background-reviews .background-ticks { right:23%;top:112px;transform:rotate(-24deg); }
+.reviews .section-heading>.heading-decoration { visibility:hidden; }
+
+@media (width >= 1200px) {
+  .background-details { width:1660px; }
+}
+@media (width < 1200px) {
+  .background-audience .background-object { right:17%;top:48px; }
+  .background-approach .background-object { top:5px;right:5%;width:39px;height:43px;border-radius:12px; }
+  .background-approach .background-object svg { width:24px;height:24px; }
+  .background-culture .route-a { width:490px;height:350px;left:-130px; }
+  .background-closing .route-a { left:-280px; }
+  .background-closing .route-b { right:-360px; }
+  .background-closing .background-object { right:6%;width:44px;height:47px; }
+}
+@media (width < 640px) {
+  .background-formats .route-a { width:240px;height:145px;right:-115px;top:-53px; }
+  .background-formats .route-b { left:-279px;top:220px; }
+  .background-formats .background-object { right:15%;top:11px;width:29px;height:31px;border-radius:10px; }
+  .background-formats .background-object svg { width:18px;height:18px; }
+  .background-formats .node-a { top:90px;right:2%; }
+  .background-formats .node-b,.background-formats .background-ticks { display:none; }
+  .background-goal .route-a { width:235px;height:100px;left:-131px;bottom:4px; }
+  .background-goal .route-b { display:none; }
+  .background-goal .background-object { left:auto;right:7%;top:4px;bottom:auto;width:27px;height:27px; }
+  .background-goal .background-object svg { width:17px;height:17px; }
+  .background-goal .node-a { left:4%;bottom:20px; }
+  .background-goal .node-b,.background-goal .background-ticks { display:none; }
+  .background-reviews .route-a { width:240px;height:165px;right:-99px;top:-32px;border-left-color:transparent; }
+  .background-reviews .route-b { width:220px;height:150px;left:-170px;bottom:-50px; }
+  .background-reviews .background-object { right:15%;top:9px;width:30px;height:33px;border-radius:10px; }
+  .background-reviews .background-object svg { width:18px;height:18px; }
+  .background-reviews .node-a { right:1%;top:123px; }
+  .background-reviews .node-b,.background-reviews .background-ticks { display:none; }
+  .background-details { width:calc(100vw - 18px); }
+  .background-route { border-width:1px; }
+  .background-object { width:34px;height:37px;border-radius:10px; }
+  .background-object svg { width:21px;height:21px; }
+  .background-node { width:5px;height:5px;box-shadow:0 0 0 4px #fcfcfd; }
+  .background-ticks { transform:scale(.7); }
+  .background-hero .route-a { left:-530px;top:-375px; }
+  .background-hero .route-b,.background-hero .background-object,.background-hero .node-a,.background-hero .background-ticks { display:none; }
+  .background-hero .node-b { bottom:380px;left:1%; }
+  .background-audience .route-a { left:-355px;top:150px;transform:rotate(-3deg); }
+  .background-audience .route-b { width:230px;height:175px;right:-104px;top:4px;transform:rotate(28deg);border-left-color:transparent; }
+  .background-audience .background-object { right:17%;top:12px;width:30px;height:30px; }
+  .background-audience .background-object svg { width:18px;height:18px; }
+  .background-audience .node-a { top:133px;right:2%; }
+  .background-audience .node-b,.background-audience .background-ticks { display:none; }
+  .background-approach .route-a { right:-340px;top:-205px; }
+  .background-approach .route-b { left:-300px;bottom:-120px; }
+  .background-approach .background-object { width:30px;height:33px;top:3px;right:10%; }
+  .background-approach .background-object svg { width:20px;height:20px; }
+  .background-approach .node-a,.background-approach .background-ticks { display:none; }
+  .background-culture .route-a { width:340px;height:290px;top:auto;bottom:54px;left:-45px; }
+  .background-culture .route-b { display:none; }
+  .background-culture .background-object { top:5px;right:5%;width:30px;height:33px;border-radius:10px; }
+  .background-culture .background-object svg { width:18px;height:18px; }
+  .background-culture .node-b,.background-culture .background-ticks { display:none; }
+  .background-closing .route-a { width:200px;height:145px;left:-148px;top:44px; }
+  .background-closing .route-b { width:220px;height:140px;right:-158px;top:120px; }
+  .background-closing .background-object { right:6%;top:30px;width:34px;height:36px;border-radius:11px; }
+  .background-closing .background-object svg { width:20px;height:20px; }
+  .background-closing .node-a { top:143px;left:2%; }
+  .background-closing .node-b,.background-closing .background-ticks { display:none; }
+}

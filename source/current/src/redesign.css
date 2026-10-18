@@ -1,0 +1,230 @@
+/* Visual direction: a personal Italian teaching studio.
+   White space carries the typography; lesson objects carry the detail.
+   Source notes: Obsidian references 1, 2, 4, 6, 7; interview 71–100, 131–150. */
+:root {
+  --ink:#202737;
+  --blue:#285dcc;
+  --blue-deep:#1c45a0;
+  --pale:#eaf1ff;
+  --orange:#f39a57;
+  --muted:#596477;
+  --line:#dce2ec;
+  color:var(--ink);
+  background:#fcfcfd;
+}
+body { background:#fcfcfd; }
+.wrap { width:min(1240px,calc(100% - 96px)); }
+.section { padding-block:100px; }
+h2 { font-size:48px; line-height:1.12; letter-spacing:-1.9px; font-weight:600; }
+h3 { font-weight:600; }
+.section-heading { margin-bottom:42px; }
+.button { min-height:62px; border-radius:19px; padding:19px 25px; font-size:14px; gap:24px; font-weight:600; }
+.button-primary { background:linear-gradient(115deg,#1e4ba8,#3473df); box-shadow:0 4px 0 #143674,0 9px 20px #2154ac22,inset 0 1px 0 #ffffff36; }
+.button-secondary { background:#fff; box-shadow:inset 0 0 0 1px #b8c6dd,0 5px 14px #293b5906; }
+.button>svg { transition:transform 180ms var(--ease); }
+.button:active { transform:translateY(3px) scale(.985); }
+.text-button { font-size:15px; }
+.site-header { height:110px; gap:24px; border-bottom:1px solid #e8ebf1; }
+.wordmark { font-size:18px; letter-spacing:-.6px; gap:13px; }
+.wordmark small { font-size:11px; letter-spacing:.1px; }
+.brand-symbol { width:48px; height:48px; background:var(--blue); color:white; border-radius:17px 17px 17px 5px; box-shadow:inset 0 1px 0 #ffffff4f,0 5px 12px #285dcc1c; }
+.navigation { font-size:13px; gap:25px; }
+.header-contact { min-height:44px; border-radius:14px; background:white; padding:11px 15px; font-size:12px; }
+.hero { grid-template-columns:minmax(0,1.13fr) minmax(0,1fr); gap:0 35px; padding-top:58px; position:relative; }
+.hero-copy { z-index:4; }
+.hero-role { font-size:12px; margin-bottom:23px; letter-spacing:.05px; color:#4b576c; }
+.hero-role>span { width:7px; height:7px; box-shadow:0 0 0 5px #e8effc; margin-right:4px; }
+.hero h1 { font-size:58px; line-height:1.13; letter-spacing:-2.4px; font-weight:600; max-width:655px; text-wrap:initial; }
+.hero-emphasis { display:inline; color:var(--blue); font-family:'Cormorant Garamond',serif; font-weight:500; font-style:italic; font-size:1.045em; letter-spacing:-2.8px; position:relative; }
+.hero-intro { font-size:16px; line-height:1.8; max-width:540px; margin-top:27px; color:#616c7e; }
+.hero-intro strong { font-weight:500; color:#313c51; }
+.hero-actions { margin-top:29px; gap:20px; }
+.hero-actions .button { padding:19px 25px; min-height:64px; font-size:14px; gap:23px; }
+.hero-down { background:#fff; width:49px; height:49px; border-color:#d4ddea; color:var(--blue); transition:transform 180ms var(--ease),background-color 180ms; }
+.hero-benefits { font-size:12px; gap:13px 16px; line-height:1.7; margin-top:32px; color:#4f5b70; }
+.hero-benefits li { gap:10px; }
+.hero-benefits svg { color:var(--blue); }
+.hero-visual { height:585px; min-height:0; padding:76px 45px 75px; overflow:clip; overflow-clip-margin:12px; isolation:isolate; }
+.portrait-backdrop { position:absolute; width:82%; height:77%; background:#dce8ff; border-radius:47% 49% 42% 48%; transform:rotate(-12deg); z-index:-1; top:12%; left:11%; }
+.portrait-frame { height:412px; width:100%; background:#fff; border:6px solid #fff; border-radius:140px 140px 28px 28px; transform:rotate(-5deg); box-shadow:0 24px 45px #2345791a,0 0 0 1px #d8e2f3; }
+.portrait-frame-top { display:none; }
+.portrait-frame-top .live-dot { display:none; }
+.portrait-slot { border-radius:135px 135px 20px 20px; background:#eaf1ff!important; border-color:#d9e4f6; gap:16px; padding-top:22px; }
+.portrait-slot>svg { color:#7997c7; width:120px; height:120px; opacity:.6; }
+.portrait-slot>span { font-size:13px; color:#415a81; }
+.portrait-slot small { font-size:10px; color:#647a9e; }
+.portrait-signature { font-size:24px; top:48px; bottom:auto; right:25px; left:25px; text-align:center; color:#2858ac; transform:rotate(-3deg); }
+.portrait-orbit { border-color:#bacbe6; }
+.orbit-one { width:98%; height:82%; top:8%; left:0; transform:rotate(-20deg); }
+.orbit-two { width:77%; height:104%; top:-1%; left:13%; transform:rotate(33deg); border-color:#d3dfee; }
+.floating-card { border:1px solid #d8e2f1; box-shadow:0 14px 35px #314f7c17; }
+.certificate-card { top:51px; left:-1px; padding:15px 17px; gap:11px; border-radius:17px; transform:rotate(-7deg); }
+.certificate-card strong { font-size:18px; letter-spacing:-.5px; }
+.certificate-card small { font-size:10px; }
+.certificate-check { margin-left:9px; }
+.icon-tile { background:#e9f0ff; width:47px; height:51px; border-radius:13px; }
+.materials-preview { display:grid; grid-template-columns:40px 1fr 20px; bottom:20px; right:-5px; width:276px; padding:17px 18px; gap:10px; border-radius:19px; transform:rotate(6deg); }
+.materials-preview strong { font-size:13px; }
+.materials-preview small { font-size:10px; margin-top:4px; }
+.materials-preview>svg { margin:0; }
+.preview-play { background:#ffdbc1; color:#a8531d; height:39px; width:39px; }
+.preview-files { grid-column:1/-1; display:flex; height:48px; gap:7px; padding-top:5px; }
+.preview-files>span { display:grid; place-items:center; width:calc(100% / 3); background:#eaf1ff; color:#285dcc; border:1px solid #dce7fc; border-radius:9px; }
+.preview-files>span:nth-child(2) { background:#ffeddf; color:#ba632a; border-color:#f7dac7; }
+.preview-files>span:nth-child(3) { background:#f4f6fa; }
+.orbit-icon { width:56px; height:56px; border:5px solid #fcfcfd; border-radius:19px; box-shadow:0 0 0 1px #e7edf7; }
+.orbit-icon-top { right:27px; top:12px; background:#dce8ff; }
+.orbit-icon-bottom { left:5px; bottom:95px; background:#ffd4b6; color:#ab4f19; transform:rotate(-13deg); }
+.hero-annotation { position:absolute; top:5px; left:16px; max-width:240px; font-family:'Cormorant Garamond',serif; font-style:italic; font-size:14px; color:#607597; transform:rotate(-6deg); }
+.hero-annotation svg { position:absolute; left:-35px; top:15px; transform:rotate(28deg); color:#7190bf; }
+.hero-detail { position:absolute; width:31px; height:31px; border:1px solid #d0ddf0; display:grid; place-items:center; color:#5e80b4; border-radius:50%; background:#fcfcfd; z-index:2; }
+.detail-one { right:6px; top:47%; }
+.detail-two { bottom:27px; left:25%; }
+.hero-trust { margin-top:58px; padding:29px 0; grid-template-columns:1.12fr 1.07fr .9fr; border-color:#d9e1ee; }
+.trust-item { gap:17px; padding-left:37px; }
+.trust-item>svg { width:34px; height:34px; }
+.trust-item strong { font-size:14px; letter-spacing:-.2px; }
+.trust-item small { font-size:12px; margin-top:6px; color:#66738a; }
+.dialog-heading h2 { font-size:27px; }
+.quiz-empty p,.policy-placeholder p { font-size:15px; }
+.dialog-note { font-size:13px; }
+@media (hover:hover) and (pointer:fine) {
+  .button:hover>svg { transform:translate(2px,-2px); }
+  .hero-down:hover { transform:translateY(3px); background:#eaf1ff; }
+  .hero-visual:hover .certificate-card { transform:translateY(-4px) rotate(-5deg); }
+  .hero-visual:hover .materials-preview { transform:translateY(-3px) rotate(4deg); }
+  .floating-card { transition:transform 280ms var(--ease); }
+}
+@media (width < 1200px) {
+  .wrap { width:calc(100% - 64px); }
+  .hero { column-gap:28px; padding-top:46px; }
+  .hero h1 { font-size:50px; letter-spacing:-2px; }
+  .hero-emphasis { letter-spacing:-2.1px; }
+  .hero-intro { font-size:15px; }
+  .hero-actions .button { font-size:12px; padding-inline:19px; gap:13px; }
+  .hero-benefits { font-size:11px; gap:12px; }
+  .hero-visual { height:530px; padding:72px 30px 78px; }
+  .portrait-frame { height:355px; }
+  .materials-preview { width:238px; right:-6px; bottom:23px; grid-template-columns:35px 1fr 17px; padding:13px; gap:8px; }
+  .materials-preview strong { font-size:12px; }
+  .materials-preview small { font-size:9px; }
+  .materials-preview>svg { width:17px; }
+  .preview-files { height:43px; }
+  .certificate-card { top:49px; left:-9px; padding:12px; gap:9px; }
+  .certificate-card strong { font-size:16px; }
+  .certificate-check { margin-left:0; }
+  .hero-annotation { left:20px; font-size:12px; }
+  .hero-trust { margin-top:38px; }
+  .trust-item { gap:14px; padding-left:23px; }
+  .trust-item strong { font-size:12px; }
+  .trust-item small { font-size:10px; }
+  .navigation { font-size:11px; gap:18px; }
+}
+@media (width < 960px) {
+  .wrap { width:calc(100% - 48px); }
+  .site-header { height:88px; gap:18px; }
+  .wordmark { font-size:15px; gap:10px; }
+  .wordmark small { font-size:9px; }
+  .brand-symbol { width:39px; height:39px; border-radius:13px 13px 13px 4px; }
+  .header-contact { padding:10px; }
+  .header-contact>span,.header-contact>svg:last-child { display:none; }
+  .hero { column-gap:28px; }
+  .hero h1 { font-size:43px; letter-spacing:-1.8px; }
+  .hero-role { font-size:10px; }
+  .hero-intro { font-size:13px; }
+  .hero-actions { gap:13px; }
+  .hero-actions .button { font-size:11px; padding-inline:16px; min-height:59px; }
+  .hero-down { width:38px; height:38px; flex-shrink:0; }
+  .hero-benefits { font-size:10px; }
+  .hero-visual { height:486px; padding-inline:23px; }
+  .portrait-frame { height:322px; border-radius:110px 110px 23px 23px; }
+  .portrait-slot>svg { width:88px; height:88px; }
+  .portrait-signature { font-size:19px; }
+  .certificate-card { top:63px; left:-12px; transform:rotate(-7deg) scale(.86); transform-origin:top left; }
+  .materials-preview { bottom:23px; transform:rotate(6deg) scale(.88); transform-origin:bottom right; }
+  .hero-annotation { max-width:175px; top:22px; }
+  .orbit-icon-top { right:4px; top:34px; width:44px; height:44px; }
+  .orbit-icon-bottom { bottom:86px; left:-6px; width:43px; height:43px; }
+  .detail-one { right:-5px; }
+  .hero-trust { grid-template-columns:1fr 1fr 1fr; }
+  .trust-item { gap:11px; padding-left:16px; }
+  .trust-item>svg { width:27px; height:27px; }
+  .trust-item strong { font-size:11px; }
+  .trust-item small { font-size:9px; }
+}
+@media (width < 640px) {
+  .wrap { width:calc(100% - 40px); }
+  .section { padding-block:62px; }
+  h2 { font-size:34px; letter-spacing:-1.1px; }
+  .site-header { height:77px; gap:11px; z-index:10; position:relative; }
+  .navigation { display:none; position:absolute; top:69px; left:0; right:0; padding:15px; background:white; border:1px solid #dce2ec; border-radius:17px; box-shadow:0 15px 35px #22376115; flex-direction:column; align-items:stretch; gap:0; font-size:14px; }
+  .navigation.is-open { display:flex; }
+  .navigation a,.navigation button { padding:13px; text-align:left; }
+  .menu-toggle { display:grid; width:36px; height:36px; }
+  .header-contact { margin-left:auto; width:36px; height:36px; min-height:36px; border:0; background:#eaf1ff; }
+  .hero { grid-template-columns:minmax(0,1fr); padding-top:28px; row-gap:0; }
+  .hero-copy { display:contents; }
+  .hero-role { grid-row:1; font-size:10px; margin-bottom:17px; }
+  .hero h1 { grid-row:2; font-size:clamp(34px,7.3vw,47px); line-height:1.12; letter-spacing:-1.45px; max-width:610px; }
+  .hero-emphasis { letter-spacing:-1.5px; }
+  .hero-intro { grid-row:3; margin-top:18px; font-size:13px; max-width:485px; line-height:1.75; }
+  .hero-visual { grid-row:4; width:min(380px,100%); height:310px; min-height:0; padding:34px 70px 29px; justify-self:center; margin-top:8px; overflow:clip; overflow-clip-margin:0; }
+  .portrait-backdrop { width:69%; height:79%; top:12%; left:17%; }
+  .portrait-frame { height:247px; border-width:4px; border-radius:85px 85px 19px 19px; }
+  .portrait-frame-top { top:23px; font-size:8px; }
+  .portrait-slot { padding-top:5px; gap:10px; }
+  .portrait-slot>svg { width:76px; height:76px; }
+  .portrait-slot>span { font-size:10px; }
+  .portrait-slot small { font-size:8px; }
+  .portrait-signature { font-size:16px; top:26px; bottom:auto; left:10px; right:10px; }
+  .orbit-one { width:91%; height:80%; top:10%; left:5%; }
+  .orbit-two { width:60%; height:105%; top:-2%; left:19%; }
+  .certificate-card { top:36px; left:9px; transform:rotate(-7deg) scale(.65); }
+  .materials-preview { bottom:12px; right:5px; transform:rotate(5deg) scale(.65); }
+  .hero-annotation { top:11px; left:56px; font-size:9px; max-width:220px; }
+  .hero-annotation svg { width:20px; height:20px; left:-27px; top:8px; }
+  .orbit-icon-top { top:20px; right:37px; height:38px; width:38px; border-width:4px; border-radius:12px; }
+  .orbit-icon-top svg { width:22px; height:22px; }
+  .orbit-icon-bottom { bottom:38px; left:28px; height:38px; width:38px; border-radius:12px; }
+  .orbit-icon-bottom svg { width:23px; height:23px; }
+  .hero-detail { width:25px; height:25px; }
+  .hero-detail svg { width:13px; height:13px; }
+  .detail-one { right:18px; top:45%; }
+  .detail-two { left:25%; bottom:11px; }
+  .hero-actions { grid-row:5; margin-top:6px; gap:13px; }
+  .hero-actions .button { min-height:58px; font-size:12px; padding:16px 18px; flex:1; gap:12px; }
+  .hero-down { width:43px; height:43px; }
+  .hero-benefits { grid-row:6; font-size:10px; margin-top:29px; gap:12px 15px; }
+  .hero-trust { grid-row:7; grid-template-columns:1fr; padding:5px 0; margin-top:30px; }
+  .trust-item { padding:17px 3px; border-left:0; border-top:1px solid #e0e6ef; gap:16px; }
+  .trust-item:first-child { border:0; }
+  .trust-item strong { font-size:13px; }
+  .trust-item small { font-size:11px; margin-top:4px; }
+  .trust-item>svg { width:28px; height:28px; }
+  .button { font-size:13px; min-height:57px; padding:16px 20px; gap:16px; }
+  .dialog-heading h2 { font-size:23px; }
+}
+@media (width < 360px) {
+  .wrap { width:calc(100% - 32px); }
+  .wordmark { font-size:13px; }
+  .wordmark small { font-size:8px; }
+  .hero { padding-top:24px; }
+  .hero h1 { font-size:32px; letter-spacing:-1.35px; }
+  .hero-intro { font-size:12px; }
+  .hero-visual { height:272px; padding:32px 49px 24px; }
+  .portrait-frame { height:216px; }
+  .portrait-slot>svg { height:65px; width:65px; }
+  .portrait-signature { font-size:14px; }
+  .certificate-card { left:0; top:26px; transform:rotate(-6deg) scale(.59); }
+  .materials-preview { bottom:9px; right:0; transform:rotate(5deg) scale(.6); }
+  .hero-annotation { top:8px; left:36px; font-size:8px; }
+  .orbit-icon-top { right:8px; }
+  .orbit-icon-bottom { left:4px; bottom:35px; }
+  .detail-one { right:3px; }
+  .hero-actions .button { font-size:10px; padding-inline:12px; gap:9px; }
+  .hero-down { width:36px; height:36px; }
+  .hero-benefits { font-size:9px; gap:10px; }
+}
+@media (prefers-reduced-motion:reduce) {
+  .floating-card,.button>svg,.hero-down { transition:none; }
+}

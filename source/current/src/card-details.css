@@ -1,0 +1,65 @@
+/* Reference 2: distinct corner motifs, layered subject icons, selective emphasis. */
+.detail-underline { text-decoration:underline wavy #d9b090 2px;text-underline-offset:10px;text-decoration-skip-ink:none; }
+.audience-card,.format-card { isolation:isolate; }
+.card-details { position:absolute;inset:0;overflow:hidden;border-radius:inherit;pointer-events:none;z-index:-1;color:#b5cceb; }
+.card-rings { position:absolute;right:-61px;top:-64px;width:222px;height:222px;display:grid;place-items:center;transform:rotate(-12deg); }
+.card-rings i { position:absolute;width:100%;height:100%;border:2px solid currentColor;border-radius:50%;opacity:.55; }
+.card-rings i:nth-child(2) { width:76%;height:76%; }
+.card-rings i:nth-child(3) { width:52%;height:52%; }
+.card-dots { position:absolute;display:grid;grid-template-columns:repeat(3,4px);gap:6px;right:151px;top:19px;color:#8eadd6;transform:rotate(-9deg); }
+.card-dots i { width:4px;height:4px;border-radius:50%;background:currentColor; }
+.audience-card-0 .card-details { color:#9cbef2; }
+.audience-card-0 .card-dots { color:#bad0f4; }
+.audience-card-0 .card-rings i { opacity:.35; }
+.audience-card-1 .card-rings { right:-63px;top:-65px;transform:rotate(30deg); }
+.audience-card-1 .card-rings i { border-radius:38px;width:77%;height:77%;border-color:#c7d8f2; }
+.audience-card-1 .card-rings i:nth-child(2) { width:56%;height:56%; }
+.audience-card-1 .card-rings i:nth-child(3) { width:35%;height:35%; }
+.audience-card-1 .card-dots { color:#dcb18f; }
+.audience-card-2 .card-rings { top:-83px;right:-80px; }
+.audience-card-2 .card-rings i { border-color:#e2c5ae;opacity:.55; }
+.audience-card-2 .card-dots { display:none; }
+.audience-card-3 .card-rings { right:-78px;top:-74px; }
+.audience-card-3 .card-rings i { border-style:dashed;border-color:#b9cce5; }
+.audience-card-3 .card-dots { color:#a7bbd6; }
+.audience-art-plate { border:1px solid #ffffff9c;box-shadow:0 8px 16px #244b8110,inset 0 1px 0 #ffffffbf; }
+.audience-card-0 .audience-art-plate { background:#3770d5;border-color:#84a9e866;box-shadow:0 8px 16px #103a921c,inset 0 1px 0 #ffffff29; }
+.art-small { box-shadow:0 4px 10px #2a487a0c; }
+.card-link { width:37px;height:37px;background:#ffffff91;border:1px solid #cad8ed80; }
+.audience-card-0 .card-link { background:#ffffff15;border-color:#ffffff40; }
+.format-card { position:relative;overflow:hidden; }
+.format-card .card-rings { width:284px;height:284px;top:-131px;right:-55px; }
+.format-0 .card-details { color:#a9c5f2; }
+.format-0 .card-rings i { opacity:.3; }
+.format-card .card-dots { right:175px;top:19px; }
+.format-0 .card-dots { color:#b8cef1; }
+.format-1 .card-rings i { border-radius:42px;transform:rotate(20deg); }
+.format-1 .card-dots { color:#dab494; }
+.format-visual { width:92px;height:90px;display:grid;place-items:center;background:#ffffff16;border:1px solid #ffffff42;border-radius:23px;color:#eef4ff;box-shadow:0 8px 16px #123f8112; }
+.format-visual>svg { width:63px;height:63px; }
+.format-mini-icon { position:absolute;width:34px;height:34px;right:-9px;bottom:-10px;display:grid;place-items:center;background:#ffdec6;color:#ab6734;border:4px solid var(--blue);border-radius:50%; }
+.format-mini-icon>svg { width:19px;height:19px; }
+.format-1 .format-visual { background:white;border-color:#dee7f3;color:#6084b7;transform:rotate(-7deg); }
+.format-1 .format-mini-icon { border-color:#f2f6fd;background:#dce8ff;color:#416baa; }
+@media (width < 1200px) {
+  .card-rings { width:195px;height:195px;right:-71px;top:-61px; }
+  .card-dots { right:125px; }
+  .format-visual { width:73px;height:74px; }
+  .format-visual>svg { width:52px;height:52px; }
+}
+@media (width < 640px) {
+  .detail-underline { text-decoration-thickness:1.5px;text-underline-offset:7px; }
+  .card-rings { width:164px;height:164px;right:-64px;top:-67px; }
+  .card-rings i { border-width:1.5px; }
+  .card-dots { grid-template-columns:repeat(3,3px);gap:5px;right:102px;top:12px; }
+  .card-dots i { width:3px;height:3px; }
+  .audience-card-1 .card-rings { right:-70px;top:-74px; }
+  .audience-card-2 .card-rings { right:-85px;top:-86px; }
+  .audience-card-3 .card-rings { right:-81px;top:-79px; }
+  .format-card .card-rings { width:216px;height:216px;top:-110px;right:-70px; }
+  .format-card .card-dots { right:116px;top:13px; }
+  .format-visual { width:63px;height:65px;border-radius:18px; }
+  .format-visual>svg { width:44px;height:44px; }
+  .format-mini-icon { width:29px;height:29px;right:-7px;bottom:-8px;border-width:3px; }
+  .format-mini-icon>svg { width:16px;height:16px; }
+}

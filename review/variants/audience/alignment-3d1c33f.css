@@ -1,0 +1,19 @@
+
+.v9 #audience .a02-card,.v9 #audience .a02-card:nth-child(even){align-items:start}
+.v9 #audience .a02-image-slot{align-self:start}
+.v9 #audience .a02-body{padding:0;align-self:start}
+.v9 #audience .a02-card h3{margin-top:0}
+@media(width >= 640px){
+ .v9 #audience .a02-card,.v9 #audience .a02-card:nth-child(even){grid-template-columns:168px minmax(0,1fr)}
+ .v9 #audience .a02-image-slot{width:168px}
+ .v9 #audience .a02-card p{max-width:none}
+}
+@media(width >= 640px) and (width < 1200px){
+ .v9 #audience .a02-grid{grid-template-columns:minmax(0,1fr);max-width:680px;margin-inline:auto}
+}
+@media(width < 640px){
+ .v9 #audience .a02-card h3{align-self:start}
+ .v9 #audience .a02-card p{margin:0}
+}
+
+

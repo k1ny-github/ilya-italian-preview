@@ -1,0 +1,8 @@
+.h01-edge-right{display:none}
+@media(width >= 640px) and (width < 960px){
+ .v9 .h01-hero .tablet-text{padding-left:32px}
+ .v9 .h01-hero .h01-art>.h01-portrait-left,
+ .v9 .h01-hero .h01-art>.h01-right{display:none}
+ .v9 .h01-hero>.h01-left{display:block;position:absolute;left:-2px;right:auto;top:215px;width:clamp(100px,calc(100px + (100vw - 640px)*.06),120px);height:auto;transform:none;z-index:1;pointer-events:none}
+ .v9 .h01-hero>.h01-edge-right{display:block;position:absolute;right:-2px;left:auto;top:140px;width:clamp(115px,calc(115px + (100vw - 640px)*.11),150px);height:auto;transform:none;z-index:1;pointer-events:none}
+}

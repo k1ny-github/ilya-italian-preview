@@ -1,0 +1,10 @@
+
+@media(width >= 640px) and (width < 960px){
+ .v9 .h01-hero .h01-copy h1{padding-left:32px;font-size:clamp(32px,calc(32px + (100vw - 640px)*.05),44px);margin-bottom:12px;line-height:1.06;letter-spacing:-.035em}
+ .v9 .h01-hero .h01-copy h1 .tablet-title-break{display:initial}
+ .v9 .h01-hero .h01-art{width:min(100%,384.49px);left:-12px}
+ .v9 .h01-hero .h01-trust{grid-template-columns:max-content minmax(0,1fr) minmax(0,.85fr);min-height:0;padding-block:20px}
+ .v9 .h01-hero .h01-trust>div:first-child{padding-right:12px}
+ .v9 .h01-hero .h01-trust>div{align-items:center}
+ .v9 .h01-hero .h01-trust img{margin-top:0}
+}

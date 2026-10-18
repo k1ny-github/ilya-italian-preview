@@ -1,0 +1,628 @@
+/* Lower-page art direction. Editorial content remains in content.js.
+   Sources: Obsidian 2 (meaningful cards), 4 (overlapping study UI),
+   6 (inline icons), 7 (crafted footer), and the interview's light palette. */
+
+.audience,.approach,.steps,.culture,.formats,.goal,.reviews,.booking,.faq{padding-block:88px}
+.section-heading{margin-bottom:42px;gap:24px}
+.section-heading h2,.materials-copy h2,.culture-copy h2,.goal-heading h2,.booking-copy h2,.faq-intro h2{font-size:clamp(38px,3.65vw,50px);line-height:1.14;letter-spacing:-1.9px;font-weight:600}
+.section-heading .heading-decoration{margin-right:8px;color:var(--blue)}
+.section-handwriting{font-size:27px;max-width:none;padding-right:8px}
+.audience-card p,.approach-item p,.materials-paragraph p,.steps-list p,.culture-copy>p,.format-card p{font-size:16px;line-height:1.75}
+.audience-card-copy,.approach-item,.materials-copy,.goal-heading,.goal-content,.booking-copy,.booking-side,.faq-list{min-width:0}
+
+/* A person's reason to learn is the focal point; the artwork supports it. */
+.audience{padding-top:98px}
+.audience-grid{grid-template-columns:1.06fr 1fr;gap:22px}
+.audience-card{display:block;min-height:350px;padding:38px 38px 48px;border:1px solid #dce5ef;border-radius:30px;background:#fff;overflow:hidden;box-shadow:none}
+.audience-card-copy{padding:0}
+.audience-card h3{font-size:27px;line-height:1.24;letter-spacing:-.9px;max-width:calc(100% - 116px);min-height:104px;margin-bottom:19px;text-wrap:balance}
+.audience-card p{max-width:470px;color:#516177}
+.audience-art{position:absolute;top:28px;right:27px;width:100px;min-height:111px;height:111px;padding:0;align-self:auto;justify-self:auto;transform:rotate(4deg)}
+.audience-art-plate{width:94px;height:97px;background:#eaf1ff;color:var(--blue);border-radius:27px;box-shadow:none;transform:rotate(7deg)}
+.audience-art-plate>svg{width:64px;height:64px}
+.art-small{width:39px;height:39px;right:-2px;bottom:-5px;background:#fff;border:4px solid #fff;color:var(--blue)}
+.art-small>svg{width:24px;height:24px}
+.card-link{width:36px;height:36px;right:20px;bottom:17px;color:var(--blue);background:transparent}
+.audience-card-0{background:var(--blue);border-color:var(--blue);color:white}
+.audience-card-0 p{color:#eef4ff}
+.audience-card-0 .audience-art-plate{background:#ffffff22;color:white;border-radius:50%;transform:rotate(-8deg)}
+.audience-card-0 .art-small{border-color:var(--blue);background:#fff;color:var(--blue)}
+.audience-card-0 .card-link{color:white}
+.audience-card-1{background:#f0f5ff;border-color:#e0e9f8}
+.audience-card-1 .audience-art{transform:rotate(-6deg)}
+.audience-card-1 .audience-art-plate{background:white;color:var(--blue);border-radius:20px;transform:rotate(8deg);box-shadow:0 10px 22px #26466a0b}
+.audience-card-1 .art-small{background:#fae1cf;color:#9d511d;border-color:#f0f5ff}
+.audience-card-2 .audience-art-plate{background:#f4f7fb;border-radius:50%;color:var(--blue);transform:rotate(-8deg)}
+.audience-card-2 .art-small{background:#e5eeff;border-color:white;color:var(--blue)}
+.audience-card-3{background:#f6f8fc;border-color:#e2e7f1}
+.audience-card-3 .audience-art{transform:rotate(-8deg)}
+.audience-card-3 .audience-art-plate{background:white;color:var(--blue);border-radius:22px;transform:rotate(4deg);box-shadow:0 7px 20px #234a7810}
+.audience-card-3 .art-small{background:#fae1cf;color:#9d511d;border-color:#f6f8fc}
+
+/* The method is four editorial columns, not another set of colored cards. */
+.approach{padding-top:65px;padding-bottom:105px}
+.inline-heading-icon{width:49px;height:49px;margin-inline:7px;background:#e8f0fe;transform:rotate(-10deg);border-radius:17px}
+.inline-heading-icon svg{width:29px;height:29px}
+.approach-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:34px}
+.approach-item{display:block;padding:0 0 0 23px;border-left:1px solid #dce5f0}
+.approach-item:first-child{padding-left:0;border-left:0}
+.approach-icon{width:74px;height:74px;border-radius:22px;margin-bottom:26px;background:#eaf1ff;color:var(--blue)}
+.approach-icon>svg{width:38px;height:38px}
+.approach-icon-1{background:#ffeadc;color:#b66329;transform:rotate(5deg)}
+.approach-icon-2{background:#eaf1ff;color:var(--blue);border-radius:50%}
+.approach-icon-3{background:#f0f3f8;color:#405d83;transform:rotate(-5deg)}
+.approach-item h3{font-size:21px;line-height:1.32;letter-spacing:-.55px;margin-bottom:15px}
+.approach-item p{color:#57667b}
+
+/* The shared board is a working object with a useful, readable toolbar. */
+.materials{background:#eef4ff;padding-block:96px;overflow:hidden}
+.materials-layout{grid-template-columns:minmax(0,.79fr) minmax(0,1.21fr);gap:55px;align-items:center}
+.materials-copy{display:block}
+.materials-copy h2{font-size:43px;line-height:1.14;margin-bottom:32px;letter-spacing:-1.65px}
+.materials-symbol{display:inline-grid;place-items:center;width:56px;height:56px;border-radius:17px;background:white;margin-bottom:22px;color:var(--blue)}
+.materials-paragraph{max-width:410px;margin-bottom:25px}
+.materials-paragraph h3{font-size:20px;margin-bottom:10px;letter-spacing:-.5px}
+.materials-paragraph p{color:#52637b}
+.materials-copy .text-button{font-size:15px;margin-top:4px;gap:12px}
+.workspace-stage{padding-block:35px 52px;max-width:none;width:100%;isolation:isolate}
+.workspace-stage::before{content:"";position:absolute;inset:38px 14px 28px 20px;z-index:-1;background:#d4e3fd;border-radius:26px;transform:rotate(-4deg)}
+.workspace{border:1px solid #cddbea;border-radius:21px;box-shadow:0 25px 48px #1d447b17,0 3px 7px #1d447b08;transform:rotate(2deg)}
+.workspace-bar{height:61px;padding:0 21px}
+.workspace-brand{font-size:13px;gap:15px;font-weight:500}
+.workspace-divider{height:20px}
+.participants>span{width:31px;height:31px;font-size:10px;border-width:2px}
+.workspace-canvas{height:425px;background:#f7f9fd}
+.workspace-toolbar{left:17px;top:43px;padding:11px;gap:21px;border-radius:12px;border-color:#dce5f0}
+.workspace-toolbar svg{width:19px;height:19px}
+.board-card{padding:16px;border-radius:12px;box-shadow:0 9px 17px #254b8111}
+.board-task{left:16%;top:39px;width:40%;min-height:238px;transform:rotate(-6deg)}
+.board-card-head{font-size:12px;gap:9px}
+.board-card-head svg{width:20px;height:20px}
+.board-asset{margin-top:16px;height:111px;font-size:11px;background:#edf3fc;color:#5b789c;border-radius:7px}
+.board-asset svg{width:48px;height:48px}
+.skeleton-lines{gap:9px;margin-top:16px}
+.skeleton-lines i{height:5px;background:#dce6f4}
+.board-video{right:3.5%;top:78px;width:34%;padding:11px;gap:13px;transform:rotate(6deg)}
+.video-placeholder{height:105px;background:#dce8fe;color:var(--blue);border-radius:8px}
+.video-placeholder svg{width:34px;height:34px}
+.board-video .board-card-head{font-size:10px;padding:0 2px 3px}
+.board-note{right:11%;bottom:31px;width:38%;padding:17px;background:#ffeadb;transform:rotate(-3deg);border-color:#f3d4bc}
+.board-note .skeleton-lines i{background:#dbb497}
+.note-foot{font-size:10px;margin-top:15px;color:#955f39}
+.board-link{top:127px;left:44%;width:27%;height:66px;border-color:#8aa7d3}
+.board-link-two{top:202px;left:34%;height:133px;width:24%;border-color:#8aa7d3}
+.board-cursor>span{font-size:10px;padding:6px 9px}
+.cursor-ilya{left:45%;top:31%}
+.cursor-student{right:23%;bottom:15%}
+.workspace-footer{font-size:11px;padding:14px 17px;gap:12px;color:#5d6e85}
+.workspace-footer>span{max-width:180px}
+.workspace-footer button{font-size:11px;min-height:34px;padding:8px 10px;gap:7px;border-radius:8px;background:#e7f0ff}
+.workspace-footer button svg{width:14px;height:14px}
+.workspace-caption{left:35px;bottom:22px;padding:13px 20px;border-radius:13px;font-size:13px;background:white;border-color:#d9e3f1;box-shadow:0 12px 22px #21457513}
+.workspace-enlarged{transform:none}
+.workspace-enlarged .workspace-canvas{height:465px}
+.workspace-enlarged .board-card-head{font-size:14px}
+.workspace-enlarged .board-asset{height:135px}
+
+/* Only the actual sequence uses numbering and a directional connection. */
+.steps{padding-top:110px;padding-bottom:106px}
+.steps-list{grid-template-columns:repeat(5,minmax(0,1fr));gap:30px;padding-top:13px}
+.steps-list li{padding:0;min-height:0}
+.step-number{position:static;width:60px;height:60px;margin:0 0 25px;border-radius:20px;background:#edf3ff;border:1px solid #cfdef5;font-size:19px;font-weight:600;color:var(--blue)}
+.steps-list li:not(:last-child)::after{height:0;left:74px;top:30px;width:calc(100% - 55px);border-top:2px dashed #b9cde9;background:none;transform:scaleX(.2);transform-origin:left}
+.steps-list.is-visible li::after{transform:scaleX(1)}
+.steps-list h3{font-size:19px;line-height:1.35;letter-spacing:-.55px;margin-bottom:13px}
+.steps-list p{font-size:15px;color:#57667b;line-height:1.75}
+.steps-list li:last-child .step-number{background:var(--blue);color:white;border-color:var(--blue)}
+
+/* Culture: one large photo mount and one moving-image mount, not a gallery. */
+.culture{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:95px;align-items:center;padding-top:35px;padding-bottom:112px}
+.culture-collage{height:472px;width:100%;max-width:none;order:0}
+.culture-main{inset:5px 38px 60px 15px;border:9px solid white;background:#e7effe;transform:rotate(-4deg);border-radius:25px;box-shadow:0 0 0 1px #d7e2f0,0 24px 40px #22436c12}
+.culture-main>svg{width:90px;height:90px;color:#7695c3}
+.culture-main>span{font-size:16px;color:#466589}
+.culture-main small{font-size:12px}
+.culture-secondary{width:225px;height:197px;right:3px;bottom:0;border:7px solid white;background:#f0f4fa;transform:rotate(7deg);border-radius:20px;box-shadow:0 0 0 1px #d3dfee,0 16px 30px #264b7815}
+.culture-secondary>svg{width:47px;height:47px;color:var(--blue)}
+.culture-secondary>span{font-size:13px}
+.culture-secondary small{font-size:10px}
+.culture-photo{display:block;object-fit:cover;object-position:center;width:auto;height:auto}
+.culture-main.culture-photo{width:calc(100% - 53px);height:calc(100% - 65px)}
+.culture-secondary.culture-photo{width:225px;height:197px}
+.culture-pin{width:65px;height:65px;right:4px;top:-14px;background:#ffd8bc;color:#aa5620;border-radius:21px;transform:rotate(12deg)}
+.culture-pin>svg{width:29px;height:29px}
+.culture-book{left:36px;bottom:11px;width:77px;height:77px;border-radius:23px;transform:rotate(-12deg);box-shadow:0 8px 20px #2749720c}
+.culture-copy h2{font-size:52px}
+.culture-copy .type-italic{font-size:1.05em}
+.culture-copy>p{margin-top:24px;max-width:485px;color:#526278}
+.culture-icons{gap:18px;margin-block:26px 30px;color:var(--blue)}
+.culture-icons svg{width:27px;height:27px}
+.culture-copy .button{font-size:15px;min-height:60px;padding:17px 22px;gap:20px}
+
+/* Individual tuition is the visual primary; groups are a quieter option. */
+.formats{padding-top:55px;padding-bottom:72px}
+.formats-grid{grid-template-columns:1.12fr 1fr;gap:24px;align-items:stretch}
+.format-card{padding:42px 40px;border-radius:30px;min-height:350px;display:flex;flex-direction:column;align-items:flex-start;border:1px solid #dfe6f0}
+.format-0{background:var(--blue);border-color:var(--blue);color:white}
+.format-1{background:#f2f6fd}
+.format-card h3{font-size:33px;line-height:1.2;max-width:calc(100% - 100px);padding:0;min-height:42px;letter-spacing:-1.2px}
+.format-card p{font-size:16px;line-height:1.75;padding:0;margin:22px 0 34px;max-width:calc(100% - 35px)}
+.format-0 p{color:#edf3ff}
+.format-1 p{color:#52647c}
+.format-visual{position:absolute;right:28px;top:28px;height:auto;margin:0;color:#ffffff8c;transform:rotate(8deg)}
+.format-visual svg{width:91px;height:91px}
+.format-1 .format-visual{color:#7d9ac3}
+.format-card .button{font-size:14px;min-height:58px;padding:16px 21px;gap:17px;margin-top:auto;max-width:100%}
+.format-card .button-white{background:white;color:var(--blue);box-shadow:0 4px 0 #c9d9f0,0 12px 22px #1237761c}
+
+/* The goal choices are clearly selectable controls, with comfortable targets. */
+.goal{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:72px;padding-block:55px 105px}
+.goal-heading h2{font-size:43px;max-width:390px}
+.goal-heading p{font-size:16px;line-height:1.75;margin-top:20px;color:#52647b}
+.goal-content fieldset{display:grid;grid-template-columns:1fr;gap:10px;max-width:none}
+.goal-option{font-size:15px;line-height:1.5;min-height:57px;padding:16px 20px;border-radius:15px;gap:14px;background:white;border-color:#d7e1ee}
+.goal-option.selected{background:#eaf2ff;border-color:var(--blue);color:var(--blue);box-shadow:inset 0 0 0 1px var(--blue)}
+.goal-check{display:grid;place-items:center;flex:none;width:25px;height:25px;border:1px solid #cfdaea;border-radius:50%;color:#8295af}
+.selected .goal-check{background:var(--blue);border-color:var(--blue);color:white}
+.goal-feedback{font-size:12px;line-height:1.7;min-height:29px;margin-top:13px}
+.goal-actions{gap:22px;margin-top:9px;align-items:center}
+.goal-actions .button{font-size:13px;min-height:56px;padding:16px 19px;gap:15px}
+.goal-actions .text-button{font-size:12px;line-height:1.6;gap:9px}
+
+/* Honest empty testimonial slots, ready for real words and portraits. */
+.reviews{padding-top:25px;padding-bottom:85px}
+.reviews-grid{grid-template-columns:1fr 1fr;gap:25px}
+.review-placeholder{padding:37px;border-radius:26px;border-color:#dce4ef;background:#fff}
+.review-placeholder>svg{color:#8dace0;width:39px;height:39px}
+.review-empty-label{font-size:17px;line-height:1.65;margin-top:19px;color:#596b82}
+.review-lines{margin-block:22px 32px;gap:11px;max-width:420px}
+.review-lines i{height:6px;background:#edf2f8}
+.review-author{font-size:14px;gap:14px}
+.review-author>span{width:49px;height:49px;background:#edf3fd;color:#8ca2c0}
+.review-author small{font-size:11px;margin-top:6px;color:#6b7b90}
+
+/* Booking is an invitation next to the actual contents of the first meeting. */
+.booking{padding-top:18px;padding-bottom:90px}
+.booking-panel{grid-template-columns:minmax(0,1.12fr) minmax(0,1fr);gap:80px;padding:65px 66px;border-radius:36px;border-color:#d8e5f8;background:#eaf2ff;align-items:center}
+.booking-icon{width:65px;height:65px;border-radius:20px;margin-bottom:28px;background:white;border:1px solid #d4e1f5;color:var(--blue)}
+.booking-icon svg{width:34px;height:34px}
+.booking-copy h2{font-size:49px;line-height:1.12;letter-spacing:-1.85px}
+.booking-copy>p{font-size:16px;line-height:1.75;margin:23px 0 31px;color:#4d6280}
+.booking-copy .button{font-size:16px;min-height:64px;min-width:260px;padding:19px 29px;gap:23px}
+.booking-help{font-size:12px;line-height:1.7;margin-top:17px;color:#617897}
+.booking-telegram{font-size:13px;gap:9px;max-width:330px;line-height:1.7;margin-top:30px;color:#385b88}
+.booking-side{padding:10px 3px 42px 0}
+.appointment-card{padding:30px;border-radius:25px;border-color:#d3e0f2;transform:rotate(4deg);box-shadow:0 24px 36px #1f4b8a18;background:white}
+.appointment-card-top{padding-bottom:22px;margin-bottom:24px}
+.appointment-card-top svg{width:27px;height:27px}
+.appointment-card h3{font-size:22px;line-height:1.35;letter-spacing:-.65px}
+.appointment-card ul{gap:16px;font-size:13px;line-height:1.65;margin:25px 0}
+.appointment-card li{font-size:13px;gap:10px}
+.appointment-card li svg{width:18px;height:18px;margin-top:2px}
+.appointment-foot{font-size:13px;padding-top:20px;gap:9px}
+.booking-handwriting{right:16px;bottom:-1px;font-size:27px}
+
+.faq{grid-template-columns:minmax(0,.69fr) minmax(0,1.31fr);gap:88px;padding-top:35px;padding-bottom:95px}
+.faq-intro h2{font-size:46px}
+.faq-mark{margin:34px 0 0 35px;color:#abc4ed}
+.faq-mark svg{width:84px;height:84px}
+.faq-item{border-color:#dce4ef}
+.faq-item:first-child{border-color:#dce4ef}
+.faq-item h3{font-size:16px;font-weight:500;line-height:1.65;letter-spacing:-.15px}
+.faq-item h3 button{padding-block:25px;gap:26px;line-height:1.65}
+.faq-item h3 svg{width:24px;height:24px;color:#7c95b6}
+.faq-item.is-open h3{color:var(--blue)}
+.faq-answer{font-size:15px;line-height:1.8;padding:0 42px 24px 0}
+.closing{padding:68px 20px 87px;border-top:1px solid #dce4ef}
+.closing-icon{width:68px;height:68px;border-radius:22px;margin-bottom:27px;background:#e9f1ff}
+.closing-icon svg{width:37px;height:37px}
+.closing h2{font-size:55px;letter-spacing:-2px;line-height:1.15}
+.closing p{font-size:16px;line-height:1.75;margin:21px 0 30px;color:#56677f}
+.closing>.button{font-size:15px;min-height:62px;padding:18px 26px;gap:22px}
+.closing-secondary{font-size:13px;margin-top:27px;gap:9px}
+.site-footer{padding-block:37px 43px;border-top:1px solid #dce4ef;gap:32px}
+.footer-name{font-size:20px;letter-spacing:-.5px;font-weight:600}
+.footer-name small{font-size:12px;line-height:1.7;margin-top:7px;letter-spacing:0}
+.footer-actions{font-size:11px;gap:11px;line-height:1.6}
+.footer-actions button{font-size:12px}
+.back-top{width:47px;height:47px;background:#e9f1ff;border:0;border-radius:16px}
+
+@media (hover:hover) and (pointer:fine) {
+  .audience-card:hover .card-link{background:#e4edfc;color:var(--blue)}
+  .audience-card-0:hover .card-link{background:white;color:var(--blue)}
+  .goal-option:hover{border-color:#8aace0;background:#f5f8ff}
+  .goal-option.selected:hover{background:#eaf2ff;border-color:var(--blue)}
+  .workspace-footer button:hover{background:#d8e7ff}
+}
+
+@media (width < 1200px) {
+  .audience,.approach,.steps,.culture,.formats,.goal,.reviews,.booking,.faq{padding-block:70px}
+  .section-heading h2,.materials-copy h2,.culture-copy h2,.goal-heading h2,.booking-copy h2,.faq-intro h2{font-size:40px;letter-spacing:-1.55px}
+  .audience-card{padding:32px 31px 45px;min-height:355px}
+  .audience-card h3{font-size:24px;max-width:calc(100% - 92px);min-height:102px}
+  .audience-card p{font-size:15px;line-height:1.75}
+  .audience-art{width:84px;right:23px;top:28px;height:96px;min-height:0}
+  .audience-art-plate{width:78px;height:86px;border-radius:22px}
+  .audience-art-plate>svg{width:55px;height:55px}
+  .art-small{width:33px;height:33px;bottom:-2px}
+  .art-small>svg{width:21px;height:21px}
+  .approach-grid{gap:23px}
+  .approach-item{padding-left:18px}
+  .approach-item h3{font-size:19px}
+  .approach-item p{font-size:15px}
+  .materials{padding-block:78px}
+  .materials-layout{gap:32px;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr)}
+  .materials-copy h2{font-size:36px}
+  .materials-paragraph h3{font-size:18px}
+  .materials-paragraph p{font-size:15px}
+  .workspace-canvas{height:390px}
+  .workspace-bar{height:52px;padding-inline:15px}
+  .workspace-brand{font-size:11px}
+  .workspace-toolbar{left:12px;padding:9px;gap:18px}
+  .workspace-toolbar svg{width:16px;height:16px}
+  .board-task{left:16%;width:42%;padding:13px;min-height:211px}
+  .board-asset{height:94px;font-size:10px}
+  .board-card-head{font-size:10px}
+  .board-card-head svg{width:17px;height:17px}
+  .board-video{right:3%;top:88px;width:34%;padding:9px}
+  .video-placeholder{height:85px}
+  .board-video .board-card-head{font-size:8px}
+  .board-note{right:9%;bottom:28px;width:40%;padding:14px}
+  .workspace-footer{font-size:9px;padding:11px 12px}
+  .workspace-footer button{font-size:9px;padding:7px 8px;gap:5px}
+  .workspace-caption{font-size:11px;left:23px;bottom:20px;padding:11px 15px}
+  .steps-list{gap:22px}
+  .steps-list h3{font-size:17px}
+  .steps-list p{font-size:14px}
+  .culture{gap:62px}
+  .culture-collage{height:420px}
+  .culture-main{right:32px}
+  .culture-secondary{width:200px;height:178px}
+  .culture-main.culture-photo{width:calc(100% - 47px)}
+  .culture-secondary.culture-photo{width:200px;height:178px}
+  .culture-copy>p{font-size:15px}
+  .culture-copy .button{font-size:13px;padding-inline:17px;gap:12px}
+  .format-card{padding:34px;min-height:335px}
+  .format-card h3{font-size:29px;max-width:calc(100% - 65px)}
+  .format-card p{font-size:15px;max-width:100%;margin-block:23px 30px}
+  .format-visual{right:22px;top:23px}
+  .format-visual svg{width:73px;height:73px}
+  .format-card .button{font-size:12px;padding-inline:17px;gap:12px}
+  .goal{gap:45px}
+  .goal-option{font-size:14px}
+  .review-placeholder{padding:30px}
+  .booking-panel{padding:47px;gap:55px}
+  .booking-copy h2{font-size:41px}
+  .appointment-card{padding:25px}
+  .appointment-card h3{font-size:19px}
+  .appointment-card li{font-size:12px}
+  .booking-handwriting{font-size:23px}
+  .faq{gap:60px}
+  .faq-item h3{font-size:15px}
+}
+
+@media (width < 960px) {
+  .audience,.approach,.steps,.culture,.formats,.goal,.reviews,.booking,.faq{padding-block:60px}
+  .section-heading{margin-bottom:32px}
+  .section-heading h2,.materials-copy h2,.culture-copy h2,.goal-heading h2,.booking-copy h2,.faq-intro h2{font-size:37px;letter-spacing:-1.35px}
+  .audience-grid{gap:17px;grid-template-columns:1fr 1fr}
+  .audience-card{min-height:390px;padding:28px 27px 44px}
+  .audience-card h3{font-size:22px;max-width:calc(100% - 57px);min-height:116px}
+  .audience-art{right:19px;top:27px;width:66px;height:83px}
+  .audience-art-plate{width:61px;height:69px;border-radius:18px}
+  .audience-art-plate>svg{width:42px;height:42px}
+  .art-small{width:31px;height:31px;right:-2px;bottom:2px;border-width:3px}
+  .art-small>svg{width:19px;height:19px}
+  .approach-grid{grid-template-columns:1fr 1fr;gap:34px 36px}
+  .approach-item{padding-left:0;border-left:0}
+  .approach-icon{width:65px;height:65px;margin-bottom:21px}
+  .approach-item h3{font-size:21px}
+  .approach-item p{font-size:15px}
+  .materials{padding-block:70px}
+  .materials-layout{grid-template-columns:1fr;gap:23px}
+  .materials-copy{display:grid;grid-template-columns:1fr 1fr;gap:22px 35px}
+  .materials-symbol{display:none}
+  .materials-copy h2{grid-column:1/-1;margin:0 0 7px}
+  .materials-paragraph{margin:0;max-width:none}
+  .materials-copy .text-button{grid-column:1/-1;justify-self:start}
+  .workspace-stage{max-width:690px;justify-self:center;padding-top:23px}
+  .workspace-canvas{height:420px}
+  .workspace-bar{height:57px;padding-inline:18px}
+  .workspace-brand{font-size:13px}
+  .board-task{left:16%;width:38%;min-height:233px;padding:16px}
+  .board-card-head{font-size:12px}
+  .board-asset{height:112px;font-size:11px}
+  .board-video{right:6%;width:32%;top:76px;padding:11px}
+  .video-placeholder{height:110px}
+  .board-video .board-card-head{font-size:10px}
+  .board-note{right:14%;width:36%;bottom:26px;padding:16px}
+  .workspace-footer{font-size:11px;padding:13px 17px}
+  .workspace-footer button{font-size:11px;padding:8px 10px}
+  .steps-list{grid-template-columns:1fr;gap:0;max-width:630px}
+  .steps-list li{padding:0 0 35px 88px;min-height:126px}
+  .step-number{position:absolute;top:0;left:0;width:60px;height:60px;margin:0}
+  .steps-list li:not(:last-child)::after{left:29px;top:70px;width:0;height:calc(100% - 79px);border-top:0;border-left:2px dashed #b9cde9;transform:scaleY(.2);transform-origin:top}
+  .steps-list.is-visible li::after{transform:scaleY(1)}
+  .steps-list li:last-child{padding-bottom:0;min-height:0}
+  .steps-list h3{font-size:20px;padding-top:3px;margin-bottom:10px}
+  .steps-list p{font-size:15px;max-width:440px}
+  .culture{gap:40px;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+  .culture-collage{height:390px}
+  .culture-main{inset:14px 25px 63px 5px;border-width:7px}
+  .culture-main>svg{width:65px;height:65px}
+  .culture-main>span{font-size:13px}
+  .culture-main small{font-size:10px}
+  .culture-secondary{width:159px;height:158px;right:0;bottom:13px;border-width:6px}
+  .culture-secondary>span{font-size:11px}
+  .culture-secondary small{font-size:8px}
+  .culture-main.culture-photo{width:calc(100% - 30px);height:calc(100% - 77px)}
+  .culture-secondary.culture-photo{width:159px;height:158px}
+  .culture-pin{width:49px;height:49px;top:0;border-radius:16px}
+  .culture-book{left:10px;width:60px;height:60px;bottom:0;border-radius:17px}
+  .culture-copy>p{font-size:15px}
+  .culture-icons{gap:15px}
+  .culture-icons svg{width:23px;height:23px}
+  .culture-copy .button{font-size:12px;min-height:55px;gap:10px;padding:14px}
+  .formats-grid{gap:18px;grid-template-columns:1fr 1fr}
+  .format-card{padding:30px;min-height:365px}
+  .format-card h3{font-size:29px;min-height:68px;max-width:calc(100% - 53px)}
+  .format-card p{font-size:15px;max-width:100%;margin:19px 0 28px}
+  .format-visual svg{width:64px;height:64px}
+  .format-visual{right:17px;top:28px}
+  .format-card .button{font-size:11px;min-height:55px;padding:14px 13px;gap:8px}
+  .goal{grid-template-columns:1fr;gap:25px}
+  .goal-heading h2{max-width:none}
+  .goal-heading p{font-size:15px;margin-top:16px}
+  .goal-content fieldset{grid-template-columns:1fr 1fr;gap:11px}
+  .goal-option{font-size:13px;padding:15px;gap:10px}
+  .goal-actions .button{font-size:14px;gap:16px;padding:17px 22px}
+  .goal-actions .text-button{font-size:13px}
+  .review-placeholder{padding:27px}
+  .review-empty-label{font-size:15px}
+  .review-author{font-size:12px}
+  .booking-panel{padding:37px;gap:35px}
+  .booking-copy h2{font-size:35px}
+  .booking-copy>p{font-size:15px}
+  .booking-copy .button{min-width:0;width:100%;font-size:15px;padding:17px 20px;min-height:60px}
+  .booking-help{font-size:10px}
+  .booking-telegram{font-size:11px;gap:7px}
+  .appointment-card{padding:21px}
+  .appointment-card h3{font-size:17px}
+  .appointment-card li{font-size:11px}
+  .appointment-foot{font-size:11px}
+  .booking-handwriting{font-size:19px;right:0;bottom:5px}
+  .faq{gap:40px;grid-template-columns:minmax(0,.68fr) minmax(0,1.32fr)}
+  .faq-item h3{font-size:14px}
+  .faq-item h3 button{gap:18px;padding-block:23px}
+  .faq-answer{font-size:14px}
+  .closing{padding-block:60px 72px}
+  .closing h2{font-size:44px}
+}
+
+@media (width < 640px) {
+  .audience,.approach,.steps,.culture,.formats,.goal,.reviews,.booking,.faq{padding-block:51px}
+  .section-heading{margin-bottom:28px;gap:15px}
+  .section-heading h2,.materials-copy h2,.culture-copy h2,.goal-heading h2,.booking-copy h2,.faq-intro h2{font-size:32px;line-height:1.18;letter-spacing:-1.15px}
+  .section-heading .heading-decoration{margin:0;color:#799cd1}
+  .section-heading .heading-decoration svg,.section-heading>.heading-decoration{width:34px;height:34px}
+  .section-handwriting{font-size:18px;max-width:108px;padding:0;line-height:1.4}
+  .audience{padding-top:62px}
+  .audience-grid{grid-template-columns:1fr;gap:17px}
+  .audience-card{padding:28px 25px 44px;min-height:0;border-radius:25px}
+  .audience-card h3{font-size:24px;line-height:1.24;max-width:calc(100% - 69px);min-height:78px;margin-bottom:17px;letter-spacing:-.7px}
+  .audience-card p{font-size:15px;line-height:1.75;max-width:none}
+  .audience-art{top:28px;right:20px;width:70px;height:83px;min-height:0}
+  .audience-art-plate{width:66px;height:74px;border-radius:18px}
+  .audience-art-plate>svg{width:46px;height:46px}
+  .art-small{width:31px;height:31px;right:-2px;bottom:-2px}
+  .art-small>svg{width:19px;height:19px}
+  .card-link{width:34px;height:34px;bottom:12px;right:14px}
+  .inline-heading-icon{width:33px;height:33px;margin-inline:5px;border-radius:11px}
+  .inline-heading-icon svg{width:22px;height:22px}
+  .approach-grid{grid-template-columns:1fr;gap:27px}
+  .approach-item{display:grid;grid-template-columns:56px minmax(0,1fr);gap:0 19px;border:0;padding:0}
+  .approach-icon{grid-column:1;grid-row:1/3;width:56px;height:56px;margin:0;border-radius:18px}
+  .approach-icon-2{border-radius:50%}
+  .approach-icon>svg{width:31px;height:31px}
+  .approach-item h3{grid-column:2;font-size:20px;line-height:1.3;margin:1px 0 11px;letter-spacing:-.45px}
+  .approach-item p{grid-column:2;font-size:15px;line-height:1.75}
+  .materials{padding-block:57px}
+  .materials-layout{gap:19px}
+  .materials-copy{display:block}
+  .materials-copy h2{font-size:32px;margin-bottom:27px}
+  .materials-paragraph{margin-bottom:23px;max-width:100%}
+  .materials-paragraph h3{font-size:19px;margin-bottom:9px}
+  .materials-paragraph p{font-size:15px;line-height:1.75}
+  .materials-copy .text-button{font-size:14px;margin-top:0}
+  .workspace-stage{padding-top:15px;padding-bottom:45px}
+  .workspace-stage::before{inset:24px 12px 30px;border-radius:21px;transform:rotate(-3deg)}
+  .workspace{border-radius:16px;transform:rotate(1deg);box-shadow:0 17px 29px #1d447b16}
+  .workspace-bar{height:48px;padding:0 12px}
+  .workspace-brand{font-size:11px;gap:11px}
+  .participants>span{width:27px;height:27px;font-size:8px}
+  .workspace-canvas{height:342px}
+  .workspace-toolbar{left:8px;top:26px;padding:7px;gap:17px;border-radius:9px}
+  .workspace-toolbar svg{width:14px;height:14px}
+  .board-task{left:17%;top:34px;width:42%;min-height:189px;padding:11px;transform:rotate(-5deg)}
+  .board-card-head{font-size:9px;gap:4px}
+  .board-card-head svg{width:16px;height:16px}
+  .board-asset{height:81px;margin-top:12px;font-size:8px;gap:6px}
+  .board-asset svg{width:36px;height:36px}
+  .skeleton-lines{gap:7px;margin-top:13px}
+  .skeleton-lines i{height:4px}
+  .board-video{right:3%;top:70px;width:33%;padding:8px;gap:10px;transform:rotate(5deg)}
+  .video-placeholder{height:78px;border-radius:6px}
+  .video-placeholder svg{width:27px;height:27px}
+  .board-video .board-card-head{font-size:7px;gap:3px}
+  .board-video .board-card-head svg{width:13px;height:13px}
+  .board-note{right:10%;bottom:26px;width:41%;padding:12px}
+  .note-foot{font-size:8px;margin-top:12px}
+  .board-cursor>svg{width:21px;height:21px}
+  .board-cursor>span{font-size:8px;padding:5px 7px}
+  .cursor-ilya{left:44%;top:28%}
+  .cursor-student{right:25%;bottom:14%}
+  .board-link{top:105px;left:45%;height:55px;width:27%}
+  .board-link-two{top:173px;left:33%;height:111px;width:28%}
+  .workspace-footer{font-size:9px;gap:9px;padding:11px 12px;align-items:center;flex-wrap:wrap}
+  .workspace-footer>span{max-width:none;flex:1 1 120px}
+  .workspace-footer button{font-size:9px;padding:8px;gap:5px;min-height:32px;white-space:normal}
+  .workspace-footer button svg{width:12px;height:12px}
+  .workspace-caption{font-size:11px;padding:10px 14px;left:17px;bottom:13px;gap:7px;border-radius:11px}
+  .workspace-caption svg{width:17px;height:17px}
+  .workspace-enlarged{transform:none}
+  .workspace-enlarged .workspace-canvas{height:352px}
+  .workspace-enlarged .board-card-head{font-size:9px}
+  .workspace-enlarged .board-asset{height:82px}
+  .workspace-enlarged .video-placeholder{height:79px}
+  .steps-list{padding:0;grid-template-columns:1fr}
+  .steps-list li{padding:0 0 30px 74px;min-height:115px}
+  .step-number{width:51px;height:51px;font-size:17px;border-radius:16px}
+  .steps-list li:not(:last-child)::after{left:24px;top:61px;height:calc(100% - 72px)}
+  .steps-list h3{font-size:19px;line-height:1.35;padding-top:0;margin-bottom:9px;letter-spacing:-.5px}
+  .steps-list p{font-size:15px;line-height:1.75}
+  .culture{display:flex;flex-direction:column;gap:34px;padding-top:27px}
+  .culture-copy{width:100%}
+  .culture-copy h2{font-size:37px}
+  .culture-copy>p{font-size:15px;line-height:1.8;margin-top:21px;max-width:none}
+  .culture-icons{gap:17px;margin:23px 0 28px}
+  .culture-icons svg{width:24px;height:24px}
+  .culture-copy .button{font-size:13px;min-height:56px;padding:16px 18px;gap:16px}
+  .culture-collage{order:2;max-width:425px;height:360px;margin-top:5px}
+  .culture-main{inset:13px 43px 40px 10px;transform:rotate(-4deg);border-width:7px}
+  .culture-main>svg{width:72px;height:72px}
+  .culture-main>span{font-size:14px}
+  .culture-main small{font-size:10px}
+  .culture-secondary{width:164px;height:151px;bottom:0;right:4px;border-width:6px;border-radius:17px}
+  .culture-secondary>svg{width:38px;height:38px}
+  .culture-main.culture-photo{width:calc(100% - 53px);height:calc(100% - 53px)}
+  .culture-secondary.culture-photo{width:164px;height:151px}
+  .culture-pin{right:11px;top:-1px}
+  .culture-book{left:28px;bottom:2px;width:62px;height:62px}
+  .formats-grid{grid-template-columns:1fr;gap:18px}
+  .format-card{padding:31px 27px;min-height:300px;border-radius:26px}
+  .format-card h3{font-size:29px;min-height:65px;max-width:calc(100% - 72px);padding:0}
+  .format-card p{font-size:15px;line-height:1.75;max-width:none;padding:0;margin:18px 0 29px}
+  .format-visual{top:26px;right:24px}
+  .format-visual svg{width:78px;height:78px}
+  .format-card .button{font-size:12px;min-height:56px;padding:15px 17px;gap:12px}
+  .goal{padding-top:32px;gap:23px}
+  .goal-heading p{font-size:15px;margin-top:16px}
+  .goal-content fieldset{grid-template-columns:1fr;gap:10px}
+  .goal-option{font-size:14px;line-height:1.5;padding:16px;gap:12px;min-height:57px}
+  .goal-check{width:24px;height:24px}
+  .goal-feedback{font-size:11px;line-height:1.7;margin-top:13px;min-height:26px}
+  .goal-actions{gap:20px;align-items:flex-start;flex-direction:column;margin-top:10px}
+  .goal-actions .button{font-size:13px;min-height:57px;padding:16px 19px;gap:15px}
+  .goal-actions .text-button{font-size:13px;gap:10px}
+  .reviews{padding-top:29px}
+  .reviews-grid{grid-template-columns:1fr;gap:17px}
+  .review-placeholder{padding:28px;border-radius:23px}
+  .review-empty-label{font-size:16px;margin-top:15px}
+  .review-lines{margin-block:21px 29px}
+  .review-author{font-size:13px}
+  .review-author small{font-size:10px}
+  .booking{padding-top:23px}
+  .booking-panel{grid-template-columns:1fr;gap:35px;padding:32px 25px 37px;border-radius:28px}
+  .booking-icon{width:56px;height:56px;border-radius:17px;margin-bottom:23px}
+  .booking-copy h2{font-size:34px;letter-spacing:-1.3px}
+  .booking-copy>p{font-size:15px;margin:19px 0 28px}
+  .booking-copy .button{font-size:15px;min-width:0;min-height:60px;padding:17px 22px}
+  .booking-help{font-size:11px;margin-top:17px;text-align:center}
+  .booking-telegram{font-size:12px;margin-top:27px;gap:8px;max-width:none;line-height:1.7}
+  .booking-telegram>svg{width:18px;height:18px}
+  .booking-side{padding:8px 10px 38px}
+  .appointment-card{padding:25px 23px;border-radius:22px;transform:rotate(3deg)}
+  .appointment-card-top{padding-bottom:19px;margin-bottom:21px}
+  .appointment-card h3{font-size:20px;line-height:1.35}
+  .appointment-card ul{margin:22px 0;gap:15px}
+  .appointment-card li{font-size:12px;gap:9px}
+  .appointment-foot{font-size:12px;padding-top:18px}
+  .booking-handwriting{font-size:23px;right:4px;bottom:0}
+  .faq{grid-template-columns:1fr;gap:29px;padding-top:31px}
+  .faq-intro{display:flex;justify-content:space-between;align-items:center}
+  .faq-intro h2{font-size:33px}
+  .faq-mark{margin:0 6px 0 0}
+  .faq-mark svg{width:61px;height:61px}
+  .faq-item h3{font-size:15px;letter-spacing:-.2px;line-height:1.65}
+  .faq-item h3 button{padding-block:22px;gap:21px}
+  .faq-item h3 svg{width:22px;height:22px}
+  .faq-answer{font-size:14px;padding:0 33px 22px 0;line-height:1.75}
+  .closing{padding:49px 0 60px}
+  .closing-icon{width:60px;height:60px;border-radius:20px;margin-bottom:23px}
+  .closing h2{font-size:36px;line-height:1.2;letter-spacing:-1.4px}
+  .closing p{font-size:15px;line-height:1.7;margin:20px 0 28px}
+  .closing>.button{font-size:13px;min-height:59px;padding:17px 20px;gap:16px;max-width:100%}
+  .closing-secondary{font-size:12px;margin-top:26px}
+  .site-footer{padding-block:31px 37px;gap:24px;flex-wrap:wrap}
+  .footer-name{font-size:19px}
+  .footer-name small{font-size:11px;line-height:1.65;max-width:220px;margin-top:6px}
+  .footer-actions{order:3;flex-basis:100%;margin:0;align-items:flex-start;text-align:left;font-size:10px;gap:9px}
+  .footer-actions button{font-size:11px}
+  .back-top{width:43px;height:43px;flex:none;margin-left:auto;border-radius:14px}
+}
+
+@media (width < 360px) {
+  .section-heading h2,.materials-copy h2,.goal-heading h2,.faq-intro h2{font-size:29px;letter-spacing:-1px}
+  .section-handwriting{font-size:16px;max-width:87px}
+  .audience-card{padding:25px 21px 43px}
+  .audience-card h3{font-size:22px;min-height:74px;max-width:calc(100% - 56px)}
+  .audience-card p{font-size:14px;line-height:1.8}
+  .audience-art{width:57px;height:76px;right:17px;top:26px}
+  .audience-art-plate{width:53px;height:65px;border-radius:16px}
+  .audience-art-plate>svg{width:38px;height:38px}
+  .art-small{width:28px;height:28px;bottom:1px;right:-3px}
+  .art-small>svg{width:17px;height:17px}
+  .approach-item{grid-template-columns:47px minmax(0,1fr);gap:0 15px}
+  .approach-icon{width:47px;height:47px;border-radius:15px}
+  .approach-icon>svg{width:28px;height:28px}
+  .approach-item h3{font-size:18px}
+  .approach-item p,.materials-paragraph p,.steps-list p,.culture-copy>p,.format-card p{font-size:14px;line-height:1.8}
+  .workspace-canvas{height:320px}
+  .board-task{left:17%;width:44%;padding:9px;min-height:185px;top:30px}
+  .board-card-head{font-size:8px}
+  .board-video{width:34%;right:2%;top:81px;padding:7px}
+  .board-video .board-card-head{font-size:6px}
+  .board-video .board-card-head svg{width:11px;height:11px}
+  .video-placeholder{height:68px}
+  .board-note{width:43%;right:6%;bottom:20px;padding:10px}
+  .workspace-footer{padding:10px;gap:8px;font-size:9px}
+  .workspace-footer button{font-size:9px;min-height:34px;padding:8px 9px}
+  .workspace-footer>span{flex-basis:100%}
+  .workspace-enlarged .board-card-head{font-size:8px}
+  .workspace-brand{font-size:10px}
+  .steps-list li{padding-left:65px}
+  .step-number{width:45px;height:45px;font-size:16px;border-radius:14px}
+  .steps-list li:not(:last-child)::after{left:21px;top:56px;height:calc(100% - 67px)}
+  .steps-list h3{font-size:18px}
+  .culture-copy h2{font-size:34px}
+  .culture-collage{height:325px}
+  .culture-secondary{width:145px;height:141px}
+  .culture-secondary.culture-photo{width:145px;height:141px}
+  .culture-copy .button{font-size:12px;padding-inline:14px;gap:12px}
+  .format-card{padding:28px 23px;min-height:310px}
+  .format-card h3{font-size:26px;max-width:calc(100% - 63px)}
+  .format-visual{right:19px;top:25px}
+  .format-visual svg{width:63px;height:63px}
+  .format-card .button{font-size:11px;padding-inline:12px;gap:9px}
+  .goal-option{font-size:13px;padding:15px 13px;gap:10px}
+  .goal-actions .button{font-size:12px;padding-inline:15px;gap:12px}
+  .booking-panel{padding:29px 20px 35px}
+  .booking-copy h2{font-size:30px;letter-spacing:-1.1px}
+  .booking-copy>p{font-size:14px}
+  .booking-telegram{font-size:11px;gap:7px}
+  .booking-side{padding-inline:3px}
+  .appointment-card{padding:23px 19px}
+  .appointment-card h3{font-size:18px}
+  .appointment-card li{font-size:11px}
+  .booking-handwriting{font-size:20px}
+  .faq-item h3{font-size:14px}
+  .closing h2{font-size:32px}
+  .closing>.button{font-size:12px;padding-inline:14px;gap:12px}
+  .footer-name{font-size:17px}
+  .footer-name small{font-size:10px;max-width:185px}
+}
+
+@media (prefers-reduced-motion:reduce) {
+  .steps-list li::after{transform:none!important}
+  .workspace-stage[data-reveal],.audience-card[data-reveal]{transform:none!important}
+}
