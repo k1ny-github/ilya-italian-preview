@@ -38,3 +38,7 @@ Below640 only: fluid stable board height, compact44pxheader, full original frame
 ## Miro two separate cards
 
 Selected F+ split,16px gap, separate white bordered cards. Bologna7s/people6s/plural6s. Compact mobile fit and other sections preserved. Source 7a57869e96c29e694a0d309593791e7475bd92a0
+
+## Responsive Quiz shell
+
+Selected white C card extends to all widths. Existing desktop composition, all images/copy/actions and other sections preserved.17 viewport/boundary browser checks and functional smoke completed. Source 264104eb35207edfcd584029f6b6cd6b4a3c0b2d

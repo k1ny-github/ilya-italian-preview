@@ -58,9 +58,11 @@
  .v9 #about .a09-copy {grid-column:2;grid-row:1;width:100%;max-width:none;justify-self:start;text-align:left}
  .v9 #about .a09-copy>p {font-size:17px;line-height:1.55;text-align:left;text-align-last:auto;hyphens:manual;letter-spacing:normal}
 }
+/* Keep the selected white quiz shell at every width, not just desktop G. */
+.v9 #quiz .q08-inner {background:#fff;border:1px solid #e4edf3;border-radius:21px;box-shadow:0 9px 27px #2c669318;overflow:hidden;padding-inline:clamp(16px,3vw,24px)}
 @media(width >= 1200px){
  .v9 #quiz {container-type:inline-size;overflow:clip;--scene-y:-12px;padding-block:24px 32px;background:linear-gradient(#f8fcff 0%,#f8fcff 65%,#f1faff 100%)}
- .v9 #quiz .q08-inner {padding:32px 32px 0;background:#fff;border:1px solid #e4edf3;border-radius:21px;box-shadow:0 9px 27px #2c669318;overflow:hidden}
+ .v9 #quiz .q08-inner {padding:32px 32px 0}
  .v9 #quiz .q08-copy {padding-bottom:32px}
  .v9 #quiz .q08-decoration {container-type:inline-size;box-sizing:border-box;width:calc(100% + 96px);max-width:none;aspect-ratio:1.35;overflow:hidden;mask:none;opacity:1;filter:none;background:transparent;border:0;border-radius:0;outline:0;box-shadow:none;isolation:isolate}
  .v9 #quiz .q08-foreground {width:100%;right:0;top:var(--scene-y);max-width:none}
