@@ -1,15 +1,15 @@
 {
-  "currentLocalCheckpoint": "08b143e83424cb51cf1aff39a79b66811b6fab6d",
-  "localCheckpointTag": "miro-full-width-2026-10-19",
+  "currentLocalCheckpoint": "80953c128251c7f85b4c45cbd9b2f926d3a8b1e6",
+  "localCheckpointTag": "about-leaves-approved-2026-10-19",
   "archivedPublicHead": "be39e02ab451ae96790c8c1398f7a8081946b4b8",
   "versions": [
     {
       "name": "current",
-      "sourceRef": "08b143e83424cb51cf1aff39a79b66811b6fab6d",
+      "sourceRef": "80953c128251c7f85b4c45cbd9b2f926d3a8b1e6",
       "base": "/ilya-italian-preview/",
       "heroOverlay": false,
       "snapshotDifferences": {},
-      "label": "Версия Г — ширина Miro исправлена19.10.2026"
+      "label": "Версия Г — утверждённый About с ветвями19.10.2026"
     },
     {
       "name": "pre-final",
@@ -47,8 +47,8 @@
   ],
   "sourceReproduction": "source/current",
   "existingPublicAssetsRetained": true,
-  "previousPublicCommit": "b68fbd8bbce6b9921ee81827d4d316c4bdea9a0d",
-  "release": "miro-width-fix-2026-10-19",
+  "previousPublicCommit": "fd5c87d702a4567d489f667b981702619ed2096b",
+  "release": "about-leaves-approved-2026-10-19",
   "currentSourceFiles": [
     {
       "path": "index.html",
@@ -355,6 +355,10 @@
       "sha256": "d1c8418fe7467ef9cd40f733de3db933be30e8e4f85134fac2ede8fa2a023487"
     },
     {
+      "path": "src/about-leaves.css",
+      "sha256": "cd6954c7e2f251f701ee18d6ba2f6436371dd869a9e59c6e660fca37b578a3a8"
+    },
+    {
       "path": "src/App.jsx",
       "sha256": "28d7b779a00469a929b24dc43a2e800cfe8ccbda97dbc7246b2bc80c042203ac"
     },
@@ -484,11 +488,11 @@
     },
     {
       "path": "src/SiteV9.jsx",
-      "sha256": "f66ce5d904e14c9939120f15539c08cbb8794ced5fe0eb8e36bd8f035c4cb17c"
+      "sha256": "142b9beb8282bc580b551c0675a95a97c417c38c8fdf4a70fde167e76507c773"
     },
     {
       "path": "src/style-entry.js",
-      "sha256": "1f6eea7c7d3d542d4fccdf5d94cfd836fce582b7fdbfff8596e80285d2f926ae"
+      "sha256": "203f40a5d28f009b1532fb91c7dce6781df65a01bbc9ca36cf6460f05f54190f"
     },
     {
       "path": "src/styles.css",

@@ -1,0 +1,51 @@
+/* Owner-selected About card and card-edge branches; no preview modes or other sections. */
+html .v9 #about { padding-block:20px }
+html .v9 #about .a09-inner { box-sizing:border-box;background:#fff;border:1px solid #e4edf3;border-radius:21px;padding:40px }
+html .v9 #about .a09-layout { display:grid;grid-template-columns:400px minmax(0,480px);gap:64px;width:100%;max-width:944px;margin:auto;align-items:start }
+html .v9 #about .a09-photo { width:100%;max-width:none;margin:0;padding:0 0 36px;grid-column:auto;grid-row:auto }
+html .v9 #about .a09-photo::before { content:none }
+html .v9 #about .a09-photo img { width:100%;height:auto;aspect-ratio:auto;object-fit:contain;border:0;border-radius:18px;box-shadow:none }
+html .v9 #about .a09-signature { font-size:23px;bottom:0;right:6px;transform:rotate(-4deg) }
+html .v9 #about .a09-copy { grid-column:auto;grid-row:auto;width:100%;max-width:none;padding:0;border:0;background:none }
+html .v9 #about .a09-copy>p { font-size:17px;line-height:1.55;margin-bottom:20px }
+html .v9 #about .a09-copy>p:last-child { margin-bottom:0 }
+@media(width < 960px) {
+html .v9 #about .a09-inner { padding:28px }
+html .v9 #about .a09-layout { grid-template-columns:minmax(0,.9fr) minmax(0,1fr);gap:32px }
+}
+@media(width < 760px) {
+html .v9 #about .a09-layout { display:flex;flex-direction:column;gap:28px }
+html .v9 #about .a09-photo { max-width:360px;align-self:center }
+}
+@media(width < 640px) {
+html .v9 #about .a09-inner { padding:24px 20px;border-radius:18px }
+}
+
+html .v9 #about .a09-layout { grid-template-columns:320px minmax(0,450px);max-width:834px;align-items:start }
+html .v9 #about .a09-photo img { height:auto;aspect-ratio:853/1155;object-fit:cover;object-position:50% 56.45% }
+@media(width < 960px) {
+html .v9 #about .a09-layout { grid-template-columns:minmax(0,.85fr) minmax(0,1fr);gap:28px }
+}
+@media(width < 760px) {
+html .v9 #about .a09-photo { max-width:320px }
+}
+
+html .v9 #about .a09-inner { position:relative;isolation:isolate }
+html .v9 #about .about-edge-decor { position:absolute;inset:0;overflow:hidden;border-radius:inherit;pointer-events:none;z-index:0 }
+html .v9 #about .a09-layout { position:relative;z-index:1 }
+html .v9 #about :is(.about-edge-left,.about-edge-right) { position:absolute;overflow:hidden;width:max(16px,calc((100% - 834px)/2 - 20px));height:330px;pointer-events:none }
+html .v9 #about .about-edge-left { left:0;top:48px;mask-image:linear-gradient(to right,#000 88%,transparent) }
+html .v9 #about .about-edge-right { right:0;bottom:36px;mask-image:linear-gradient(to left,#000 88%,transparent) }
+html .v9 #about .about-edge-decor img { position:absolute;display:block;width:260px;max-width:none;height:auto;opacity:.94 }
+html .v9 #about .about-edge-left img { left:0;top:0 }
+html .v9 #about .about-edge-right img { right:0;bottom:0 }
+@media(width < 1200px) {
+html .v9 #about :is(.about-edge-left,.about-edge-right) { width:24px;height:240px }
+html .v9 #about .about-edge-decor img { width:190px;opacity:.75 }
+}
+@media(width < 760px) {
+html .v9 #about :is(.about-edge-left,.about-edge-right) { width:16px;height:190px }
+html .v9 #about .about-edge-left { top:32px }
+html .v9 #about .about-edge-right { bottom:24px }
+html .v9 #about .about-edge-decor img { width:150px;opacity:.68 }
+}

@@ -1,7 +1,6 @@
 {
-  "release": "miro-width-fix-2026-10-19",
-  "sourceCheckpoint": "08b143e83424cb51cf1aff39a79b66811b6fab6d",
-  "baseVersionG": "be8e80fbebf8f2c53e5f889e3b3ce3d6b746c17f",
-  "previousPublicCommit": "b68fbd8bbce6b9921ee81827d4d316c4bdea9a0d",
+  "release": "about-leaves-approved-2026-10-19",
+  "sourceCheckpoint": "80953c128251c7f85b4c45cbd9b2f926d3a8b1e6",
+  "previousPublicCommit": "fd5c87d702a4567d489f667b981702619ed2096b",
   "purpose": "owner-review"
 }
