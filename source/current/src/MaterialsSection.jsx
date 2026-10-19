@@ -13,13 +13,14 @@ export function MaterialsSection({ shellVariant = 'classic' }) {
     observer.observe(section.current);
     return () => observer.disconnect();
   }, []);
+  const features = <div className="features">{content.materials.map(([title, text], index) => {
+    const icon=<img src={`/ilya-italian-preview/images/miro-approved/assets/${index ? 'folder-tile-source.png' : 'miro-yellow-tile.png'}`} width={index ? 94 : 90} height={89} alt="" loading="lazy"/>;
+    return <div className="feature" key={title}><div className="feature-heading">{icon}<h3>{title}</h3></div><p>{text}</p></div>;
+  })}</div>;
+  const board = <Suspense fallback={<div className="m13-screen-placeholder"/>}>{ready ? <MiroViewer shellVariant={shellVariant}/> : <div className="m13-screen-placeholder"/>}</Suspense>;
   return <section ref={section} className="m13-materials" id="materials" aria-labelledby="m13-title">
     <div className="inner"><h2 className="m13-title" id="m13-title">{content.materialsTitle}</h2>
-      <div className="features">{content.materials.map(([title, text], index) => <div className="feature" key={title}>
-        <img src={`/ilya-italian-preview/images/miro-approved/assets/${index ? 'folder-tile-source.png' : 'miro-yellow-tile.png'}`} width={index ? 94 : 90} height={89} alt="" loading="lazy"/>
-        <div><h3>{title}</h3><p>{text}</p></div>
-      </div>)}</div>
-      <Suspense fallback={<div className="m13-screen-placeholder"/>}>{ready ? <MiroViewer shellVariant={shellVariant}/> : <div className="m13-screen-placeholder"/>}</Suspense>
+      <div className="miro-composition">{board}{features}</div>
     </div>
   </section>;
 }

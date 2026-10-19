@@ -44,7 +44,7 @@ export default function MiroViewer({ shellVariant = 'classic' }) {
       <div aria-hidden="true" dangerouslySetInnerHTML={{ __html: refreshed ? refreshedShell : shell }}/>
       <div ref={slot} className="exercise-slot">
         {slides.map((slide, index) => <div className={'slide ' + (current === index ? 'active' : '')} aria-hidden={current !== index} key={slide.file}>
-          <div className="crop" style={{ '--sw': slide.sw, '--cx': slide.cx, '--cy': slide.cy, '--cw': slide.cw, '--ch': slide.ch }}>
+          <div className="crop" style={{ '--sw': slide.sw, '--cx': slide.cx, '--cy': slide.cy, '--cw': slide.cw, '--ch': slide.ch, '--mobile-base': Math.max(0, Math.min(size.width - 24, (size.height - 24) * slide.cw / slide.ch)) + 'px' }}>
             {(index === current || index === (current + 1) % slides.length) && <img src={root + slide.file} alt={slide.alt} draggable={false} decoding="async"/>}
           </div>
         </div>)}

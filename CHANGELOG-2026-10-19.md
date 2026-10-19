@@ -26,3 +26,7 @@
 ## Удалён только заключительный CTA
 
 Удалён блок «Давайте знакомиться». Booking и футер сохранены,12 секций. Miro и остальные блоки не менялись. Исходный checkpoint `0dab7a9620a1d7511394257bdc45ee9a72c4e2a5`.
+
+## Miro F+ shared
+
+Approved common white panel below880x580board,32pxicons,19pxheadings,exact owner paragraph. Three original frames5/4/4; other sections preserved. Source checkpoint: 92668e9c2b4d9b12bd1f3938f467579ba095aa18
