@@ -40,6 +40,7 @@ html .v9 #about .about-edge-decor img { position:absolute;display:block;width:26
 html .v9 #about .about-edge-left img { left:0;top:0 }
 html .v9 #about .about-edge-right img { right:0;bottom:0 }
 @media(width < 1200px) {
+html .v9 #about .about-edge-decor { display:none }
 html .v9 #about :is(.about-edge-left,.about-edge-right) { width:24px;height:240px }
 html .v9 #about .about-edge-decor img { width:190px;opacity:.75 }
 }

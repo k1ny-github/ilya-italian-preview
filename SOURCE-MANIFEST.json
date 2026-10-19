@@ -1,15 +1,15 @@
 {
-  "currentLocalCheckpoint": "b8ec6e939682e488d61201719d77a8e0cb10da93",
-  "localCheckpointTag": "quiz-mobile-crop-2026-10-19",
+  "currentLocalCheckpoint": "8c1d500052a012ff52aed8470019eb0f53ecb435",
+  "localCheckpointTag": "about-mobile-no-leaves-2026-10-19",
   "archivedPublicHead": "be39e02ab451ae96790c8c1398f7a8081946b4b8",
   "versions": [
     {
       "name": "current",
-      "sourceRef": "b8ec6e939682e488d61201719d77a8e0cb10da93",
+      "sourceRef": "8c1d500052a012ff52aed8470019eb0f53ecb435",
       "base": "/ilya-italian-preview/",
       "heroOverlay": false,
       "snapshotDifferences": {},
-      "label": "Текущая версия — крупный Quiz с нижним срезом"
+      "label": "Текущая версия — About A без листьев ниже1200"
     },
     {
       "name": "pre-final",
@@ -47,8 +47,8 @@
   ],
   "sourceReproduction": "source/current",
   "existingPublicAssetsRetained": true,
-  "previousPublicCommit": "03aca9a1ebc25e6c7c4abe371a0552afd3aa6729",
-  "release": "quiz-mobile-crop-2026-10-19",
+  "previousPublicCommit": "00cbcba2a241c412cd2fb1ad40f8e02d4bb0b5ca",
+  "release": "about-mobile-no-leaves-2026-10-19",
   "currentSourceFiles": [
     {
       "path": "index.html",
@@ -356,7 +356,7 @@
     },
     {
       "path": "src/about-leaves.css",
-      "sha256": "cd6954c7e2f251f701ee18d6ba2f6436371dd869a9e59c6e660fca37b578a3a8"
+      "sha256": "86002c8824bac6d693f4c418217598291e617e21e7206a211ee35c542f74342e"
     },
     {
       "path": "src/App.jsx",

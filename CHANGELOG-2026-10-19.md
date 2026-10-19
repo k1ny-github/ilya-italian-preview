@@ -50,3 +50,7 @@ Both skins: decorative back/Italiano/search/two existing avatars/menu.44pxheader
 ## Quiz larger scene and bottom crop
 
 Below1200 enlarged collage with opaque lower edge clipped by white card;question/options/CTA preserved. Desktop1200+,assets,Miro and other sections unchanged. Source b8ec6e939682e488d61201719d77a8e0cb10da93
+
+## About selected variant A
+
+Hide existing leaf decoration below1200 only. Desktop leaves,portrait/crop/copy/layout and all other sections unchanged. Source 8c1d500052a012ff52aed8470019eb0f53ecb435
