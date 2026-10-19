@@ -1,15 +1,15 @@
 {
-  "currentLocalCheckpoint": "b8fc8e817aabbf7e3a7bdfdef276950bfd595b56",
-  "localCheckpointTag": "last-quick-fixes-2026-10-19",
+  "currentLocalCheckpoint": "0dab7a9620a1d7511394257bdc45ee9a72c4e2a5",
+  "localCheckpointTag": "remove-closing-2026-10-19",
   "archivedPublicHead": "be39e02ab451ae96790c8c1398f7a8081946b4b8",
   "versions": [
     {
       "name": "current",
-      "sourceRef": "b8fc8e817aabbf7e3a7bdfdef276950bfd595b56",
+      "sourceRef": "0dab7a9620a1d7511394257bdc45ee9a72c4e2a5",
       "base": "/ilya-italian-preview/",
       "heroOverlay": false,
       "snapshotDifferences": {},
-      "label": "Текущая версия — автоматические слайдеры и перестановка CTA19.10.2026"
+      "label": "Текущая версия — удалён только Closing19.10.2026"
     },
     {
       "name": "pre-final",
@@ -47,8 +47,8 @@
   ],
   "sourceReproduction": "source/current",
   "existingPublicAssetsRetained": true,
-  "previousPublicCommit": "4a1d95bbd7855e7a2829b267991c7f3ed61d6447",
-  "release": "last-quick-fixes-2026-10-19",
+  "previousPublicCommit": "796b84639b2b39f1151ac5dededf28f4c945a6ab",
+  "release": "remove-closing-2026-10-19",
   "currentSourceFiles": [
     {
       "path": "index.html",
@@ -492,7 +492,7 @@
     },
     {
       "path": "src/SiteV9.jsx",
-      "sha256": "7c63e216ad848355e4f00d2bb1173efe958db0379756091d74d4141b7dc6ece9"
+      "sha256": "54b4189cef03b3fa10438fc8e8024ae9c9155a39e99fc8001096fafc062f2283"
     },
     {
       "path": "src/style-entry.js",

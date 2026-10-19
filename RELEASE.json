@@ -1,7 +1,6 @@
 {
-  "release": "last-quick-fixes-2026-10-19",
-  "sourceCheckpoint": "b8fc8e817aabbf7e3a7bdfdef276950bfd595b56",
-  "previousPublicCommit": "4a1d95bbd7855e7a2829b267991c7f3ed61d6447",
-  "manualControlsCheckpoint": "80953c128251c7f85b4c45cbd9b2f926d3a8b1e6",
+  "release": "remove-closing-2026-10-19",
+  "sourceCheckpoint": "0dab7a9620a1d7511394257bdc45ee9a72c4e2a5",
+  "previousPublicCommit": "796b84639b2b39f1151ac5dededf28f4c945a6ab",
   "purpose": "owner-review"
 }
