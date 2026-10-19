@@ -34,3 +34,7 @@ Approved common white panel below880x580board,32pxicons,19pxheadings,exact owner
 ## Compact mobile Miro
 
 Below640 only: fluid stable board height, compact44pxheader, full original frames without extra inset. Desktop F+ shared/copy/other sections preserved. Source checkpoint 23a3fc637102d1a82bf54e32cb16eb80ff55d6c0
+
+## Miro two separate cards
+
+Selected F+ split,16px gap, separate white bordered cards. Bologna7s/people6s/plural6s. Compact mobile fit and other sections preserved. Source 7a57869e96c29e694a0d309593791e7475bd92a0

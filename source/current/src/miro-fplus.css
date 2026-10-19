@@ -1,4 +1,4 @@
-/* Approved F+ shared panel. Materials only. */
+/* Approved F+ split cards. Materials only. */
 .v9 #materials{padding:32px 0;background:#f7fbff;--board-w:880px}
 .v9 #materials .miro-composition{display:contents}
 .v9 #materials .m13-title{font-size:38px;line-height:1.1;letter-spacing:-.03em;margin:0 0 28px;text-align:center}
@@ -8,20 +8,20 @@
 .v9 #materials .crop{width:var(--mobile-base)}
 .v9 #materials .live-avatar{height:3.25cqw!important}
 .v9 #materials .live-sidekick{height:5.510907cqw!important;top:16.4%!important}
-.v9 #materials .features{box-sizing:border-box;display:grid;width:min(880px,100%);max-width:none;min-height:0;margin:24px auto 0;padding:20px 24px;gap:32px;grid-template-columns:minmax(0,1fr) minmax(0,1fr);background:white;border:1px solid #e4edf3;border-radius:16px}
-.v9 #materials :is(.feature,.feature+.feature){display:block;min-width:0;padding:0;border:0}
+.v9 #materials .features{box-sizing:border-box;display:grid;width:min(880px,100%);max-width:none;min-height:0;margin:24px auto 0;padding:0;gap:16px;grid-template-columns:minmax(0,1fr) minmax(0,1fr);background:transparent;border:0;border-radius:0}
+.v9 #materials :is(.feature,.feature+.feature){display:block;min-width:0;padding:20px 16px;border:1px solid #e4edf3;border-radius:16px;background:white}
 .v9 #materials .feature-heading{display:flex;gap:10px;align-items:center;margin-bottom:6px}
 .v9 #materials .feature-heading img{width:32px;height:32px;object-fit:contain;flex:none}
 .v9 #materials .feature-heading h3{font-size:19px;margin:0;line-height:1.2;letter-spacing:normal}
 .v9 #materials .feature p{font-size:16px;line-height:1.5;max-width:none;margin:0}
 @media(width < 960px){
- .v9 #materials .features{grid-template-columns:1fr;max-width:600px;gap:24px}
+ .v9 #materials .features{grid-template-columns:1fr}
  .v9 #materials .m13-title{font-size:34px}
 }
 @media(width < 640px){
  .v9 #materials{padding:28px 0}
  .v9 #materials .m13-title{font-size:32px;text-align:left;margin:0 0 24px}
- .v9 #materials .features{max-width:none;padding:20px 16px;border-radius:14px}
+ .v9 #materials :is(.feature,.feature+.feature){border-radius:14px}
  /* Fixed envelope for all frames: header/gaps + the tallest original's ratio. */
  .v9 #materials .inner{container-type:inline-size}
  .v9 #materials :is(.screen,.m13-screen-placeholder){height:calc(74px + (100cqw - 16px) * 1571 / 2610);aspect-ratio:auto}

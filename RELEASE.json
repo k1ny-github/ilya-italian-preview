@@ -1,6 +1,6 @@
 {
-  "release": "mobile-miro-fit-2026-10-19",
-  "sourceCheckpoint": "23a3fc637102d1a82bf54e32cb16eb80ff55d6c0",
-  "previousPublicCommit": "134243241fd370dad2c651a3a06aeca15c02facf",
+  "release": "miro-two-cards-2026-10-19",
+  "sourceCheckpoint": "7a57869e96c29e694a0d309593791e7475bd92a0",
+  "previousPublicCommit": "4805bad6cf18159de9df9c8d14a74a3bcb604650",
   "purpose": "owner-review"
 }

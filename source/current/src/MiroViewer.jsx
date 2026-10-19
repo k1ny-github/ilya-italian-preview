@@ -35,7 +35,7 @@ export default function MiroViewer({ shellVariant = 'classic' }) {
   }, []);
   useEffect(() => {
     if (reducedMotion || !visible || !pageVisible) return;
-    const timer = setTimeout(() => setCurrent(index => (index + 1) % slides.length), current === 0 ? 5000 : 4000);
+    const timer = setTimeout(() => setCurrent(index => (index + 1) % slides.length), current === 0 ? 7000 : 6000);
     return () => clearTimeout(timer);
   }, [reducedMotion, visible, pageVisible, current]);
   const ratio = slides[current].cw / slides[current].ch;

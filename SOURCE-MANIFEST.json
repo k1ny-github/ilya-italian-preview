@@ -1,15 +1,15 @@
 {
-  "currentLocalCheckpoint": "23a3fc637102d1a82bf54e32cb16eb80ff55d6c0",
-  "localCheckpointTag": "mobile-miro-fit-2026-10-19",
+  "currentLocalCheckpoint": "7a57869e96c29e694a0d309593791e7475bd92a0",
+  "localCheckpointTag": "miro-two-cards-2026-10-19",
   "archivedPublicHead": "be39e02ab451ae96790c8c1398f7a8081946b4b8",
   "versions": [
     {
       "name": "current",
-      "sourceRef": "23a3fc637102d1a82bf54e32cb16eb80ff55d6c0",
+      "sourceRef": "7a57869e96c29e694a0d309593791e7475bd92a0",
       "base": "/ilya-italian-preview/",
       "heroOverlay": false,
       "snapshotDifferences": {},
-      "label": "Текущая версия — компактная мобильная доска Miro19.10.2026"
+      "label": "Текущая версия — две карточки Miro и цикл7/6/6"
     },
     {
       "name": "pre-final",
@@ -47,8 +47,8 @@
   ],
   "sourceReproduction": "source/current",
   "existingPublicAssetsRetained": true,
-  "previousPublicCommit": "134243241fd370dad2c651a3a06aeca15c02facf",
-  "release": "mobile-miro-fit-2026-10-19",
+  "previousPublicCommit": "4805bad6cf18159de9df9c8d14a74a3bcb604650",
+  "release": "miro-two-cards-2026-10-19",
   "currentSourceFiles": [
     {
       "path": "index.html",
@@ -416,7 +416,7 @@
     },
     {
       "path": "src/miro-fplus.css",
-      "sha256": "dba644720ccc8234294e87eb5bedb8272e7c357ded65ee1cc359bf82b92fcda8"
+      "sha256": "dbd3a076badbaff38970ba441afc351d38714d16b3beac644233ff958ec2fe37"
     },
     {
       "path": "src/miro-shell-refreshed.html",
@@ -448,7 +448,7 @@
     },
     {
       "path": "src/MiroViewer.jsx",
-      "sha256": "ac63e3804cc4080ad0580189b1abfbbe9e4863733531eb9f067372a872c637e1"
+      "sha256": "b75e7a356c1f5086781cf4b9d80c1061e3382f1fc022f1aa969c9d1f38f1be5d"
     },
     {
       "path": "src/quiz-data.js",
