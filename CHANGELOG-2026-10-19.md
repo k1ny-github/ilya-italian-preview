@@ -30,3 +30,7 @@
 ## Miro F+ shared
 
 Approved common white panel below880x580board,32pxicons,19pxheadings,exact owner paragraph. Three original frames5/4/4; other sections preserved. Source checkpoint: 92668e9c2b4d9b12bd1f3938f467579ba095aa18
+
+## Compact mobile Miro
+
+Below640 only: fluid stable board height, compact44pxheader, full original frames without extra inset. Desktop F+ shared/copy/other sections preserved. Source checkpoint 23a3fc637102d1a82bf54e32cb16eb80ff55d6c0

@@ -4,7 +4,7 @@
 .v9 #materials .m13-title{font-size:38px;line-height:1.1;letter-spacing:-.03em;margin:0 0 28px;text-align:center}
 .v9 #materials :is(figure,.m13-screen-placeholder){width:min(880px,100%);max-width:none;margin-inline:auto;min-width:0}
 .v9 #materials :is(.screen,.m13-screen-placeholder){aspect-ratio:880/580;height:auto}
-.v9 #materials .screen{width:100%;max-width:none;border-radius:14px;box-shadow:0 9px 24px #274f7514}
+.v9 #materials .screen{width:100%;max-width:none;border-radius:14px;box-shadow:0 9px 24px #274f7514;--miro-fit-inset:24px}
 .v9 #materials .crop{width:var(--mobile-base)}
 .v9 #materials .live-avatar{height:3.25cqw!important}
 .v9 #materials .live-sidekick{height:5.510907cqw!important;top:16.4%!important}
@@ -22,7 +22,11 @@
  .v9 #materials{padding:28px 0}
  .v9 #materials .m13-title{font-size:32px;text-align:left;margin:0 0 24px}
  .v9 #materials .features{max-width:none;padding:20px 16px;border-radius:14px}
- .v9 #materials :is(.screen,.m13-screen-placeholder){height:360px;aspect-ratio:auto}
- .v9 #materials .exercise-slot{left:8px;top:78px;width:calc(100% - 16px);height:calc(100% - 90px);overflow:hidden}
- .v9 #materials .mobile-board-header{left:10px;right:10px;gap:10px;padding-inline:12px}
+ /* Fixed envelope for all frames: header/gaps + the tallest original's ratio. */
+ .v9 #materials .inner{container-type:inline-size}
+ .v9 #materials :is(.screen,.m13-screen-placeholder){height:calc(74px + (100cqw - 16px) * 1571 / 2610);aspect-ratio:auto}
+ .v9 #materials .screen{--miro-fit-inset:0px}
+ .v9 #materials .exercise-slot{left:8px;top:62px;width:calc(100% - 16px);height:calc(100% - 74px);overflow:hidden}
+ .v9 #materials :is(.slide,.slide.active){padding:0}
+ .v9 #materials .mobile-board-header{top:8px;left:10px;right:10px;height:44px;gap:10px;padding-inline:12px;border-radius:22px}
 }

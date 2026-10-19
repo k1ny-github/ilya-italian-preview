@@ -1,15 +1,15 @@
 {
-  "currentLocalCheckpoint": "92668e9c2b4d9b12bd1f3938f467579ba095aa18",
-  "localCheckpointTag": "miro-fplus-2026-10-19",
+  "currentLocalCheckpoint": "23a3fc637102d1a82bf54e32cb16eb80ff55d6c0",
+  "localCheckpointTag": "mobile-miro-fit-2026-10-19",
   "archivedPublicHead": "be39e02ab451ae96790c8c1398f7a8081946b4b8",
   "versions": [
     {
       "name": "current",
-      "sourceRef": "92668e9c2b4d9b12bd1f3938f467579ba095aa18",
+      "sourceRef": "23a3fc637102d1a82bf54e32cb16eb80ff55d6c0",
       "base": "/ilya-italian-preview/",
       "heroOverlay": false,
       "snapshotDifferences": {},
-      "label": "Текущая версия — Miro F+ shared19.10.2026"
+      "label": "Текущая версия — компактная мобильная доска Miro19.10.2026"
     },
     {
       "name": "pre-final",
@@ -47,8 +47,8 @@
   ],
   "sourceReproduction": "source/current",
   "existingPublicAssetsRetained": true,
-  "previousPublicCommit": "e29982d45d8c7ac22792efd0f6d815886a6bcbc4",
-  "release": "install-miro-fplus-2026-10-19",
+  "previousPublicCommit": "134243241fd370dad2c651a3a06aeca15c02facf",
+  "release": "mobile-miro-fit-2026-10-19",
   "currentSourceFiles": [
     {
       "path": "index.html",
@@ -416,7 +416,7 @@
     },
     {
       "path": "src/miro-fplus.css",
-      "sha256": "e40800f18d41aae50fe3207414495402394e62dc6ed4351fe33ba89664d85450"
+      "sha256": "dba644720ccc8234294e87eb5bedb8272e7c357ded65ee1cc359bf82b92fcda8"
     },
     {
       "path": "src/miro-shell-refreshed.html",
@@ -448,7 +448,7 @@
     },
     {
       "path": "src/MiroViewer.jsx",
-      "sha256": "f1567632fe1b2c47f094d5df07c72af9466ffcd04bad43e3975688c9d776be82"
+      "sha256": "ac63e3804cc4080ad0580189b1abfbbe9e4863733531eb9f067372a872c637e1"
     },
     {
       "path": "src/quiz-data.js",

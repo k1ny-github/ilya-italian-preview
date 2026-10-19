@@ -14,7 +14,7 @@ export default function MiroViewer({ shellVariant = 'classic' }) {
   const [current, setCurrent] = useState(0);
   const [reducedMotion, setReducedMotion] = useState(() => matchMedia('(prefers-reduced-motion: reduce)').matches);
   const [visible, setVisible] = useState(false), [pageVisible, setPageVisible] = useState(!document.hidden);
-  const [size, setSize] = useState({ width: 0, height: 0 });
+  const [size, setSize] = useState({ width: 0, height: 0, inset: 24 });
   useEffect(() => {
     const observer = new IntersectionObserver(entries => setVisible(entries[0].intersectionRatio >= .5), { threshold: [0, .5] });
     observer.observe(screen.current);
@@ -26,7 +26,10 @@ export default function MiroViewer({ shellVariant = 'classic' }) {
     return () => { observer.disconnect(); document.removeEventListener('visibilitychange', visibility); motion.removeEventListener('change', changedMotion); };
   }, []);
   useEffect(() => {
-    const update = () => setSize({ width: slot.current.clientWidth, height: slot.current.clientHeight });
+    const update = () => {
+      const inset = parseFloat(getComputedStyle(screen.current).getPropertyValue('--miro-fit-inset'));
+      setSize({ width: slot.current.clientWidth, height: slot.current.clientHeight, inset: Number.isFinite(inset) ? inset : 24 });
+    };
     const observer = new ResizeObserver(update); observer.observe(slot.current); update();
     return () => observer.disconnect();
   }, []);
@@ -36,7 +39,7 @@ export default function MiroViewer({ shellVariant = 'classic' }) {
     return () => clearTimeout(timer);
   }, [reducedMotion, visible, pageVisible, current]);
   const ratio = slides[current].cw / slides[current].ch;
-  const base = Math.max(0, Math.min(size.width - 24, (size.height - 24) * ratio));
+  const base = Math.max(0, Math.min(size.width - size.inset, (size.height - size.inset) * ratio));
   const refreshed = shellVariant === 'refreshed';
   return <figure aria-label="Примеры заданий с демонстрационной оболочкой Miro">
     <div ref={screen} data-image-surface="" data-shell-variant={refreshed ? 'refreshed' : 'classic'} className="screen" style={{ '--mobile-base': base + 'px', '--mobile-scale': 1, '--pan-x': '0px', '--pan-y': '0px' }}>
@@ -44,7 +47,7 @@ export default function MiroViewer({ shellVariant = 'classic' }) {
       <div aria-hidden="true" dangerouslySetInnerHTML={{ __html: refreshed ? refreshedShell : shell }}/>
       <div ref={slot} className="exercise-slot">
         {slides.map((slide, index) => <div className={'slide ' + (current === index ? 'active' : '')} aria-hidden={current !== index} key={slide.file}>
-          <div className="crop" style={{ '--sw': slide.sw, '--cx': slide.cx, '--cy': slide.cy, '--cw': slide.cw, '--ch': slide.ch, '--mobile-base': Math.max(0, Math.min(size.width - 24, (size.height - 24) * slide.cw / slide.ch)) + 'px' }}>
+          <div className="crop" style={{ '--sw': slide.sw, '--cx': slide.cx, '--cy': slide.cy, '--cw': slide.cw, '--ch': slide.ch, '--mobile-base': Math.max(0, Math.min(size.width - size.inset, (size.height - size.inset) * slide.cw / slide.ch)) + 'px' }}>
             {(index === current || index === (current + 1) % slides.length) && <img src={root + slide.file} alt={slide.alt} draggable={false} decoding="async"/>}
           </div>
         </div>)}
