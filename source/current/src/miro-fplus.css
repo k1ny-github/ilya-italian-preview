@@ -29,4 +29,8 @@
  .v9 #materials .exercise-slot{left:8px;top:62px;width:calc(100% - 16px);height:calc(100% - 74px);overflow:hidden}
  .v9 #materials :is(.slide,.slide.active){padding:0}
  .v9 #materials .mobile-board-header{top:8px;left:10px;right:10px;height:44px;gap:10px;padding-inline:12px;border-radius:22px}
+ .v9 #materials .mobile-board-header{pointer-events:none}
+ .v9 #materials .mobile-header-icon{display:flex;align-items:center;justify-content:center;width:24px;height:24px;flex:none;color:#222428}
+ .v9 #materials .mobile-header-icon svg{display:block;width:24px;height:24px}
+ .v9 #materials .mobile-board-title{white-space:nowrap}
 }

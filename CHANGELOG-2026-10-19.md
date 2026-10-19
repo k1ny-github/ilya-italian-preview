@@ -42,3 +42,7 @@ Selected F+ split,16px gap, separate white bordered cards. Bologna7s/people6s/pl
 ## Responsive Quiz shell
 
 Selected white C card extends to all widths. Existing desktop composition, all images/copy/actions and other sections preserved.17 viewport/boundary browser checks and functional smoke completed. Source 264104eb35207edfcd584029f6b6cd6b4a3c0b2d
+
+## Mobile Miro header
+
+Both skins: decorative back/Italiano/search/two existing avatars/menu.44pxheader and compact board preserved. Official Help Center diagram;back/search library approximations,not native pixelperfect. Other sections untouched. Source 2115e208c188ef334d961615f58c0ab0fc3d6e09
