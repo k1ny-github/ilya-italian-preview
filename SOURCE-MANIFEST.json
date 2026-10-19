@@ -52,23 +52,23 @@
   "currentSourceFiles": [
     {
       "path": "index.html",
-      "sha256": "61114c08fe3791e5fe621f17ce8fdebb5d89d3957e97d3077835108746719914"
+      "sha256": "dae3178cc5508e5e2364230e6d55c93ca4231e2701eceef4bae721fa6732de5d"
     },
     {
       "path": "miro-shell-review-frame.html",
-      "sha256": "b8ffd082ced54519fd60662ad36b34806f95fb0b01748811a37c5a32745c4a2c"
+      "sha256": "06d7e12404e8e381939f30a4c54f379a98e1d23cbc18dd0f6c7bab185d017a8f"
     },
     {
       "path": "miro-shell-review.html",
-      "sha256": "782b1cb6002ca574ded7f091f27025cccd767a937b3f59b01518e51f82296a1b"
+      "sha256": "820f971806f35e61014bcccbcb56e2d3ca4fadf439b799ff66035ed263c16c26"
     },
     {
       "path": "package-lock.json",
-      "sha256": "f9750ef182f308a3cf994875417c99289e9b615d66b5133b4145227ea9ec33a6"
+      "sha256": "e66e0fe10189a3cee9bd2ff7721f59d837369c0fc36b2f9ff3b54619cf6bf351"
     },
     {
       "path": "package.json",
-      "sha256": "0b2ca33476dcb61709fa1449fb22fb05a85b4e8a3382e4964122ecb79ce1c603"
+      "sha256": "4edfbcf0338c7b85a5b8357d3bf1ba31369f33b912146ef4dee2751b17b11167"
     },
     {
       "path": "public/images/about-section/ilya-about-photo-3.png",
@@ -184,7 +184,7 @@
     },
     {
       "path": "public/images/hero-section/emphasis-strokes.svg",
-      "sha256": "14a809bc783ba10d853d720690113dd98e05b388fc0f8355e598f2bc05c77e84"
+      "sha256": "453f302927100b65ec809e97d5abd725675b5be59dbc39b7c220b81f1606c7f3"
     },
     {
       "path": "public/images/hero-section/ilya-hero-photo-1.png",
@@ -200,15 +200,15 @@
     },
     {
       "path": "public/images/hero-section/trust-level.svg",
-      "sha256": "17e106b6fe4b01b1f46d2adb7875f80e5a7ee839be6ff2fba3cccf36aed7d86e"
+      "sha256": "e16e12af5394ce52a6762d7ca1132b745ca3e50d18602b8f857c303d8dc9657b"
     },
     {
       "path": "public/images/hero-section/trust-people.svg",
-      "sha256": "19e582e09d337729eacbda7614b90dc8dc6b569f02dbb46c6094ef892e91a987"
+      "sha256": "d1b8db0f67b705192611d5d5dfd871379c4f39184b8bab547b58190efb7c24b5"
     },
     {
       "path": "public/images/hero-section/trust-shield.svg",
-      "sha256": "285a7d386ef68bb60c189ebd4e3cbb0e4b6f591bba81124fffc6e84214bd5b8a"
+      "sha256": "4e96b618d394d87d72fc5363a1cd4964a55bf40b3da80ec43cc00f648394f7e6"
     },
     {
       "path": "public/images/italian-bakery.png",
@@ -356,151 +356,152 @@
     },
     {
       "path": "src/App.jsx",
-      "sha256": "d045c0dd1137a7637a37e8ee9c1c4646a5dbad2e90ccaf49ea6c03cd64993374"
+      "sha256": "28d7b779a00469a929b24dc43a2e800cfe8ccbda97dbc7246b2bc80c042203ac"
     },
     {
       "path": "src/backgrounds.css",
-      "sha256": "c66561380d5f506d2c11560f4198ae3e05e7e1c8d5e11db68c91e5bfa7e2c180"
+      "sha256": "a8da00bbc7e070987226d4c47186f35f5796a7c2a0faa2695de1de5c438f2d83"
     },
     {
       "path": "src/card-details.css",
-      "sha256": "0df9e60d9f9abf4a0af05bf2a24939c186a50c9152908e476f7de0877514979c"
+      "sha256": "bc28fef7a3315685cec52ab1b4716c987907214ed8b4886cd7f4aabb387837cb"
     },
     {
       "path": "src/content.js",
-      "sha256": "79c4fca02e9ada0cfb6101bc1be8fbce6462774d4d9ba316be65f385dfc46d10"
+      "sha256": "2ea2336907dfa695254d91a152da16576b60fd6dfc1691be667a3b33db49500d"
     },
     {
       "path": "src/CultureSection.css",
-      "sha256": "8020d4d484d9cce99c02d1254d5f139bf491d44e25eeed2ef7ba0f1f88b0771f"
+      "sha256": "24acaa9d04bf8f9311f8cf42dd43069c5e3787692e8b0a0ff44cc47f31019f30"
     },
     {
       "path": "src/CultureSection.jsx",
-      "sha256": "dcc17cdee8dddc708b9cffa0eaf5aff26bc3a1b03a7dddccc5e11e054a852d67"
+      "sha256": "6072e2f056280e23c341a68c1f7df73148eb1392be7420bd7cc5e7db5533a094"
     },
     {
       "path": "src/final-composition.css",
-      "sha256": "c9075c9cedd02aa0ececb5715b6381b3f18f0bfb3cb834da3456749954d13411"
+      "sha256": "8887421e623984797331df0a3144b3d1602022e1a820a2014f7d3411bd0a556f"
     },
     {
       "path": "src/LearningSteps.jsx",
-      "sha256": "fc7273c950f903a2fc85a5308ce286ccc26ca40916eb13618f0a20cbef1ba4c4"
+      "sha256": "9260ad6133c997e986784f6bf1a72476757bebaa9b5543fec74a1b7aa9f2e2d1"
     },
     {
       "path": "src/living-design.css",
-      "sha256": "3b27ca4210a6f776446b539fb17b59c40b82df8087dee96b1a412cf1f85b2197"
+      "sha256": "dfa04e4e9bb668b19e241fd3b36d73423cf338a6a971d05c97f40e013d513035"
     },
     {
       "path": "src/LivingDetails.jsx",
-      "sha256": "5ed88527a89087908b31f770f08ac46f1b307e8da48ed722ea1146483fa9b309"
+      "sha256": "3b45cfa4b29f012f0970dff2917f51ce3de21621ba4368f3cec0b7b3de3c05f2"
     },
     {
       "path": "src/main.jsx",
-      "sha256": "5b87fbc52d830aac8ca2f0f9cd74e735e8f9104a602b19840445e7a125e46d9f"
+      "sha256": "476a578f4586a0c5aedce00e1868bd4bc25a8ecfb4a64705b0f042399b245f85"
     },
     {
       "path": "src/MaterialsSection.css",
-      "sha256": "23f949a483d28685109ddde9e18ef15b8dc4a8f576dec61d0d15a7f0015e4d93"
+      "sha256": "4e44f2fb0bfa9331f2e58bd7492af0fb73e9c73197dc513785e1a59627e7015a"
     },
     {
       "path": "src/MaterialsSection.jsx",
-      "sha256": "8ed51d9ed27fc2be479ff7d591a07cdd172f0621619cb965d480a4d262041005"
+      "sha256": "34d4b45405512f296b2ca8a33686a4548ab6a1e93df2a92e94894a7dedb9ba0e"
     },
     {
       "path": "src/miro-shell-refreshed.html",
-      "sha256": "90c2b1de6b32edf97954ef3dc39d8336b1c20e9c21c763cfec9d287af1fbe080"
+      "sha256": "5aaf0df92e3d98bf7860b98dab4b66e5c6368b5b6aa58a843c548a646094fcb3"
     },
     {
       "path": "src/miro-shell.html",
-      "sha256": "21da280f0f4165aa26ee46915149e18ef5e127c26007babe8c5581fdde18aa30"
+      "sha256": "38384afaabf5ad92d8bcd77682bfb233ebfcb0ab67f1b4c978acd3bd18e87654"
     },
     {
       "path": "src/MiroReviewHost.css",
-      "sha256": "9c7052c2d5b9da84c1b754d65b202c2ba289679496aaa20e2288e8d172ae141b"
+      "sha256": "1e468660fdc5691374835dca1633533a7b23c8577559e441031ac6b8951a3cd9"
     },
     {
       "path": "src/MiroReviewHost.js",
-      "sha256": "76de5dd51ef8b3630f85b700cf0dc8e1191f09d67bf09d027f9104c1f5f758d4"
+      "sha256": "715eb4228d2b160777276decb2a80ce44c79db52300b756b36dd4d15bec6f6b9"
     },
     {
       "path": "src/MiroShellReview.css",
-      "sha256": "7ef176199bacc5bff368f9ab217a2085c83cc45d4a652f078516cae49159ffdc"
+      "sha256": "b1f94f593a41b9a3b5848be2243f4cc4d630586cf1431fd8e3a5e9cc9a9e1bf7"
     },
     {
       "path": "src/MiroShellReview.jsx",
-      "sha256": "9da11129e68e513f7afe787f61f6ffa4cd63215feb9a731518f58c55da6315bd"
+      "sha256": "88fd8634fb7d1f7de07f783923c773ec900054201a92d71affb8ebd5da14f407"
     },
     {
       "path": "src/MiroShellVariants.css",
-      "sha256": "0772e822518b87d8b9cc9a53c55dd29836a91905c6c563cc878a5fafa5c21415"
+      "sha256": "64e25cdaf4d3547e03fce8c8594147b2bd18e541668e0268fd239f901bc02d19"
     },
     {
       "path": "src/MiroViewer.jsx",
-      "sha256": "ee671fbf89ea9ffd95b140a1947a5a9271473d9acf27209c63fa5d5088554a11"
+      "sha256": "3a90f9574ccb4a90c5d8b48adbf13a3a294e89350b192e3aec9a61a1b5c27687"
     },
     {
       "path": "src/quiz-data.js",
-      "sha256": "29ea3b9843e3aa5657e32da3e15130880e81d4d63a3449cb521575ab6642aa26"
+      "sha256": "3bc77faeea1446016273fccfac1cf44c9ccfb8ea37895614bbe466f75caef705"
     },
     {
       "path": "src/Quiz.jsx",
-      "sha256": "433e5ab163dfc80f9c6de84041bdfffa88bbe6aec2bdae8c82d7133cad821c9a"
+      "sha256": "33bcce58ddae999ca2a63b7efe235a649895e85f746074dba8e902c7cae6c0ab"
     },
     {
       "path": "src/QuizDecoration.css",
-      "sha256": "87300fa257e6c8fe6ddeb2b27e89e425d1b00d3080c7204c08c1d78b04a7d100"
+      "sha256": "531a10ca8a43f9d2fc8980c42ccb1d92dbe9ce1b38c5c889a920ec8ee6397fb9"
     },
     {
       "path": "src/QuizDecoration.jsx",
-      "sha256": "8e8d91d2a12cb6c2a6418df34f04f02b3b503f7d889755ff0987489008cbf052"
+      "sha256": "a567a45e215c877ed9a3f3a7273bed8c09de9fa4e01f9ed6d102b3fa1448abb2"
     },
     {
       "path": "src/redesign.css",
-      "sha256": "db9363e3539be1a6a302140da5519f2b4537b77e6a0a2438a1aa154774d8bca0"
+      "sha256": "6d621f7933be12489025ff2eb3b422646e5f453d7f151c8cb9c2518e5797b106"
     },
     {
       "path": "src/refinements.css",
-      "sha256": "8d47530f38c321f37c60b79aecd2b92b803b62914d33c7445796074334fb7bb2"
+      "sha256": "cecd5fb1e8375c26f20160e4354e74d22557578b3335def115c26bab57c58c10"
     },
     {
       "path": "src/reviews-data.js",
-      "sha256": "1e1d68f831eb89482652fab25eb2675ad357caafc19cf713b35748d959e93da6"
+      "sha256": "da842458e3e10178c970b02374775020b06099d47e01cc8d88716544feda566d"
     },
     {
       "path": "src/ReviewsSection.css",
-      "sha256": "7022d08f55a81e88ea928a5e790dfae646905a0081bf9e53421c49838024d98d"
+      "sha256": "19d35a59d51177b18f0bd7897caee9a37ab4d1d958d82bd68e926e1f8bf3b685"
     },
     {
       "path": "src/ReviewsSection.jsx",
-      "sha256": "77780d2a8a94b8fe52a239a522c837fd51e0baf77cde150db3ebcd4c30993f55"
+      "sha256": "53220a581d0bb118a71492504939cda30c53774f691aacd0aa18ed77f5f4f276"
     },
     {
       "path": "src/sections.css",
-      "sha256": "6fc572b97e430e51a14b84696a70e67420130f8aef982b1dfabc65443cd64a26"
+      "sha256": "7fafc30d0b89e5418153b0f3054e516cd902b45a03629067f4756e1662e2f365"
     },
     {
       "path": "src/site-v9.css",
-      "sha256": "5f4ed941d3944d2686c1a944c6f74acbabd27b813b66a1fd5682f9a96b35a0c9"
+      "sha256": "9e375548bb2cd8926031a59f490e246b1cd0a57e70563b81eba3b349e2874e1a"
     },
     {
       "path": "src/SiteV9.jsx",
-      "sha256": "670972f9757bdc0494d2782bceeabeb5d14ba414dc768c84aa2075a6f9fe9e88"
+      "sha256": "f66ce5d904e14c9939120f15539c08cbb8794ced5fe0eb8e36bd8f035c4cb17c"
     },
     {
       "path": "src/style-entry.js",
-      "sha256": "88a179ff7061185181f431361d8a1bc4780ebfa57c5864c9ca6b3d5b22107937"
+      "sha256": "1f6eea7c7d3d542d4fccdf5d94cfd836fce582b7fdbfff8596e80285d2f926ae"
     },
     {
       "path": "src/styles.css",
-      "sha256": "14a927c0d2aa2883ed94f97fdb9d330fbb00ebe965d8d3638da5c7d77d621d00"
+      "sha256": "c2182de089a1342fd1369f10fbfb86e71077629d6f849d2df1f062a1740a1e61"
     },
     {
       "path": "src/version-g.css",
-      "sha256": "261e41b71f558bbf1d6a47c35b72c0139a51f040fffbddc9dfbabd8087c1cd02"
+      "sha256": "15f88e48943b522d867f22d7da2f7af99a984622ae1b5afb1df314e994cdd497"
     },
     {
       "path": "vite.config.mjs",
-      "sha256": "b833a298aa30267a3f4b5b287ab8efd059d97d42da6e905f269b97b95bf2f226"
+      "sha256": "dfe0e81063a6aef66fb4cd1f88f848615af082b69a21a6d1cd9dee306e11ec69"
     }
-  ]
+  ],
+  "checksumBasis": "SHA-256 of committed Git blob bytes for source/current; textual working-copy CRLF conversion is excluded."
 }
