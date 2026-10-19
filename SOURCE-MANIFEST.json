@@ -1,15 +1,15 @@
 {
-  "currentLocalCheckpoint": "be8e80fbebf8f2c53e5f889e3b3ce3d6b746c17f",
-  "localCheckpointTag": "intermediate-version-g-2026-10-19",
+  "currentLocalCheckpoint": "08b143e83424cb51cf1aff39a79b66811b6fab6d",
+  "localCheckpointTag": "miro-full-width-2026-10-19",
   "archivedPublicHead": "be39e02ab451ae96790c8c1398f7a8081946b4b8",
   "versions": [
     {
       "name": "current",
-      "sourceRef": "be8e80fbebf8f2c53e5f889e3b3ce3d6b746c17f",
+      "sourceRef": "08b143e83424cb51cf1aff39a79b66811b6fab6d",
       "base": "/ilya-italian-preview/",
       "heroOverlay": false,
       "snapshotDifferences": {},
-      "label": "Промежуточная версия Г — 19.10.2026"
+      "label": "Версия Г — ширина Miro исправлена19.10.2026"
     },
     {
       "name": "pre-final",
@@ -47,8 +47,8 @@
   ],
   "sourceReproduction": "source/current",
   "existingPublicAssetsRetained": true,
-  "previousPublicCommit": "6ad7d69af5918e04b676ef52b13d92fa76b40e2a",
-  "release": "intermediate-version-G-2026-10-19",
+  "previousPublicCommit": "b68fbd8bbce6b9921ee81827d4d316c4bdea9a0d",
+  "release": "miro-width-fix-2026-10-19",
   "currentSourceFiles": [
     {
       "path": "index.html",
@@ -380,7 +380,7 @@
     },
     {
       "path": "src/final-composition.css",
-      "sha256": "8887421e623984797331df0a3144b3d1602022e1a820a2014f7d3411bd0a556f"
+      "sha256": "048321a1c23fde0f6765268ad5e520e52fc78cc0d9671671eea13552625397eb"
     },
     {
       "path": "src/LearningSteps.jsx",
@@ -503,5 +503,6 @@
       "sha256": "dfe0e81063a6aef66fb4cd1f88f848615af082b69a21a6d1cd9dee306e11ec69"
     }
   ],
-  "checksumBasis": "SHA-256 of committed Git blob bytes for source/current; textual working-copy CRLF conversion is excluded."
+  "checksumBasis": "SHA-256 of committed Git blob bytes for source/current; textual working-copy CRLF conversion is excluded.",
+  "baseVersionG": "be8e80fbebf8f2c53e5f889e3b3ce3d6b746c17f"
 }
