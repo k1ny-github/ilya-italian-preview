@@ -1,6 +1,6 @@
 {
-  "release": "mobile-miro-header-2026-10-19",
-  "sourceCheckpoint": "2115e208c188ef334d961615f58c0ab0fc3d6e09",
-  "previousPublicCommit": "9a24143b4a0f3a2cd50dc9b4c16b1344f4d20bd2",
+  "release": "quiz-mobile-crop-2026-10-19",
+  "sourceCheckpoint": "b8ec6e939682e488d61201719d77a8e0cb10da93",
+  "previousPublicCommit": "03aca9a1ebc25e6c7c4abe371a0552afd3aa6729",
   "purpose": "owner-review"
 }

@@ -46,3 +46,7 @@ Selected white C card extends to all widths. Existing desktop composition, all i
 ## Mobile Miro header
 
 Both skins: decorative back/Italiano/search/two existing avatars/menu.44pxheader and compact board preserved. Official Help Center diagram;back/search library approximations,not native pixelperfect. Other sections untouched. Source 2115e208c188ef334d961615f58c0ab0fc3d6e09
+
+## Quiz larger scene and bottom crop
+
+Below1200 enlarged collage with opaque lower edge clipped by white card;question/options/CTA preserved. Desktop1200+,assets,Miro and other sections unchanged. Source b8ec6e939682e488d61201719d77a8e0cb10da93

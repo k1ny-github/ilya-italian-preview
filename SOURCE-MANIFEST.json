@@ -1,15 +1,15 @@
 {
-  "currentLocalCheckpoint": "2115e208c188ef334d961615f58c0ab0fc3d6e09",
-  "localCheckpointTag": "mobile-miro-header-2026-10-19",
+  "currentLocalCheckpoint": "b8ec6e939682e488d61201719d77a8e0cb10da93",
+  "localCheckpointTag": "quiz-mobile-crop-2026-10-19",
   "archivedPublicHead": "be39e02ab451ae96790c8c1398f7a8081946b4b8",
   "versions": [
     {
       "name": "current",
-      "sourceRef": "2115e208c188ef334d961615f58c0ab0fc3d6e09",
+      "sourceRef": "b8ec6e939682e488d61201719d77a8e0cb10da93",
       "base": "/ilya-italian-preview/",
       "heroOverlay": false,
       "snapshotDifferences": {},
-      "label": "Текущая версия — мобильная шапка Miro по официальной схеме"
+      "label": "Текущая версия — крупный Quiz с нижним срезом"
     },
     {
       "name": "pre-final",
@@ -47,8 +47,8 @@
   ],
   "sourceReproduction": "source/current",
   "existingPublicAssetsRetained": true,
-  "previousPublicCommit": "9a24143b4a0f3a2cd50dc9b4c16b1344f4d20bd2",
-  "release": "mobile-miro-header-2026-10-19",
+  "previousPublicCommit": "03aca9a1ebc25e6c7c4abe371a0552afd3aa6729",
+  "release": "quiz-mobile-crop-2026-10-19",
   "currentSourceFiles": [
     {
       "path": "index.html",
@@ -512,7 +512,7 @@
     },
     {
       "path": "src/version-g.css",
-      "sha256": "3cab03019e7e6095ea66e7b23e28ba3670b0197908834225e95a0dd9570bbd70"
+      "sha256": "48af119995fe4879af435d18a29cbfd7c85057d477b50bbea35b71a35e357fb4"
     },
     {
       "path": "vite.config.mjs",
