@@ -1,5 +1,4 @@
 import { useEffect, useRef } from 'react';
-import './CultureSection.css';
 
 const frames = [
   ['C8-02-pisa-tower-and-cathedral', 'Пизанская башня и собор'],

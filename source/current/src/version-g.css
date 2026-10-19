@@ -1,0 +1,69 @@
+/* Selected G reference only. Integrate after existing base styles; verify specificity and build cascade. Not a replacement for production CSS. */
+/* Isolated comparison only. Restore selected culture separately from the new desktop proposal. */
+/* New wishes apply only to desktop >=1200. Header and the 1120px page container stay as reference. */
+@media(width >= 1200px){
+ .v9{--page-max:clamp(1120px,calc(100vw - 80px),1200px)}
+ .v9 .h01-copy{padding-left:clamp(0px,calc(240px - 16.666667vw),40px);left:clamp(0px,calc(48px - 3.333333vw),8px)}
+ .v9 .h01-emphasis{left:462px}
+ .v9 #steps .s05-inner{padding-block:40px}
+ .v9 #steps .s05-card{padding-bottom:16px}
+ .v9 #steps .s05-copy{padding-bottom:12px}
+ .v9 #steps .s05-card:last-child,.v9 #steps .s05-card:last-child .s05-copy{padding-bottom:0}
+ .v9 #culture .c16-inner{padding-block:40px}
+ .v9 #culture .c16-slider{justify-self:end;margin-inline:0}
+ .v9 #reviews .r10-inner{padding-top:32px}
+}
+
+/* Approved upright booking card: all widths, current proposals only. */
+.v9 #booking .b11-paper-wrap{transform:none;rotate:none}/* Shared isolated-preview correction. Original PNGs and archived modes untouched. */
+@media (width >= 960px) {
+ .v9 .h01-hero {
+  container-type:inline-size;
+  --edge-art-x:clamp(-18px,calc(-74px + 5.833333vw),-4px);
+  --edge-right-width:clamp(150px,calc(68.75vw - 510px),315px);
+ }
+ .v9 .h01-grid {column-gap:24px}
+ .v9 .h01-art {left:var(--edge-art-x)}
+ .v9 .h01-photo {margin:0 0 0 40px}
+ .v9 .h01-art > .h01-glow {left:calc(40px + var(--h01-photo-width)/2)}
+ .v9 .h01-art > .h01-right {
+  width:var(--edge-right-width);
+  left:calc(50cqw - 12px - var(--edge-art-x) - var(--edge-right-width) + 2px);
+  right:auto;
+  top:clamp(60px,calc(110px - 4.166667vw),70px);
+ }
+ .v9 .h01-hero > .h01-left {
+  width:clamp(100px,calc(25vw - 140px),160px);
+  left:clamp(-14px,calc(5vw - 62px),-2px);
+ }
+}
+@media (width >= 1200px) {
+ .v9 .h01-hero > .h01-left {width:clamp(160px,calc(33.333333vw - 240px),240px)}
+}
+@media (width >= 960px) and (width < 1200px) {
+ .v9 .h01-copy {
+  padding-left:clamp(0px,calc(16.666667vw - 160px),40px);
+  left:clamp(8px,calc(28px - 1.666667vw),12px);
+ }
+}
+/* About-only exploration. All other sections inherit the current preview. */
+@media(width >= 1200px){
+ .v9 #about {--portrait:330px;--reading:520px;--space:72px;--air:64px}
+ .v9 #about .a09-inner {padding-block:var(--air) 32px}
+ .v9 #about .a09-layout {display:grid;grid-template-columns:var(--portrait) var(--reading);gap:var(--space);width:max-content;max-width:100%;margin-inline:auto;align-items:start}
+ .v9 #about .a09-photo {grid-column:1;grid-row:1;width:var(--portrait);max-width:none;margin:0;padding:0 0 30px calc(var(--portrait)*.054545)}
+ .v9 #about .a09-photo img {width:100%;height:auto;aspect-ratio:auto;object-fit:contain;object-position:center;border-width:calc(var(--portrait)*.022727);border-radius:calc(var(--portrait)*.063636)}
+ .v9 #about .a09-photo::before {width:calc(var(--portrait)*.454545);height:calc(var(--portrait)*.454545);left:calc(var(--portrait)*-.027273);top:calc(var(--portrait)*-.125)}
+ .v9 #about .a09-signature {font-size:clamp(15px,calc(var(--portrait)*.056818),20px);right:calc(var(--portrait)*.036364)}
+ .v9 #about .a09-copy {grid-column:2;grid-row:1;width:100%;max-width:none;justify-self:start;text-align:left}
+ .v9 #about .a09-copy>p {font-size:17px;line-height:1.55;text-align:left;text-align-last:auto;hyphens:manual;letter-spacing:normal}
+}
+@media(width >= 1200px){
+ .v9 #quiz {container-type:inline-size;overflow:clip;--scene-y:-12px;padding-block:24px 32px;background:linear-gradient(#f8fcff 0%,#f8fcff 65%,#f1faff 100%)}
+ .v9 #quiz .q08-inner {padding:32px 32px 0;background:#fff;border:1px solid #e4edf3;border-radius:21px;box-shadow:0 9px 27px #2c669318;overflow:hidden}
+ .v9 #quiz .q08-copy {padding-bottom:32px}
+ .v9 #quiz .q08-decoration {container-type:inline-size;box-sizing:border-box;width:calc(100% + 96px);max-width:none;aspect-ratio:1.35;overflow:hidden;mask:none;opacity:1;filter:none;background:transparent;border:0;border-radius:0;outline:0;box-shadow:none;isolation:isolate}
+ .v9 #quiz .q08-foreground {width:100%;right:0;top:var(--scene-y);max-width:none}
+ .v9 #quiz .q08-photo-frame {left:4%;top:calc(18.5cqw + var(--scene-y));width:33%;height:31.82cqw}
+}
+

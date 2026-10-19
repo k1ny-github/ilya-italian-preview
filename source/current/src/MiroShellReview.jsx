@@ -1,15 +1,7 @@
+import './style-entry.js';
 import React, { useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import { MaterialsSection } from './MaterialsSection.jsx';
-import './styles.css';
-import './redesign.css';
-import './sections.css';
-import './backgrounds.css';
-import './card-details.css';
-import './refinements.css';
-import './living-design.css';
-import './site-v9.css';
-import './final-composition.css';
 import './MiroShellReview.css';
 
 function MiroShellReview(){

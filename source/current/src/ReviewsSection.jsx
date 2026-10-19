@@ -1,6 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
 import { reviews } from './reviews-data.js';
-import './ReviewsSection.css';
 
 
 

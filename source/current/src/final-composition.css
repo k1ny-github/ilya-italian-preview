@@ -216,6 +216,27 @@
 .v9 .c13-footer-inner { padding-block: 28px; }
 .v9 .c13-footer a { min-height: 44px; display: inline-flex; align-items: center; }
 
+/* Compact footer: keep navigation at the right, with privacy beneath it. */
+@media (width < 960px) {
+  .v9 .c13-footer-inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas: "brand top" "privacy privacy";
+    gap: 4px 20px;
+    padding-block: 20px;
+  }
+  .v9 .c13-brand { grid-area: brand; }
+  .v9 .c13-top { grid-area: top; justify-self: end; }
+  .v9 .c13-privacy { grid-area: privacy; justify-self: start; }
+}
+@media (width < 640px) {
+  .v9 .c13-footer-inner {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-areas: "brand" "top" "privacy";
+  }
+  .v9 .c13-privacy { justify-self: end; }
+}
+
 @media (width < 1200px) {
   .v9 { --page-gutter: 24px; --grid-gap: 20px; --section-space: 56px; }
   .v9 .h01-emphasis { display: none; }
@@ -657,7 +678,7 @@
  .v9 #culture .c16-controls{margin-top:12px}
  .v9 #culture .c16-cta{align-self:center;width:auto;max-width:320px}
 }
-/* Booking: compact text-width action and level paper in the single column. */
+/* Booking: compact text-width action and upright paper at every width. */
 .v9 #booking .b11-calendar {
   width: fit-content;
   min-width: 0;
@@ -666,9 +687,7 @@
   align-self: flex-start;
   flex: none;
 }
-@media (width < 960px) {
-  .v9 #booking .b11-paper-wrap { transform: rotate(0deg); }
-}
+.v9 #booking .b11-paper-wrap { transform: rotate(0deg); }
 /* Give About's existing circle clearance from the preceding quiz section. */
 .v9 #about .a09-inner { padding-top: 80px; }
 @media (width < 640px) {

@@ -1,7 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import shell from './miro-shell.html?raw';
 import refreshedShell from './miro-shell-refreshed.html?raw';
-import './MiroShellVariants.css';
 
 const root = '/ilya-italian-preview/images/miro-approved/';
 const slides = [
@@ -21,13 +20,13 @@ function Symbol({ name }) {
 export default function MiroViewer({ shellVariant = 'classic' }) {
   const refreshed = shellVariant === 'refreshed';
   const screen = useRef(null), slot = useRef(null), drag = useRef(null);
-  const [current, setCurrent] = useState(0);
+  const [current, setCurrent] = useState(2);
   const [paused, setPaused] = useState(() => matchMedia('(prefers-reduced-motion: reduce)').matches);
   const [visible, setVisible] = useState(false), [pageVisible, setPageVisible] = useState(!document.hidden);
   const [epoch, setEpoch] = useState(0), [scale, setScale] = useState(1), [pan, setPan] = useState({ x: 0, y: 0 });
   const [dragging, setDragging] = useState(false), [size, setSize] = useState({ width: 0, height: 0, mobile: false });
   useEffect(() => {
-    const observer = new IntersectionObserver(entries => setVisible(entries[0].isIntersecting));
+    const observer = new IntersectionObserver(entries => setVisible(entries[0].intersectionRatio >= .5), { threshold: [0, .5] });
     observer.observe(screen.current);
     const visibility = () => setPageVisible(!document.hidden);
     document.addEventListener('visibilitychange', visibility);
@@ -40,9 +39,9 @@ export default function MiroViewer({ shellVariant = 'classic' }) {
   }, []);
   useEffect(() => {
     if (paused || !visible || !pageVisible || dragging) return;
-    const timer = setInterval(() => { setCurrent(index => (index + 1) % slides.length); setScale(1); setPan({ x: 0, y: 0 }); }, 4000);
-    return () => clearInterval(timer);
-  }, [paused, visible, pageVisible, dragging, epoch]);
+    const timer = setTimeout(() => { setCurrent(index => (index + 1) % slides.length); setScale(1); setPan({ x: 0, y: 0 }); }, current === 2 ? 5000 : 4000);
+    return () => clearTimeout(timer);
+  }, [paused, visible, pageVisible, dragging, epoch, current]);
   const ratio = slides[current].cw / slides[current].ch;
   const base = Math.max(0, Math.min(size.width - 24, (size.height - 24) * ratio));
   const limitX = Math.max(0, (base * scale - size.width) / 2 + 12);

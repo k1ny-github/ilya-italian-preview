@@ -10,7 +10,7 @@ function render(){
   frame.style.width=width+'px';
   frame.hidden=available<width;
   notice.hidden=!frame.hidden;
-  label.textContent=width+' CSS px'+(frame.hidden?' В· СЂР°СЃС€РёСЂСЊС‚Рµ РѕРєРЅРѕ':'');
+  label.textContent=width+' CSS px'+(frame.hidden?' · расширьте окно':'');
   buttons.forEach(b=>b.setAttribute('aria-pressed',String(Number(b.dataset.width)===width)));
 }
 buttons.forEach(b=>b.addEventListener('click',()=>{width=Number(b.dataset.width);render();}));

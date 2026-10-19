@@ -1,14 +1,15 @@
 {
-  "currentLocalCheckpoint": "3f0455edd41f5d86b4d6c528e314a4df53c75488",
-  "localCheckpointTag": "review-2026-10-18-booking-gap",
+  "currentLocalCheckpoint": "be8e80fbebf8f2c53e5f889e3b3ce3d6b746c17f",
+  "localCheckpointTag": "intermediate-version-g-2026-10-19",
   "archivedPublicHead": "be39e02ab451ae96790c8c1398f7a8081946b4b8",
   "versions": [
     {
       "name": "current",
-      "sourceRef": "3f0455edd41f5d86b4d6c528e314a4df53c75488",
+      "sourceRef": "be8e80fbebf8f2c53e5f889e3b3ce3d6b746c17f",
       "base": "/ilya-italian-preview/",
       "heroOverlay": false,
-      "snapshotDifferences": {}
+      "snapshotDifferences": {},
+      "label": "Промежуточная версия Г — 19.10.2026"
     },
     {
       "name": "pre-final",
@@ -40,10 +41,466 @@
     }
   ],
   "publicationOnlyChanges": [
-    "Project-base paths and Vite multipage entries for static hosting.",
-    "privacy.html replaced with the agreed review notice in builds and public source; local original remains unchanged.",
-    "Miro review controls normalized to six inspection widths; landing defaults and slider logic unchanged."
+    "GitHub Pages base /ilya-italian-preview/ and static asset/navigation paths.",
+    "Exact previously accepted public privacy notice in root and source/current; private local draft excluded.",
+    "Reproducible Vite scripts and the existing six-width Miro review inspection controls; no landing UI or behavior change."
   ],
   "sourceReproduction": "source/current",
-  "existingPublicAssetsRetained": true
+  "existingPublicAssetsRetained": true,
+  "previousPublicCommit": "6ad7d69af5918e04b676ef52b13d92fa76b40e2a",
+  "release": "intermediate-version-G-2026-10-19",
+  "currentSourceFiles": [
+    {
+      "path": "index.html",
+      "sha256": "61114c08fe3791e5fe621f17ce8fdebb5d89d3957e97d3077835108746719914"
+    },
+    {
+      "path": "miro-shell-review-frame.html",
+      "sha256": "b8ffd082ced54519fd60662ad36b34806f95fb0b01748811a37c5a32745c4a2c"
+    },
+    {
+      "path": "miro-shell-review.html",
+      "sha256": "782b1cb6002ca574ded7f091f27025cccd767a937b3f59b01518e51f82296a1b"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "f9750ef182f308a3cf994875417c99289e9b615d66b5133b4145227ea9ec33a6"
+    },
+    {
+      "path": "package.json",
+      "sha256": "0b2ca33476dcb61709fa1449fb22fb05a85b4e8a3382e4964122ecb79ce1c603"
+    },
+    {
+      "path": "public/images/about-section/ilya-about-photo-3.png",
+      "sha256": "1972178b11dc7aa11aaaf7b633b5d941985883341e610f9884b6a5e158304158"
+    },
+    {
+      "path": "public/images/approach-section/01-method-books.png",
+      "sha256": "a58b4468b30bd74430a9e7a2c67a0ff462940f148ac16942b50a9372ff6de13a"
+    },
+    {
+      "path": "public/images/approach-section/02-live-media.png",
+      "sha256": "77679e67561866f70bf862188a97193d7ce94523699fb23dc6931f026828c9db"
+    },
+    {
+      "path": "public/images/approach-section/03-speaking-notes.png",
+      "sha256": "240b0a2b4dd00e68594c78039e0e23d70998d44225e441b9e20ca431e2848563"
+    },
+    {
+      "path": "public/images/approach-section/04-theory-practice.png",
+      "sha256": "7b5e0b5d9b05f2d4b0eeb588a297c3f960ce4b6d84460e7e4637b0dd27738efb"
+    },
+    {
+      "path": "public/images/approach-section/P1-A-books-without-papers.webp",
+      "sha256": "92185f1f65f09db104f0d6299b1c80c6e7445ed37fd6bd1bf45db8489298c48f"
+    },
+    {
+      "path": "public/images/approach-section/P2-C-laptop-full-edges-balanced-close.webp",
+      "sha256": "01aabb98724cf2cc1f6214fcb7c15733f37bf7faea9f68c21d646f7f27d11e13"
+    },
+    {
+      "path": "public/images/approach-section/P3-C-conversation-centered-close.webp",
+      "sha256": "9273ef926f650e92ff39e216087f5e67e7a9729b86be93f13f768d1a22c4a272"
+    },
+    {
+      "path": "public/images/approach-section/P4-C-italian-page-neat-diagonal.webp",
+      "sha256": "36fd46af0f3c455e83d50edb259be0797525297daa63ed61210d2eb7bac96d20"
+    },
+    {
+      "path": "public/images/audience-section/01-coastal-village.png",
+      "sha256": "ab8979de1aa9bf21c339e5b4c7f3543f1d6bf6bb9d4420a7553e8a3536a2c973"
+    },
+    {
+      "path": "public/images/audience-section/01-relocation-06a-2508.webp",
+      "sha256": "d16675bbb677fdade40495edb9a2c7e3153649825e5d48f2e33a64bde6565f7c"
+    },
+    {
+      "path": "public/images/audience-section/02-cafe-cappuccino.png",
+      "sha256": "ae47a61f0f0c94202b17d5666f55db0b3d1f70c6c09b12acad613ca07b48833a"
+    },
+    {
+      "path": "public/images/audience-section/02-waterfront-cafe-warm.webp",
+      "sha256": "a71c1e2f116e5b7b76ffaa6809d67ddb4aaf4d0f53ca5baeff10711ef3fdc51c"
+    },
+    {
+      "path": "public/images/audience-section/03-dialogue-bubbles.png",
+      "sha256": "9b008a564992d19c0ff06db678f41fecb168ce3d25a74ba30be0b075fd8f5bc5"
+    },
+    {
+      "path": "public/images/audience-section/03-speaking-h1-gelateria-pause.webp",
+      "sha256": "a704a321defd8d05cd411156638b245537d8037d960365462fb17922b1a367db"
+    },
+    {
+      "path": "public/images/audience-section/04-return-a1-large-handwriting.webp",
+      "sha256": "33946c76e0055d73287c383252c836b5d9735c190ad308288b213daaac503f18"
+    },
+    {
+      "path": "public/images/audience-section/04-return-notebook.png",
+      "sha256": "4ef8dc8b8ff0524c84b44badd9ee3e55e141b589651249859531d11c76397968"
+    },
+    {
+      "path": "public/images/culture-section/culture-roma.png",
+      "sha256": "0a9dd723405b29f9589dc9d810126542307b1969417251897307c44b74a664da"
+    },
+    {
+      "path": "public/images/culture-section/culture-trattoria.png",
+      "sha256": "62b7b584ef37a4de53a9f9db721fdd752ba352d8a1ed739d6b6ee178df9760fb"
+    },
+    {
+      "path": "public/images/culture-slider/C8-01-colosseum-daylight.webp",
+      "sha256": "46d005ca29e00534365de61f632b1a588458a85bea2e113c445cf13efd5e8584"
+    },
+    {
+      "path": "public/images/culture-slider/C8-02-pisa-tower-and-cathedral.webp",
+      "sha256": "d8a7fd806dd27c9809cc019f6d5f1fb8ad535fcfd982a8acb0381a45de51f8e9"
+    },
+    {
+      "path": "public/images/culture-slider/C8-03-bologna-terracotta-rooftops.webp",
+      "sha256": "951fad5ed4bbe3c137431923bea9e66c1a37cba21a48b8660293715fdc9be0c4"
+    },
+    {
+      "path": "public/images/culture-slider/C8-04-bologna-archiginnasio-courtyard.webp",
+      "sha256": "ee318c5468f4a64f39aca44daa62ce4b4ff4d4b8f6a675af87273e55b046c9e3"
+    },
+    {
+      "path": "public/images/culture-slider/C8-05-light-italian-gallery.webp",
+      "sha256": "ea35df130b08d81bdaf4894ab70167aaed097a1028210729e0aeebaa227ae673"
+    },
+    {
+      "path": "public/images/culture-slider/C8-06-apollo-daphne-marble-detail.webp",
+      "sha256": "bf8d968b9720ecdb999db3373eaa6e10cc3c6cbe05817a3ca010ee302689d287"
+    },
+    {
+      "path": "public/images/culture-slider/C8-07-italian-painted-vault.webp",
+      "sha256": "9ee808445d544fa14426f7963dd7deab61f07a9fe53756f7fad8f8c222961854"
+    },
+    {
+      "path": "public/images/culture-slider/C9-light-italian-church-interior.webp",
+      "sha256": "43b019e1ebb607803f586b9498bf0c5261cf3b2a7a8493ef57b915f1d7aa939a"
+    },
+    {
+      "path": "public/images/hero-section/books-pen.png",
+      "sha256": "cc1bd4b10e02a5609af9bb36f6334a11c640ef7dd3ef4cc4e93aa30bea88e2a2"
+    },
+    {
+      "path": "public/images/hero-section/emphasis-strokes.svg",
+      "sha256": "14a809bc783ba10d853d720690113dd98e05b388fc0f8355e598f2bc05c77e84"
+    },
+    {
+      "path": "public/images/hero-section/ilya-hero-photo-1.png",
+      "sha256": "d3158515e1d1d1ffd5244fda1b9a03ae8c29574909f959e113f4319406c52360"
+    },
+    {
+      "path": "public/images/hero-section/olive-left.png",
+      "sha256": "5c5962f7c99adf2fa63c2568b4fedbe20ad3427d9608a2a041085eb39c0deb06"
+    },
+    {
+      "path": "public/images/hero-section/olive-right.png",
+      "sha256": "b476e448a105d23fd62b0fc75a978e509d1e475204ed4a25512b12ea9da8c186"
+    },
+    {
+      "path": "public/images/hero-section/trust-level.svg",
+      "sha256": "17e106b6fe4b01b1f46d2adb7875f80e5a7ee839be6ff2fba3cccf36aed7d86e"
+    },
+    {
+      "path": "public/images/hero-section/trust-people.svg",
+      "sha256": "19e582e09d337729eacbda7614b90dc8dc6b569f02dbb46c6094ef892e91a987"
+    },
+    {
+      "path": "public/images/hero-section/trust-shield.svg",
+      "sha256": "285a7d386ef68bb60c189ebd4e3cbb0e4b6f591bba81124fffc6e84214bd5b8a"
+    },
+    {
+      "path": "public/images/italian-bakery.png",
+      "sha256": "f02b2ebaa3d1dc580ad3a2607d0affa1018b808dcfecbd96abd483dc8cfbece6"
+    },
+    {
+      "path": "public/images/italian-cafe.png",
+      "sha256": "1e908680f51ac29536afd53187dd67f2a9da12e53d753e78e7ba695ceb86d3b6"
+    },
+    {
+      "path": "public/images/italian-piazza.png",
+      "sha256": "a511ec7438a2771461f80aab31b3a2b9d6d1e4387defe6dbccc9d48d8c84c728"
+    },
+    {
+      "path": "public/images/italian-street.png",
+      "sha256": "1a4f3a20022a8e04e29d1dbf31baf7b4cbff4a6da74372572e6342db9c1485f4"
+    },
+    {
+      "path": "public/images/italian-terrace.png",
+      "sha256": "282641a9a591cbadb5eacc263d9999c17b4ccb92576f64650a9ac717bb4743e3"
+    },
+    {
+      "path": "public/images/miro-approved/assets/avatar-ilya.png",
+      "sha256": "0c13b3ee350a5a828a6a8b1d588f43e8bb7b7f597dde6440ee52c977139815ab"
+    },
+    {
+      "path": "public/images/miro-approved/assets/avatar-mark.png",
+      "sha256": "ea26dc41a938c9b721866759ba2cff892a9f3da15cccf9d31f092e3db463e2fe"
+    },
+    {
+      "path": "public/images/miro-approved/assets/folder-tile-source.png",
+      "sha256": "52cddcb760395a2354815ab2a6ec2b1751d114fd1adacfdf021e404958ae21b2"
+    },
+    {
+      "path": "public/images/miro-approved/assets/miro-current-ui/board-icon.png",
+      "sha256": "a883a8744520d7e99928ec3204b98aabb3f356812e9bbaabdeddadfc1ce12dff"
+    },
+    {
+      "path": "public/images/miro-approved/assets/miro-yellow-tile.png",
+      "sha256": "230135dd73df01a1f0b030225f722632c9485361610990db4c5da8bfa08b2c79"
+    },
+    {
+      "path": "public/images/miro-approved/assets/noto-sans-0.ttf",
+      "sha256": "5be701a9511117e73603bdab95947feef4f18bd1851dbddc30659370b26c69f1"
+    },
+    {
+      "path": "public/images/miro-approved/assets/noto-sans-0.woff",
+      "sha256": "bc5d1c33c266de117b6247423e2ebb8a34d56a4691ef65bbc39d2a3a1f10b88e"
+    },
+    {
+      "path": "public/images/miro-approved/assets/noto-sans-1.ttf",
+      "sha256": "94499fa8e77fbb927426767aa48e98f96e94dc4919d7bb7d98732ee985e2afe3"
+    },
+    {
+      "path": "public/images/miro-approved/assets/noto-sans-1.woff",
+      "sha256": "a91c2a5dfb6165d06ff4a8afbf1296d24ce34f1d8d51cc2af1eb0c15965fe4a6"
+    },
+    {
+      "path": "public/images/miro-approved/assets/noto-sans-2.ttf",
+      "sha256": "d28e6da8972668eff5b2faacb865cab11195aba6b0683aee040d20a04928817b"
+    },
+    {
+      "path": "public/images/miro-approved/assets/noto-sans-2.woff",
+      "sha256": "7a0a01d56318add9977a3a898d786025641c157e21e4643380d2684da5c9beb5"
+    },
+    {
+      "path": "public/images/miro-approved/assets/noto-sans-3.ttf",
+      "sha256": "9f0ce911354e554bbac00c399dcea71c785962cebfd86e965656f0bd011dfca9"
+    },
+    {
+      "path": "public/images/miro-approved/assets/noto-sans-3.woff",
+      "sha256": "446a038ac596a3cec25118d2366c6c82a4a1eb3de9af8c9d0b90086afa559e28"
+    },
+    {
+      "path": "public/images/miro-approved/frames/04-exercise.jpg",
+      "sha256": "a79d4bac531773317e93077c223803254c98c59211f53d28f19e76f9db3d902c"
+    },
+    {
+      "path": "public/images/miro-approved/frames/05-exercise.jpg",
+      "sha256": "6726c8f38a97809f2f803f9e276f018fd801a359dfc80e96c65334998d92523c"
+    },
+    {
+      "path": "public/images/miro-approved/frames/06-exercise.jpg",
+      "sha256": "d8fab12274be8b89cdb4795e61b5da0bf3095d9068afdc36b7d327ccc0638a7a"
+    },
+    {
+      "path": "public/images/miro-approved/originals/01-people-original.png",
+      "sha256": "0cc133d27839597c66d61ae47af2b37df334e47ac87af6e38c82cef8546d1cfe"
+    },
+    {
+      "path": "public/images/miro-approved/originals/02-plural-original.png",
+      "sha256": "eec47cbe1b3d601dbfbe26d43b1a7612e416cbe05ed37d87c4a9e469edeff73b"
+    },
+    {
+      "path": "public/images/miro-approved/originals/03-bologna-original.png",
+      "sha256": "3129fa1e55e43c5befbb2c298e7806c48e20e8fa796f26883f79cdd865ce2931"
+    },
+    {
+      "path": "public/images/miro-section/folder-tile-source.png",
+      "sha256": "52cddcb760395a2354815ab2a6ec2b1751d114fd1adacfdf021e404958ae21b2"
+    },
+    {
+      "path": "public/images/miro-section/miro-board-illustrative.png",
+      "sha256": "7224eb775909cc4308a51a239ae0fe9f4a987c84fdd156ec5ef7f274e30ac7b3"
+    },
+    {
+      "path": "public/images/miro-section/miro-yellow-tile.png",
+      "sha256": "230135dd73df01a1f0b030225f722632c9485361610990db4c5da8bfa08b2c79"
+    },
+    {
+      "path": "public/images/quiz-section/quiz-decoration-v9.png",
+      "sha256": "384a342f201e1c7c54e68fed53098f5be9ee5bf363759826e895e910bffc5c31"
+    },
+    {
+      "path": "public/images/quiz-section/quiz-foreground-clean.png",
+      "sha256": "6e7dbc30825ec3dd95a267f29c26840e5f440b93a74beaa23e1f3d1fbb6617e5"
+    },
+    {
+      "path": "public/images/quiz-section/quiz-foreground-complete.png",
+      "sha256": "1da03801d67252ab57efa4472d71f1d9c8dde11f53cc19696190d235e84fc1fd"
+    },
+    {
+      "path": "public/images/review-section/c-neutral.svg",
+      "sha256": "171f65ed715ccd823d4702f79831c66e8782c4ff0a4b9743ffa73a1077dcdaf6"
+    },
+    {
+      "path": "public/images/v9/culture-roma.png",
+      "sha256": "0a9dd723405b29f9589dc9d810126542307b1969417251897307c44b74a664da"
+    },
+    {
+      "path": "public/images/v9/culture-trattoria.png",
+      "sha256": "62b7b584ef37a4de53a9f9db721fdd752ba352d8a1ed739d6b6ee178df9760fb"
+    },
+    {
+      "path": "public/images/v9/ilya-about-photo-3.png",
+      "sha256": "1972178b11dc7aa11aaaf7b633b5d941985883341e610f9884b6a5e158304158"
+    },
+    {
+      "path": "public/images/v9/ilya-hero-photo-1.png",
+      "sha256": "d3158515e1d1d1ffd5244fda1b9a03ae8c29574909f959e113f4319406c52360"
+    },
+    {
+      "path": "public/privacy.html",
+      "sha256": "d1c8418fe7467ef9cd40f733de3db933be30e8e4f85134fac2ede8fa2a023487"
+    },
+    {
+      "path": "src/App.jsx",
+      "sha256": "d045c0dd1137a7637a37e8ee9c1c4646a5dbad2e90ccaf49ea6c03cd64993374"
+    },
+    {
+      "path": "src/backgrounds.css",
+      "sha256": "c66561380d5f506d2c11560f4198ae3e05e7e1c8d5e11db68c91e5bfa7e2c180"
+    },
+    {
+      "path": "src/card-details.css",
+      "sha256": "0df9e60d9f9abf4a0af05bf2a24939c186a50c9152908e476f7de0877514979c"
+    },
+    {
+      "path": "src/content.js",
+      "sha256": "79c4fca02e9ada0cfb6101bc1be8fbce6462774d4d9ba316be65f385dfc46d10"
+    },
+    {
+      "path": "src/CultureSection.css",
+      "sha256": "8020d4d484d9cce99c02d1254d5f139bf491d44e25eeed2ef7ba0f1f88b0771f"
+    },
+    {
+      "path": "src/CultureSection.jsx",
+      "sha256": "dcc17cdee8dddc708b9cffa0eaf5aff26bc3a1b03a7dddccc5e11e054a852d67"
+    },
+    {
+      "path": "src/final-composition.css",
+      "sha256": "c9075c9cedd02aa0ececb5715b6381b3f18f0bfb3cb834da3456749954d13411"
+    },
+    {
+      "path": "src/LearningSteps.jsx",
+      "sha256": "fc7273c950f903a2fc85a5308ce286ccc26ca40916eb13618f0a20cbef1ba4c4"
+    },
+    {
+      "path": "src/living-design.css",
+      "sha256": "3b27ca4210a6f776446b539fb17b59c40b82df8087dee96b1a412cf1f85b2197"
+    },
+    {
+      "path": "src/LivingDetails.jsx",
+      "sha256": "5ed88527a89087908b31f770f08ac46f1b307e8da48ed722ea1146483fa9b309"
+    },
+    {
+      "path": "src/main.jsx",
+      "sha256": "5b87fbc52d830aac8ca2f0f9cd74e735e8f9104a602b19840445e7a125e46d9f"
+    },
+    {
+      "path": "src/MaterialsSection.css",
+      "sha256": "23f949a483d28685109ddde9e18ef15b8dc4a8f576dec61d0d15a7f0015e4d93"
+    },
+    {
+      "path": "src/MaterialsSection.jsx",
+      "sha256": "8ed51d9ed27fc2be479ff7d591a07cdd172f0621619cb965d480a4d262041005"
+    },
+    {
+      "path": "src/miro-shell-refreshed.html",
+      "sha256": "90c2b1de6b32edf97954ef3dc39d8336b1c20e9c21c763cfec9d287af1fbe080"
+    },
+    {
+      "path": "src/miro-shell.html",
+      "sha256": "21da280f0f4165aa26ee46915149e18ef5e127c26007babe8c5581fdde18aa30"
+    },
+    {
+      "path": "src/MiroReviewHost.css",
+      "sha256": "9c7052c2d5b9da84c1b754d65b202c2ba289679496aaa20e2288e8d172ae141b"
+    },
+    {
+      "path": "src/MiroReviewHost.js",
+      "sha256": "76de5dd51ef8b3630f85b700cf0dc8e1191f09d67bf09d027f9104c1f5f758d4"
+    },
+    {
+      "path": "src/MiroShellReview.css",
+      "sha256": "7ef176199bacc5bff368f9ab217a2085c83cc45d4a652f078516cae49159ffdc"
+    },
+    {
+      "path": "src/MiroShellReview.jsx",
+      "sha256": "9da11129e68e513f7afe787f61f6ffa4cd63215feb9a731518f58c55da6315bd"
+    },
+    {
+      "path": "src/MiroShellVariants.css",
+      "sha256": "0772e822518b87d8b9cc9a53c55dd29836a91905c6c563cc878a5fafa5c21415"
+    },
+    {
+      "path": "src/MiroViewer.jsx",
+      "sha256": "ee671fbf89ea9ffd95b140a1947a5a9271473d9acf27209c63fa5d5088554a11"
+    },
+    {
+      "path": "src/quiz-data.js",
+      "sha256": "29ea3b9843e3aa5657e32da3e15130880e81d4d63a3449cb521575ab6642aa26"
+    },
+    {
+      "path": "src/Quiz.jsx",
+      "sha256": "433e5ab163dfc80f9c6de84041bdfffa88bbe6aec2bdae8c82d7133cad821c9a"
+    },
+    {
+      "path": "src/QuizDecoration.css",
+      "sha256": "87300fa257e6c8fe6ddeb2b27e89e425d1b00d3080c7204c08c1d78b04a7d100"
+    },
+    {
+      "path": "src/QuizDecoration.jsx",
+      "sha256": "8e8d91d2a12cb6c2a6418df34f04f02b3b503f7d889755ff0987489008cbf052"
+    },
+    {
+      "path": "src/redesign.css",
+      "sha256": "db9363e3539be1a6a302140da5519f2b4537b77e6a0a2438a1aa154774d8bca0"
+    },
+    {
+      "path": "src/refinements.css",
+      "sha256": "8d47530f38c321f37c60b79aecd2b92b803b62914d33c7445796074334fb7bb2"
+    },
+    {
+      "path": "src/reviews-data.js",
+      "sha256": "1e1d68f831eb89482652fab25eb2675ad357caafc19cf713b35748d959e93da6"
+    },
+    {
+      "path": "src/ReviewsSection.css",
+      "sha256": "7022d08f55a81e88ea928a5e790dfae646905a0081bf9e53421c49838024d98d"
+    },
+    {
+      "path": "src/ReviewsSection.jsx",
+      "sha256": "77780d2a8a94b8fe52a239a522c837fd51e0baf77cde150db3ebcd4c30993f55"
+    },
+    {
+      "path": "src/sections.css",
+      "sha256": "6fc572b97e430e51a14b84696a70e67420130f8aef982b1dfabc65443cd64a26"
+    },
+    {
+      "path": "src/site-v9.css",
+      "sha256": "5f4ed941d3944d2686c1a944c6f74acbabd27b813b66a1fd5682f9a96b35a0c9"
+    },
+    {
+      "path": "src/SiteV9.jsx",
+      "sha256": "670972f9757bdc0494d2782bceeabeb5d14ba414dc768c84aa2075a6f9fe9e88"
+    },
+    {
+      "path": "src/style-entry.js",
+      "sha256": "88a179ff7061185181f431361d8a1bc4780ebfa57c5864c9ca6b3d5b22107937"
+    },
+    {
+      "path": "src/styles.css",
+      "sha256": "14a927c0d2aa2883ed94f97fdb9d330fbb00ebe965d8d3638da5c7d77d621d00"
+    },
+    {
+      "path": "src/version-g.css",
+      "sha256": "261e41b71f558bbf1d6a47c35b72c0139a51f040fffbddc9dfbabd8087c1cd02"
+    },
+    {
+      "path": "vite.config.mjs",
+      "sha256": "b833a298aa30267a3f4b5b287ab8efd059d97d42da6e905f269b97b95bf2f226"
+    }
+  ]
 }

@@ -1,1 +1,6 @@
-{"release":"review-2026-10-18","sourceCheckpoint":"3f0455edd41f5d86b4d6c528e314a4df53c75488","purpose":"owner-review"}
+{
+  "release": "intermediate-version-G-2026-10-19",
+  "sourceCheckpoint": "be8e80fbebf8f2c53e5f889e3b3ce3d6b746c17f",
+  "previousPublicCommit": "6ad7d69af5918e04b676ef52b13d92fa76b40e2a",
+  "purpose": "owner-review"
+}

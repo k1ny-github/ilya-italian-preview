@@ -1,4 +1,3 @@
-import './QuizDecoration.css';
 
 export default function QuizDecoration() {
   return <div className="q08-decoration q08-rebuilt" aria-hidden="true">

@@ -1,6 +1,5 @@
 import { lazy, Suspense, useEffect, useRef, useState } from 'react';
 import { content } from './content.js';
-import './MaterialsSection.css';
 
 const MiroViewer = lazy(() => import('./MiroViewer.jsx'));
 
