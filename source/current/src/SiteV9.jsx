@@ -24,6 +24,7 @@ import { content as c, config } from './content.js';
 import { Quiz, useQuizAttempt } from './Quiz.jsx';
 import { ReviewsSection } from './ReviewsSection.jsx';
 import { MaterialsSection } from './MaterialsSection.jsx';
+import { useInertImages } from './useInertImages.js';
 
 const photo = '/ilya-italian-preview/images/v9/';
 const nav = [['#audience', 'Для кого'], ['#about', 'Обо мне'], ['#materials', 'Как занимаемся'], ['#reviews', 'Отзывы']];
@@ -76,6 +77,7 @@ function MethodArt({ index }) {
 }
 
 export function SiteV9() {
+  useInertImages();
   const [menuOpen, setMenuOpen] = useState(false);
   const [modal, setModal] = useState(null);
   const quizAttempt = useQuizAttempt();
@@ -94,7 +96,7 @@ export function SiteV9() {
           <p className="h01-intro">{c.intro.split("CILS C1").map((part, i) => <Fragment key={i}>{i > 0 && <span style={{ whiteSpace: "nowrap" }}>CILS C1</span>}{part}</Fragment>)}</p>
           <ul className="h01-benefits">{c.bullets.map(item=><li key={item}><Check size={19} weight="bold" aria-hidden="true"/>{item}</li>)}</ul>
           <PrimaryButton className="h01-primary" href={config.bookingUrl} target="_blank" rel="noreferrer"/>
-        </div><div className="h01-art"><div className="h01-glow" aria-hidden="true"/>
+        </div><div className="h01-art" data-image-surface=""><div className="h01-glow" aria-hidden="true"/>
           <img className="h01-left h01-portrait-left" src="/ilya-italian-preview/images/hero-section/olive-left.png" width="1154" height="1363" alt="" aria-hidden="true"/>
           <img className="h01-right" src="/ilya-italian-preview/images/hero-section/olive-right.png" width="1137" height="1383" alt="" aria-hidden="true"/>
           
@@ -137,11 +139,11 @@ export function SiteV9() {
 
       <section className="a09-about" id="about" aria-labelledby="a09-title"><div className="a09-inner"><div className="about-edge-decor" aria-hidden="true"><div className="about-edge-left"><img src="/ilya-italian-preview/images/hero-section/olive-left.png" alt=""/></div><div className="about-edge-right"><img src="/ilya-italian-preview/images/hero-section/olive-right.png" alt=""/></div></div><div className="a09-layout"><div className="a09-photo"><img src="/ilya-italian-preview/images/about-section/ilya-about-photo-3.png" width="853" height="1279" alt="Илья Хорьков у светлой стены" loading="lazy"/><span className="a09-signature">Илья Хорьков</span></div><div className="a09-copy"><h2 id="a09-title">Обо мне</h2><p>Я лингвист-переводчик, окончил МГЛУ и учился в Москве и Италии.</p><p>У меня 15 лет практики итальянского языка. Мой уровень владения языком подтверждён сертификатом CILS C1.</p><p>До преподавания работал на радио, занимался письменным и устным переводом. Затем преподавал в языковых школах, а сейчас провожу индивидуальные занятия по итальянскому языку.</p><p>На занятиях вы работаете со мной напрямую: я веду уроки, подбираю задания и отвечаю на ваши вопросы.</p></div></div>{/* Diploma and CILS certificate are pending owner-supplied files; document slots are temporarily hidden. */}</div></section>
 
-      <section className="b11-booking" id="booking" aria-labelledby="b11-title"><div className="b11-inner"><div className="b11-copy"><h2 id="b11-title">{c.bookingTitle.split(' для ')[0]}<br/>для {c.bookingTitle.split(' для ')[1]}</h2><p>{c.goalDescription}</p><div className="b11-actions"><PrimaryButton className="b11-calendar" href={config.bookingUrl} target="_blank" rel="noreferrer">Выбрать время</PrimaryButton><TelegramButton className="b11-telegram"/></div></div><div className="b11-paper-wrap"><div className="b11-paper"><h3>{c.trust[1][0]}</h3><ul>{c.bullets.map(item => <li key={item}>{item}</li>)}</ul><div className="b11-note"><strong>{c.trust[0][0]}</strong><span>{c.trust[0][1]}</span></div><span className="b11-presto">A presto!</span></div></div></div></section>
+      <section className="c13-closing" id="closing" aria-labelledby="c13-title"><div className="c13-inner"><div className="c13-copy"><h2 id="c13-title">{c.closingTitle}</h2><p>{c.closing}</p><div className="c13-actions"><a className="c13-primary" href={config.bookingUrl} target="_blank" rel="noopener noreferrer"><span>{c.cta}</span></a><TelegramButton className="c13-telegram"/></div></div><div className="c13-lettering" aria-hidden="true">La vita<br/>parla italiano</div></div></section>
 
       <section className="faq12" id="faq" aria-labelledby="faq12-title"><h2 id="faq12-title">{c.faqTitle}</h2><div className="faq12-list">{c.faq.map((question, i) => <details key={question}><summary><span>{question}</span><span className="faq12-toggle" aria-hidden="true"/></summary><div className="faq12-answer"><p>{config.faqAnswers[i] || 'Ответ преподавателя будет добавлен.'}</p></div></details>)}</div></section>
 
-      <section className="c13-closing" id="closing" aria-labelledby="c13-title"><div className="c13-inner"><div className="c13-copy"><h2 id="c13-title">{c.closingTitle}</h2><p>{c.closing}</p><div className="c13-actions"><a className="c13-primary" href={config.bookingUrl} target="_blank" rel="noopener noreferrer"><span>{c.cta}</span></a><TelegramButton className="c13-telegram"/></div></div><div className="c13-lettering" aria-hidden="true">La vita<br/>parla italiano</div></div></section>
+      <section className="b11-booking" id="booking" aria-labelledby="b11-title"><div className="b11-inner"><div className="b11-copy"><h2 id="b11-title">{c.bookingTitle.split(' для ')[0]}<br/>для {c.bookingTitle.split(' для ')[1]}</h2><p>{c.goalDescription}</p><div className="b11-actions"><PrimaryButton className="b11-calendar" href={config.bookingUrl} target="_blank" rel="noreferrer">Выбрать время</PrimaryButton><TelegramButton className="b11-telegram"/></div></div><div className="b11-paper-wrap"><div className="b11-paper"><h3>{c.trust[1][0]}</h3><ul>{c.bullets.map(item => <li key={item}>{item}</li>)}</ul><div className="b11-note"><strong>{c.trust[0][0]}</strong><span>{c.trust[0][1]}</span></div><span className="b11-presto">A presto!</span></div></div></div></section>
     </main>
     <footer className="c13-footer"><div className="c13-footer-inner"><a className="c13-brand" href="#top"><span className="c13-flag" aria-hidden="true"/><span><strong>{c.name}</strong><small>{c.role}</small></span></a><a className="c13-privacy" href="/ilya-italian-preview/privacy.html">Политика конфиденциальности</a><a className="c13-top" href="#top">Вернуться наверх</a></div></footer>
     {modal === 'quiz' && <Quiz attempt={quizAttempt} Modal={Modal} Button={PrimaryButton} onClose={() => setModal(null)} onBook={() => { bookingRequested.current = true; setModal(null); }}/>} 

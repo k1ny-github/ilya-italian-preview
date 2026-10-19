@@ -1,6 +1,7 @@
 {
-  "release": "about-leaves-approved-2026-10-19",
-  "sourceCheckpoint": "80953c128251c7f85b4c45cbd9b2f926d3a8b1e6",
-  "previousPublicCommit": "fd5c87d702a4567d489f667b981702619ed2096b",
+  "release": "last-quick-fixes-2026-10-19",
+  "sourceCheckpoint": "b8fc8e817aabbf7e3a7bdfdef276950bfd595b56",
+  "previousPublicCommit": "4a1d95bbd7855e7a2829b267991c7f3ed61d6447",
+  "manualControlsCheckpoint": "80953c128251c7f85b4c45cbd9b2f926d3a8b1e6",
   "purpose": "owner-review"
 }

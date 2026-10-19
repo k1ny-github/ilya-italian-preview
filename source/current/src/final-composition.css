@@ -356,7 +356,7 @@
   .v9 { --page-gutter: 16px; --section-space: 40px; --heading-gap: 24px; --section-title: 34px; }
   .v9 .h01-art { --h01-photo-width: 246px; }
   .v9 .h01-intro { font-size: 17px; }
-  .v9 .c16-photos figure, .v9 .c16-photos button { border-radius: 12px; }
+  .v9 .c16-photos figure, .v9 .c16-photos .c16-small { border-radius: 12px; }
   .v9 .f07-card { padding: 24px 20px 144px; }
   .v9 .f07-secondary { padding-bottom: 190px; }
   .v9 .f07-secondary .f07-lettering { bottom: 116px; }

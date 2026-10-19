@@ -1,0 +1,12 @@
+.v9 img,
+.v9 [data-image-surface] {
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+}
+
+/* The canvas remains the same size; only real manual tools are gone. */
+.v9 .m13-materials .m13-screen-placeholder { margin-bottom: 0; }
+.v9 .c16-small { cursor: default; }
+.v9 .c16-counter[hidden], .v9 .m13-counter[hidden] { display: none; }

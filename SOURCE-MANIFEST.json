@@ -1,15 +1,15 @@
 {
-  "currentLocalCheckpoint": "80953c128251c7f85b4c45cbd9b2f926d3a8b1e6",
-  "localCheckpointTag": "about-leaves-approved-2026-10-19",
+  "currentLocalCheckpoint": "b8fc8e817aabbf7e3a7bdfdef276950bfd595b56",
+  "localCheckpointTag": "last-quick-fixes-2026-10-19",
   "archivedPublicHead": "be39e02ab451ae96790c8c1398f7a8081946b4b8",
   "versions": [
     {
       "name": "current",
-      "sourceRef": "80953c128251c7f85b4c45cbd9b2f926d3a8b1e6",
+      "sourceRef": "b8fc8e817aabbf7e3a7bdfdef276950bfd595b56",
       "base": "/ilya-italian-preview/",
       "heroOverlay": false,
       "snapshotDifferences": {},
-      "label": "Версия Г — утверждённый About с ветвями19.10.2026"
+      "label": "Текущая версия — автоматические слайдеры и перестановка CTA19.10.2026"
     },
     {
       "name": "pre-final",
@@ -47,8 +47,8 @@
   ],
   "sourceReproduction": "source/current",
   "existingPublicAssetsRetained": true,
-  "previousPublicCommit": "fd5c87d702a4567d489f667b981702619ed2096b",
-  "release": "about-leaves-approved-2026-10-19",
+  "previousPublicCommit": "4a1d95bbd7855e7a2829b267991c7f3ed61d6447",
+  "release": "last-quick-fixes-2026-10-19",
   "currentSourceFiles": [
     {
       "path": "index.html",
@@ -376,15 +376,19 @@
     },
     {
       "path": "src/CultureSection.css",
-      "sha256": "24acaa9d04bf8f9311f8cf42dd43069c5e3787692e8b0a0ff44cc47f31019f30"
+      "sha256": "5526e878189d52c4ff493e58e8547fad839f4eb881f360f777ce0064c89ec186"
     },
     {
       "path": "src/CultureSection.jsx",
-      "sha256": "6072e2f056280e23c341a68c1f7df73148eb1392be7420bd7cc5e7db5533a094"
+      "sha256": "295b02ee923307ffe54fa5f41279a4b57617b36902dcf855532c975222c227cb"
     },
     {
       "path": "src/final-composition.css",
-      "sha256": "048321a1c23fde0f6765268ad5e520e52fc78cc0d9671671eea13552625397eb"
+      "sha256": "41b86f737bca28f9255ef9d3c8fd6b492693f58a1922de99706d9977c999c698"
+    },
+    {
+      "path": "src/image-inert.css",
+      "sha256": "06785c10b8846f5fb72a547bef0dd56b451bb60dfb85d9e00f63896efd82ed21"
     },
     {
       "path": "src/LearningSteps.jsx",
@@ -432,7 +436,7 @@
     },
     {
       "path": "src/MiroShellReview.jsx",
-      "sha256": "88fd8634fb7d1f7de07f783923c773ec900054201a92d71affb8ebd5da14f407"
+      "sha256": "7945023d106a366831e0287a63dceabe3e4ee1ffb7f79b0101b7538831a0cbb9"
     },
     {
       "path": "src/MiroShellVariants.css",
@@ -440,7 +444,7 @@
     },
     {
       "path": "src/MiroViewer.jsx",
-      "sha256": "3a90f9574ccb4a90c5d8b48adbf13a3a294e89350b192e3aec9a61a1b5c27687"
+      "sha256": "b7f3dbda38cccbf3e608254a6b5b0fcacadc15181bb1fdc99a100cbacc15554a"
     },
     {
       "path": "src/quiz-data.js",
@@ -488,15 +492,19 @@
     },
     {
       "path": "src/SiteV9.jsx",
-      "sha256": "142b9beb8282bc580b551c0675a95a97c417c38c8fdf4a70fde167e76507c773"
+      "sha256": "7c63e216ad848355e4f00d2bb1173efe958db0379756091d74d4141b7dc6ece9"
     },
     {
       "path": "src/style-entry.js",
-      "sha256": "203f40a5d28f009b1532fb91c7dce6781df65a01bbc9ca36cf6460f05f54190f"
+      "sha256": "cd254b5ee7eb356cc3b957aa7218944ff90fec341e5638f9d47cfff2b179e960"
     },
     {
       "path": "src/styles.css",
       "sha256": "c2182de089a1342fd1369f10fbfb86e71077629d6f849d2df1f062a1740a1e61"
+    },
+    {
+      "path": "src/useInertImages.js",
+      "sha256": "f3ba472c23f2dd1ab94fdc1c9fa2c71b4795e0c3a769ab5718460d0d1aae4453"
     },
     {
       "path": "src/version-g.css",
@@ -508,5 +516,6 @@
     }
   ],
   "checksumBasis": "SHA-256 of committed Git blob bytes for source/current; textual working-copy CRLF conversion is excluded.",
-  "baseVersionG": "be8e80fbebf8f2c53e5f889e3b3ce3d6b746c17f"
+  "baseVersionG": "be8e80fbebf8f2c53e5f889e3b3ce3d6b746c17f",
+  "manualControlsCheckpoint": "80953c128251c7f85b4c45cbd9b2f926d3a8b1e6"
 }
