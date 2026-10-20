@@ -49,3 +49,7 @@ Serve density-aware resampled-lossless mobile Hero/leaf variants below960, prese
 ## Responsive mobile Hero images and Materials spacing
 
 Serve density-aware resampled-lossless mobile Hero/leaf variants below960, preserve original files and desktop sources; increase Materials top spacing48 to64 below640. Source f1d0d3771bbdb7a260aad4357b36fb8fc43b0ca1
+
+## F01 mobile Hero top gap
+
+Reduce existing below960 Hero stage padding-top24 to8 only; all other source and assets unchanged. Source 24d857b57a2b86586f7e915d78ce2229a24578e5

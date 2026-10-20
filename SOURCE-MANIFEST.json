@@ -1,15 +1,15 @@
 {
-  "currentLocalCheckpoint": "f1d0d3771bbdb7a260aad4357b36fb8fc43b0ca1",
-  "localCheckpointTag": "responsive-hero-images-2026-10-20",
+  "currentLocalCheckpoint": "24d857b57a2b86586f7e915d78ce2229a24578e5",
+  "localCheckpointTag": "hero-mobile-top-gap-2026-10-20",
   "archivedPublicHead": "be39e02ab451ae96790c8c1398f7a8081946b4b8",
   "versions": [
     {
       "name": "current",
-      "sourceRef": "f1d0d3771bbdb7a260aad4357b36fb8fc43b0ca1",
+      "sourceRef": "24d857b57a2b86586f7e915d78ce2229a24578e5",
       "base": "/ilya-italian-preview/",
       "heroOverlay": false,
       "snapshotDifferences": {},
-      "label": "Current version - responsive mobile Hero images and Materials spacing"
+      "label": "Current version - mobile Hero top gap"
     },
     {
       "name": "pre-final",
@@ -47,8 +47,8 @@
   ],
   "sourceReproduction": "source/current",
   "existingPublicAssetsRetained": true,
-  "previousPublicCommit": "3db205c4facbd827a837b77a5ca966296eb4f940",
-  "release": "responsive-hero-images-2026-10-20",
+  "previousPublicCommit": "7acd35c6acc14c7821db78d6347a74790ae7dba0",
+  "release": "hero-mobile-top-gap-2026-10-20",
   "currentSourceFiles": [
     {
       "path": "index.html",
@@ -480,7 +480,7 @@
     },
     {
       "path": "src/final-composition.css",
-      "sha256": "088a588d53f7709732c5c1ed492950e1ac7f2f067eac5b673a10c1bcd301bafd"
+      "sha256": "dff6c0b5a4780c49d87597e9a4393f743c0852ad5ba65f6f3e31f58e19771553"
     },
     {
       "path": "src/image-inert.css",
