@@ -1,15 +1,15 @@
 {
-  "currentLocalCheckpoint": "b1f76c61a4144a70a3386dd40ab2996662d926af",
-  "localCheckpointTag": "booking-title-2026-10-20",
+  "currentLocalCheckpoint": "0499063b9d8c8e4b63e5755a1993df2d5b173c26",
+  "localCheckpointTag": "formats-icons-inside-circle-2026-10-20-documented",
   "archivedPublicHead": "be39e02ab451ae96790c8c1398f7a8081946b4b8",
   "versions": [
     {
       "name": "current",
-      "sourceRef": "b1f76c61a4144a70a3386dd40ab2996662d926af",
+      "sourceRef": "0499063b9d8c8e4b63e5755a1993df2d5b173c26",
       "base": "/ilya-italian-preview/",
       "heroOverlay": false,
       "snapshotDifferences": {},
-      "label": "Current version - friendly introduction heading"
+      "label": "Current version - Formats icons inside circle"
     },
     {
       "name": "pre-final",
@@ -47,8 +47,8 @@
   ],
   "sourceReproduction": "source/current",
   "existingPublicAssetsRetained": true,
-  "previousPublicCommit": "855054878409dcf8a57cb6e322f855e70a2f764c",
-  "release": "booking-title-2026-10-20",
+  "previousPublicCommit": "1dd5df5c54e5c2f1fc16c7623da8ec62b79b1aea",
+  "release": "formats-icons-inside-circle-2026-10-20",
   "currentSourceFiles": [
     {
       "path": "index.html",
@@ -588,7 +588,7 @@
     },
     {
       "path": "src/site-v9.css",
-      "sha256": "c674793bd2b8aaae85233c0ab12241cb58b159ff6b8fb85904f3e064ea56805b"
+      "sha256": "b9c3380c8cc5cdbf09e941aefaa361146f3f3947867403968d78a27c09cc30ae"
     },
     {
       "path": "src/SiteV9.jsx",

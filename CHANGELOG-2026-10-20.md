@@ -57,3 +57,7 @@ Reduce existing below960 Hero stage padding-top24 to8 only; all other source and
 ## Introduction heading
 
 Restore owner-requested friendly introduction heading; preserve layout and destinations. Source b1f76c61a4144a70a3386dd40ab2996662d926af
+
+## F01 Formats icons inside circle
+
+Place Formats message icons inside existing circles: right16/bottom14/scale.83 at all widths; preserve circle and internal artwork. Source 0499063b9d8c8e4b63e5755a1993df2d5b173c26
