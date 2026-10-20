@@ -1,15 +1,15 @@
 {
-  "currentLocalCheckpoint": "af3e682501e1158bd2b57ddf9b8afd431fe4d263",
-  "localCheckpointTag": "materials-top-spacing-2026-10-20",
+  "currentLocalCheckpoint": "db369dae1ce5abdf1dd13afbbad02a7da2af4c2e",
+  "localCheckpointTag": "mobile-image-performance-2026-10-20",
   "archivedPublicHead": "be39e02ab451ae96790c8c1398f7a8081946b4b8",
   "versions": [
     {
       "name": "current",
-      "sourceRef": "af3e682501e1158bd2b57ddf9b8afd431fe4d263",
+      "sourceRef": "db369dae1ce5abdf1dd13afbbad02a7da2af4c2e",
       "base": "/ilya-italian-preview/",
       "heroOverlay": false,
       "snapshotDifferences": {},
-      "label": "Current version - mobile Materials top spacing"
+      "label": "Current version - lossless image optimization and first-screen loading"
     },
     {
       "name": "pre-final",
@@ -47,8 +47,8 @@
   ],
   "sourceReproduction": "source/current",
   "existingPublicAssetsRetained": true,
-  "previousPublicCommit": "d72316164e1dd2b3517fa5dda653b55b0d53af30",
-  "release": "materials-top-spacing-2026-10-20",
+  "previousPublicCommit": "2bc74c05f4a3102bc8eaf3603523eb1950c6568c",
+  "release": "mobile-image-performance-2026-10-20",
   "currentSourceFiles": [
     {
       "path": "index.html",
@@ -73,6 +73,10 @@
     {
       "path": "public/images/about-section/ilya-about-photo-3.png",
       "sha256": "1972178b11dc7aa11aaaf7b633b5d941985883341e610f9884b6a5e158304158"
+    },
+    {
+      "path": "public/images/about-section/ilya-about-photo-3.webp",
+      "sha256": "64914f22c958ea78189f0121b3954ec281f0551331916dad0f4b7a76a6549142"
     },
     {
       "path": "public/images/approach-section/01-method-books.png",
@@ -191,12 +195,24 @@
       "sha256": "d3158515e1d1d1ffd5244fda1b9a03ae8c29574909f959e113f4319406c52360"
     },
     {
+      "path": "public/images/hero-section/ilya-hero-photo-1.webp",
+      "sha256": "b7571c97a029cd149d9cf2bd914c13fd2a53e94e7ffa7c5fffa5749b20f71551"
+    },
+    {
       "path": "public/images/hero-section/olive-left.png",
       "sha256": "5c5962f7c99adf2fa63c2568b4fedbe20ad3427d9608a2a041085eb39c0deb06"
     },
     {
+      "path": "public/images/hero-section/olive-left.webp",
+      "sha256": "083dfe7b35830e95d4444b68db06bac72f559b9676c81b07bb301c4459e14103"
+    },
+    {
       "path": "public/images/hero-section/olive-right.png",
       "sha256": "b476e448a105d23fd62b0fc75a978e509d1e475204ed4a25512b12ea9da8c186"
+    },
+    {
+      "path": "public/images/hero-section/olive-right.webp",
+      "sha256": "71b359e049cf78acb465bb3c664ddbffa02b1f28a17c30b379f9a0595151fa95"
     },
     {
       "path": "public/images/hero-section/trust-level.svg",
@@ -299,12 +315,24 @@
       "sha256": "0cc133d27839597c66d61ae47af2b37df334e47ac87af6e38c82cef8546d1cfe"
     },
     {
+      "path": "public/images/miro-approved/originals/01-people-original.webp",
+      "sha256": "aa63adc9bbc69e5669ed5d8b5ac18e106e1dbf279ce5f117cfffdb7c25b75422"
+    },
+    {
       "path": "public/images/miro-approved/originals/02-plural-original.png",
       "sha256": "eec47cbe1b3d601dbfbe26d43b1a7612e416cbe05ed37d87c4a9e469edeff73b"
     },
     {
+      "path": "public/images/miro-approved/originals/02-plural-original.webp",
+      "sha256": "c7479b734de86fbfea21bd4a79b03f2a6f8b6194fc7b6cfe9dd5fdfd46ceea52"
+    },
+    {
       "path": "public/images/miro-approved/originals/03-bologna-original.png",
       "sha256": "3129fa1e55e43c5befbb2c298e7806c48e20e8fa796f26883f79cdd865ce2931"
+    },
+    {
+      "path": "public/images/miro-approved/originals/03-bologna-original.webp",
+      "sha256": "c2b0625b3328b82887b41ab9c114f46a61b9050ec868ce2422b45d7cd938383b"
     },
     {
       "path": "public/images/miro-section/folder-tile-source.png",
@@ -329,6 +357,10 @@
     {
       "path": "public/images/quiz-section/quiz-foreground-complete.png",
       "sha256": "1da03801d67252ab57efa4472d71f1d9c8dde11f53cc19696190d235e84fc1fd"
+    },
+    {
+      "path": "public/images/quiz-section/quiz-foreground-complete.webp",
+      "sha256": "d0c4e406e6be1838a267162d9ed5ca36514200543ccdad84cc7add5d7bd2ef77"
     },
     {
       "path": "public/images/review-section/c-neutral.svg",
@@ -380,7 +412,7 @@
     },
     {
       "path": "src/CultureSection.jsx",
-      "sha256": "295b02ee923307ffe54fa5f41279a4b57617b36902dcf855532c975222c227cb"
+      "sha256": "b0b53224f6dbe888922399e9790fc7a298d1313122c0a428c056ee2fd4314f55"
     },
     {
       "path": "src/final-composition.css",
@@ -448,7 +480,7 @@
     },
     {
       "path": "src/MiroViewer.jsx",
-      "sha256": "b75e7a356c1f5086781cf4b9d80c1061e3382f1fc022f1aa969c9d1f38f1be5d"
+      "sha256": "0a8125b465c4fcc98e3aaa0d33e7fb54ad1ac1f7c73699f4c54ef3bf84ad6cb1"
     },
     {
       "path": "src/quiz-data.js",
@@ -464,7 +496,7 @@
     },
     {
       "path": "src/QuizDecoration.jsx",
-      "sha256": "a567a45e215c877ed9a3f3a7273bed8c09de9fa4e01f9ed6d102b3fa1448abb2"
+      "sha256": "a7254be24c352867dcfb6a3d6fc4dff19481e734987447bd057ba40d07b892af"
     },
     {
       "path": "src/redesign.css",
@@ -496,7 +528,7 @@
     },
     {
       "path": "src/SiteV9.jsx",
-      "sha256": "59702f3c368b0493134f56dee9a65b2cd46e19bdc08d2687d7040926b978e008"
+      "sha256": "ea672e06e7f66c17d36fe4c0a40e68c53dc5ca62638e7bef11b325dc2e761ab9"
     },
     {
       "path": "src/style-entry.js",
@@ -505,6 +537,10 @@
     {
       "path": "src/styles.css",
       "sha256": "c2182de089a1342fd1369f10fbfb86e71077629d6f849d2df1f062a1740a1e61"
+    },
+    {
+      "path": "src/useBelowHeroImages.js",
+      "sha256": "9689031b7c507c902a093e4d320f37d7d4d6f3067688d4585923618934898f27"
     },
     {
       "path": "src/useInertImages.js",

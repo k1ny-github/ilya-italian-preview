@@ -1,6 +1,6 @@
 {
-  "release": "materials-top-spacing-2026-10-20",
-  "sourceCheckpoint": "af3e682501e1158bd2b57ddf9b8afd431fe4d263",
-  "previousPublicCommit": "d72316164e1dd2b3517fa5dda653b55b0d53af30",
+  "release": "mobile-image-performance-2026-10-20",
+  "sourceCheckpoint": "db369dae1ce5abdf1dd13afbbad02a7da2af4c2e",
+  "previousPublicCommit": "2bc74c05f4a3102bc8eaf3603523eb1950c6568c",
   "purpose": "owner-review"
 }

@@ -4,9 +4,9 @@ import refreshedShell from './miro-shell-refreshed.html?raw';
 
 const root = '/ilya-italian-preview/images/miro-approved/';
 const slides = [
-  { file: 'originals/03-bologna-original.png', sw: 2610, cx: 0, cy: 0, cw: 2610, ch: 1571, alt: 'Чтение: 10 e lode — Bologna' },
-  { file: 'originals/01-people-original.png', sw: 1739, cx: 0, cy: 0, cw: 1739, ch: 854, alt: 'G. Descrivi le persone — описание людей' },
-  { file: 'originals/02-plural-original.png', sw: 2610, cx: 0, cy: 0, cw: 2610, ch: 1033, alt: '3B. Ora metti le parole al plurale — множественное число' },
+  { file: 'originals/03-bologna-original.webp', sw: 2610, cx: 0, cy: 0, cw: 2610, ch: 1571, alt: 'Чтение: 10 e lode — Bologna' },
+  { file: 'originals/01-people-original.webp', sw: 1739, cx: 0, cy: 0, cw: 1739, ch: 854, alt: 'G. Descrivi le persone — описание людей' },
+  { file: 'originals/02-plural-original.webp', sw: 2610, cx: 0, cy: 0, cw: 2610, ch: 1033, alt: '3B. Ora metti le parole al plurale — множественное число' },
 ];
 
 export default function MiroViewer({ shellVariant = 'classic' }) {

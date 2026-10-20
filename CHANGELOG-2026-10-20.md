@@ -37,3 +37,7 @@ Increase desktop accent offset4px to12px per revised designer specification and 
 ## Mobile Materials top spacing
 
 Increase only Materials top padding28px to48px below640 per UX specification and actual-after approval; preserve bottom28 and640+. Source af3e682501e1158bd2b57ddf9b8afd431fe4d263
+
+## Lossless image loading performance
+
+Add8exactlosslessWebPvariants alongside originals and gate only Quiz/Culture image discovery after hero settled or nearviewport. Preserve geometry/timers; noheadpreloads after measured CSR experiments. Source db369dae1ce5abdf1dd13afbbad02a7da2af4c2e

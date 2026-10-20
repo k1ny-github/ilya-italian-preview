@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import { useBelowHeroImages } from './useBelowHeroImages.js';
 
 const frames = [
   ['C8-02-pisa-tower-and-cathedral', 'Пизанская башня и собор'],
@@ -15,6 +16,7 @@ const imageUrl = n => `/ilya-italian-preview/images/culture-slider/${frames[mod(
 
 export default function CultureSection({ title, text, bookingUrl, Button }) {
   const regionRef = useRef(null);
+  const imagesReady = useBelowHeroImages(regionRef);
 
   useEffect(() => {
     const region = regionRef.current;
@@ -129,9 +131,9 @@ export default function CultureSection({ title, text, bookingUrl, Button }) {
       </div>
       <div ref={regionRef} className="c16-slider" role="region" aria-label="Иллюстративная галерея культуры Италии" aria-roledescription="карусель">
         <div className="c16-photos" data-image-surface="">
-          <figure className="c16-main"><img data-c16-image src={imageUrl(0)} width="1254" height="1254" alt={`Иллюстрация: ${frames[0][1]}`} loading="lazy"/></figure>
+          <figure className="c16-main"><img data-c16-image src={imagesReady ? imageUrl(0) : undefined} width="1254" height="1254" alt={`Иллюстрация: ${frames[0][1]}`} loading="lazy" decoding="async"/></figure>
           {[1, 2].map((n, k) => <div key={n} className={`c16-small ${k ? 'c16-second' : ''}`}>
-            <img data-c16-image src={imageUrl(n)} width="1254" height="1254" alt={`Иллюстрация: ${frames[n][1]}`} loading="lazy"/>
+            <img data-c16-image src={imagesReady ? imageUrl(n) : undefined} width="1254" height="1254" alt={`Иллюстрация: ${frames[n][1]}`} loading="lazy" decoding="async"/>
           </div>)}
         </div>
         <span className="c16-counter" hidden aria-live="off">1 / 8</span>
