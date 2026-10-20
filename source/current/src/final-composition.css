@@ -725,3 +725,10 @@
 
 /* Keep the short hero action sized to its label at every viewport. */
 .v9 .h01-primary { width: fit-content; min-width: 0; max-width: 100%; align-self: flex-start; justify-self: start; padding-inline: 26px; }
+
+/* Formats: use the available text measure and tighten the action rhythm. */
+.v9 .f07-card p { max-width: none; margin-bottom: 16px; }
+@media (width >= 960px) {
+  .v9 .f07-grid { row-gap: 12px; }
+  .v9 .f07-card { min-height: 0; padding-bottom: 128px; }
+}

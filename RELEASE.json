@@ -1,6 +1,6 @@
 {
-  "release": "formats-icons-inside-circle-2026-10-20",
-  "sourceCheckpoint": "0499063b9d8c8e4b63e5755a1993df2d5b173c26",
-  "previousPublicCommit": "1dd5df5c54e5c2f1fc16c7623da8ec62b79b1aea",
+  "release": "formats-compact-2026-10-20",
+  "sourceCheckpoint": "437b174dec8419393bfe9520888679e17f74cde8",
+  "previousPublicCommit": "0a3ad1bc887157b8cd87ad649e0c2355d032085e",
   "purpose": "owner-review"
 }

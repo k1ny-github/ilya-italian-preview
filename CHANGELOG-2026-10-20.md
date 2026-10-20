@@ -61,3 +61,7 @@ Restore owner-requested friendly introduction heading; preserve layout and desti
 ## F01 Formats icons inside circle
 
 Place Formats message icons inside existing circles: right16/bottom14/scale.83 at all widths; preserve circle and internal artwork. Source 0499063b9d8c8e4b63e5755a1993df2d5b173c26
+
+## Compact Formats cards
+
+Widen Formats text measure, lift aligned actions and reduce the decorative lower zone. Source 437b174dec8419393bfe9520888679e17f74cde8
