@@ -8,7 +8,7 @@ export function useQuizAttempt() {
   return { index, setIndex, answers, setAnswers, done, setDone };
 }
 
-export function Quiz({ Modal, Button, onClose, onBook, attempt }) {
+export function Quiz({ Modal, Button, onClose, bookingUrl, attempt }) {
   const { index, setIndex, answers, setAnswers, done, setDone } = attempt;
   const heading = useRef(null);
   useEffect(() => {
@@ -35,7 +35,7 @@ export function Quiz({ Modal, Button, onClose, onBook, attempt }) {
     </div> : <div className="quiz-result">
       <p className="result-score">{score}<span> / {Q.length}</span></p><h3 ref={heading} tabIndex={-1}>Ваш результат</h3>
       {answered === 0 ? <p>Недостаточно ответов для оценки. Вы пропустили все вопросы. Можно пройти тест заново или обсудить свой уровень на знакомстве.</p> : <p>Предварительный ориентир по грамматике: <strong>{score <= 7 ? 'A1–A2' : score <= 14 ? 'B1–B2' : 'C1–C2'}</strong>. Короткий тест не определяет общий уровень языка и не проверяет разговорную речь.</p>}
-      <div className="quiz-result-actions"><Button onClick={onBook} /><button className="text-button quiz-restart" type="button" onClick={() => { setAnswers(Array(Q.length).fill(null)); setIndex(0); setDone(false); }}>Пройти заново</button></div>
+      <div className="quiz-result-actions"><Button href={bookingUrl} target="_blank" rel="noreferrer" /><button className="text-button quiz-restart" type="button" onClick={() => { setAnswers(Array(Q.length).fill(null)); setIndex(0); setDone(false); }}>Пройти заново</button></div>
       <div className="topic-results">{topics.map(t => <div key={t.topic}><span>{t.topic}</span><strong>{t.correct} / {t.total}</strong><progress value={t.correct} max={t.total} aria-label={t.topic} /></div>)}</div>
       <h3 className="review-title">Разбор ответов</h3>{Q.map((q, i) => <details className="answer-review" key={q.s}><summary><span className={answers[i] === q.k ? 'answer-correct' : 'answer-wrong'}>{answers[i] === q.k ? '✓' : '—'}</span>{i + 1}. {q.s}</summary><p>Ваш ответ: {answers[i] === -1 ? 'Пропущен' : q.o[answers[i]]}</p><p><strong>Правильный ответ: {q.o[q.k]}</strong></p><p>{q.w}</p></details>)}
     </div>}

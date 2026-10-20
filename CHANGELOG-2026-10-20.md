@@ -5,3 +5,7 @@ Show the existing three orange hero strokes across responsive widths. Includes t
 ## Hero strokes text anchor correction
 
 Anchor existing SVG to the actual first phrase, preserving natural heading wrapping, geometry and desktop placement. Source 0cc1a97943c45f99b55d5ecb386cf5ad9660660c.
+
+## Telegram booking
+
+Replace active calendar booking with Telegram, simplify the final action and keep photographs inert. Source 4c5e6984752cb131f096b9e745ff0e16a2156126

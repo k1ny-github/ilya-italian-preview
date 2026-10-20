@@ -56,7 +56,7 @@ function CardDetails() {
   return <span className="card-details" aria-hidden="true"><span className="card-rings"><i /><i /><i /></span><span className="card-dots">{Array.from({ length: 9 }, (_, i) => <i key={i} />)}</span></span>;
 }
 
-function Button({ children = c.cta, href = '#booking', secondary = false, className = '', icon = true, ...props }) {
+function Button({ children = c.cta, href = config.telegramUrl, secondary = false, className = '', icon = true, ...props }) {
   const classes = `button ${secondary ? 'button-secondary' : 'button-primary'} ${className}`;
   const inside = <><span>{children}</span>{icon && <ArrowUpRight size={21} weight="bold" aria-hidden="true" />}</>;
   return props.onClick ? <button type="button" className={classes} {...props}>{inside}</button> : <a className={classes} href={href} {...props}>{inside}</a>;
@@ -103,15 +103,7 @@ export function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [modal, setModal] = useState(null);
   const [faq, setFaq] = useState(null);
-  const bookingRequested = useRef(false);
 
-  useEffect(() => {
-    if (modal !== null || !bookingRequested.current) return;
-    bookingRequested.current = false;
-    const booking = document.getElementById('booking');
-    booking.querySelector('a.button').focus({ preventScroll: true });
-    booking.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
-  }, [modal]);
 
   useEffect(() => {
     const observer = new IntersectionObserver(entries => entries.forEach(entry => {
@@ -179,7 +171,7 @@ export function App() {
 
       <section className="culture section wrap" aria-labelledby="culture-title"><BackgroundDetails variant="culture" /><CultureGallery /><div className="culture-copy"><h2 id="culture-title">Погружение<br />в культуру</h2><p>{c.culture}</p><Button secondary /></div></section>
 
-      <section id="formats" className="formats section wrap" aria-labelledby="formats-title"><BackgroundDetails variant="formats" /><div className="section-heading"><h2 id="formats-title">{c.formatsTitle}</h2></div><div className="formats-grid">{c.formats.map(([title, text], i) => <article className={`format-card format-${i}`} key={title}><CardDetails /><div className="format-visual" aria-hidden="true">{i === 0 ? <UserFocus size={100} weight="thin" /> : <Users size={100} weight="thin" />}<span className="format-mini-icon">{i === 0 ? <ChatCircle weight="duotone" /> : <BookOpen weight="duotone" />}</span></div><h3>{title}</h3><p>{text}</p>{i === 0 ? <Button className="button-white" /> : <Button secondary icon={false} href={config.telegramUrl} target="_blank" rel="noreferrer"><TelegramLogo size={22} weight="fill" />Обсудить в Telegram</Button>}</article>)}</div></section>
+      <section id="formats" className="formats section wrap" aria-labelledby="formats-title"><BackgroundDetails variant="formats" /><div className="section-heading"><h2 id="formats-title">{c.formatsTitle}</h2></div><div className="formats-grid">{c.formats.map(([title, text], i) => <article className={`format-card format-${i}`} key={title}><CardDetails /><div className="format-visual" aria-hidden="true">{i === 0 ? <UserFocus size={100} weight="thin" /> : <Users size={100} weight="thin" />}<span className="format-mini-icon">{i === 0 ? <ChatCircle weight="duotone" /> : <BookOpen weight="duotone" />}</span></div><h3>{title}</h3><p>{text}</p>{i === 0 ? <Button className="button-white" /> : <Button secondary icon={false} href={config.telegramUrl} target="_blank" rel="noreferrer"><TelegramLogo size={22} weight="fill" />{c.cta}</Button>}</article>)}</div></section>
 
       <section id="quiz" data-reveal className="quiz-section section wrap" aria-labelledby="quiz-title">
         <div className="quiz-invite"><span className="quiz-label">20 вопросов · Без регистрации</span><h2 id="quiz-title">Проверьте свой<br />итальянский</h2><p>Грамматика, артикли и устойчивые выражения. После теста — результат и разбор каждого ответа.</p><Button onClick={() => setModal('quiz')}>Начать тест</Button></div>
@@ -192,7 +184,7 @@ export function App() {
 
       <section id="reviews" className="reviews section wrap" aria-labelledby="reviews-title"><BackgroundDetails variant="reviews" /><div className="section-heading"><h2 id="reviews-title">{c.reviewsTitle}</h2><Quotes size={44} weight="duotone" className="heading-decoration" aria-hidden="true" /></div><div className="reviews-grid">{[0, 1].map(i => <article className="review-placeholder" key={i}><Quotes size={33} weight="fill" /><p className="review-empty-label">Место для отзыва ученика</p><div className="review-lines" aria-hidden="true"><i /><i /><i /></div><div className="review-author"><span><UserFocus size={27} /></span><div>Имя ученика<small>Отзыв будет добавлен</small></div></div></article>)}</div></section>
 
-      <section id="booking" className="booking section wrap" aria-labelledby="booking-title"><div className="booking-panel"><div className="booking-copy"><span className="booking-icon"><CalendarBlank size={32} weight="duotone" /></span><h2 id="booking-title">Выберите время<br />для знакомства</h2><p>{c.goalDescription}</p><Button href={config.bookingUrl} target="_blank" rel="noreferrer">Выбрать время</Button><span className="booking-help">Откроется Google Календарь</span><a className="booking-telegram" href={config.telegramUrl} target="_blank" rel="noreferrer"><TelegramLogo size={23} weight="fill" />Есть вопросы? Напишите в Telegram</a></div><div className="booking-side"><div className="appointment-card"><div className="appointment-card-top"><CalendarBlank size={25} /><ArrowUpRight size={21} /></div><h3>Ознакомительный урок</h3><ul>{c.bullets.map(item => <li key={item}><Check size={17} />{item}</li>)}</ul><div className="appointment-foot"><CheckCircle size={20} weight="duotone" />Без обязательств</div></div><span className="booking-handwriting">Давайте знакомиться</span></div></div></section>
+      <section id="booking" className="booking section wrap" aria-labelledby="booking-title"><div className="booking-panel"><div className="booking-copy"><span className="booking-icon"><CalendarBlank size={32} weight="duotone" /></span><h2 id="booking-title">{c.bookingTitle}</h2><p>{c.goalDescription}</p><Button href={config.telegramUrl} target="_blank" rel="noreferrer">Написать в Telegram</Button></div><div className="booking-side"><div className="appointment-card"><div className="appointment-card-top"><CalendarBlank size={25} /><ArrowUpRight size={21} /></div><h3>Ознакомительный урок</h3><ul>{c.bullets.map(item => <li key={item}><Check size={17} />{item}</li>)}</ul><div className="appointment-foot"><CheckCircle size={20} weight="duotone" />Без обязательств</div></div><span className="booking-handwriting">Давайте знакомиться</span></div></div></section>
 
       <section id="faq" className="faq section wrap" aria-labelledby="faq-title"><div className="faq-intro"><h2 id="faq-title">Ответы<br />на вопросы</h2><span className="faq-mark" aria-hidden="true"><ChatCircle size={69} weight="duotone" /></span></div><div className="faq-list">{c.faq.map((question, i) => <div className={`faq-item ${faq === i ? 'is-open' : ''}`} key={question}><h3><button type="button" aria-expanded={faq === i} aria-controls={`faq-answer-${i}`} onClick={() => setFaq(faq === i ? null : i)}>{question}<span className="faq-toggle"><Plus size={22} /></span></button></h3><div id={`faq-answer-${i}`} className="faq-answer" aria-hidden={faq !== i}><div><p>{config.faqAnswers[i] || 'Ответ преподавателя будет добавлен.'}</p></div></div></div>)}</div></section>
 
@@ -200,7 +192,7 @@ export function App() {
     </main>
     <footer className="site-footer wrap"><a href="#" className="footer-name">{c.name}<small>{c.role}</small></a><div className="footer-actions"><button type="button" onClick={() => setModal('privacy')}>Политика конфиденциальности</button><span>Локальный прототип</span></div><a href="#" className="back-top" aria-label="Вернуться наверх"><ArrowUp size={22} /></a></footer>
     {modal === 'workspace' && <Modal title="Общая доска" onClose={() => setModal(null)} className="workspace-dialog"><Workspace enlarged /><p className="dialog-note">Композиция для предпросмотра. Реальные фрагменты занятия будут добавлены.</p></Modal>}
-    {modal === 'quiz' && <Quiz attempt={quizAttempt} Modal={Modal} Button={Button} onClose={() => setModal(null)} onBook={() => { bookingRequested.current = true; setModal(null); }} />}
-    {modal === 'privacy' && <Modal title="Политика конфиденциальности" onClose={() => setModal(null)}><div className="policy-placeholder"><FileText size={46} weight="duotone" /><p>Документ будет добавлен перед публикацией сайта.</p><p className="muted">В этом локальном прототипе нет собственной формы сбора контактов и аналитики. Запись открывается на стороне Google Календаря.</p></div></Modal>}
+    {modal === 'quiz' && <Quiz attempt={quizAttempt} Modal={Modal} Button={Button} onClose={() => setModal(null)} bookingUrl={config.telegramUrl} />}
+    {modal === 'privacy' && <Modal title="Политика конфиденциальности" onClose={() => setModal(null)}><div className="policy-placeholder"><FileText size={46} weight="duotone" /><p>Документ будет добавлен перед публикацией сайта.</p><p className="muted">В этом локальном прототипе нет собственной формы сбора контактов и аналитики. Для записи можно написать в Telegram.</p></div></Modal>}
   </>;
 }

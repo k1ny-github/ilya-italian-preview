@@ -29,7 +29,7 @@ import { useInertImages } from './useInertImages.js';
 const photo = '/ilya-italian-preview/images/v9/';
 const nav = [['#audience', 'Для кого'], ['#about', 'Обо мне'], ['#materials', 'Как занимаемся'], ['#reviews', 'Отзывы']];
 
-function PrimaryButton({ children = c.cta, href = '#booking', className = '', onClick, ...props }) {
+function PrimaryButton({ children = c.cta, href = config.telegramUrl, className = '', onClick, ...props }) {
   const classes = `button button-primary v9-primary ${className}`;
   const inner = <><span>{children}</span></>;
   return onClick ? <button type="button" className={classes} onClick={onClick} {...props}>{inner}</button> : <a className={classes} href={href} {...props}>{inner}</a>;
@@ -81,8 +81,6 @@ export function SiteV9() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [modal, setModal] = useState(null);
   const quizAttempt = useQuizAttempt();
-  const bookingRequested = useRef(false);
-  useEffect(() => { if (modal !== null || !bookingRequested.current) return; bookingRequested.current = false; const booking = document.getElementById('booking'); booking?.scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' }); booking?.querySelector('a.v9-primary')?.focus({ preventScroll: true }); }, [modal]);
   useEffect(() => { if (!menuOpen) return; const close = e => { if (e.key === 'Escape') setMenuOpen(false); }; addEventListener('keydown', close); return () => removeEventListener('keydown', close); }, [menuOpen]);
   return <div className="v9" id="top">
     <a className="skip-link" href="#main">Перейти к содержанию</a>
@@ -94,7 +92,7 @@ export function SiteV9() {
           <h1 id="h01-title"><span className="h01-title-anchor">Запишитесь на<img className="h01-emphasis" src="/ilya-italian-preview/images/hero-section/emphasis-strokes.svg" width="56" height="72" alt="" aria-hidden="true"/></span> <br/><em>бесплатный урок</em> по <br/>итальянскому языку</h1>
           <p className="h01-intro">{c.intro.split("CILS C1").map((part, i) => <Fragment key={i}>{i > 0 && <span style={{ whiteSpace: "nowrap" }}>CILS C1</span>}{part}</Fragment>)}</p>
           <ul className="h01-benefits">{c.bullets.map(item=><li key={item}><Check size={19} weight="bold" aria-hidden="true"/>{item}</li>)}</ul>
-          <PrimaryButton className="h01-primary" href={config.bookingUrl} target="_blank" rel="noreferrer"/>
+          <PrimaryButton className="h01-primary" href={config.telegramUrl} target="_blank" rel="noreferrer"/>
         </div><div className="h01-art" data-image-surface=""><div className="h01-glow" aria-hidden="true"/>
           <img className="h01-left h01-portrait-left" src="/ilya-italian-preview/images/hero-section/olive-left.png" width="1154" height="1363" alt="" aria-hidden="true"/>
           <img className="h01-right" src="/ilya-italian-preview/images/hero-section/olive-right.png" width="1137" height="1383" alt="" aria-hidden="true"/>
@@ -130,9 +128,9 @@ export function SiteV9() {
 
       <section className="q08-invitation" id="quiz" aria-labelledby="q08-title"><div className="q08-inner"><div className="q08-copy"><h2 id="q08-title">Проверьте свой<br/><span>итальянский</span></h2><p>Грамматика, артикли и устойчивые выражения. После теста — результат и разбор каждого ответа.</p><button className="q08-button" type="button" onClick={() => setModal('quiz')}>Начать тест</button></div><QuizDecoration/></div></section>
 
-      <section id="formats" className="f07-formats" aria-labelledby="formats-title"><div className="f07-inner"><h2 id="formats-title">{c.formatsTitle}</h2><div className="f07-grid">{c.formats.map(([title, text], i) => <article className={`f07-card f07-${i === 0 ? 'primary' : 'secondary'}`} key={title}><div className="f07-content"><h3>{title}</h3><p>{text}</p><a className={`f07-button f07-button-${i === 0 ? 'light' : 'outline'}`} href={i === 0 ? config.bookingUrl : config.telegramUrl} target="_blank" rel="noopener noreferrer"><span>{i === 0 ? c.cta : 'Обсудить в Telegram'}</span></a></div><div className="f07-lettering" aria-hidden="true">{i === 0 ? <><span>Un passo</span><span>alla volta</span></> : <><span>Insieme si impara</span><span>meglio!</span></>}</div><div className={`f07-visual f07-visual-${i === 0 ? 'solo' : 'group'}`} aria-hidden="true">{i === 0 ? <div className="f07-solo-chat"><span></span><span></span><span></span></div> : <><span></span><span></span><span></span></>}</div></article>)}</div></div></section>
+      <section id="formats" className="f07-formats" aria-labelledby="formats-title"><div className="f07-inner"><h2 id="formats-title">{c.formatsTitle}</h2><div className="f07-grid">{c.formats.map(([title, text], i) => <article className={`f07-card f07-${i === 0 ? 'primary' : 'secondary'}`} key={title}><div className="f07-content"><h3>{title}</h3><p>{text}</p><a className={`f07-button f07-button-${i === 0 ? 'light' : 'outline'}`} href={config.telegramUrl} target="_blank" rel="noopener noreferrer"><span>{c.cta}</span></a></div><div className="f07-lettering" aria-hidden="true">{i === 0 ? <><span>Un passo</span><span>alla volta</span></> : <><span>Insieme si impara</span><span>meglio!</span></>}</div><div className={`f07-visual f07-visual-${i === 0 ? 'solo' : 'group'}`} aria-hidden="true">{i === 0 ? <div className="f07-solo-chat"><span></span><span></span><span></span></div> : <><span></span><span></span><span></span></>}</div></article>)}</div></div></section>
 
-      <CultureSection title={c.cultureTitle} text={c.culture} bookingUrl={config.bookingUrl} Button={PrimaryButton}/>
+      <CultureSection title={c.cultureTitle} text={c.culture} bookingUrl={config.telegramUrl} Button={PrimaryButton}/>
 
       <ReviewsSection title={c.reviewsTitle}/>
 
@@ -142,9 +140,9 @@ export function SiteV9() {
 
       <section className="faq12" id="faq" aria-labelledby="faq12-title"><h2 id="faq12-title">{c.faqTitle}</h2><div className="faq12-list">{c.faq.map((question, i) => <details key={question}><summary><span>{question}</span><span className="faq12-toggle" aria-hidden="true"/></summary><div className="faq12-answer"><p>{config.faqAnswers[i] || 'Ответ преподавателя будет добавлен.'}</p></div></details>)}</div></section>
 
-      <section className="b11-booking" id="booking" aria-labelledby="b11-title"><div className="b11-inner"><div className="b11-copy"><h2 id="b11-title">{c.bookingTitle.split(' для ')[0]}<br/>для {c.bookingTitle.split(' для ')[1]}</h2><p>{c.goalDescription}</p><div className="b11-actions"><PrimaryButton className="b11-calendar" href={config.bookingUrl} target="_blank" rel="noreferrer">Выбрать время</PrimaryButton><TelegramButton className="b11-telegram"/></div></div><div className="b11-paper-wrap"><div className="b11-paper"><h3>{c.trust[1][0]}</h3><ul>{c.bullets.map(item => <li key={item}>{item}</li>)}</ul><div className="b11-note"><strong>{c.trust[0][0]}</strong><span>{c.trust[0][1]}</span></div><span className="b11-presto">A presto!</span></div></div></div></section>
+      <section className="b11-booking" id="booking" aria-labelledby="b11-title"><div className="b11-inner"><div className="b11-copy"><h2 id="b11-title">{c.bookingTitle}</h2><p>{c.goalDescription}</p><div className="b11-actions"><PrimaryButton className="b11-calendar" href={config.telegramUrl} target="_blank" rel="noreferrer">Написать в Telegram</PrimaryButton></div></div><div className="b11-paper-wrap"><div className="b11-paper"><h3>{c.trust[1][0]}</h3><ul>{c.bullets.map(item => <li key={item}>{item}</li>)}</ul><div className="b11-note"><strong>{c.trust[0][0]}</strong><span>{c.trust[0][1]}</span></div><span className="b11-presto">A presto!</span></div></div></div></section>
     </main>
     <footer className="c13-footer"><div className="c13-footer-inner"><a className="c13-brand" href="#top"><span className="c13-flag" aria-hidden="true"/><span><strong>{c.name}</strong><small>{c.role}</small></span></a><a className="c13-privacy" href="/ilya-italian-preview/privacy.html">Политика конфиденциальности</a><a className="c13-top" href="#top">Вернуться наверх</a></div></footer>
-    {modal === 'quiz' && <Quiz attempt={quizAttempt} Modal={Modal} Button={PrimaryButton} onClose={() => setModal(null)} onBook={() => { bookingRequested.current = true; setModal(null); }}/>} 
+    {modal === 'quiz' && <Quiz attempt={quizAttempt} Modal={Modal} Button={PrimaryButton} onClose={() => setModal(null)} bookingUrl={config.telegramUrl}/>}
   </div>;
 }

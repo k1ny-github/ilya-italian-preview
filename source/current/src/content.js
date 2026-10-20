@@ -6,7 +6,7 @@ export const content = {
   role: 'Преподаватель итальянского языка',
   hero: 'Запишитесь на бесплатный урок по итальянскому языку',
   intro: 'От лингвиста-переводчика с сертификатом CILS C1 и 15 годами практики',
-  cta: 'Записаться на урок',
+  cta: 'Записаться',
   bullets: ['Разбор вашего текущего уровня', 'Знакомство с преподавателем', 'Обзор методики и материалов', 'Ответы на ваши вопросы о занятиях'],
   trust: [['Без обязательств', 'Решение продолжать остаётся за вами'], ['Ознакомительный урок', 'Обсудим вашу цель и уровень'], ['Для любого уровня', 'От A1 до B2']],
   audienceTitle: 'Кому подойдут занятия со мной',
@@ -35,7 +35,7 @@ export const content = {
   goalDescription: 'Обсудим вашу цель и уровень',
   goals: ['Переезд или жизнь в Италии', 'Для себя: кино, опера, путешествия', 'Учил, но так и не заговорил', 'Другое'],
   reviewsTitle: 'Отзывы учеников',
-  bookingTitle: 'Выберите время для знакомства',
+  bookingTitle: 'Договоримся о знакомстве',
   faqTitle: 'Ответы на вопросы',
   faq: ['С нуля тоже можно?', 'Занимался, но давно всё забыл. С чего начинать?', 'Онлайн правда работает так же, как вживую?', 'Мне уже за сорок, не поздно?', 'Что если у меня нет способностей к языкам?', 'Учебник нужен свой или вы даёте?', 'Что если придётся пропустить занятие?', 'Готовите ли вы к экзаменам?'],
   closingTitle: 'Давайте знакомиться',
@@ -43,8 +43,6 @@ export const content = {
 };
 
 export const config = {
-  // Confirmed by Mark in this conversation on 2026-09-25. Prototype calendar, not yet Ilya's production calendar.
-  bookingUrl: 'https://calendar.app.google/jSghJB2igCMbxY4J6',
   telegramUrl: 'https://t.me/furettinetto',
   // No fabricated assessment, testimonials, photos, or promises. Supply approved content before launch.
   quizQuestions: [],

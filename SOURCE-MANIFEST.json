@@ -1,15 +1,15 @@
 {
-  "currentLocalCheckpoint": "0cc1a97943c45f99b55d5ecb386cf5ad9660660c",
-  "localCheckpointTag": "hero-strokes-text-anchor-2026-10-20",
+  "currentLocalCheckpoint": "4c5e6984752cb131f096b9e745ff0e16a2156126",
+  "localCheckpointTag": "telegram-booking-2026-10-20",
   "archivedPublicHead": "be39e02ab451ae96790c8c1398f7a8081946b4b8",
   "versions": [
     {
       "name": "current",
-      "sourceRef": "0cc1a97943c45f99b55d5ecb386cf5ad9660660c",
+      "sourceRef": "4c5e6984752cb131f096b9e745ff0e16a2156126",
       "base": "/ilya-italian-preview/",
       "heroOverlay": false,
       "snapshotDifferences": {},
-      "label": "Current version - hero strokes anchored to actual first phrase"
+      "label": "Current version - Telegram booking and inert photographs"
     },
     {
       "name": "pre-final",
@@ -47,8 +47,8 @@
   ],
   "sourceReproduction": "source/current",
   "existingPublicAssetsRetained": true,
-  "previousPublicCommit": "f9627448eba6bce85cb1d601727f5faa920cdcce",
-  "release": "hero-strokes-text-anchor-2026-10-20",
+  "previousPublicCommit": "b1aa5aa293b9f19bb5246ab96c5593e29831e588",
+  "release": "telegram-booking-2026-10-20",
   "currentSourceFiles": [
     {
       "path": "index.html",
@@ -360,7 +360,7 @@
     },
     {
       "path": "src/App.jsx",
-      "sha256": "28d7b779a00469a929b24dc43a2e800cfe8ccbda97dbc7246b2bc80c042203ac"
+      "sha256": "41697b925669a24c93e0cd7effe105bd9c904ea1fec52480c984c0f87a95f84b"
     },
     {
       "path": "src/backgrounds.css",
@@ -372,7 +372,7 @@
     },
     {
       "path": "src/content.js",
-      "sha256": "d765cef3cff271f0c3a579a33140ef9bae7e965c079a5b17de32923bd75877aa"
+      "sha256": "5d313c729150eec845cbf4a77c8e9f8a8a0a5e5d1d882853035f3d4ecd45ea4c"
     },
     {
       "path": "src/CultureSection.css",
@@ -388,7 +388,7 @@
     },
     {
       "path": "src/image-inert.css",
-      "sha256": "06785c10b8846f5fb72a547bef0dd56b451bb60dfb85d9e00f63896efd82ed21"
+      "sha256": "08da41c38b7f6398739b1a4341198a93688335a1ac88a8a70c8871921cfe6fec"
     },
     {
       "path": "src/LearningSteps.jsx",
@@ -456,7 +456,7 @@
     },
     {
       "path": "src/Quiz.jsx",
-      "sha256": "33bcce58ddae999ca2a63b7efe235a649895e85f746074dba8e902c7cae6c0ab"
+      "sha256": "342ce93f84d2bc101743a8efc439c30e56f7060db12901d2873ab30be3a3f821"
     },
     {
       "path": "src/QuizDecoration.css",
@@ -496,7 +496,7 @@
     },
     {
       "path": "src/SiteV9.jsx",
-      "sha256": "9c1735ab8d048e71ce80cc7751ba346c561a6f781eb96e034b822e03cccd6c62"
+      "sha256": "522d55d59aaf470ec73b7bfaa6d44cc9559af6bda258dd34bfb63c97bace8398"
     },
     {
       "path": "src/style-entry.js",

@@ -10,3 +10,6 @@
 .v9 .m13-materials .m13-screen-placeholder { margin-bottom: 0; }
 .v9 .c16-small { cursor: default; }
 .v9 .c16-counter[hidden], .v9 .m13-counter[hidden] { display: none; }
+
+/* Let the image surface wrapper receive input, rather than native image actions. */
+.v9 img { pointer-events: none; }
