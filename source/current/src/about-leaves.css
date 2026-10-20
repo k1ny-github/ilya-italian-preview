@@ -13,7 +13,7 @@ html .v9 #about .a09-copy>p:last-child { margin-bottom:0 }
 html .v9 #about .a09-inner { padding:28px }
 html .v9 #about .a09-layout { grid-template-columns:minmax(0,.9fr) minmax(0,1fr);gap:32px }
 }
-@media(width < 760px) {
+@media(width < 960px) {
 html .v9 #about .a09-layout { display:flex;flex-direction:column;gap:28px }
 html .v9 #about .a09-photo { max-width:360px;align-self:center }
 }
@@ -26,7 +26,7 @@ html .v9 #about .a09-photo img { height:auto;aspect-ratio:853/1155;object-fit:co
 @media(width < 960px) {
 html .v9 #about .a09-layout { grid-template-columns:minmax(0,.85fr) minmax(0,1fr);gap:28px }
 }
-@media(width < 760px) {
+@media(width < 960px) {
 html .v9 #about .a09-photo { max-width:320px }
 }
 
@@ -44,7 +44,7 @@ html .v9 #about .about-edge-decor { display:none }
 html .v9 #about :is(.about-edge-left,.about-edge-right) { width:24px;height:240px }
 html .v9 #about .about-edge-decor img { width:190px;opacity:.75 }
 }
-@media(width < 760px) {
+@media(width < 960px) {
 html .v9 #about :is(.about-edge-left,.about-edge-right) { width:16px;height:190px }
 html .v9 #about .about-edge-left { top:32px }
 html .v9 #about .about-edge-right { bottom:24px }

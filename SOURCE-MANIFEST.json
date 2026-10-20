@@ -1,15 +1,15 @@
 {
-  "currentLocalCheckpoint": "8c1d500052a012ff52aed8470019eb0f53ecb435",
-  "localCheckpointTag": "about-mobile-no-leaves-2026-10-19",
+  "currentLocalCheckpoint": "9b544d027e7a95571180376298bf0d06bd20164b",
+  "localCheckpointTag": "hero-orange-strokes-2026-10-20",
   "archivedPublicHead": "be39e02ab451ae96790c8c1398f7a8081946b4b8",
   "versions": [
     {
       "name": "current",
-      "sourceRef": "8c1d500052a012ff52aed8470019eb0f53ecb435",
+      "sourceRef": "9b544d027e7a95571180376298bf0d06bd20164b",
       "base": "/ilya-italian-preview/",
       "heroOverlay": false,
       "snapshotDifferences": {},
-      "label": "Текущая версия — About A без листьев ниже1200"
+      "label": "Current version - responsive hero orange strokes and About 960 breakpoint"
     },
     {
       "name": "pre-final",
@@ -47,8 +47,8 @@
   ],
   "sourceReproduction": "source/current",
   "existingPublicAssetsRetained": true,
-  "previousPublicCommit": "00cbcba2a241c412cd2fb1ad40f8e02d4bb0b5ca",
-  "release": "about-mobile-no-leaves-2026-10-19",
+  "previousPublicCommit": "5abe96af44977dde510b3bdc470b99f39f009005",
+  "release": "hero-orange-strokes-2026-10-20",
   "currentSourceFiles": [
     {
       "path": "index.html",
@@ -356,7 +356,7 @@
     },
     {
       "path": "src/about-leaves.css",
-      "sha256": "86002c8824bac6d693f4c418217598291e617e21e7206a211ee35c542f74342e"
+      "sha256": "a9f38968f399408e9da71980669f1db239a40b7f3372c40e64615f813c891bb8"
     },
     {
       "path": "src/App.jsx",
@@ -384,7 +384,7 @@
     },
     {
       "path": "src/final-composition.css",
-      "sha256": "41b86f737bca28f9255ef9d3c8fd6b492693f58a1922de99706d9977c999c698"
+      "sha256": "5b4d320fa0575f632a4cbd742ea71d2bc95921f9cd88e7eb1fe8c5f021caa837"
     },
     {
       "path": "src/image-inert.css",
@@ -496,7 +496,7 @@
     },
     {
       "path": "src/SiteV9.jsx",
-      "sha256": "54b4189cef03b3fa10438fc8e8024ae9c9155a39e99fc8001096fafc062f2283"
+      "sha256": "4e11669c815281b336a386ca561af65c34758f613763e217554a1b4e8ab03d08"
     },
     {
       "path": "src/style-entry.js",
