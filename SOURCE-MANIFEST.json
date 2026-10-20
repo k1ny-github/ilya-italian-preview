@@ -1,15 +1,15 @@
 {
-  "currentLocalCheckpoint": "db369dae1ce5abdf1dd13afbbad02a7da2af4c2e",
-  "localCheckpointTag": "mobile-image-performance-2026-10-20",
+  "currentLocalCheckpoint": "b5ebb675a192d292b03732df447bafa3b055605a",
+  "localCheckpointTag": "menu-escape-focus-2026-10-20",
   "archivedPublicHead": "be39e02ab451ae96790c8c1398f7a8081946b4b8",
   "versions": [
     {
       "name": "current",
-      "sourceRef": "db369dae1ce5abdf1dd13afbbad02a7da2af4c2e",
+      "sourceRef": "b5ebb675a192d292b03732df447bafa3b055605a",
       "base": "/ilya-italian-preview/",
       "heroOverlay": false,
       "snapshotDifferences": {},
-      "label": "Current version - lossless image optimization and first-screen loading"
+      "label": "Current version - menu Escape focus return"
     },
     {
       "name": "pre-final",
@@ -47,8 +47,8 @@
   ],
   "sourceReproduction": "source/current",
   "existingPublicAssetsRetained": true,
-  "previousPublicCommit": "2bc74c05f4a3102bc8eaf3603523eb1950c6568c",
-  "release": "mobile-image-performance-2026-10-20",
+  "previousPublicCommit": "43af83d902c3a478581bceeb712a03b6f0c973a4",
+  "release": "menu-escape-focus-2026-10-20",
   "currentSourceFiles": [
     {
       "path": "index.html",
@@ -528,7 +528,7 @@
     },
     {
       "path": "src/SiteV9.jsx",
-      "sha256": "ea672e06e7f66c17d36fe4c0a40e68c53dc5ca62638e7bef11b325dc2e761ab9"
+      "sha256": "38c7e3085d5c6023d5913a7577f71beb86ea26b94dba815930ae85f6dae249d9"
     },
     {
       "path": "src/style-entry.js",

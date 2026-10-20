@@ -41,3 +41,7 @@ Increase only Materials top padding28px to48px below640 per UX specification and
 ## Lossless image loading performance
 
 Add8exactlosslessWebPvariants alongside originals and gate only Quiz/Culture image discovery after hero settled or nearviewport. Preserve geometry/timers; noheadpreloads after measured CSR experiments. Source db369dae1ce5abdf1dd13afbbad02a7da2af4c2e
+
+## F01 menu Escape focus return
+
+Restore the existing menu toggle focus on Escape only with preventScroll. Navigation clicks, styles, copy and images unchanged. Source b5ebb675a192d292b03732df447bafa3b055605a

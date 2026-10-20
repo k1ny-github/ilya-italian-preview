@@ -79,12 +79,13 @@ function MethodArt({ index }) {
 export function SiteV9() {
   useInertImages();
   const [menuOpen, setMenuOpen] = useState(false);
+  const menuToggleRef = useRef(null);
   const [modal, setModal] = useState(null);
   const quizAttempt = useQuizAttempt();
-  useEffect(() => { if (!menuOpen) return; const close = e => { if (e.key === 'Escape') setMenuOpen(false); }; addEventListener('keydown', close); return () => removeEventListener('keydown', close); }, [menuOpen]);
+  useEffect(() => { if (!menuOpen) return; const close = e => { if (e.key === 'Escape') { setMenuOpen(false); menuToggleRef.current?.focus({ preventScroll: true }); } }; addEventListener('keydown', close); return () => removeEventListener('keydown', close); }, [menuOpen]);
   return <div className="v9" id="top">
     <a className="skip-link" href="#main">Перейти к содержанию</a>
-    <header className="v9-header"><div className="v9-shell v9-header-inner h01-header"><Brand/><nav id="v9-navigation" className={`v9-nav ${menuOpen ? 'is-open' : ''}`} aria-label="Основная навигация">{nav.map(([href, label]) => <a key={href} href={href} onClick={() => setMenuOpen(false)}>{label}</a>)}<TelegramButton className="v9-header-telegram v9-menu-telegram">Есть вопрос? Пишите!</TelegramButton></nav><TelegramButton className="v9-header-telegram">Есть вопрос? Пишите!</TelegramButton><button className="v9-menu-toggle" type="button" aria-controls="v9-navigation" aria-expanded={menuOpen} aria-label={menuOpen ? 'Закрыть меню' : 'Открыть меню'} onClick={() => setMenuOpen(v => !v)}>{menuOpen ? <X size={25}/> : <List size={25}/>}</button></div></header>
+    <header className="v9-header"><div className="v9-shell v9-header-inner h01-header"><Brand/><nav id="v9-navigation" className={`v9-nav ${menuOpen ? 'is-open' : ''}`} aria-label="Основная навигация">{nav.map(([href, label]) => <a key={href} href={href} onClick={() => setMenuOpen(false)}>{label}</a>)}<TelegramButton className="v9-header-telegram v9-menu-telegram">Есть вопрос? Пишите!</TelegramButton></nav><TelegramButton className="v9-header-telegram">Есть вопрос? Пишите!</TelegramButton><button ref={menuToggleRef} className="v9-menu-toggle" type="button" aria-controls="v9-navigation" aria-expanded={menuOpen} aria-label={menuOpen ? 'Закрыть меню' : 'Открыть меню'} onClick={() => setMenuOpen(v => !v)}>{menuOpen ? <X size={25}/> : <List size={25}/>}</button></div></header>
     <main id="main">
       <section className="h01-hero" aria-labelledby="h01-title"><img className="h01-left" src="/ilya-italian-preview/images/hero-section/olive-left.webp" width="1154" height="1363" alt="" loading="eager" decoding="async" aria-hidden="true"/><div className="h01-stage">
         
