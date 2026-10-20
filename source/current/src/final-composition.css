@@ -703,9 +703,10 @@
 
 /* Anchor the existing accent to the first phrase, independent of heading width. */
 @media (width < 1200px) {
-  .v9 .h01-title-anchor { position: relative; }
+  .v9 .h01-title-anchor { position: relative; padding-inline-end: 32px; }
+  .v9 .h01-copy h1 .h01-title-anchor + br { display: initial; }
   .v9 .h01-emphasis {
-    display: block; left: calc(100% - 8px); right: auto; top: auto; bottom: 100%;
+    display: block; left: auto; right: 0; top: 0; bottom: auto;
     width: clamp(24px, 2.5vw, 28px); height: auto;
   }
 }

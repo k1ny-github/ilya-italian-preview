@@ -13,3 +13,7 @@ Replace active calendar booking with Telegram, simplify the final action and kee
 ## Mini-group action label
 
 Restore the mini-group action label to Write in Telegram; retain its existing destination. Source 60ef8f9539a227b129dda8089ca536b1808963c4
+
+## Hero strokes beside first line
+
+Place the existing orange strokes beside the first phrase and restore its existing line break below1200. Source 3629414cd5ff01a7e727a8a56a29f9662021051a

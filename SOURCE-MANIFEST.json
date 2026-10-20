@@ -1,15 +1,15 @@
 {
-  "currentLocalCheckpoint": "60ef8f9539a227b129dda8089ca536b1808963c4",
-  "localCheckpointTag": "formats-telegram-label-2026-10-20",
+  "currentLocalCheckpoint": "3629414cd5ff01a7e727a8a56a29f9662021051a",
+  "localCheckpointTag": "hero-strokes-inline-2026-10-20",
   "archivedPublicHead": "be39e02ab451ae96790c8c1398f7a8081946b4b8",
   "versions": [
     {
       "name": "current",
-      "sourceRef": "60ef8f9539a227b129dda8089ca536b1808963c4",
+      "sourceRef": "3629414cd5ff01a7e727a8a56a29f9662021051a",
       "base": "/ilya-italian-preview/",
       "heroOverlay": false,
       "snapshotDifferences": {},
-      "label": "Current version - mini-group Telegram action"
+      "label": "Current version - hero strokes beside first line"
     },
     {
       "name": "pre-final",
@@ -48,7 +48,7 @@
   "sourceReproduction": "source/current",
   "existingPublicAssetsRetained": true,
   "previousPublicCommit": "2fc70b1d35747005796c4faa3de6c6e40c1b4b70",
-  "release": "formats-telegram-label-2026-10-20",
+  "release": "hero-strokes-inline-2026-10-20",
   "currentSourceFiles": [
     {
       "path": "index.html",
@@ -384,7 +384,7 @@
     },
     {
       "path": "src/final-composition.css",
-      "sha256": "118ef7100fdbfd5d90842092d284d4d85385c3844e021e5da3d4432587676966"
+      "sha256": "4ff171a2865d40b84f1467e89ec731cf3d596679e95eca4206a84267ac4594b7"
     },
     {
       "path": "src/image-inert.css",
