@@ -21,3 +21,7 @@ Place the existing orange strokes beside the first phrase and restore its existi
 ## Hero action and formats decor
 
 Set hero action to the approved lesson label and move both format decorations slightly inward. Source 877040c718e0c6900f5487fb5c4428609b898575
+
+## Desktop hero strokes per UX spec
+
+Anchor existing desktop strokes to the first phrase at44px per designer specification and actual-after visual approval. Preserve below1200 behavior. Source 82ed57c62dcd9a1086000495d2f4a6e8a2be981d

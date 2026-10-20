@@ -1,15 +1,15 @@
 {
-  "currentLocalCheckpoint": "877040c718e0c6900f5487fb5c4428609b898575",
-  "localCheckpointTag": "hero-formats-publish-2026-10-20",
+  "currentLocalCheckpoint": "82ed57c62dcd9a1086000495d2f4a6e8a2be981d",
+  "localCheckpointTag": "hero-desktop-strokes-2026-10-20",
   "archivedPublicHead": "be39e02ab451ae96790c8c1398f7a8081946b4b8",
   "versions": [
     {
       "name": "current",
-      "sourceRef": "877040c718e0c6900f5487fb5c4428609b898575",
+      "sourceRef": "82ed57c62dcd9a1086000495d2f4a6e8a2be981d",
       "base": "/ilya-italian-preview/",
       "heroOverlay": false,
       "snapshotDifferences": {},
-      "label": "Current version - hero label and format decor inset"
+      "label": "Current version - UX-approved desktop hero strokes"
     },
     {
       "name": "pre-final",
@@ -47,8 +47,8 @@
   ],
   "sourceReproduction": "source/current",
   "existingPublicAssetsRetained": true,
-  "previousPublicCommit": "3fbc2448634f075b36fd91d38ad870f1b7ae8dc6",
-  "release": "hero-formats-publish-2026-10-20",
+  "previousPublicCommit": "520745d581adb9a257258c13458f2c2b0fb8fd47",
+  "release": "hero-desktop-strokes-2026-10-20",
   "currentSourceFiles": [
     {
       "path": "index.html",
@@ -384,7 +384,7 @@
     },
     {
       "path": "src/final-composition.css",
-      "sha256": "4ff171a2865d40b84f1467e89ec731cf3d596679e95eca4206a84267ac4594b7"
+      "sha256": "a44aacc937d3ae7b9b4195cf1a087add2efc19ead9c132e18ef7ae8ec806eac2"
     },
     {
       "path": "src/image-inert.css",

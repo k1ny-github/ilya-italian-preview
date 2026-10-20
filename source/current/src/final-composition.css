@@ -713,3 +713,12 @@
 @media (width < 960px) {
   .v9 .h01-copy h1 { margin-top: 12px; }
 }
+
+/* UX-approved desktop accent follows the first phrase without reserving text width. */
+@media (width >= 1200px) {
+  .v9 .h01-copy h1 .h01-title-anchor { position: relative; padding-inline-end: 0; }
+  .v9 .h01-title-anchor > .h01-emphasis {
+    left: calc(100% + 4px); right: auto; top: 0; bottom: auto;
+    width: 44px; height: auto;
+  }
+}
