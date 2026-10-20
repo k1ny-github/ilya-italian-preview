@@ -1,15 +1,15 @@
 {
-  "currentLocalCheckpoint": "24d857b57a2b86586f7e915d78ce2229a24578e5",
-  "localCheckpointTag": "hero-mobile-top-gap-2026-10-20",
+  "currentLocalCheckpoint": "b1f76c61a4144a70a3386dd40ab2996662d926af",
+  "localCheckpointTag": "booking-title-2026-10-20",
   "archivedPublicHead": "be39e02ab451ae96790c8c1398f7a8081946b4b8",
   "versions": [
     {
       "name": "current",
-      "sourceRef": "24d857b57a2b86586f7e915d78ce2229a24578e5",
+      "sourceRef": "b1f76c61a4144a70a3386dd40ab2996662d926af",
       "base": "/ilya-italian-preview/",
       "heroOverlay": false,
       "snapshotDifferences": {},
-      "label": "Current version - mobile Hero top gap"
+      "label": "Current version - friendly introduction heading"
     },
     {
       "name": "pre-final",
@@ -47,8 +47,8 @@
   ],
   "sourceReproduction": "source/current",
   "existingPublicAssetsRetained": true,
-  "previousPublicCommit": "7acd35c6acc14c7821db78d6347a74790ae7dba0",
-  "release": "hero-mobile-top-gap-2026-10-20",
+  "previousPublicCommit": "855054878409dcf8a57cb6e322f855e70a2f764c",
+  "release": "booking-title-2026-10-20",
   "currentSourceFiles": [
     {
       "path": "index.html",
@@ -468,7 +468,7 @@
     },
     {
       "path": "src/content.js",
-      "sha256": "5d313c729150eec845cbf4a77c8e9f8a8a0a5e5d1d882853035f3d4ecd45ea4c"
+      "sha256": "e226efb6dffec691250da5a837887b19cc90ea71e464a7367c67e23f86d21fb1"
     },
     {
       "path": "src/CultureSection.css",

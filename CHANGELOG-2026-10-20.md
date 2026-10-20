@@ -53,3 +53,7 @@ Serve density-aware resampled-lossless mobile Hero/leaf variants below960, prese
 ## F01 mobile Hero top gap
 
 Reduce existing below960 Hero stage padding-top24 to8 only; all other source and assets unchanged. Source 24d857b57a2b86586f7e915d78ce2229a24578e5
+
+## Introduction heading
+
+Restore owner-requested friendly introduction heading; preserve layout and destinations. Source b1f76c61a4144a70a3386dd40ab2996662d926af
