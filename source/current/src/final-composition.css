@@ -718,7 +718,7 @@
 @media (width >= 1200px) {
   .v9 .h01-copy h1 .h01-title-anchor { position: relative; padding-inline-end: 0; }
   .v9 .h01-title-anchor > .h01-emphasis {
-    left: calc(100% + 4px); right: auto; top: 0; bottom: auto;
+    left: calc(100% + 12px); right: auto; top: 0; bottom: auto;
     width: 44px; height: auto;
   }
 }

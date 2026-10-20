@@ -1,6 +1,6 @@
 {
-  "release": "section-order-quiz-second-2026-10-20",
-  "sourceCheckpoint": "0138f7dabd4285e1f495923dd8bfe58120472216",
-  "previousPublicCommit": "b84f761e422e5a3c77d99d1b631ab534fc7e4937",
+  "release": "desktop-strokes-gap-2026-10-20",
+  "sourceCheckpoint": "8c8e4feef4b0df660b84ea400ac1c56d86050345",
+  "previousPublicCommit": "ec05dcad3874aad777643ef19d6f2639a0afbb1b",
   "purpose": "owner-review"
 }

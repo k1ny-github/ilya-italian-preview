@@ -1,15 +1,15 @@
 {
-  "currentLocalCheckpoint": "0138f7dabd4285e1f495923dd8bfe58120472216",
-  "localCheckpointTag": "section-order-quiz-second-2026-10-20",
+  "currentLocalCheckpoint": "8c8e4feef4b0df660b84ea400ac1c56d86050345",
+  "localCheckpointTag": "desktop-strokes-gap-2026-10-20",
   "archivedPublicHead": "be39e02ab451ae96790c8c1398f7a8081946b4b8",
   "versions": [
     {
       "name": "current",
-      "sourceRef": "0138f7dabd4285e1f495923dd8bfe58120472216",
+      "sourceRef": "8c8e4feef4b0df660b84ea400ac1c56d86050345",
       "base": "/ilya-italian-preview/",
       "heroOverlay": false,
       "snapshotDifferences": {},
-      "label": "Current version - quiz second and selected section order"
+      "label": "Current version - desktop accent gap revision"
     },
     {
       "name": "pre-final",
@@ -47,8 +47,8 @@
   ],
   "sourceReproduction": "source/current",
   "existingPublicAssetsRetained": true,
-  "previousPublicCommit": "b84f761e422e5a3c77d99d1b631ab534fc7e4937",
-  "release": "section-order-quiz-second-2026-10-20",
+  "previousPublicCommit": "ec05dcad3874aad777643ef19d6f2639a0afbb1b",
+  "release": "desktop-strokes-gap-2026-10-20",
   "currentSourceFiles": [
     {
       "path": "index.html",
@@ -384,7 +384,7 @@
     },
     {
       "path": "src/final-composition.css",
-      "sha256": "e3735698d0bbeb6a6fd4b292f959fd51d9cc61cd2ae769e7ffd014818c06564d"
+      "sha256": "088a588d53f7709732c5c1ed492950e1ac7f2f067eac5b673a10c1bcd301bafd"
     },
     {
       "path": "src/image-inert.css",

@@ -29,3 +29,7 @@ Anchor existing desktop strokes to the first phrase at44px per designer specific
 ## Quiz second and section order
 
 Move quiz after hero and apply owner section order; retain compact hero action. Source 0138f7dabd4285e1f495923dd8bfe58120472216
+
+## Desktop hero gap revision
+
+Increase desktop accent offset4px to12px per revised designer specification and actual-after approval. Preserve all other styles and below1200 behavior. Source 8c8e4feef4b0df660b84ea400ac1c56d86050345
