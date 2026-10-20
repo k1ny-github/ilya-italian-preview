@@ -114,8 +114,8 @@
   .v9 .h01-intro { font-size: 20px; line-height: 1.34; max-width: 520px; margin: 18px 0 24px; }
   .v9 .h01-primary { width: 405px; min-height: 46px; padding: 13px 26px; }
   .v9 .h01-benefits { font-size: 14px; gap: 8px; margin: 0 0 24px; }
-  .v9 .h01-benefits li { align-items: center; }
-  .v9 .h01-benefits svg { width: 28px; height: 28px; }
+  .v9 .h01-benefits li { align-items: center; min-height: 28px; gap: 16px; }
+  .v9 .h01-benefits svg { width: 24px; height: 24px; padding: 4px; box-sizing: border-box; flex: none; }
   .v9 .h01-photo { margin: 0 0 0 40px; }
   .v9 .h01-glow {
     left: calc(40px + var(--h01-photo-width) / 2);
@@ -532,6 +532,7 @@
   max-width: none;
 }
 @media (width >= 640px) {
+  .v9 .h01-benefits li { align-items: center; }
   .v9 #audience .a02-card,
   .v9 #audience .a02-card:nth-child(even),
   .v9 #approach .a04-card {

@@ -1,15 +1,15 @@
 {
-  "currentLocalCheckpoint": "437b174dec8419393bfe9520888679e17f74cde8",
-  "localCheckpointTag": "formats-compact-2026-10-20",
+  "currentLocalCheckpoint": "0167c020c9b84b5d73bf7cad27289169282b89f2",
+  "localCheckpointTag": "hero-benefits-alignment-2026-10-20",
   "archivedPublicHead": "be39e02ab451ae96790c8c1398f7a8081946b4b8",
   "versions": [
     {
       "name": "current",
-      "sourceRef": "437b174dec8419393bfe9520888679e17f74cde8",
+      "sourceRef": "0167c020c9b84b5d73bf7cad27289169282b89f2",
       "base": "/ilya-italian-preview/",
       "heroOverlay": false,
       "snapshotDifferences": {},
-      "label": "Current version - compact Formats cards"
+      "label": "Current version - Hero benefits alignment"
     },
     {
       "name": "pre-final",
@@ -47,8 +47,8 @@
   ],
   "sourceReproduction": "source/current",
   "existingPublicAssetsRetained": true,
-  "previousPublicCommit": "0a3ad1bc887157b8cd87ad649e0c2355d032085e",
-  "release": "formats-compact-2026-10-20",
+  "previousPublicCommit": "6ebb4e94990c9ce7202a548cab138bf951c02625",
+  "release": "hero-benefits-alignment-2026-10-20",
   "currentSourceFiles": [
     {
       "path": "index.html",
@@ -480,7 +480,7 @@
     },
     {
       "path": "src/final-composition.css",
-      "sha256": "21364107826b11818fcb1754f9fc335d227fff18c8f6530c68ca268fac25086a"
+      "sha256": "bf9592413e19cb6b4a3a9453aa57a9883a2468971bd9586940f19476dc119e5a"
     },
     {
       "path": "src/image-inert.css",

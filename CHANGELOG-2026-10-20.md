@@ -65,3 +65,7 @@ Place Formats message icons inside existing circles: right16/bottom14/scale.83 a
 ## Compact Formats cards
 
 Widen Formats text measure, lift aligned actions and reduce the decorative lower zone. Source 437b174dec8419393bfe9520888679e17f74cde8
+
+## F01 Hero benefits alignment
+
+Center Hero benefit rows from640; reduce desktop circles24/padding4 with rowminheight28/gap16; preserve phone geometry and colors. Source 0167c020c9b84b5d73bf7cad27289169282b89f2
