@@ -9,3 +9,7 @@ Anchor existing SVG to the actual first phrase, preserving natural heading wrapp
 ## Telegram booking
 
 Replace active calendar booking with Telegram, simplify the final action and keep photographs inert. Source 4c5e6984752cb131f096b9e745ff0e16a2156126
+
+## Mini-group action label
+
+Restore the mini-group action label to Write in Telegram; retain its existing destination. Source 60ef8f9539a227b129dda8089ca536b1808963c4

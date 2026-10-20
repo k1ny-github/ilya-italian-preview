@@ -1,6 +1,6 @@
 {
-  "release": "telegram-booking-2026-10-20",
-  "sourceCheckpoint": "4c5e6984752cb131f096b9e745ff0e16a2156126",
-  "previousPublicCommit": "b1aa5aa293b9f19bb5246ab96c5593e29831e588",
+  "release": "formats-telegram-label-2026-10-20",
+  "sourceCheckpoint": "60ef8f9539a227b129dda8089ca536b1808963c4",
+  "previousPublicCommit": "2fc70b1d35747005796c4faa3de6c6e40c1b4b70",
   "purpose": "owner-review"
 }

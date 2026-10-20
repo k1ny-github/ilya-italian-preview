@@ -1,15 +1,15 @@
 {
-  "currentLocalCheckpoint": "4c5e6984752cb131f096b9e745ff0e16a2156126",
-  "localCheckpointTag": "telegram-booking-2026-10-20",
+  "currentLocalCheckpoint": "60ef8f9539a227b129dda8089ca536b1808963c4",
+  "localCheckpointTag": "formats-telegram-label-2026-10-20",
   "archivedPublicHead": "be39e02ab451ae96790c8c1398f7a8081946b4b8",
   "versions": [
     {
       "name": "current",
-      "sourceRef": "4c5e6984752cb131f096b9e745ff0e16a2156126",
+      "sourceRef": "60ef8f9539a227b129dda8089ca536b1808963c4",
       "base": "/ilya-italian-preview/",
       "heroOverlay": false,
       "snapshotDifferences": {},
-      "label": "Current version - Telegram booking and inert photographs"
+      "label": "Current version - mini-group Telegram action"
     },
     {
       "name": "pre-final",
@@ -47,8 +47,8 @@
   ],
   "sourceReproduction": "source/current",
   "existingPublicAssetsRetained": true,
-  "previousPublicCommit": "b1aa5aa293b9f19bb5246ab96c5593e29831e588",
-  "release": "telegram-booking-2026-10-20",
+  "previousPublicCommit": "2fc70b1d35747005796c4faa3de6c6e40c1b4b70",
+  "release": "formats-telegram-label-2026-10-20",
   "currentSourceFiles": [
     {
       "path": "index.html",
@@ -496,7 +496,7 @@
     },
     {
       "path": "src/SiteV9.jsx",
-      "sha256": "522d55d59aaf470ec73b7bfaa6d44cc9559af6bda258dd34bfb63c97bace8398"
+      "sha256": "65cdb11ab7f577b35f8f060a51c3ac2434953bf057df73f8fe94c41c099324d7"
     },
     {
       "path": "src/style-entry.js",
