@@ -1,15 +1,15 @@
 {
-  "currentLocalCheckpoint": "8c8e4feef4b0df660b84ea400ac1c56d86050345",
-  "localCheckpointTag": "desktop-strokes-gap-2026-10-20",
+  "currentLocalCheckpoint": "af3e682501e1158bd2b57ddf9b8afd431fe4d263",
+  "localCheckpointTag": "materials-top-spacing-2026-10-20",
   "archivedPublicHead": "be39e02ab451ae96790c8c1398f7a8081946b4b8",
   "versions": [
     {
       "name": "current",
-      "sourceRef": "8c8e4feef4b0df660b84ea400ac1c56d86050345",
+      "sourceRef": "af3e682501e1158bd2b57ddf9b8afd431fe4d263",
       "base": "/ilya-italian-preview/",
       "heroOverlay": false,
       "snapshotDifferences": {},
-      "label": "Current version - desktop accent gap revision"
+      "label": "Current version - mobile Materials top spacing"
     },
     {
       "name": "pre-final",
@@ -47,8 +47,8 @@
   ],
   "sourceReproduction": "source/current",
   "existingPublicAssetsRetained": true,
-  "previousPublicCommit": "ec05dcad3874aad777643ef19d6f2639a0afbb1b",
-  "release": "desktop-strokes-gap-2026-10-20",
+  "previousPublicCommit": "d72316164e1dd2b3517fa5dda653b55b0d53af30",
+  "release": "materials-top-spacing-2026-10-20",
   "currentSourceFiles": [
     {
       "path": "index.html",
@@ -416,7 +416,7 @@
     },
     {
       "path": "src/miro-fplus.css",
-      "sha256": "674db78503ebef8cd10548e7bd81a15d6e0937fceef94ab69e87770c0e58ca8a"
+      "sha256": "64cd34859d50d810b2927a249e43d8f402c8e5f28622af27ca4d5972d55799a3"
     },
     {
       "path": "src/miro-shell-refreshed.html",

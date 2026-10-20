@@ -33,3 +33,7 @@ Move quiz after hero and apply owner section order; retain compact hero action. 
 ## Desktop hero gap revision
 
 Increase desktop accent offset4px to12px per revised designer specification and actual-after approval. Preserve all other styles and below1200 behavior. Source 8c8e4feef4b0df660b84ea400ac1c56d86050345
+
+## Mobile Materials top spacing
+
+Increase only Materials top padding28px to48px below640 per UX specification and actual-after approval; preserve bottom28 and640+. Source af3e682501e1158bd2b57ddf9b8afd431fe4d263
