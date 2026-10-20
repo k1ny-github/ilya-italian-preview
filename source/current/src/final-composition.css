@@ -701,11 +701,11 @@
   .v9 #about .a09-inner { padding-top: 61px; }
 }
 
-/* The existing orange accent remains anchored to the heading on smaller layouts. */
+/* Anchor the existing accent to the first phrase, independent of heading width. */
 @media (width < 1200px) {
-  .v9 .h01-copy h1 { position: relative; }
+  .v9 .h01-title-anchor { position: relative; }
   .v9 .h01-emphasis {
-    display: block; left: auto; right: 0; top: auto; bottom: calc(100% + 4px);
+    display: block; left: calc(100% - 8px); right: auto; top: auto; bottom: 100%;
     width: clamp(24px, 2.5vw, 28px); height: auto;
   }
 }

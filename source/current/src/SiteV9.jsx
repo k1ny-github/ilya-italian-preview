@@ -91,7 +91,7 @@ export function SiteV9() {
       <section className="h01-hero" aria-labelledby="h01-title"><img className="h01-left" src="/ilya-italian-preview/images/hero-section/olive-left.png" width="1154" height="1363" alt="" aria-hidden="true"/><div className="h01-stage">
         
         <div className="h01-grid"><div className="h01-copy">
-          <h1 id="h01-title">Запишитесь на <br/><em>бесплатный урок</em> по <br/>итальянскому языку<img className="h01-emphasis" src="/ilya-italian-preview/images/hero-section/emphasis-strokes.svg" width="56" height="72" alt="" aria-hidden="true"/></h1>
+          <h1 id="h01-title"><span className="h01-title-anchor">Запишитесь на<img className="h01-emphasis" src="/ilya-italian-preview/images/hero-section/emphasis-strokes.svg" width="56" height="72" alt="" aria-hidden="true"/></span> <br/><em>бесплатный урок</em> по <br/>итальянскому языку</h1>
           <p className="h01-intro">{c.intro.split("CILS C1").map((part, i) => <Fragment key={i}>{i > 0 && <span style={{ whiteSpace: "nowrap" }}>CILS C1</span>}{part}</Fragment>)}</p>
           <ul className="h01-benefits">{c.bullets.map(item=><li key={item}><Check size={19} weight="bold" aria-hidden="true"/>{item}</li>)}</ul>
           <PrimaryButton className="h01-primary" href={config.bookingUrl} target="_blank" rel="noreferrer"/>

@@ -1,15 +1,15 @@
 {
-  "currentLocalCheckpoint": "9b544d027e7a95571180376298bf0d06bd20164b",
-  "localCheckpointTag": "hero-orange-strokes-2026-10-20",
+  "currentLocalCheckpoint": "0cc1a97943c45f99b55d5ecb386cf5ad9660660c",
+  "localCheckpointTag": "hero-strokes-text-anchor-2026-10-20",
   "archivedPublicHead": "be39e02ab451ae96790c8c1398f7a8081946b4b8",
   "versions": [
     {
       "name": "current",
-      "sourceRef": "9b544d027e7a95571180376298bf0d06bd20164b",
+      "sourceRef": "0cc1a97943c45f99b55d5ecb386cf5ad9660660c",
       "base": "/ilya-italian-preview/",
       "heroOverlay": false,
       "snapshotDifferences": {},
-      "label": "Current version - responsive hero orange strokes and About 960 breakpoint"
+      "label": "Current version - hero strokes anchored to actual first phrase"
     },
     {
       "name": "pre-final",
@@ -47,8 +47,8 @@
   ],
   "sourceReproduction": "source/current",
   "existingPublicAssetsRetained": true,
-  "previousPublicCommit": "5abe96af44977dde510b3bdc470b99f39f009005",
-  "release": "hero-orange-strokes-2026-10-20",
+  "previousPublicCommit": "f9627448eba6bce85cb1d601727f5faa920cdcce",
+  "release": "hero-strokes-text-anchor-2026-10-20",
   "currentSourceFiles": [
     {
       "path": "index.html",
@@ -384,7 +384,7 @@
     },
     {
       "path": "src/final-composition.css",
-      "sha256": "5b4d320fa0575f632a4cbd742ea71d2bc95921f9cd88e7eb1fe8c5f021caa837"
+      "sha256": "118ef7100fdbfd5d90842092d284d4d85385c3844e021e5da3d4432587676966"
     },
     {
       "path": "src/image-inert.css",
@@ -496,7 +496,7 @@
     },
     {
       "path": "src/SiteV9.jsx",
-      "sha256": "4e11669c815281b336a386ca561af65c34758f613763e217554a1b4e8ab03d08"
+      "sha256": "9c1735ab8d048e71ce80cc7751ba346c561a6f781eb96e034b822e03cccd6c62"
     },
     {
       "path": "src/style-entry.js",
