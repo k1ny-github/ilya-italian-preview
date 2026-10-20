@@ -722,3 +722,6 @@
     width: 44px; height: auto;
   }
 }
+
+/* Keep the short hero action sized to its label at every viewport. */
+.v9 .h01-primary { width: fit-content; min-width: 0; max-width: 100%; align-self: flex-start; justify-self: start; padding-inline: 26px; }

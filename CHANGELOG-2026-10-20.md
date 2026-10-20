@@ -25,3 +25,7 @@ Set hero action to the approved lesson label and move both format decorations sl
 ## Desktop hero strokes per UX spec
 
 Anchor existing desktop strokes to the first phrase at44px per designer specification and actual-after visual approval. Preserve below1200 behavior. Source 82ed57c62dcd9a1086000495d2f4a6e8a2be981d
+
+## Quiz second and section order
+
+Move quiz after hero and apply owner section order; retain compact hero action. Source 0138f7dabd4285e1f495923dd8bfe58120472216

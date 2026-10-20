@@ -102,7 +102,13 @@ export function SiteV9() {
         <div className="h01-trust">{c.trust.map(([title,detail],i)=><div key={title}><img src={`/ilya-italian-preview/images/hero-section/trust-${['shield','people','level'][i]}.svg`} width="48" height="48" alt="" aria-hidden="true"/><span><strong>{title}</strong><small>{detail}</small></span></div>)}</div>
       </div></section>
 
+      <section className="q08-invitation" id="quiz" aria-labelledby="q08-title"><div className="q08-inner"><div className="q08-copy"><h2 id="q08-title">Проверьте свой<br/><span>итальянский</span></h2><p>Грамматика, артикли и устойчивые выражения. После теста — результат и разбор каждого ответа.</p><button className="q08-button" type="button" onClick={() => setModal('quiz')}>Начать тест</button></div><QuizDecoration/></div></section>
+
       <MaterialsSection/>
+
+      <section id="formats" className="f07-formats" aria-labelledby="formats-title"><div className="f07-inner"><h2 id="formats-title">{c.formatsTitle}</h2><div className="f07-grid">{c.formats.map(([title, text], i) => <article className={`f07-card f07-${i === 0 ? 'primary' : 'secondary'}`} key={title}><div className="f07-content"><h3>{title}</h3><p>{text}</p><a className={`f07-button f07-button-${i === 0 ? 'light' : 'outline'}`} href={config.telegramUrl} target="_blank" rel="noopener noreferrer"><span>{i === 0 ? c.cta : 'Написать в Telegram'}</span></a></div><div className="f07-lettering" aria-hidden="true">{i === 0 ? <><span>Un passo</span><span>alla volta</span></> : <><span>Insieme si impara</span><span>meglio!</span></>}</div><div className={`f07-visual f07-visual-${i === 0 ? 'solo' : 'group'}`} aria-hidden="true">{i === 0 ? <div className="f07-solo-chat"><span></span><span></span><span></span></div> : <><span></span><span></span><span></span></>}</div></article>)}</div></div></section>
+
+      <CultureSection title={c.cultureTitle} text={c.culture} bookingUrl={config.telegramUrl} Button={PrimaryButton}/>
 
       <section className="a04-approach" id="approach" aria-labelledby="a04-title"><div className="a04-inner"><h2 id="a04-title">{c.approachTitle}</h2><div className="a04-grid">{c.approach.map(([title, text], i) => {
         const scenes = [
@@ -126,17 +132,11 @@ export function SiteV9() {
         return <a className="a02-card" href="#booking" key={title}><span className="a02-image-slot"><img className="a02-image" style={i === 2 ? { objectFit: 'cover' } : undefined} src={'/ilya-italian-preview/images/audience-section/' + assets[i]} alt={alts[i]} width={sizes[i][0]} height={sizes[i][1]} loading="lazy"/></span><div className="a02-body"><h3>{at >= 0 ? <>{title.slice(0, at)}<br className="a02-desktop-break"/>{title.slice(at)}</> : title}</h3><p>{text}</p></div></a>;
       })}</div></div></section>
 
-      <section className="q08-invitation" id="quiz" aria-labelledby="q08-title"><div className="q08-inner"><div className="q08-copy"><h2 id="q08-title">Проверьте свой<br/><span>итальянский</span></h2><p>Грамматика, артикли и устойчивые выражения. После теста — результат и разбор каждого ответа.</p><button className="q08-button" type="button" onClick={() => setModal('quiz')}>Начать тест</button></div><QuizDecoration/></div></section>
-
-      <section id="formats" className="f07-formats" aria-labelledby="formats-title"><div className="f07-inner"><h2 id="formats-title">{c.formatsTitle}</h2><div className="f07-grid">{c.formats.map(([title, text], i) => <article className={`f07-card f07-${i === 0 ? 'primary' : 'secondary'}`} key={title}><div className="f07-content"><h3>{title}</h3><p>{text}</p><a className={`f07-button f07-button-${i === 0 ? 'light' : 'outline'}`} href={config.telegramUrl} target="_blank" rel="noopener noreferrer"><span>{i === 0 ? c.cta : 'Написать в Telegram'}</span></a></div><div className="f07-lettering" aria-hidden="true">{i === 0 ? <><span>Un passo</span><span>alla volta</span></> : <><span>Insieme si impara</span><span>meglio!</span></>}</div><div className={`f07-visual f07-visual-${i === 0 ? 'solo' : 'group'}`} aria-hidden="true">{i === 0 ? <div className="f07-solo-chat"><span></span><span></span><span></span></div> : <><span></span><span></span><span></span></>}</div></article>)}</div></div></section>
-
-      <CultureSection title={c.cultureTitle} text={c.culture} bookingUrl={config.telegramUrl} Button={PrimaryButton}/>
-
-      <ReviewsSection title={c.reviewsTitle}/>
-
       <section className="a09-about" id="about" aria-labelledby="a09-title"><div className="a09-inner"><div className="about-edge-decor" aria-hidden="true"><div className="about-edge-left"><img src="/ilya-italian-preview/images/hero-section/olive-left.png" alt=""/></div><div className="about-edge-right"><img src="/ilya-italian-preview/images/hero-section/olive-right.png" alt=""/></div></div><div className="a09-layout"><div className="a09-photo"><img src="/ilya-italian-preview/images/about-section/ilya-about-photo-3.png" width="853" height="1279" alt="Илья Хорьков у светлой стены" loading="lazy"/><span className="a09-signature">Илья Хорьков</span></div><div className="a09-copy"><h2 id="a09-title">Обо мне</h2><p>Я лингвист-переводчик, окончил МГЛУ и учился в Москве и Италии.</p><p>У меня 15 лет практики итальянского языка. Мой уровень владения языком подтверждён сертификатом CILS C1.</p><p>До преподавания работал на радио, занимался письменным и устным переводом. Затем преподавал в языковых школах, а сейчас провожу индивидуальные занятия по итальянскому языку.</p><p>На занятиях вы работаете со мной напрямую: я веду уроки, подбираю задания и отвечаю на ваши вопросы.</p></div></div>{/* Diploma and CILS certificate are pending owner-supplied files; document slots are temporarily hidden. */}</div></section>
 
 
+
+      <ReviewsSection title={c.reviewsTitle}/>
 
       <section className="faq12" id="faq" aria-labelledby="faq12-title"><h2 id="faq12-title">{c.faqTitle}</h2><div className="faq12-list">{c.faq.map((question, i) => <details key={question}><summary><span>{question}</span><span className="faq12-toggle" aria-hidden="true"/></summary><div className="faq12-answer"><p>{config.faqAnswers[i] || 'Ответ преподавателя будет добавлен.'}</p></div></details>)}</div></section>
 
