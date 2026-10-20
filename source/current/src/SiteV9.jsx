@@ -92,7 +92,7 @@ export function SiteV9() {
           <h1 id="h01-title"><span className="h01-title-anchor">Запишитесь на<img className="h01-emphasis" src="/ilya-italian-preview/images/hero-section/emphasis-strokes.svg" width="56" height="72" alt="" aria-hidden="true"/></span> <br/><em>бесплатный урок</em> по <br/>итальянскому языку</h1>
           <p className="h01-intro">{c.intro.split("CILS C1").map((part, i) => <Fragment key={i}>{i > 0 && <span style={{ whiteSpace: "nowrap" }}>CILS C1</span>}{part}</Fragment>)}</p>
           <ul className="h01-benefits">{c.bullets.map(item=><li key={item}><Check size={19} weight="bold" aria-hidden="true"/>{item}</li>)}</ul>
-          <PrimaryButton className="h01-primary" href={config.telegramUrl} target="_blank" rel="noreferrer"/>
+          <PrimaryButton className="h01-primary" href={config.telegramUrl} target="_blank" rel="noreferrer">Записаться на урок</PrimaryButton>
         </div><div className="h01-art" data-image-surface=""><div className="h01-glow" aria-hidden="true"/>
           <img className="h01-left h01-portrait-left" src="/ilya-italian-preview/images/hero-section/olive-left.png" width="1154" height="1363" alt="" aria-hidden="true"/>
           <img className="h01-right" src="/ilya-italian-preview/images/hero-section/olive-right.png" width="1137" height="1383" alt="" aria-hidden="true"/>

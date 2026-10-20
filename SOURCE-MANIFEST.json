@@ -1,15 +1,15 @@
 {
-  "currentLocalCheckpoint": "3629414cd5ff01a7e727a8a56a29f9662021051a",
-  "localCheckpointTag": "hero-strokes-inline-2026-10-20",
+  "currentLocalCheckpoint": "877040c718e0c6900f5487fb5c4428609b898575",
+  "localCheckpointTag": "hero-formats-publish-2026-10-20",
   "archivedPublicHead": "be39e02ab451ae96790c8c1398f7a8081946b4b8",
   "versions": [
     {
       "name": "current",
-      "sourceRef": "3629414cd5ff01a7e727a8a56a29f9662021051a",
+      "sourceRef": "877040c718e0c6900f5487fb5c4428609b898575",
       "base": "/ilya-italian-preview/",
       "heroOverlay": false,
       "snapshotDifferences": {},
-      "label": "Current version - hero strokes beside first line"
+      "label": "Current version - hero label and format decor inset"
     },
     {
       "name": "pre-final",
@@ -47,8 +47,8 @@
   ],
   "sourceReproduction": "source/current",
   "existingPublicAssetsRetained": true,
-  "previousPublicCommit": "13594a889b91fe26107cf43b99398cab3b306c25",
-  "release": "hero-strokes-inline-2026-10-20",
+  "previousPublicCommit": "3fbc2448634f075b36fd91d38ad870f1b7ae8dc6",
+  "release": "hero-formats-publish-2026-10-20",
   "currentSourceFiles": [
     {
       "path": "index.html",
@@ -492,11 +492,11 @@
     },
     {
       "path": "src/site-v9.css",
-      "sha256": "9e375548bb2cd8926031a59f490e246b1cd0a57e70563b81eba3b349e2874e1a"
+      "sha256": "c674793bd2b8aaae85233c0ab12241cb58b159ff6b8fb85904f3e064ea56805b"
     },
     {
       "path": "src/SiteV9.jsx",
-      "sha256": "65cdb11ab7f577b35f8f060a51c3ac2434953bf057df73f8fe94c41c099324d7"
+      "sha256": "732e845706197c41161b04af177e307d46cb6f66fafcb5bf70461513adb14e71"
     },
     {
       "path": "src/style-entry.js",

@@ -17,3 +17,7 @@ Restore the mini-group action label to Write in Telegram; retain its existing de
 ## Hero strokes beside first line
 
 Place the existing orange strokes beside the first phrase and restore its existing line break below1200. Source 3629414cd5ff01a7e727a8a56a29f9662021051a
+
+## Hero action and formats decor
+
+Set hero action to the approved lesson label and move both format decorations slightly inward. Source 877040c718e0c6900f5487fb5c4428609b898575
