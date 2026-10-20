@@ -69,3 +69,7 @@ Widen Formats text measure, lift aligned actions and reduce the decorative lower
 ## F01 Hero benefits alignment
 
 Center Hero benefit rows from640; reduce desktop circles24/padding4 with rowminheight28/gap16; preserve phone geometry and colors. Source 0167c020c9b84b5d73bf7cad27289169282b89f2
+
+## F01 Quiz final action
+
+Hide skip only when existing final result button is visible; preserve Back, answers, scoring and all-skipped completion. Source 44bb722bde0f3668bed2551f56b6b48f2898db60

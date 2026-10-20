@@ -17,6 +17,7 @@ export function Quiz({ Modal, Button, onClose, bookingUrl, attempt }) {
     if (dialog) dialog.scrollTop = 0;
   }, [index, done]);
   const q = Q[index];
+  const finishVisible = index === Q.length - 1 && answers[index] !== null;
   function answer(value) {
     setAnswers(prev => prev.map((a, i) => i === index ? value : a));
     if (index < Q.length - 1) setIndex(index + 1);
@@ -30,8 +31,8 @@ export function Quiz({ Modal, Button, onClose, bookingUrl, attempt }) {
       <progress value={index} max={Q.length} aria-label="Прогресс теста" />
       <h3 ref={heading} tabIndex={-1}>{q.q}</h3><p className="quiz-sentence" lang="it">{q.s}</p>
       <div className="quiz-answers">{q.o.map((option, i) => <button type="button" key={option} aria-pressed={answers[index] === i} className={answers[index] === i ? 'chosen' : ''} onClick={() => answer(i)}><span>{String.fromCharCode(65 + i)}</span><span lang="it">{option}</span><span aria-hidden="true">→</span></button>)}</div>
-      {index === Q.length - 1 && answers[index] !== null && <Button className="quiz-finish" onClick={() => setDone(true)}>Показать результат</Button>}
-      <div className="quiz-controls"><button type="button" disabled={index === 0} onClick={() => setIndex(index - 1)}>Назад</button><button type="button" onClick={() => answer(-1)}>Не знаю — пропустить</button></div>
+      {finishVisible && <Button className="quiz-finish" onClick={() => setDone(true)}>Показать результат</Button>}
+      <div className="quiz-controls"><button type="button" disabled={index === 0} onClick={() => setIndex(index - 1)}>Назад</button>{!finishVisible && <button type="button" onClick={() => answer(-1)}>Не знаю — пропустить</button>}</div>
     </div> : <div className="quiz-result">
       <p className="result-score">{score}<span> / {Q.length}</span></p><h3 ref={heading} tabIndex={-1}>Ваш результат</h3>
       {answered === 0 ? <p>Недостаточно ответов для оценки. Вы пропустили все вопросы. Можно пройти тест заново или обсудить свой уровень на знакомстве.</p> : <p>Предварительный ориентир по грамматике: <strong>{score <= 7 ? 'A1–A2' : score <= 14 ? 'B1–B2' : 'C1–C2'}</strong>. Короткий тест не определяет общий уровень языка и не проверяет разговорную речь.</p>}

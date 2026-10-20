@@ -1,15 +1,15 @@
 {
-  "currentLocalCheckpoint": "0167c020c9b84b5d73bf7cad27289169282b89f2",
-  "localCheckpointTag": "hero-benefits-alignment-2026-10-20",
+  "currentLocalCheckpoint": "44bb722bde0f3668bed2551f56b6b48f2898db60",
+  "localCheckpointTag": "quiz-final-action-2026-10-20",
   "archivedPublicHead": "be39e02ab451ae96790c8c1398f7a8081946b4b8",
   "versions": [
     {
       "name": "current",
-      "sourceRef": "0167c020c9b84b5d73bf7cad27289169282b89f2",
+      "sourceRef": "44bb722bde0f3668bed2551f56b6b48f2898db60",
       "base": "/ilya-italian-preview/",
       "heroOverlay": false,
       "snapshotDifferences": {},
-      "label": "Current version - Hero benefits alignment"
+      "label": "Current version - Quiz final action"
     },
     {
       "name": "pre-final",
@@ -47,8 +47,8 @@
   ],
   "sourceReproduction": "source/current",
   "existingPublicAssetsRetained": true,
-  "previousPublicCommit": "6ebb4e94990c9ce7202a548cab138bf951c02625",
-  "release": "hero-benefits-alignment-2026-10-20",
+  "previousPublicCommit": "60641150f3821fb3861e063931239c4a835b8cce",
+  "release": "quiz-final-action-2026-10-20",
   "currentSourceFiles": [
     {
       "path": "index.html",
@@ -552,7 +552,7 @@
     },
     {
       "path": "src/Quiz.jsx",
-      "sha256": "342ce93f84d2bc101743a8efc439c30e56f7060db12901d2873ab30be3a3f821"
+      "sha256": "d7a8230db49884769c0b76a9f1c626811ffb44164c5a3fb88c87218529206405"
     },
     {
       "path": "src/QuizDecoration.css",
