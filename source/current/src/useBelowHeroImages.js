@@ -28,8 +28,7 @@ export function useBelowHeroImages(regionRef) {
       }, { rootMargin: '400px' });
       observer.observe(region);
     } else activate();
-    const images = [...document.querySelectorAll('.h01-hero img')].filter(image =>
-      /\/(?:ilya-hero-photo-1|olive-left|olive-right)\.(?:png|webp)(?:$|\?)/.test(image.src));
+    const images = [...document.querySelectorAll('.h01-hero img.h01-photo, .h01-hero img.h01-left, .h01-hero img.h01-right')];
     images.forEach(image => {
       if (image.complete) return; // Includes cached images and settled failures.
       pending.add(image);

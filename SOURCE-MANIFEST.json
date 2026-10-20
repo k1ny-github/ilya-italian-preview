@@ -1,15 +1,15 @@
 {
-  "currentLocalCheckpoint": "b5ebb675a192d292b03732df447bafa3b055605a",
-  "localCheckpointTag": "menu-escape-focus-2026-10-20",
+  "currentLocalCheckpoint": "f1d0d3771bbdb7a260aad4357b36fb8fc43b0ca1",
+  "localCheckpointTag": "responsive-hero-images-2026-10-20",
   "archivedPublicHead": "be39e02ab451ae96790c8c1398f7a8081946b4b8",
   "versions": [
     {
       "name": "current",
-      "sourceRef": "b5ebb675a192d292b03732df447bafa3b055605a",
+      "sourceRef": "f1d0d3771bbdb7a260aad4357b36fb8fc43b0ca1",
       "base": "/ilya-italian-preview/",
       "heroOverlay": false,
       "snapshotDifferences": {},
-      "label": "Current version - menu Escape focus return"
+      "label": "Current version - responsive mobile Hero images and Materials spacing"
     },
     {
       "name": "pre-final",
@@ -47,8 +47,8 @@
   ],
   "sourceReproduction": "source/current",
   "existingPublicAssetsRetained": true,
-  "previousPublicCommit": "43af83d902c3a478581bceeb712a03b6f0c973a4",
-  "release": "menu-escape-focus-2026-10-20",
+  "previousPublicCommit": "3db205c4facbd827a837b77a5ca966296eb4f940",
+  "release": "responsive-hero-images-2026-10-20",
   "currentSourceFiles": [
     {
       "path": "index.html",
@@ -191,6 +191,22 @@
       "sha256": "453f302927100b65ec809e97d5abd725675b5be59dbc39b7c220b81f1606c7f3"
     },
     {
+      "path": "public/images/hero-section/ilya-hero-photo-1-256.webp",
+      "sha256": "b36ede64cbefd18e059383b38cb5b361c3f85b958655e6ec108022ed94ffcb43"
+    },
+    {
+      "path": "public/images/hero-section/ilya-hero-photo-1-320.webp",
+      "sha256": "a7c09649a600cff16b6f040eb97f12c8e0d2c4c6874a19ecdedba2ef4f2f3acb"
+    },
+    {
+      "path": "public/images/hero-section/ilya-hero-photo-1-480.webp",
+      "sha256": "7c3e58687da0ff851f6e7c51e97d0fda38436dd30b514a4f45316cb8d4699804"
+    },
+    {
+      "path": "public/images/hero-section/ilya-hero-photo-1-640.webp",
+      "sha256": "ea334bbbd2e20766e7b1dc0a4b2feb92e24efde3cc0b8c660f001049658befd1"
+    },
+    {
       "path": "public/images/hero-section/ilya-hero-photo-1.png",
       "sha256": "d3158515e1d1d1ffd5244fda1b9a03ae8c29574909f959e113f4319406c52360"
     },
@@ -199,12 +215,60 @@
       "sha256": "b7571c97a029cd149d9cf2bd914c13fd2a53e94e7ffa7c5fffa5749b20f71551"
     },
     {
+      "path": "public/images/hero-section/olive-left-192.webp",
+      "sha256": "be7ca984f85d0bd2eb15e1662f7198cb4de5b2f61cb3f57b64e0b9418be85281"
+    },
+    {
+      "path": "public/images/hero-section/olive-left-256.webp",
+      "sha256": "a32a32d79de8b1588bcf28c15e463e70c101f09271299de20c1c96952aa10aa5"
+    },
+    {
+      "path": "public/images/hero-section/olive-left-384.webp",
+      "sha256": "ea216aa194081435866b182e91a255d61e0ada5c1c735c22a7f1965ade662d10"
+    },
+    {
+      "path": "public/images/hero-section/olive-left-512.webp",
+      "sha256": "b4d3db336ebf806eb4be14cdb23a29ca7f3612ba98238328d98adcd299fddf62"
+    },
+    {
+      "path": "public/images/hero-section/olive-left-576.webp",
+      "sha256": "a61a2e0251b9c2e93e84287d3cd789075d72d707fbf66f20eeb5e6923a6c2ed4"
+    },
+    {
+      "path": "public/images/hero-section/olive-left-768.webp",
+      "sha256": "81823776fe220367399be084852f2d54a637db1af01ce0a2b3dbad8369ee6668"
+    },
+    {
       "path": "public/images/hero-section/olive-left.png",
       "sha256": "5c5962f7c99adf2fa63c2568b4fedbe20ad3427d9608a2a041085eb39c0deb06"
     },
     {
       "path": "public/images/hero-section/olive-left.webp",
       "sha256": "083dfe7b35830e95d4444b68db06bac72f559b9676c81b07bb301c4459e14103"
+    },
+    {
+      "path": "public/images/hero-section/olive-right-192.webp",
+      "sha256": "b0908c976a0d6171c65eec165ce71af690c6d5a6ac42c93ccac4193bef3dd80f"
+    },
+    {
+      "path": "public/images/hero-section/olive-right-256.webp",
+      "sha256": "8208e142ab4dbf5d11a5c9899c415981d248dcdfab50f03812c94a37640eb64b"
+    },
+    {
+      "path": "public/images/hero-section/olive-right-384.webp",
+      "sha256": "aa4ec816e8814e8112928f6150db24664bf2fd9db5d1bfdcc323c53277641652"
+    },
+    {
+      "path": "public/images/hero-section/olive-right-512.webp",
+      "sha256": "ab50e76e61ccd2e90fb644f1d451311198fd468aa7590b3c47d7e269d77e9b21"
+    },
+    {
+      "path": "public/images/hero-section/olive-right-576.webp",
+      "sha256": "07c5fc23c0f47c1291bfab41276780a764c269b5a94a4f1db14b5dc2c37280f8"
+    },
+    {
+      "path": "public/images/hero-section/olive-right-768.webp",
+      "sha256": "7f23704294899e40b68b97942792ac372283aff1db36d45e067563468aa337c6"
     },
     {
       "path": "public/images/hero-section/olive-right.png",
@@ -448,7 +512,7 @@
     },
     {
       "path": "src/miro-fplus.css",
-      "sha256": "64cd34859d50d810b2927a249e43d8f402c8e5f28622af27ca4d5972d55799a3"
+      "sha256": "978b9ce861f068f7fe7c7fe4a529b5c1af0b4c668eb88cf243ced2d48e87508c"
     },
     {
       "path": "src/miro-shell-refreshed.html",
@@ -528,7 +592,7 @@
     },
     {
       "path": "src/SiteV9.jsx",
-      "sha256": "38c7e3085d5c6023d5913a7577f71beb86ea26b94dba815930ae85f6dae249d9"
+      "sha256": "16df9bed71eecd5a4afef8d980446df6a1ff6b9e76522099a47e879249ae9eb0"
     },
     {
       "path": "src/style-entry.js",
@@ -540,7 +604,7 @@
     },
     {
       "path": "src/useBelowHeroImages.js",
-      "sha256": "9689031b7c507c902a093e4d320f37d7d4d6f3067688d4585923618934898f27"
+      "sha256": "31ff5287f4fccaacd0c7ffdc10555211a8c9bf7413fa4a6bb544b576f5334801"
     },
     {
       "path": "src/useInertImages.js",

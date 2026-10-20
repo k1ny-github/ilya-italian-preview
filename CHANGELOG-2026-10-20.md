@@ -44,4 +44,8 @@ Add8exactlosslessWebPvariants alongside originals and gate only Quiz/Culture ima
 
 ## F01 menu Escape focus return
 
-Restore the existing menu toggle focus on Escape only with preventScroll. Navigation clicks, styles, copy and images unchanged. Source b5ebb675a192d292b03732df447bafa3b055605a
+Serve density-aware resampled-lossless mobile Hero/leaf variants below960, preserve original files and desktop sources; increase Materials top spacing48 to64 below640. Source b5ebb675a192d292b03732df447bafa3b055605a
+
+## Responsive mobile Hero images and Materials spacing
+
+Serve density-aware resampled-lossless mobile Hero/leaf variants below960, preserve original files and desktop sources; increase Materials top spacing48 to64 below640. Source f1d0d3771bbdb7a260aad4357b36fb8fc43b0ca1
