@@ -86,7 +86,7 @@ h3 { font-weight:600; }
 .trust-item strong { font-size:14px; letter-spacing:-.2px; }
 .trust-item small { font-size:12px; margin-top:6px; color:#66738a; }
 .dialog-heading h2 { font-size:27px; }
-.quiz-empty p,.policy-placeholder p { font-size:15px; }
+.quiz-empty p { font-size:15px; }
 .dialog-note { font-size:13px; }
 @media (hover:hover) and (pointer:fine) {
   .button:hover>svg { transform:translate(2px,-2px); }

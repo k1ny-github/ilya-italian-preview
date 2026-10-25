@@ -223,25 +223,23 @@
 .v9 .c13-footer-inner { padding-block: 28px; }
 .v9 .c13-footer a { min-height: 44px; display: inline-flex; align-items: center; }
 
-/* Compact footer: keep navigation at the right, with privacy beneath it. */
+/* Compact footer: brand and back-to-top navigation. */
 @media (width < 960px) {
   .v9 .c13-footer-inner {
     display: grid;
     grid-template-columns: minmax(0, 1fr) auto;
-    grid-template-areas: "brand top" "privacy privacy";
+    grid-template-areas: "brand top";
     gap: 4px 20px;
     padding-block: 20px;
   }
   .v9 .c13-brand { grid-area: brand; }
   .v9 .c13-top { grid-area: top; justify-self: end; }
-  .v9 .c13-privacy { grid-area: privacy; justify-self: start; }
 }
 @media (width < 640px) {
   .v9 .c13-footer-inner {
     grid-template-columns: minmax(0, 1fr);
-    grid-template-areas: "brand" "top" "privacy";
+    grid-template-areas: "brand" "top";
   }
-  .v9 .c13-privacy { justify-self: end; }
 }
 
 @media (width < 1200px) {

@@ -190,9 +190,8 @@ export function App() {
 
       <section className="closing wrap"><BackgroundDetails variant="closing" /><span className="closing-icon" aria-hidden="true"><ChatCircle size={33} weight="duotone" /></span><h2>{c.closingTitle}</h2><p>{c.closing}</p><Button /><a className="closing-secondary" href={config.telegramUrl} target="_blank" rel="noreferrer"><TelegramLogo size={23} weight="fill" />Написать в Telegram</a></section>
     </main>
-    <footer className="site-footer wrap"><a href="#" className="footer-name">{c.name}<small>{c.role}</small></a><div className="footer-actions"><button type="button" onClick={() => setModal('privacy')}>Политика конфиденциальности</button><span>Локальный прототип</span></div><a href="#" className="back-top" aria-label="Вернуться наверх"><ArrowUp size={22} /></a></footer>
+    <footer className="site-footer wrap"><a href="#" className="footer-name">{c.name}<small>{c.role}</small></a><div className="footer-actions"><span>Локальный прототип</span></div><a href="#" className="back-top" aria-label="Вернуться наверх"><ArrowUp size={22} /></a></footer>
     {modal === 'workspace' && <Modal title="Общая доска" onClose={() => setModal(null)} className="workspace-dialog"><Workspace enlarged /><p className="dialog-note">Композиция для предпросмотра. Реальные фрагменты занятия будут добавлены.</p></Modal>}
     {modal === 'quiz' && <Quiz attempt={quizAttempt} Modal={Modal} Button={Button} onClose={() => setModal(null)} bookingUrl={config.telegramUrl} />}
-    {modal === 'privacy' && <Modal title="Политика конфиденциальности" onClose={() => setModal(null)}><div className="policy-placeholder"><FileText size={46} weight="duotone" /><p>Документ будет добавлен перед публикацией сайта.</p><p className="muted">В этом локальном прототипе нет собственной формы сбора контактов и аналитики. Для записи можно написать в Telegram.</p></div></Modal>}
   </>;
 }
