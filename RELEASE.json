@@ -1,6 +1,6 @@
 {
-  "release": "copyright-auto-year-2026-10-26",
-  "sourceCheckpoint": "c2e15b47eb9a704cb6dce37b7998a005fcac18ef",
-  "previousPublicCommit": "63ffd76ace105d55c076c834483674465440e4d8",
+  "release": "mobile-removal-release-2026-10-29",
+  "sourceCheckpoint": "54c14e0ee65e3df6e9380db0c3834ed38433ca15",
+  "previousPublicCommit": "59ebe35e94930e0f3636b10376737b3f434a6ca4",
   "purpose": "owner-review"
 }

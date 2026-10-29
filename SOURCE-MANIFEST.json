@@ -1,15 +1,15 @@
 {
-  "currentLocalCheckpoint": "c2e15b47eb9a704cb6dce37b7998a005fcac18ef",
-  "localCheckpointTag": "copyright-auto-year-2026-10-26",
+  "currentLocalCheckpoint": "54c14e0ee65e3df6e9380db0c3834ed38433ca15",
+  "localCheckpointTag": "mobile-removal-release-2026-10-29",
   "archivedPublicHead": "be39e02ab451ae96790c8c1398f7a8081946b4b8",
   "versions": [
     {
       "name": "current",
-      "sourceRef": "c2e15b47eb9a704cb6dce37b7998a005fcac18ef",
+      "sourceRef": "54c14e0ee65e3df6e9380db0c3834ed38433ca15",
       "base": "/ilya-italian-preview/",
       "heroOverlay": false,
       "snapshotDifferences": {},
-      "label": "Current version - Automatic copyright year"
+      "label": "Current version - Shorter phone page"
     },
     {
       "name": "pre-final",
@@ -47,8 +47,8 @@
   ],
   "sourceReproduction": "source/current",
   "existingPublicAssetsRetained": true,
-  "previousPublicCommit": "63ffd76ace105d55c076c834483674465440e4d8",
-  "release": "copyright-auto-year-2026-10-26",
+  "previousPublicCommit": "59ebe35e94930e0f3636b10376737b3f434a6ca4",
+  "release": "mobile-removal-release-2026-10-29",
   "currentSourceFiles": [
     {
       "path": "index.html",
@@ -476,7 +476,7 @@
     },
     {
       "path": "src/final-composition.css",
-      "sha256": "995086f5b3f8fd6a4a6c8df49d306307b308cb8f936749ccc33bd332644e307e"
+      "sha256": "890b0728acd0f6506a568d1a96bccc162e049b98bafadab31b71f8c33d05a82d"
     },
     {
       "path": "src/image-inert.css",
