@@ -1,15 +1,15 @@
 {
-  "currentLocalCheckpoint": "54c14e0ee65e3df6e9380db0c3834ed38433ca15",
-  "localCheckpointTag": "mobile-removal-release-2026-10-29",
+  "currentLocalCheckpoint": "1b526ada325458f19bda9499804c2bf5ec60a93f",
+  "localCheckpointTag": "mobileprivacy-release-2026-10-29",
   "archivedPublicHead": "be39e02ab451ae96790c8c1398f7a8081946b4b8",
   "versions": [
     {
       "name": "current",
-      "sourceRef": "54c14e0ee65e3df6e9380db0c3834ed38433ca15",
+      "sourceRef": "1b526ada325458f19bda9499804c2bf5ec60a93f",
       "base": "/ilya-italian-preview/",
       "heroOverlay": false,
       "snapshotDifferences": {},
-      "label": "Current version - Shorter phone page"
+      "label": "Current version - Short privacy notice"
     },
     {
       "name": "pre-final",
@@ -47,8 +47,8 @@
   ],
   "sourceReproduction": "source/current",
   "existingPublicAssetsRetained": true,
-  "previousPublicCommit": "59ebe35e94930e0f3636b10376737b3f434a6ca4",
-  "release": "mobile-removal-release-2026-10-29",
+  "previousPublicCommit": "9edf7d4cfedfd5efe006005aaadf0132b6cffe48",
+  "release": "mobileprivacy-release-2026-10-29",
   "currentSourceFiles": [
     {
       "path": "index.html",
@@ -447,6 +447,10 @@
       "sha256": "d3158515e1d1d1ffd5244fda1b9a03ae8c29574909f959e113f4319406c52360"
     },
     {
+      "path": "public/privacy.html",
+      "sha256": "8a5cef148f3af499a52a3a08dc950517f2331346376c3686d1e87097d8c422c1"
+    },
+    {
       "path": "src/about-leaves.css",
       "sha256": "a9f38968f399408e9da71980669f1db239a40b7f3372c40e64615f813c891bb8"
     },
@@ -476,7 +480,7 @@
     },
     {
       "path": "src/final-composition.css",
-      "sha256": "890b0728acd0f6506a568d1a96bccc162e049b98bafadab31b71f8c33d05a82d"
+      "sha256": "8b709ddb08e8546c0babe1f924ea5fe6268926f71dcddc88109dcb8dad461271"
     },
     {
       "path": "src/image-inert.css",
@@ -588,7 +592,7 @@
     },
     {
       "path": "src/SiteV9.jsx",
-      "sha256": "db4ca773e46b62912bb939874f1c2e8cfa8108c486bc84ca91f9f8ad5c166965"
+      "sha256": "7f42b541d890293664749388469689b3611a7ac422660caef76a117936249914"
     },
     {
       "path": "src/style-entry.js",

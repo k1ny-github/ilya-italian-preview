@@ -1,6 +1,6 @@
 {
-  "release": "mobile-removal-release-2026-10-29",
-  "sourceCheckpoint": "54c14e0ee65e3df6e9380db0c3834ed38433ca15",
-  "previousPublicCommit": "59ebe35e94930e0f3636b10376737b3f434a6ca4",
+  "release": "mobileprivacy-release-2026-10-29",
+  "sourceCheckpoint": "1b526ada325458f19bda9499804c2bf5ec60a93f",
+  "previousPublicCommit": "9edf7d4cfedfd5efe006005aaadf0132b6cffe48",
   "purpose": "owner-review"
 }
