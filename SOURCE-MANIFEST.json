@@ -1,15 +1,15 @@
 {
-  "currentLocalCheckpoint": "1b526ada325458f19bda9499804c2bf5ec60a93f",
-  "localCheckpointTag": "mobileprivacy-release-2026-10-29",
+  "currentLocalCheckpoint": "3ca9358527fac0f905d410504b63e6e3f8af2431",
+  "localCheckpointTag": "privacy-contact-2026-10-30",
   "archivedPublicHead": "be39e02ab451ae96790c8c1398f7a8081946b4b8",
   "versions": [
     {
       "name": "current",
-      "sourceRef": "1b526ada325458f19bda9499804c2bf5ec60a93f",
+      "sourceRef": "3ca9358527fac0f905d410504b63e6e3f8af2431",
       "base": "/ilya-italian-preview/",
       "heroOverlay": false,
       "snapshotDifferences": {},
-      "label": "Current version - Short privacy notice"
+      "label": "Current version - Plain privacy contact"
     },
     {
       "name": "pre-final",
@@ -47,8 +47,8 @@
   ],
   "sourceReproduction": "source/current",
   "existingPublicAssetsRetained": true,
-  "previousPublicCommit": "9edf7d4cfedfd5efe006005aaadf0132b6cffe48",
-  "release": "mobileprivacy-release-2026-10-29",
+  "previousPublicCommit": "1489de2b011250b110c91ea76c6e91b9e828f79d",
+  "release": "privacy-contact-2026-10-30",
   "currentSourceFiles": [
     {
       "path": "index.html",
@@ -448,7 +448,7 @@
     },
     {
       "path": "public/privacy.html",
-      "sha256": "8a5cef148f3af499a52a3a08dc950517f2331346376c3686d1e87097d8c422c1"
+      "sha256": "c0f10b2fe51f359e82161c7846fb72a35c56009bfc485cb5d46eacd747529c34"
     },
     {
       "path": "src/about-leaves.css",
