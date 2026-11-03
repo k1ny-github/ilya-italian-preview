@@ -1,15 +1,15 @@
 {
-  "currentLocalCheckpoint": "33144a064200db7c97f47b09b4853ebb1d268f0d",
-  "localCheckpointTag": "privacy-contact-label-2026-10-30",
+  "currentLocalCheckpoint": "07e8fd700eea7343fbcbefb19e5adfa4b3817a11",
+  "localCheckpointTag": "faq-release-2026-11-03",
   "archivedPublicHead": "be39e02ab451ae96790c8c1398f7a8081946b4b8",
   "versions": [
     {
       "name": "current",
-      "sourceRef": "33144a064200db7c97f47b09b4853ebb1d268f0d",
+      "sourceRef": "07e8fd700eea7343fbcbefb19e5adfa4b3817a11",
       "base": "/ilya-italian-preview/",
       "heroOverlay": false,
       "snapshotDifferences": {},
-      "label": "Current version - Plain privacy contact"
+      "label": "Current version - Ilya approved FAQ answers"
     },
     {
       "name": "pre-final",
@@ -47,8 +47,8 @@
   ],
   "sourceReproduction": "source/current",
   "existingPublicAssetsRetained": true,
-  "previousPublicCommit": "a64a06e713c3db34703781ec6e02ca526334968b",
-  "release": "privacy-contact-label-2026-10-30",
+  "previousPublicCommit": "9b1b188d2cb98e92b513795044001503ac2982b3",
+  "release": "faq-release-2026-11-03",
   "currentSourceFiles": [
     {
       "path": "index.html",
@@ -468,7 +468,7 @@
     },
     {
       "path": "src/content.js",
-      "sha256": "0f3f182c84055ba81615cfdc420e602ad6f3b749ae92637e1cf5c4c34689e2b1"
+      "sha256": "8c7a9013cddc2db4a68ccb8a85af1c3ea0c716d9ff66906db6094f52d70d4aa6"
     },
     {
       "path": "src/CultureSection.css",

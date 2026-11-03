@@ -1,6 +1,6 @@
 {
-  "release": "privacy-contact-label-2026-10-30",
-  "sourceCheckpoint": "33144a064200db7c97f47b09b4853ebb1d268f0d",
-  "previousPublicCommit": "a64a06e713c3db34703781ec6e02ca526334968b",
+  "release": "faq-release-2026-11-03",
+  "sourceCheckpoint": "07e8fd700eea7343fbcbefb19e5adfa4b3817a11",
+  "previousPublicCommit": "9b1b188d2cb98e92b513795044001503ac2982b3",
   "purpose": "owner-review"
 }
