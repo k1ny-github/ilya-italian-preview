@@ -215,8 +215,8 @@
   padding: 40px 32px;
 }
 .v9 .faq12 h2 { font-size: var(--section-title); line-height: 1.1; margin: 0 0 var(--heading-gap); }
-.v9 .faq12 summary { font-size: 20px; padding: 12px 20px; }
-.v9 .faq12-answer { padding-left: 20px; }
+.v9 .faq12 summary { font-size: 19px; line-height: 1.3; padding: 12px 20px; }
+.v9 .faq12-answer { padding-left: 20px; font-size: 17px; line-height: 1.55; font-weight: 400; color: #b6c0ca; }
 .v9 .c13-closing, .v9 .c13-footer { width: 100%; }
 .v9 .c13-copy p { font-size: 22px; line-height: 1.5; }
 .v9 .c13-actions { gap: 20px; }
@@ -353,7 +353,7 @@
   .v9 .c16-cta { width: 100%; }
   .v9 .r10-card { padding: 24px 20px; }
   .v9 .faq12 { padding: 28px 16px; }
-  .v9 .faq12 summary { font-size: 17px; padding: 14px 12px; gap: 12px; }
+  .v9 .faq12 summary { font-size: 17px; line-height: 1.35; padding: 14px 12px; gap: 12px; }
   .v9 .faq12-answer { font-size: 16px; padding: 0 12px 20px; }
   .v9 .c13-copy p { font-size: 20px; }
   .v9 .c13-primary { width: 100%; }
