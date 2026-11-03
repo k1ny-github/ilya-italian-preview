@@ -1,6 +1,6 @@
 {
-  "release": "faq-visual-refine-2026-11-03",
-  "sourceCheckpoint": "dfa7c2340f0893bd02eb26f3f3d424d4641a7b91",
-  "previousPublicCommit": "829deb606a2ff0503526dabb93041b1b5c6b75be",
+  "release": "responsive-system-2026-11-03",
+  "sourceCheckpoint": "c9414ed8acbb264d4940fadcd025583ceedf2761",
+  "previousPublicCommit": "afa5f5abac625280931bc5b30ddf692fba712b22",
   "purpose": "owner-review"
 }

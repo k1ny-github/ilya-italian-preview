@@ -2,7 +2,6 @@
 /* Isolated comparison only. Restore selected culture separately from the new desktop proposal. */
 /* New wishes apply only to desktop >=1200. Header and the 1120px page container stay as reference. */
 @media(width >= 1200px){
- .v9{--page-max:clamp(1120px,calc(100vw - 80px),1200px)}
  .v9 .h01-copy{padding-left:clamp(0px,calc(240px - 16.666667vw),40px);left:clamp(0px,calc(48px - 3.333333vw),8px)}
  .v9 .h01-emphasis{left:462px}
  .v9 #steps .s05-inner{padding-block:40px}

@@ -1,15 +1,15 @@
 {
-  "currentLocalCheckpoint": "dfa7c2340f0893bd02eb26f3f3d424d4641a7b91",
-  "localCheckpointTag": "faq-visual-refine-2026-11-03",
+  "currentLocalCheckpoint": "c9414ed8acbb264d4940fadcd025583ceedf2761",
+  "localCheckpointTag": "responsive-system-2026-11-03",
   "archivedPublicHead": "be39e02ab451ae96790c8c1398f7a8081946b4b8",
   "versions": [
     {
       "name": "current",
-      "sourceRef": "dfa7c2340f0893bd02eb26f3f3d424d4641a7b91",
+      "sourceRef": "c9414ed8acbb264d4940fadcd025583ceedf2761",
       "base": "/ilya-italian-preview/",
       "heroOverlay": false,
       "snapshotDifferences": {},
-      "label": "Current version - Refined FAQ reading hierarchy"
+      "label": "Current version - Responsive safe zones"
     },
     {
       "name": "pre-final",
@@ -47,8 +47,8 @@
   ],
   "sourceReproduction": "source/current",
   "existingPublicAssetsRetained": true,
-  "previousPublicCommit": "829deb606a2ff0503526dabb93041b1b5c6b75be",
-  "release": "faq-visual-refine-2026-11-03",
+  "previousPublicCommit": "afa5f5abac625280931bc5b30ddf692fba712b22",
+  "release": "responsive-system-2026-11-03",
   "currentSourceFiles": [
     {
       "path": "index.html",
@@ -480,7 +480,7 @@
     },
     {
       "path": "src/final-composition.css",
-      "sha256": "7d82d0568d8a8ce0eecff76a100e0841a8f5e8c9331dc5a645b9f0086c2bdc91"
+      "sha256": "5c275e6efba3de58941cb9c21b1f9482766cbe981595a9d62c18b197c4858b6a"
     },
     {
       "path": "src/image-inert.css",
@@ -612,7 +612,7 @@
     },
     {
       "path": "src/version-g.css",
-      "sha256": "48af119995fe4879af435d18a29cbfd7c85057d477b50bbea35b71a35e357fb4"
+      "sha256": "05be977cdf5e747ba69179e02996ae49858ecc93645b85192d48d13617abb857"
     },
     {
       "path": "vite.config.mjs",
