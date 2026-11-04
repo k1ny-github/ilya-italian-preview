@@ -4,30 +4,12 @@
    [640,960), [960,1200), [1200,infinity). See RESPONSIVE-SYSTEM.md.
    Width conditions use < and >= so fractional viewport widths have no gaps. */
 .v9 {
-  --page-max: 1280px;
-  --page-gutter: 16px;
-  --grid-gap: 12px;
-  --page-columns: 4;
+  --page-max: 1120px;
+  --page-gutter: 32px;
+  --grid-gap: 24px;
   --section-space: 64px;
   --heading-gap: 32px;
   --section-title: clamp(36px, 4vw, 50px);
-}
-
-/* Reference frames share the existing ranges; margins interpolate between them. */
-@media (width >= 360px) {
-  .v9 { --page-gutter: clamp(16px, calc(6.666667vw - 8px), 24px); --grid-gap: 16px; }
-}
-@media (width >= 480px) {
-  .v9 { --page-gutter: 24px; }
-}
-@media (width >= 640px) {
-  .v9 { --page-gutter: clamp(24px, calc(5vw - 8px), 40px); --page-columns: 8; }
-}
-@media (width >= 960px) {
-  .v9 { --page-gutter: clamp(40px, calc(10vw - 56px), 64px); --grid-gap: 24px; --page-columns: 12; }
-}
-@media (width >= 1200px) {
-  .v9 { --page-gutter: clamp(64px, calc(6.666667vw - 16px), 80px); }
 }
 
 .v9 :is(.h01-header, .h01-stage, .a02-inner, .m13-materials .inner,
@@ -121,6 +103,7 @@
 /* Owner's desktop revision: original hero rhythm, with half the old
    foliage-to-copy gap. Header and the 40px/32px portrait clearances stay. */
 @media (width >= 1200px) {
+  .v9 .h01-stage { width: min(1137px, calc(100% - 2 * var(--page-gutter))); }
   .v9 .h01-copy { padding-left: 40px; }
   .v9 .h01-copy h1 {
     font-size: 54px;
@@ -228,7 +211,7 @@
 .v9 .b11-calendar { min-width: 0; width: min(100%, 320px); }
 .v9 .b11-telegram { margin-top: 20px; }
 .v9 .faq12 {
-  width: min(var(--page-max), calc(100% - 2 * var(--page-gutter)));
+  width: min(calc(var(--page-max) + 64px), calc(100% - 2 * var(--page-gutter)));
   padding: 40px 32px;
 }
 .v9 .faq12 h2 { font-size: var(--section-title); line-height: 1.1; margin: 0 0 var(--heading-gap); }
@@ -268,7 +251,7 @@
 }
 
 @media (width < 1200px) {
-  .v9 { --section-space: 56px; }
+  .v9 { --page-gutter: 24px; --grid-gap: 20px; --section-space: 56px; }
   .v9 .h01-emphasis { display: none; }
 }
 @media (width < 1200px) {
@@ -352,7 +335,7 @@
   .v9 .c13-lettering { align-self: flex-end; margin: 0 16px 0 0; }
 }
 @media (width < 640px) {
-  .v9 { --section-space: 44px; --section-title: 36px; }
+  .v9 { --page-gutter: 20px; --grid-gap: 16px; --section-space: 44px; --section-title: 36px; }
   .v9 .h01-header { grid-template-columns: minmax(0, 1fr) auto; gap: 12px; padding-block: 12px; }
   .v9 .h01-header .v9-brand { grid-column: 1; grid-row: 1; }
   .v9 .h01-header .v9-menu-toggle { grid-column: 2; grid-row: 1; }
@@ -376,7 +359,7 @@
   .v9 .c13-primary { width: 100%; }
 }
 @media (width < 480px) {
-  .v9 { --section-space: 40px; --heading-gap: 24px; --section-title: 34px; }
+  .v9 { --page-gutter: 16px; --section-space: 40px; --heading-gap: 24px; --section-title: 34px; }
   .v9 .h01-art { --h01-photo-width: 246px; }
   .v9 .h01-intro { font-size: 17px; }
   .v9 .c16-photos figure, .v9 .c16-photos .c16-small { border-radius: 12px; }
