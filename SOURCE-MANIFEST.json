@@ -1,15 +1,15 @@
 {
-  "currentLocalCheckpoint": "d9508ca0c8d97a43c071841b854d7498a2a3c8fa",
-  "localCheckpointTag": "responsive-rollback-2026-11-04",
+  "currentLocalCheckpoint": "b08f345a4dfbd87d3f76df467838ef99d7b8edf1",
+  "localCheckpointTag": "privacy-contact-short-2026-11-04",
   "archivedPublicHead": "be39e02ab451ae96790c8c1398f7a8081946b4b8",
   "versions": [
     {
       "name": "current",
-      "sourceRef": "d9508ca0c8d97a43c071841b854d7498a2a3c8fa",
+      "sourceRef": "b08f345a4dfbd87d3f76df467838ef99d7b8edf1",
       "base": "/ilya-italian-preview/",
       "heroOverlay": false,
       "snapshotDifferences": {},
-      "label": "Current version - Restored accepted layout and FAQ"
+      "label": "Current version - Short privacy contact"
     },
     {
       "name": "pre-final",
@@ -47,8 +47,8 @@
   ],
   "sourceReproduction": "source/current",
   "existingPublicAssetsRetained": true,
-  "previousPublicCommit": "ed4e582cfb9a2153815f26885c007585d21f18c7",
-  "release": "responsive-rollback-2026-11-04",
+  "previousPublicCommit": "4dc3123b72590d3116274a4ee44e7fe675c7ed96",
+  "release": "privacy-contact-short-2026-11-04",
   "currentSourceFiles": [
     {
       "path": "index.html",
@@ -448,7 +448,7 @@
     },
     {
       "path": "public/privacy.html",
-      "sha256": "f4615fd7dbaf91ba77ea802f33c2f8b8c05801485542fc3a75483eda30865003"
+      "sha256": "e1378732663240475abeacd1c2c15a2079e8ba7956599d8c1eea5515672b41c7"
     },
     {
       "path": "src/about-leaves.css",

@@ -1,7 +1,6 @@
 {
-  "release": "responsive-rollback-2026-11-04",
-  "sourceCheckpoint": "d9508ca0c8d97a43c071841b854d7498a2a3c8fa",
-  "previousPublicCommit": "ed4e582cfb9a2153815f26885c007585d21f18c7",
-  "restoredPublicCommit": "afa5f5abac625280931bc5b30ddf692fba712b22",
+  "release": "privacy-contact-short-2026-11-04",
+  "sourceCheckpoint": "b08f345a4dfbd87d3f76df467838ef99d7b8edf1",
+  "previousPublicCommit": "4dc3123b72590d3116274a4ee44e7fe675c7ed96",
   "purpose": "owner-review"
 }
