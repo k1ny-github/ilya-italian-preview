@@ -1,6 +1,6 @@
 {
-  "release": "privacy-contact-short-2026-11-04",
-  "sourceCheckpoint": "b08f345a4dfbd87d3f76df467838ef99d7b8edf1",
-  "previousPublicCommit": "4dc3123b72590d3116274a4ee44e7fe675c7ed96",
+  "release": "contrast-images-2026-11-05",
+  "sourceCheckpoint": "f4419a95da3b68d17fcd7e2ca98c9ee975180def",
+  "previousPublicCommit": "9d9d044bc9bb6c79321218c3ccb0eb56d2ff3215",
   "purpose": "owner-review"
 }

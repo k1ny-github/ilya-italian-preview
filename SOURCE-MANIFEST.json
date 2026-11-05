@@ -1,15 +1,15 @@
 {
-  "currentLocalCheckpoint": "b08f345a4dfbd87d3f76df467838ef99d7b8edf1",
-  "localCheckpointTag": "privacy-contact-short-2026-11-04",
+  "currentLocalCheckpoint": "f4419a95da3b68d17fcd7e2ca98c9ee975180def",
+  "localCheckpointTag": "contrast-images-2026-11-05",
   "archivedPublicHead": "be39e02ab451ae96790c8c1398f7a8081946b4b8",
   "versions": [
     {
       "name": "current",
-      "sourceRef": "b08f345a4dfbd87d3f76df467838ef99d7b8edf1",
+      "sourceRef": "f4419a95da3b68d17fcd7e2ca98c9ee975180def",
       "base": "/ilya-italian-preview/",
       "heroOverlay": false,
       "snapshotDifferences": {},
-      "label": "Current version - Short privacy contact"
+      "label": "Current version - Supporting contrast and responsive quiz artwork"
     },
     {
       "name": "pre-final",
