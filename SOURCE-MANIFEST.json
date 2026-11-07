@@ -1,15 +1,15 @@
 {
-  "currentLocalCheckpoint": "f4419a95da3b68d17fcd7e2ca98c9ee975180def",
-  "localCheckpointTag": "contrast-images-2026-11-05",
+  "currentLocalCheckpoint": "22206bc067c1d1c4e3af03a0a34023e440c71dbb",
+  "localCheckpointTag": "cta-motion-2026-11-07",
   "archivedPublicHead": "be39e02ab451ae96790c8c1398f7a8081946b4b8",
   "versions": [
     {
       "name": "current",
-      "sourceRef": "f4419a95da3b68d17fcd7e2ca98c9ee975180def",
+      "sourceRef": "22206bc067c1d1c4e3af03a0a34023e440c71dbb",
       "base": "/ilya-italian-preview/",
       "heroOverlay": false,
       "snapshotDifferences": {},
-      "label": "Current version - Supporting contrast and responsive quiz artwork"
+      "label": "Current version - Consistent CTA feedback"
     },
     {
       "name": "pre-final",

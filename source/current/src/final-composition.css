@@ -749,3 +749,25 @@
     display: none;
   }
 }
+
+/* Share the existing primary-action feedback across every CTA treatment. */
+.v9 :is(.v9-primary, .v9-telegram, .f07-button, .q08-button),
+.v9 .v9-nav .v9-telegram {
+  transition: transform 150ms ease-out, filter 150ms ease-out,
+    background-color 150ms ease-out, box-shadow 150ms ease-out;
+}
+@media (hover: hover) and (pointer: fine) {
+  .v9 :is(.v9-primary, .v9-telegram, .f07-button, .q08-button):not(:disabled):not([aria-disabled="true"]):hover {
+    filter: brightness(1.06);
+    transform: translateY(-1px);
+  }
+}
+.v9 :is(.v9-primary, .v9-telegram, .f07-button, .q08-button):not(:disabled):not([aria-disabled="true"]):active {
+  filter: brightness(.98);
+  transform: translateY(1px) scale(.985);
+}
+@media (prefers-reduced-motion: reduce) {
+  .v9 :is(.v9-primary, .v9-telegram, .f07-button, .q08-button):is(:hover, :active) {
+    transform: none;
+  }
+}

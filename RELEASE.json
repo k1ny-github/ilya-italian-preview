@@ -1,6 +1,6 @@
 {
-  "release": "contrast-images-2026-11-05",
-  "sourceCheckpoint": "f4419a95da3b68d17fcd7e2ca98c9ee975180def",
-  "previousPublicCommit": "9d9d044bc9bb6c79321218c3ccb0eb56d2ff3215",
+  "release": "cta-motion-2026-11-07",
+  "sourceCheckpoint": "22206bc067c1d1c4e3af03a0a34023e440c71dbb",
+  "previousPublicCommit": "4b0781365f07eb1881d3b872e15cb42d1617221f",
   "purpose": "owner-review"
 }
