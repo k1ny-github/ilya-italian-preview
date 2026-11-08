@@ -4,7 +4,6 @@
 .v9 .c13-footer .c13-copyright { text-align:right; }
 .v9 .c13-footer-tools { grid-area:tools; display:flex; align-items:center; justify-content:space-between; gap:16px; min-width:0; }
 .v9 .c13-footer-tools .c13-top { margin:0; grid-area:auto; width:fit-content; flex:none; }
-.review-translation-note { font-size:13px; color:#52617a; margin:8px 0 20px; }
 .v9 .h01-header { grid-template-columns:minmax(230px,1fr) auto auto; gap:24px; }
 .v9 .h01-header .v9-nav { gap:22px; }
 .v9 .h01-header .v9-nav a { white-space:nowrap; }

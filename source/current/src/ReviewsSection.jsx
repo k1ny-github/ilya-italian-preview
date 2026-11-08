@@ -52,7 +52,7 @@ function ReviewDialog({
   }}>
     <div className="r10-dialog-inner" tabIndex={0} aria-label={t("Полный текст отзыва")}>
       <div className="r10-dialog-top"><span>{t("ПОЛНЫЙ ОТЗЫВ")}</span><button type="button" className="r10-dialog-close" onClick={onClose} aria-label={t("Свернуть отзыв")}>×</button></div>
-      <h2 id="r10-dialog-title">{review.name}</h2>{locale !== "ru" && <p className="review-translation-note">{t("Перевод с русского")}</p>}
+      <h2 id="r10-dialog-title">{review.name}</h2>
       <div className="r10-dialog-copy">{review.paragraphs.map((paragraph, index) => <p key={index}>{paragraph}</p>)}</div>
       <button type="button" className="r10-dialog-bottom" onClick={onClose}>{t("Свернуть отзыв")}</button>
     </div>
@@ -80,7 +80,7 @@ function ReviewCard({
   }, [review]);
   const more = review.paragraphs.length > 1 || clipped;
   return <article className="r10-card" id={`r10-review-${index}`} aria-labelledby={`r10-author-${index}`}>
-    <div className="r10-card-top"><span className="r10-avatar" aria-hidden="true"><img src="/ilya-italian-preview/images/review-section/c-neutral.svg" width="52" height="52" alt="" /></span><h3 id={`r10-author-${index}`}>{review.name}</h3></div>
+    <div className="r10-card-top"><span className="r10-avatar" aria-hidden="true"><img src="/images/review-section/c-neutral.svg" width="52" height="52" alt="" /></span><h3 id={`r10-author-${index}`}>{review.name}</h3></div>
     <div ref={excerpt} className={`r10-excerpt ${clipped ? "has-more" : ""}`}>{review.paragraphs.map((paragraph, i) => <p key={i}>{paragraph}</p>)}</div>
 
     {more ? <button type="button" className="r10-read-more" onClick={() => openReview(index)} aria-label={t("Читать полный отзыв: {0}", review.name)}>{t("Читать дальше")}</button> : null}
@@ -97,7 +97,7 @@ export function ReviewsSection({
   const reviews = dictionary.reviews;
   const [opened, setOpened] = useState(null);
   return <section className="r10-reviews" id="reviews" aria-labelledby="r10-title"><div className="r10-inner">
-    <h2 id="r10-title">{title}</h2>{locale !== "ru" && <p className="review-translation-note">{t("Перевод с русского")}</p>}
+    <h2 id="r10-title">{title}</h2>
     <div className="r10-grid">{reviews.map((review, index) => <ReviewCard key={index} review={review} index={index} openReview={setOpened} />)}</div>
     {opened !== null ? <ReviewDialog review={reviews[opened]} onClose={() => setOpened(null)} /> : null}
   </div></section>;
