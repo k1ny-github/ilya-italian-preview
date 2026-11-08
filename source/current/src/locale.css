@@ -1,4 +1,4 @@
-.v9 .c13-footer-inner { grid-template-columns:minmax(0,1fr) auto; grid-template-areas:"brand legal" "tools tools"; gap:16px 24px; }
+.v9 .c13-footer .c13-footer-inner { grid-template-columns:minmax(0,1fr) auto; grid-template-areas:"brand legal" "tools tools"; gap:16px 24px; }
 .v9 .c13-footer .c13-brand { grid-area:brand; }
 .v9 .c13-footer .c13-legal { grid-area:legal; justify-self:end; align-items:flex-end; }
 .v9 .c13-footer .c13-copyright { text-align:right; }
@@ -26,7 +26,7 @@ html:not([lang="ru"]) .v9 .h01-title-anchor { white-space:normal; }
 @media (width < 640px) {
  .v9 .h01-header { grid-template-columns:minmax(0,1fr) 44px; gap:12px; }
  .v9 .h01-header .v9-menu-toggle { grid-column:2; grid-row:1; }
- .v9 .c13-footer-inner { grid-template-columns:minmax(0,1fr); grid-template-areas:"brand" "legal" "tools"; }
+ .v9 .c13-footer .c13-footer-inner { grid-template-columns:minmax(0,1fr); grid-template-areas:"brand" "legal" "tools"; }
  .v9 .c13-footer .c13-legal { justify-self:start; align-items:flex-start; }
  .v9 .c13-footer .c13-copyright { text-align:left; }
 }
