@@ -45,3 +45,6 @@ html:not([lang="ru"]) .v9 .h01-title-anchor { white-space:normal; }
 }
 
 .v9 footer.c13-footer .c13-rights { white-space:nowrap; }
+
+.v9 .h01-copy h1.h01-title-english .h01-title-anchor,
+.v9 .h01-copy h1.h01-title-english em { white-space:nowrap; }

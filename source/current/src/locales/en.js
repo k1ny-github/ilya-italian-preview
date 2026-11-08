@@ -1,9 +1,8 @@
 // English translation of the approved Russian source.
 export default {
   "heroLines": [
-    "Book a",
-    "free Italian",
-    "lesson"
+    "Book a free",
+    "Italian lesson"
   ],
   "content": {
     "name": "Ilya Khorkov",

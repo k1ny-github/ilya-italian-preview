@@ -1,11 +1,11 @@
 {
-  "currentLocalCheckpoint": "8d51a16be2c25f74d9fb7b406661d73c7a3c998e",
+  "currentLocalCheckpoint": "c7b47d494440f65417eb42b8351d413e7ca6717d",
   "localCheckpointTag": "i18n-auto-2026-11-08",
   "archivedPublicHead": "be39e02ab451ae96790c8c1398f7a8081946b4b8",
   "versions": [
     {
       "name": "current",
-      "sourceRef": "8d51a16be2c25f74d9fb7b406661d73c7a3c998e",
+      "sourceRef": "c7b47d494440f65417eb42b8351d413e7ca6717d",
       "base": "/ilya-italian-preview/",
       "heroOverlay": false,
       "snapshotDifferences": {},
@@ -47,7 +47,7 @@
   ],
   "sourceReproduction": "source/current",
   "existingPublicAssetsRetained": true,
-  "previousPublicCommit": "5f1441afe8344708a7617a7dc188a24bd8a691d3",
+  "previousPublicCommit": "c89f53be7a710c0d5a13dfeec13f312c801f99c3",
   "release": "i18n-auto-2026-11-08",
   "currentSourceFiles": [
     {
@@ -560,7 +560,7 @@
     },
     {
       "path": "src/SiteV9.jsx",
-      "sha256": "e95cc0f9faaf80a9f8ee722409227a26da97baa206500d229a4f576c46fb9431"
+      "sha256": "5f70fd9eb7058d036c15318cc70d8b8f1ea040e70fa97e44f027f699f65a32b8"
     },
     {
       "path": "src/about-leaves.css",
@@ -596,11 +596,11 @@
     },
     {
       "path": "src/locale.css",
-      "sha256": "c078663598c2c35e4fcf76c70eaa7f4bb8fa601ac47ba99f83c91de0378620c5"
+      "sha256": "fc2b41ea680853debdef0e09fca8e98ad150ca1b339c7952b500d9759d0c5d6b"
     },
     {
       "path": "src/locales/en.js",
-      "sha256": "9276822d82d4310e0b55ed97d40355cfb344ce219c9fcb6e43fdb3fe17300fa4"
+      "sha256": "cd0aebc1a844114938066e07607ace752102aeb163295a0f21305f94877353a7"
     },
     {
       "path": "src/locales/it.js",
