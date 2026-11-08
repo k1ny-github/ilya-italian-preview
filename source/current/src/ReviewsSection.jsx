@@ -80,7 +80,7 @@ function ReviewCard({
   }, [review]);
   const more = review.paragraphs.length > 1 || clipped;
   return <article className="r10-card" id={`r10-review-${index}`} aria-labelledby={`r10-author-${index}`}>
-    <div className="r10-card-top"><span className="r10-avatar" aria-hidden="true"><img src="/images/review-section/c-neutral.svg" width="52" height="52" alt="" /></span><h3 id={`r10-author-${index}`}>{review.name}</h3></div>
+    <div className="r10-card-top"><span className="r10-avatar" aria-hidden="true"><img src={`${import.meta.env.BASE_URL}images/review-section/c-neutral.svg`} width="52" height="52" alt="" /></span><h3 id={`r10-author-${index}`}>{review.name}</h3></div>
     <div ref={excerpt} className={`r10-excerpt ${clipped ? "has-more" : ""}`}>{review.paragraphs.map((paragraph, i) => <p key={i}>{paragraph}</p>)}</div>
 
     {more ? <button type="button" className="r10-read-more" onClick={() => openReview(index)} aria-label={t("Читать полный отзыв: {0}", review.name)}>{t("Читать дальше")}</button> : null}

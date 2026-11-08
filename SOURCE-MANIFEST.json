@@ -1,11 +1,11 @@
 {
-  "currentLocalCheckpoint": "44f4d9c7888b43919b3a40ea3c2eaa984b1f4529",
+  "currentLocalCheckpoint": "2868e372960af0baf5493fd86480a09b171056ac",
   "localCheckpointTag": "i18n-auto-2026-11-08",
   "archivedPublicHead": "be39e02ab451ae96790c8c1398f7a8081946b4b8",
   "versions": [
     {
       "name": "current",
-      "sourceRef": "44f4d9c7888b43919b3a40ea3c2eaa984b1f4529",
+      "sourceRef": "2868e372960af0baf5493fd86480a09b171056ac",
       "base": "/ilya-italian-preview/",
       "heroOverlay": false,
       "snapshotDifferences": {},
@@ -47,7 +47,7 @@
   ],
   "sourceReproduction": "source/current",
   "existingPublicAssetsRetained": true,
-  "previousPublicCommit": "ef4e7b536db5cf98f1f3b7a0990d667f0cea8ac8",
+  "previousPublicCommit": "610b6c3595afaa70e5cf7efec4869cd4d9a32a94",
   "release": "i18n-auto-2026-11-08",
   "currentSourceFiles": [
     {
@@ -556,7 +556,7 @@
     },
     {
       "path": "src/ReviewsSection.jsx",
-      "sha256": "35031edd3fb1685d63efb3624c3900ec10cc9804cac5aad409623b633f87fdbd"
+      "sha256": "445e26dadb128fd24eed882f85a04db8360ed92e99ca5b9d45b31dd5b80160d8"
     },
     {
       "path": "src/SiteV9.jsx",
