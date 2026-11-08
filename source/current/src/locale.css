@@ -39,8 +39,8 @@ html:not([lang="ru"]) .v9 .h01-title-anchor { white-space:normal; }
 /* One text size for footer details and links on every device. */
 .v9 .c13-footer { --footer-copy-size:14px; }
 .v9 .c13-footer .c13-brand small,
-.v9 .c13-footer .c13-copyright,
-.v9 .c13-footer .c13-confidentiality,
+.v9 .c13-footer .c13-legal .c13-copyright,
+.v9 .c13-footer .c13-legal .c13-confidentiality,
 .v9 .c13-footer-tools .c13-top {
  font:400 var(--footer-copy-size)/1.5 Arial,Helvetica,sans-serif;
  letter-spacing:normal;
