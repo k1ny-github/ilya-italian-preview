@@ -65,3 +65,6 @@ html:not([lang="ru"]) .v9 .h01-title-anchor { white-space:normal; }
  .v9 .c13-footer .c13-footer-inner { column-gap:16px; }
  .v9 .c13-footer .c13-legal { gap:16px; }
 }
+
+.v9 .c13-footer .c13-legal .c13-confidentiality { text-decoration:none; }
+.v9 .c13-footer-tools .c13-top { display:inline-flex; align-items:center; gap:8px; white-space:nowrap; }

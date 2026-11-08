@@ -1,11 +1,11 @@
 {
-  "currentLocalCheckpoint": "ace4b35ffa08b00626382e3c14fba027abb1f572",
+  "currentLocalCheckpoint": "f32b536f1d6823597fff3b3bbc922d540ae5c6c8",
   "localCheckpointTag": "i18n-auto-2026-11-08",
   "archivedPublicHead": "be39e02ab451ae96790c8c1398f7a8081946b4b8",
   "versions": [
     {
       "name": "current",
-      "sourceRef": "ace4b35ffa08b00626382e3c14fba027abb1f572",
+      "sourceRef": "f32b536f1d6823597fff3b3bbc922d540ae5c6c8",
       "base": "/ilya-italian-preview/",
       "heroOverlay": false,
       "snapshotDifferences": {},
@@ -47,7 +47,7 @@
   ],
   "sourceReproduction": "source/current",
   "existingPublicAssetsRetained": true,
-  "previousPublicCommit": "c0772dd1853eb4dccd14b110c6bf5691d631f8dc",
+  "previousPublicCommit": "64cbe518541021a8d6c4a3d4e0fea7e4386a57ab",
   "release": "i18n-auto-2026-11-08",
   "currentSourceFiles": [
     {
@@ -560,7 +560,7 @@
     },
     {
       "path": "src/SiteV9.jsx",
-      "sha256": "f892d8da3815b53ee42ef885057a423f7f98cef2c835fa405281b233a06d83f1"
+      "sha256": "64f07f703f3c0c2e8b1e46c9565f6bae0140dddd4fe2c884b50e04dfd31887bd"
     },
     {
       "path": "src/about-leaves.css",
@@ -596,7 +596,7 @@
     },
     {
       "path": "src/locale.css",
-      "sha256": "f3930bcfe499e3f8a95d03669aceb7c36a454db723e7ca6d83f897505e0af4f4"
+      "sha256": "2decf8881df1b445bad97453ef3d42a1d9ec21eedb1ba9494787d6ec9ac21db1"
     },
     {
       "path": "src/locales/en.js",
