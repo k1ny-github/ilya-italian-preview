@@ -1,23 +1,34 @@
-import { lazy, Suspense, useEffect, useRef, useState } from 'react';
-import { content } from './content.js';
-
-const MiroViewer = lazy(() => import('./MiroViewer.jsx'));
-
-export function MaterialsSection({ shellVariant = 'classic' }) {
+import { useLocale } from "./LocaleProvider.jsx";
+import { lazy, Suspense, useEffect, useRef, useState } from "react";
+const MiroViewer = lazy(() => import("./MiroViewer.jsx"));
+export function MaterialsSection({
+  shellVariant = "classic"
+}) {
+  const {
+    t,
+    dictionary,
+    locale
+  } = useLocale();
+  const content = dictionary.content;
   const section = useRef(null);
   const [ready, setReady] = useState(false);
   useEffect(() => {
     const observer = new IntersectionObserver(entries => {
-      if (entries.some(entry => entry.isIntersecting)) { setReady(true); observer.disconnect(); }
-    }, { rootMargin: '400px' });
+      if (entries.some(entry => entry.isIntersecting)) {
+        setReady(true);
+        observer.disconnect();
+      }
+    }, {
+      rootMargin: "400px"
+    });
     observer.observe(section.current);
     return () => observer.disconnect();
   }, []);
   const features = <div className="features">{content.materials.map(([title, text], index) => {
-    const icon=<img src={`/ilya-italian-preview/images/miro-approved/assets/${index ? 'folder-tile-source.png' : 'miro-yellow-tile.png'}`} width={index ? 94 : 90} height={89} alt="" loading="lazy"/>;
-    return <div className="feature" key={title}><div className="feature-heading">{icon}<h3>{title}</h3></div><p>{text}</p></div>;
-  })}</div>;
-  const board = <Suspense fallback={<div className="m13-screen-placeholder"/>}>{ready ? <MiroViewer shellVariant={shellVariant}/> : <div className="m13-screen-placeholder"/>}</Suspense>;
+      const icon = <img src={`/ilya-italian-preview/images/miro-approved/assets/${index ? "folder-tile-source.png" : "miro-yellow-tile.png"}`} width={index ? 94 : 90} height={89} alt="" loading="lazy" />;
+      return <div className="feature" key={title}><div className="feature-heading">{icon}<h3>{title}</h3></div><p>{text}</p></div>;
+    })}</div>;
+  const board = <Suspense fallback={<div className="m13-screen-placeholder" />}>{ready ? <MiroViewer shellVariant={shellVariant} /> : <div className="m13-screen-placeholder" />}</Suspense>;
   return <section ref={section} className="m13-materials" id="materials" aria-labelledby="m13-title">
     <div className="inner"><h2 className="m13-title" id="m13-title">{content.materialsTitle}</h2>
       <div className="miro-composition">{board}{features}</div>

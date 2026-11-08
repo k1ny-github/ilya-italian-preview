@@ -6,7 +6,7 @@ export default defineConfig({
   build: {
     outDir: "dist/client",
     rollupOptions: {
-      input: ['index.html', 'miro-shell-review.html', 'miro-shell-review-frame.html'],
+      input: ['index.html', 'privacy.html', 'miro-shell-review.html', 'miro-shell-review-frame.html'],
     },
   },
   optimizeDeps: {

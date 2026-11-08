@@ -1,3 +1,4 @@
+import {LocaleProvider} from './LocaleProvider.jsx';
 import './style-entry.js';
 import React, { useState } from 'react';
 import { createRoot } from 'react-dom/client';
@@ -21,4 +22,4 @@ function MiroShellReview(){
   </>;
 }
 
-createRoot(document.getElementById('root')).render(<React.StrictMode><MiroShellReview/></React.StrictMode>);
+createRoot(document.getElementById('root')).render(<React.StrictMode><LocaleProvider><MiroShellReview/></LocaleProvider></React.StrictMode>);

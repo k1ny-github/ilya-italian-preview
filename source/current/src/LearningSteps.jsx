@@ -93,7 +93,7 @@ export default function LearningSteps({ title, steps }) {
   return <section className="s05-steps" id="steps" aria-labelledby="s05-title">
     <div className="s05-inner"><h2 id="s05-title">{title}</h2>
       <ol ref={listRef} className="s05-grid">{steps.map(([heading, text], i) =>
-        <li className="s05-card" key={heading}>
+        <li className="s05-card" key={i}>
           <span className="s05-number" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>
           <div className="s05-copy"><h3>{heading}</h3><p>{text}</p></div>
         </li>
