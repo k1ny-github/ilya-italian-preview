@@ -230,10 +230,9 @@ export function SiteV9() {
       <section className="b11-booking" id="booking" aria-labelledby="b11-title"><div className="b11-inner"><div className="b11-copy"><h2 id="b11-title">{c.bookingTitle}</h2><p>{c.goalDescription}</p><div className="b11-actions"><PrimaryButton className="b11-calendar" href={config.telegramUrl} target="_blank" rel="noreferrer">{t("Написать в Telegram")}</PrimaryButton></div></div><div className="b11-paper-wrap"><div className="b11-paper"><h3>{c.trust[1][0]}</h3><ul>{c.bullets.map(item => <li key={item}>{item}</li>)}</ul><div className="b11-note"><strong>{c.trust[0][0]}</strong><span>{c.trust[0][1]}</span></div><span className="b11-presto">A presto!</span></div></div></div></section>
     </main>
     <footer className="c13-footer"><div className="c13-footer-inner">
-      <a className="c13-brand" href="#top"><span className="c13-flag" aria-hidden="true" /><span><strong>{c.name}</strong><small>{c.role}</small></span></a>
-      <a className="c13-contact" href={config.telegramUrl} target="_blank" rel="noopener noreferrer"><TelegramLogo size={22} weight="regular" aria-hidden="true" /><span><strong>Telegram</strong><small>@furettinetto</small></span></a>
+      <p className="c13-copyright">© {new Date().getFullYear()} {c.name}{t(". Все права защищены.")}</p>
       <a className="c13-confidentiality" href={localizedUrl("./privacy.html", locale)}>{t("Конфиденциальность")}</a>
-      <div className="c13-footer-bottom"><p className="c13-copyright">© {new Date().getFullYear()} {t("Все права защищены.")}</p><a className="c13-top" href="#top">{t("Вернуться наверх")}<ArrowUp size={18} weight="regular" aria-hidden="true" /></a></div>
+      <a className="c13-top" href="#top">{t("Вернуться наверх")}<ArrowUp size={18} weight="regular" aria-hidden="true" /></a>
     </div></footer>
     {modal === "quiz" && <Quiz attempt={quizAttempt} Modal={Modal} Button={PrimaryButton} onClose={() => setModal(null)} bookingUrl={config.telegramUrl} />}
   </div>;
