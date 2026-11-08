@@ -40,7 +40,7 @@ html:not([lang="ru"]) .v9 .h01-title-anchor { white-space:normal; }
  .v9 footer.c13-footer .c13-confidentiality:hover,.v9 footer.c13-footer .c13-top:hover { color:#a8caff; }
 }
 @media (width < 640px) {
- .v9 footer.c13-footer .c13-footer-inner { grid-template-columns:minmax(0,1fr); grid-template-areas:"copyright" "policy" "top"; gap:4px; padding-block:24px; }
+ .v9 footer.c13-footer .c13-footer-inner { grid-template-columns:minmax(0,1fr); grid-template-areas:"copyright" "policy" "top"; grid-auto-rows:minmax(44px,auto); gap:0; padding-block:20px; }
  .v9 footer.c13-footer .c13-confidentiality,.v9 footer.c13-footer .c13-top { justify-self:start; }
 }
 
