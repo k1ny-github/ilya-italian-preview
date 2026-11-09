@@ -2,7 +2,7 @@ import { useLocale } from "./LocaleProvider.jsx";
 import { useEffect, useRef, useState } from "react";
 import shell from "./miro-shell.html?raw";
 import refreshedShell from "./miro-shell-refreshed.html?raw";
-const root = "/ilya-italian-preview/images/miro-approved/";
+const root = "/images/miro-approved/";
 const slides = [{
   file: "originals/03-bologna-original.webp",
   sw: 2610,

@@ -1,3 +1,4 @@
+import {canonicalUrl,russianMetadata,currentSiteUrl} from './seo-settings.js';
 import {createContext, useContext, useEffect, useMemo, useState} from 'react';
 import ru from './locales/ru.js';
 import en from './locales/en.js';
@@ -6,10 +7,10 @@ import {resolveLocale,localizedUrl,supportedLocales,translate} from './locale-ut
 export const dictionaries = {ru,en,it};
 export const LocaleContext = createContext(null);
 function browserLocale() {
-  return resolveLocale({search:typeof location === 'undefined' ? '' : location.search,languages:typeof navigator === 'undefined' ? undefined : navigator.languages,language:typeof navigator === 'undefined' ? undefined : navigator.language});
+  return resolveLocale({pathname:typeof location === 'undefined' ? '' : location.pathname,search:typeof location === 'undefined' ? '' : location.search,languages:typeof navigator === 'undefined' ? undefined : navigator.languages,language:typeof navigator === 'undefined' ? undefined : navigator.language});
 }
-export function LocaleProvider({children}) {
-  const [locale,setLocale] = useState(browserLocale);
+export function LocaleProvider({children, initialLocale}) {
+  const [locale,setLocale] = useState(() => initialLocale || browserLocale());
   const dictionary = dictionaries[locale];
   useEffect(()=>{
     const sync=()=>setLocale(browserLocale());
@@ -18,9 +19,13 @@ export function LocaleProvider({children}) {
   },[]);
   useEffect(()=>{
     document.documentElement.lang=locale;
+    const canonical=document.querySelector('link[rel=canonical]');
+    const siteUrl=import.meta.env.VITE_SITE_URL || currentSiteUrl;
+    if(canonical && !location.pathname.endsWith('/privacy.html'))canonical.href=canonicalUrl(locale,siteUrl);
     const privacy=location.pathname.endsWith('/privacy.html');
-    document.title=privacy ? dictionary.metadata.privacyTitle : dictionary.metadata.title;
-    document.querySelector('meta[name="description"]')?.setAttribute('content',privacy ? dictionary.privacy.paragraphs[0] : dictionary.metadata.description);
+    const metadata=locale==='ru' ? russianMetadata : dictionary.metadata;
+    document.title=privacy ? dictionary.metadata.privacyTitle : metadata.title;
+    document.querySelector('meta[name="description"]')?.setAttribute('content',privacy ? dictionary.privacy.paragraphs[0] : metadata.description);
   },[locale,dictionary]);
   const value=useMemo(()=>({locale,dictionary,t:(key,...args)=>translate(dictionary,key,...args),switchLocale(next){
     if(!supportedLocales.includes(next))return;

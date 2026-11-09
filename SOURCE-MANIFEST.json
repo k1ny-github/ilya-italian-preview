@@ -1,5 +1,5 @@
 {
-  "currentLocalCheckpoint": "c9e80a824303025e3ab8ae4344dca1ea71f9d4d9",
+  "currentLocalCheckpoint": "014723bb02674f0c5b2a9f6131de7b6f5dc79b83",
   "localCheckpointTag": "i18n-auto-2026-11-08",
   "archivedPublicHead": "be39e02ab451ae96790c8c1398f7a8081946b4b8",
   "versions": [
@@ -41,38 +41,42 @@
     }
   ],
   "publicationOnlyChanges": [
-    "GitHub Pages base /ilya-italian-preview/ and static asset/navigation paths.",
-    "Reproducible Vite scripts; runtime resources are served locally by the site.",
-    "Unapproved privacy draft, unrelated design context and untracked license draft excluded."
+    "Base /ilya-italian-preview/ in runtime and asset paths.",
+    "Owner authorized searchable pages; canonical/hreflang/JSON-LD/sitemap included.",
+    "Historical HTML remains accessible with noindex; root robots served in dedicated user-site repository."
   ],
   "sourceReproduction": "source/current",
   "existingPublicAssetsRetained": true,
   "previousPublicCommit": "1ee743ea93800d1d9f2dd709875a4b1964ac3ff9",
-  "release": "i18n-auto-2026-11-08",
+  "release": "seo-launch-2026-11-09",
   "currentSourceFiles": [
     {
       "path": "index.html",
-      "sha256": "dae3178cc5508e5e2364230e6d55c93ca4231e2701eceef4bae721fa6732de5d"
+      "sha256": "1a545eb967fcb5297152d2d763820d46007d25a4870bc35d352196e5defee441"
     },
     {
       "path": "miro-shell-review-frame.html",
-      "sha256": "06d7e12404e8e381939f30a4c54f379a98e1d23cbc18dd0f6c7bab185d017a8f"
+      "sha256": "86ef7d73cdd2483a70b0a1d4712633f5dbe66d790f8577bcedbc718c30cc5aef"
     },
     {
       "path": "miro-shell-review.html",
-      "sha256": "820f971806f35e61014bcccbcb56e2d3ca4fadf439b799ff66035ed263c16c26"
+      "sha256": "1283a0f96606dc12c65b0c8c84965d090d5acf07007b4467f23fad271848f531"
     },
     {
       "path": "package-lock.json",
-      "sha256": "e759462eada9535ecff5f6c96c1140fcebb3a1a94560f1828680ec47cd63375d"
+      "sha256": "cad3b96353aa310fa18ec44f8348fbc4c9a5924403ebfaf19f3f7adc7e5acc3a"
     },
     {
       "path": "package.json",
-      "sha256": "2b463a8c33661d9e12607df5903a3bac4929fda61970652a00745ee893f05401"
+      "sha256": "145c89091879a5c2da572e38940c77a1384f62958804e84cde2879a9478eeb08"
     },
     {
       "path": "privacy.html",
-      "sha256": "6c4a9f9130f545c9c0d2054c0b6785ac3185f1ebdfbfb5dd13e0d954dfbcd02b"
+      "sha256": "aa1d4c7c89cee287efd816c69e94bb2c76bcd993994dd648b4f21ef8e45ba39a"
+    },
+    {
+      "path": "public/favicon.svg",
+      "sha256": "94da14b2cad14c9615e70e9c95ceb4a7eee29805d83b3df44ef4e82918fdc44e"
     },
     {
       "path": "public/images/about-section/ilya-about-photo-3.png",
@@ -208,7 +212,7 @@
     },
     {
       "path": "public/images/hero-section/emphasis-strokes.svg",
-      "sha256": "453f302927100b65ec809e97d5abd725675b5be59dbc39b7c220b81f1606c7f3"
+      "sha256": "14a809bc783ba10d853d720690113dd98e05b388fc0f8355e598f2bc05c77e84"
     },
     {
       "path": "public/images/hero-section/ilya-hero-photo-1-256.webp",
@@ -300,15 +304,15 @@
     },
     {
       "path": "public/images/hero-section/trust-level.svg",
-      "sha256": "e16e12af5394ce52a6762d7ca1132b745ca3e50d18602b8f857c303d8dc9657b"
+      "sha256": "17e106b6fe4b01b1f46d2adb7875f80e5a7ee839be6ff2fba3cccf36aed7d86e"
     },
     {
       "path": "public/images/hero-section/trust-people.svg",
-      "sha256": "d1b8db0f67b705192611d5d5dfd871379c4f39184b8bab547b58190efb7c24b5"
+      "sha256": "19e582e09d337729eacbda7614b90dc8dc6b569f02dbb46c6094ef892e91a987"
     },
     {
       "path": "public/images/hero-section/trust-shield.svg",
-      "sha256": "4e96b618d394d87d72fc5363a1cd4964a55bf40b3da80ec43cc00f648394f7e6"
+      "sha256": "285a7d386ef68bb60c189ebd4e3cbb0e4b6f591bba81124fffc6e84214bd5b8a"
     },
     {
       "path": "public/images/italian-bakery.png",
@@ -479,140 +483,112 @@
       "sha256": "d3158515e1d1d1ffd5244fda1b9a03ae8c29574909f959e113f4319406c52360"
     },
     {
-      "path": "src/App.jsx",
-      "sha256": "2a4ebe5ff85abdc06f031912319c71dde88d4ab251f65edab8cc485cdd12140d"
+      "path": "public/robots.txt",
+      "sha256": "a8f31103361fca68bef71fc69cff844b7c23bd3d64d2b872d74690cbda656bfc"
     },
     {
-      "path": "src/CultureSection.css",
-      "sha256": "5526e878189d52c4ff493e58e8547fad839f4eb881f360f777ce0064c89ec186"
+      "path": "scripts/build-seo.mjs",
+      "sha256": "137c2f03f4ad97f576d8d68546d9c086f649dffe0b1c2d44925faa6bd41f92ec"
     },
     {
-      "path": "src/CultureSection.jsx",
-      "sha256": "03699813db77408450e50b5062240f5bfa95c0471f8102d6776e29fa03298c33"
+      "path": "scripts/check-indexing.mjs",
+      "sha256": "2b5c0727abc98f9797e1ad9584619b95513a876e00da19aaa8d149324b818d3a"
     },
     {
-      "path": "src/LearningSteps.jsx",
-      "sha256": "e7600c19e5cc0335e2f8de5877be1a73963e2c37db999849c8790b4d68fc2b5c"
+      "path": "scripts/indexing-policy.mjs",
+      "sha256": "8595c0901c2f80b0280397975e9514e3ccba27beb0c9e747f6b5705f705a0460"
     },
     {
-      "path": "src/LivingDetails.jsx",
-      "sha256": "3b45cfa4b29f012f0970dff2917f51ce3de21621ba4368f3cec0b7b3de3c05f2"
+      "path": "scripts/prepare-sites-build.mjs",
+      "sha256": "ea0855bb81a2b0425258ed95cc50f82a35ff95d9b88a30eb946580a6cc98c478"
     },
     {
-      "path": "src/LocaleProvider.jsx",
-      "sha256": "a0fb5f0cd799af008dc1ac0b27b6b67b556d6f12996c96bffb3b9d7394317bfb"
-    },
-    {
-      "path": "src/MaterialsSection.css",
-      "sha256": "4e44f2fb0bfa9331f2e58bd7492af0fb73e9c73197dc513785e1a59627e7015a"
-    },
-    {
-      "path": "src/MaterialsSection.jsx",
-      "sha256": "f603d673c167097621e179a224bb7759fff000a3d97a7de5ab7b73c50dc1a4f3"
-    },
-    {
-      "path": "src/MiroReviewHost.css",
-      "sha256": "1e468660fdc5691374835dca1633533a7b23c8577559e441031ac6b8951a3cd9"
-    },
-    {
-      "path": "src/MiroReviewHost.js",
-      "sha256": "715eb4228d2b160777276decb2a80ce44c79db52300b756b36dd4d15bec6f6b9"
-    },
-    {
-      "path": "src/MiroShellReview.css",
-      "sha256": "b1f94f593a41b9a3b5848be2243f4cc4d630586cf1431fd8e3a5e9cc9a9e1bf7"
-    },
-    {
-      "path": "src/MiroShellReview.jsx",
-      "sha256": "0ce6358a1ebba427e0f6b55732a975b383945b43c4c914da6b789511d488ec5c"
-    },
-    {
-      "path": "src/MiroShellVariants.css",
-      "sha256": "64e25cdaf4d3547e03fce8c8594147b2bd18e541668e0268fd239f901bc02d19"
-    },
-    {
-      "path": "src/MiroViewer.jsx",
-      "sha256": "6c8404d995b7139e41bf786919eb06111c4fdbcac991d733dc9c4fdefec6c6fa"
-    },
-    {
-      "path": "src/Privacy.jsx",
-      "sha256": "74b8a0e9cdd0ab3ec6adf23ee180ef4d23561e1fc6a7fd4ca64478ffd2a12872"
-    },
-    {
-      "path": "src/Quiz.jsx",
-      "sha256": "ac030d024d5c322dd5731fcd3f9613d3df2c169cbdcdccef38bb298e46857e94"
-    },
-    {
-      "path": "src/QuizDecoration.css",
-      "sha256": "531a10ca8a43f9d2fc8980c42ccb1d92dbe9ce1b38c5c889a920ec8ee6397fb9"
-    },
-    {
-      "path": "src/QuizDecoration.jsx",
-      "sha256": "964f90c4df8db01488ea8e55bb24b02eb8da8dba1473ecf108c100209801c019"
-    },
-    {
-      "path": "src/ReviewsSection.css",
-      "sha256": "19d35a59d51177b18f0bd7897caee9a37ab4d1d958d82bd68e926e1f8bf3b685"
-    },
-    {
-      "path": "src/ReviewsSection.jsx",
-      "sha256": "445e26dadb128fd24eed882f85a04db8360ed92e99ca5b9d45b31dd5b80160d8"
-    },
-    {
-      "path": "src/SiteV9.jsx",
-      "sha256": "5f70fd9eb7058d036c15318cc70d8b8f1ea040e70fa97e44f027f699f65a32b8"
+      "path": "SEO-RELEASE-CHECKLIST.txt",
+      "sha256": "2dc36d6c32382afaeec6691eeae0cc693940b6eda6b3f956a7f3d42aae7f31d9"
     },
     {
       "path": "src/about-leaves.css",
-      "sha256": "a9f38968f399408e9da71980669f1db239a40b7f3372c40e64615f813c891bb8"
+      "sha256": "9b4ab4ebdd33aa87550e005eee2c806cdf2ccb0dbf67fa0f9693bf5802a0ece9"
+    },
+    {
+      "path": "src/App.jsx",
+      "sha256": "d07bbe2c630fc729f271de657f53c5d73dbd236bec41ed805ab965571cb18077"
     },
     {
       "path": "src/backgrounds.css",
-      "sha256": "a8da00bbc7e070987226d4c47186f35f5796a7c2a0faa2695de1de5c438f2d83"
+      "sha256": "c66561380d5f506d2c11560f4198ae3e05e7e1c8d5e11db68c91e5bfa7e2c180"
     },
     {
       "path": "src/card-details.css",
-      "sha256": "bc28fef7a3315685cec52ab1b4716c987907214ed8b4886cd7f4aabb387837cb"
+      "sha256": "0df9e60d9f9abf4a0af05bf2a24939c186a50c9152908e476f7de0877514979c"
     },
     {
       "path": "src/content.js",
-      "sha256": "8c7a9013cddc2db4a68ccb8a85af1c3ea0c716d9ff66906db6094f52d70d4aa6"
+      "sha256": "3aa0c4b405bd781d482016e01f0ad6ab26a3441acf45a7219303a07d142ea5a4"
+    },
+    {
+      "path": "src/CultureSection.css",
+      "sha256": "616ad6241403ee81e50b4887ba93a9aa1e9b0865d1f9a9ee8c5a40dd110ffe3d"
+    },
+    {
+      "path": "src/CultureSection.jsx",
+      "sha256": "8106de47cd3ab04799238189a85e0100307dc1957f9178dbfc59373c32e3477e"
     },
     {
       "path": "src/final-composition.css",
-      "sha256": "7e3e0fec95f117bc1fa6cd1496bf2d59480dd1291509c2f9726c49206f4b1a74"
+      "sha256": "c8f8c5c2532df2ba3b33dcbd44f6a3a5346901d7c8482c97fd3228d789d5adda"
     },
     {
       "path": "src/image-inert.css",
-      "sha256": "08da41c38b7f6398739b1a4341198a93688335a1ac88a8a70c8871921cfe6fec"
+      "sha256": "97c7dec3a2dc84e366a067e5d00a9565d420fecbd2dde94a36eea7a1eeb3ccf1"
+    },
+    {
+      "path": "src/LearningSteps.jsx",
+      "sha256": "e374f5695b7948776a29b7c8050137145bfeedb14ab6aa8e6c3bb65e6b2316d7"
     },
     {
       "path": "src/living-design.css",
-      "sha256": "dfa04e4e9bb668b19e241fd3b36d73423cf338a6a971d05c97f40e013d513035"
+      "sha256": "3b27ca4210a6f776446b539fb17b59c40b82df8087dee96b1a412cf1f85b2197"
+    },
+    {
+      "path": "src/LivingDetails.jsx",
+      "sha256": "b7414aa1bf7ae1063509dce84ab4e76a27c32a6d33cff93466e93f16285d2495"
     },
     {
       "path": "src/locale-utils.js",
-      "sha256": "1d4bf03f3108d6c714a103e0003e43375959ebfdc40911940c40d397a02fcc6e"
+      "sha256": "0ba5459ed58d977307e475682b57cae46990514b206cb54d9fcce4d220481b5b"
     },
     {
       "path": "src/locale.css",
-      "sha256": "cfaeff8c5be179ce8474490c867c87f117d2c2cc157d5268acf7f25ad345b823"
+      "sha256": "eaf9cd7e13ce4021dba39b2adbe34c65bee4b1b967c047c17991255b8608f4eb"
+    },
+    {
+      "path": "src/LocaleProvider.jsx",
+      "sha256": "6fdd382a946dc9877e1df8474a2049d2d6ddebb578d6148ec5517ddb6c916889"
     },
     {
       "path": "src/locales/en.js",
-      "sha256": "cd0aebc1a844114938066e07607ace752102aeb163295a0f21305f94877353a7"
+      "sha256": "7eb3b9e8501cf06f0dd5d5963bbd1520062f83e0241acc5451be331c161bfcef"
     },
     {
       "path": "src/locales/it.js",
-      "sha256": "cd342711b8776d717699b67a3831f519c9131cad091cce0961a54a70358e8454"
+      "sha256": "9a6e215e887d6ba6ffea842991eaa08c8c1c66ab3758727de28874a06e5c5204"
     },
     {
       "path": "src/locales/ru.js",
-      "sha256": "9bed98682c1df31d1e388430cc75fdd1b2418a36ccc7e1644a21f9cb930733f1"
+      "sha256": "abdb0db1a1ad1e24887a2c7c8d3784f02fb92f348904752eb99a7616ffc86850"
     },
     {
       "path": "src/main.jsx",
       "sha256": "957ecc5b633795be9679f5bf5cbae68e0126283f4d4672403b6f91030678d6ff"
+    },
+    {
+      "path": "src/MaterialsSection.css",
+      "sha256": "52ab91cc35c1378f08018f93bdd52f1c711b3a767e84455505e10ad5d3fe96a7"
+    },
+    {
+      "path": "src/MaterialsSection.jsx",
+      "sha256": "7ed0207da03f376105ba7a54537f8a861fafa8863aa447db381ebd5582a4f07a"
     },
     {
       "path": "src/miro-fplus.css",
@@ -620,47 +596,107 @@
     },
     {
       "path": "src/miro-shell-refreshed.html",
-      "sha256": "29c8889a46d5d3b16c83aa56b91ce1fb70b95b9593b1a50222af6f1672590595"
+      "sha256": "fa18750d5d9ab6fe00a97fe3363c5b47e086f4cae709cdf3d24afefa5eb21454"
     },
     {
       "path": "src/miro-shell.html",
-      "sha256": "a7ee76e945ec453dfb69e6953a91e0ea06743ed3cc9c1addeb3c757d6608505a"
+      "sha256": "ef8959c826fc61f4a28a02965268bfeedebfa755cea4fd8f1c897746d3b0c974"
+    },
+    {
+      "path": "src/MiroReviewHost.css",
+      "sha256": "1e468660fdc5691374835dca1633533a7b23c8577559e441031ac6b8951a3cd9"
+    },
+    {
+      "path": "src/MiroReviewHost.js",
+      "sha256": "b0d989553a1e13ce5dd3e7a228b98352fc433d13ce946f6f0520a0e238f81a40"
+    },
+    {
+      "path": "src/MiroShellReview.css",
+      "sha256": "b1f94f593a41b9a3b5848be2243f4cc4d630586cf1431fd8e3a5e9cc9a9e1bf7"
+    },
+    {
+      "path": "src/MiroShellReview.jsx",
+      "sha256": "bc6c33def459d50f3a9bd6b937b0b4da4728d819057b7da21e6dce652cedc9d3"
+    },
+    {
+      "path": "src/MiroShellVariants.css",
+      "sha256": "0772e822518b87d8b9cc9a53c55dd29836a91905c6c563cc878a5fafa5c21415"
+    },
+    {
+      "path": "src/MiroViewer.jsx",
+      "sha256": "497255e1b274873950c4cf10758dbbdab2a97c9ac92de2dab621c32f3da12640"
     },
     {
       "path": "src/privacy.css",
-      "sha256": "d65abae23d7c834b188954560a694d82388ce9bd5fa4cdaf89cc48546f5c598c"
+      "sha256": "d6ff8ac330ed19ee31eb81c7359c78959632978338261edf3a4ad6b2704c6141"
+    },
+    {
+      "path": "src/Privacy.jsx",
+      "sha256": "94191340908a14269563c3a87116faa3616d38ad51bd6af93db55cee6a8880cb"
     },
     {
       "path": "src/quiz-data.js",
-      "sha256": "3bc77faeea1446016273fccfac1cf44c9ccfb8ea37895614bbe466f75caef705"
+      "sha256": "29ea3b9843e3aa5657e32da3e15130880e81d4d63a3449cb521575ab6642aa26"
+    },
+    {
+      "path": "src/Quiz.jsx",
+      "sha256": "0193b6f6d39b6b63951b81e347aa6dee23a3260f039c153030c7d2c560bc9e5e"
+    },
+    {
+      "path": "src/QuizDecoration.css",
+      "sha256": "87300fa257e6c8fe6ddeb2b27e89e425d1b00d3080c7204c08c1d78b04a7d100"
+    },
+    {
+      "path": "src/QuizDecoration.jsx",
+      "sha256": "49471cecf8cc71f89f2e4cd38d110fec7509f2ed3ea038df2d85c0f7f78f4bdd"
     },
     {
       "path": "src/redesign.css",
-      "sha256": "0ef329b4c9671e5bc3036c675e45c0496868a567a981d49a18c983abc130c6a6"
+      "sha256": "7760a25cee91ce7db5631d8d623771062ef85686a8786d7235ecc2757ee5b9ea"
     },
     {
       "path": "src/refinements.css",
-      "sha256": "cecd5fb1e8375c26f20160e4354e74d22557578b3335def115c26bab57c58c10"
+      "sha256": "8d47530f38c321f37c60b79aecd2b92b803b62914d33c7445796074334fb7bb2"
     },
     {
       "path": "src/reviews-data.js",
-      "sha256": "da842458e3e10178c970b02374775020b06099d47e01cc8d88716544feda566d"
+      "sha256": "1e1d68f831eb89482652fab25eb2675ad357caafc19cf713b35748d959e93da6"
+    },
+    {
+      "path": "src/ReviewsSection.css",
+      "sha256": "7022d08f55a81e88ea928a5e790dfae646905a0081bf9e53421c49838024d98d"
+    },
+    {
+      "path": "src/ReviewsSection.jsx",
+      "sha256": "1fe42cb9b418d55d73461bd69c364e662b9072a4d8643aeae99fe42ad34e624f"
     },
     {
       "path": "src/sections.css",
-      "sha256": "7fafc30d0b89e5418153b0f3054e516cd902b45a03629067f4756e1662e2f365"
+      "sha256": "6fc572b97e430e51a14b84696a70e67420130f8aef982b1dfabc65443cd64a26"
+    },
+    {
+      "path": "src/seo-render.jsx",
+      "sha256": "935fbe17a9b5f41ec709b89907a219b1c64ca03e309fc4b6e6c27797deeb981a"
+    },
+    {
+      "path": "src/seo-settings.js",
+      "sha256": "61ad8508b256786c02343b99486dd28fbe43fde710f5a0f0fc6e68cc1cfd4d2d"
     },
     {
       "path": "src/site-v9.css",
-      "sha256": "8cf1870bf86bb866d96dda6985090c5f84309c686481e1075a108e3f6552c83a"
+      "sha256": "08014ab0a9cf490afe0d092cf3159eb1ef410905aed042000fa21eec3fb19bde"
+    },
+    {
+      "path": "src/SiteV9.jsx",
+      "sha256": "b2fa64fb9f3de8827ed16bc6ed35100eacb05430505d87ad1b5e3641a225885d"
     },
     {
       "path": "src/style-entry.js",
-      "sha256": "6afed2afe816f36adf074c21fdb070f44433da7adb6a7cb5e3b2af775028bc77"
+      "sha256": "ebca8689f54cd3087f0513b421360f14b67def6281379b02fde359c3906ae629"
     },
     {
       "path": "src/styles.css",
-      "sha256": "0c302e997474564d62328d0c8115d35a1954c50409d4118130fbf23ceabe1a8f"
+      "sha256": "362a018f9560ee52807dc5a17a91ea12056a558b37f91776331e9b4a43f734b7"
     },
     {
       "path": "src/useBelowHeroImages.js",
@@ -672,11 +708,31 @@
     },
     {
       "path": "src/version-g.css",
-      "sha256": "48af119995fe4879af435d18a29cbfd7c85057d477b50bbea35b71a35e357fb4"
+      "sha256": "65648f6b1f6815615300f1a8fc63e9a22d28e95f89d6b533fab74d18b8059bb2"
+    },
+    {
+      "path": "tests/i18n.test.mjs",
+      "sha256": "fb89536cd6881982c1e5917ed93d8feb3e4bb79cad9476c3f8b7ab01f4b2db9a"
+    },
+    {
+      "path": "tests/indexing-policy.test.mjs",
+      "sha256": "d89a45a832d6b2387268e748354b072b0854b5a76f56747c873d9bcce416dc5d"
+    },
+    {
+      "path": "tests/responsive-ranges.test.mjs",
+      "sha256": "e895aba939441c0002aae8dc6dbef89a483e9918e667007496aff8fed93c36f6"
+    },
+    {
+      "path": "tests/seo-settings.test.mjs",
+      "sha256": "f4cacce02945b7bc0ca850f49b947346c75f73143fc2c27ecd9252235c04adbf"
+    },
+    {
+      "path": "tests/sites-worker.test.mjs",
+      "sha256": "8ca10b7bda5d29d05cbed90fc0c63ee11091c8b197d7e6828cfb2ac8bd99b7ab"
     },
     {
       "path": "vite.config.mjs",
-      "sha256": "03f06c756fcd153c0f17c32f7957338b55619683e39b820cbe05ea3e00225834"
+      "sha256": "ce7bb9aa0c9c01c4b05583d3db5a7397656469e2f39c304906b47316c7ab75b3"
     }
   ],
   "checksumBasis": "SHA-256 of committed Git blob bytes for source/current; textual working-copy CRLF conversion is excluded.",

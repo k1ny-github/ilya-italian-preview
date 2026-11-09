@@ -3,7 +3,7 @@ const frame=document.querySelector('#review-frame');
 const notice=document.querySelector('#review-narrow');
 const label=document.querySelector('#review-size');
 const buttons=[...document.querySelectorAll('[data-width]')];
-let width=360;
+let width=390;
 function render(){
   const style=getComputedStyle(stage);
   const available=stage.clientWidth-parseFloat(style.paddingLeft)-parseFloat(style.paddingRight);

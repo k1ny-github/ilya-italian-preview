@@ -1,6 +1,7 @@
 {
-  "release": "i18n-auto-2026-11-08",
-  "sourceCheckpoint": "c9e80a824303025e3ab8ae4344dca1ea71f9d4d9",
-  "previousPublicCommit": "1ee743ea93800d1d9f2dd709875a4b1964ac3ff9",
-  "purpose": "owner-review"
+  "release": "seo-launch-2026-11-09",
+  "sourceCheckpoint": "014723bb02674f0c5b2a9f6131de7b6f5dc79b83",
+  "previousPublicCommit": "f0ffc5df40a93b44535758a2fcf87c056ad109d0",
+  "purpose": "owner-approved-indexing",
+  "indexing": "open"
 }

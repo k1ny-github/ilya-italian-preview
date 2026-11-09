@@ -1,0 +1,17 @@
+ROBOTS: TWO PREPARED MODES / CLOSED IS ACTIVE
+
+Closed (default): User-agent: * / Disallow: /. Existing noindex,nofollow on main and private pages is retained. This is the expressly requested prelaunch crawl block, not a guarantee of removing previously discovered URLs.
+
+Launch mode ONLY AFTER OWNER PERMISSION:
+- Confirm the real final HTTPS site URL and base path, not a placeholder or an assumed future domain.
+- Set SEO_INDEXING=true AND SEO_RELEASE_APPROVED=true AND VITE_SITE_URL=<approved actual URL> for that release only. These flags do not replace actual owner permission.
+- Public canonical HTML gets no restrictive robots meta tag. Privacy keeps its existing noindex,nofollow.
+- robots.txt: User-agent: * / Allow: /, blank line, Sitemap: <approved URL>/sitemap.xml. No additional Disallow. CSS/JS/images and pages with noindex remain crawlable.
+- Sitemap contains only the canonical ru.html, en.html, it.html; no privacy, root/index aliases, queries, fragments, review or history URLs.
+- Canonical consolidates duplicate root/index/query URLs; it is a preference signal, not an HTTP redirect or guaranteed exclusion. Handle historical technical URLs with accessible noindex or actual404/410 on the final host; do not add Disallow to hide their noindex.
+- At deployment check actual robots.txt and sitemap.xml200, canonical URLs200, correct MIME types, and no noindex/nofollow in X-Robots-Tag or HTML on searchable pages. Recheck CSS/JS/image fetches and canonical/hreflang.
+- Existing published archives require a separate release decision; no remote files changed here.
+- Final hosting headers/redirects, subpath deployment and Sites fallback remain as described in the SEO report.
+
+No analytics/tracking/cookies added. Visible content/design untouched.
+The open robots file in dist/seo-review is only a non-public template; it must never be copied to the live site with its placeholder. The build generates the real sitemap URL from VITE_SITE_URL at the approved release.

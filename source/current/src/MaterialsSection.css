@@ -4,7 +4,7 @@
   font-weight: 400;
   font-stretch: normal;
   font-display: swap;
-  src: url(/ilya-italian-preview/images/miro-approved/assets/noto-sans-0.woff) format('woff');
+  src: url(/images/miro-approved/assets/noto-sans-0.woff) format('woff');
 }
 @font-face {
   font-family: 'Noto Sans';
@@ -12,7 +12,7 @@
   font-weight: 500;
   font-stretch: normal;
   font-display: swap;
-  src: url(/ilya-italian-preview/images/miro-approved/assets/noto-sans-1.woff) format('woff');
+  src: url(/images/miro-approved/assets/noto-sans-1.woff) format('woff');
 }
 @font-face {
   font-family: 'Noto Sans';
@@ -20,7 +20,7 @@
   font-weight: 600;
   font-stretch: normal;
   font-display: swap;
-  src: url(/ilya-italian-preview/images/miro-approved/assets/noto-sans-2.woff) format('woff');
+  src: url(/images/miro-approved/assets/noto-sans-2.woff) format('woff');
 }
 @font-face {
   font-family: 'Noto Sans';
@@ -28,7 +28,7 @@
   font-weight: 700;
   font-stretch: normal;
   font-display: swap;
-  src: url(/ilya-italian-preview/images/miro-approved/assets/noto-sans-3.woff) format('woff');
+  src: url(/images/miro-approved/assets/noto-sans-3.woff) format('woff');
 }
 
 

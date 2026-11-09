@@ -2,11 +2,11 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
 export default defineConfig({
-  base: "/ilya-italian-preview/",
+  base: process.env.SITE_BASE || "/",
   build: {
     outDir: "dist/client",
     rollupOptions: {
-      input: ['index.html', 'privacy.html', 'miro-shell-review.html', 'miro-shell-review-frame.html'],
+      input: ['index.html', 'privacy.html'],
     },
   },
   optimizeDeps: {

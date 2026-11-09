@@ -1,7 +1,9 @@
 export const supportedLocales = ['ru', 'en', 'it'];
-export function resolveLocale({ search = '', languages, language } = {}) {
+export function resolveLocale({ search = '', languages, language, pathname = '' } = {}) {
   const explicit = new URLSearchParams(search).get('lang');
   if (supportedLocales.includes(explicit)) return explicit;
+  const pageLocale = pathname.match(/\/(ru|en|it)\.html$/)?.[1];
+  if (pageLocale) return pageLocale;
   const preferences = Array.isArray(languages) && languages.length ? languages : [language];
   for (const preference of preferences) {
     const primary = typeof preference === 'string' ? preference.toLowerCase().split(/[-_]/)[0] : '';

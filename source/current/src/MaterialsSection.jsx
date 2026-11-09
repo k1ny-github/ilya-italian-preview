@@ -25,7 +25,7 @@ export function MaterialsSection({
     return () => observer.disconnect();
   }, []);
   const features = <div className="features">{content.materials.map(([title, text], index) => {
-      const icon = <img src={`/ilya-italian-preview/images/miro-approved/assets/${index ? "folder-tile-source.png" : "miro-yellow-tile.png"}`} width={index ? 94 : 90} height={89} alt="" loading="lazy" />;
+      const icon = <img src={`/images/miro-approved/assets/${index ? "folder-tile-source.png" : "miro-yellow-tile.png"}`} width={index ? 94 : 90} height={89} alt="" loading="lazy" />;
       return <div className="feature" key={title}><div className="feature-heading">{icon}<h3>{title}</h3></div><p>{text}</p></div>;
     })}</div>;
   const board = <Suspense fallback={<div className="m13-screen-placeholder" />}>{ready ? <MiroViewer shellVariant={shellVariant} /> : <div className="m13-screen-placeholder" />}</Suspense>;

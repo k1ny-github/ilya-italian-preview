@@ -28,11 +28,11 @@ export function useAmbientMotion() {
 }
 
 const photos = [
-  ['/ilya-italian-preview/images/italian-street.png', 'Итальянская улица — сгенерированная иллюстрация'],
-  ['/ilya-italian-preview/images/italian-cafe.png', 'Столик кафе — сгенерированная иллюстрация'],
-  ['/ilya-italian-preview/images/italian-piazza.png', 'Итальянская площадь — сгенерированная иллюстрация'],
-  ['/ilya-italian-preview/images/italian-bakery.png', 'Итальянская пекарня — сгенерированная иллюстрация'],
-  ['/ilya-italian-preview/images/italian-terrace.png', 'Терраса — сгенерированная иллюстрация'],
+  ['/images/italian-street.png', 'Итальянская улица — сгенерированная иллюстрация'],
+  ['/images/italian-cafe.png', 'Столик кафе — сгенерированная иллюстрация'],
+  ['/images/italian-piazza.png', 'Итальянская площадь — сгенерированная иллюстрация'],
+  ['/images/italian-bakery.png', 'Итальянская пекарня — сгенерированная иллюстрация'],
+  ['/images/italian-terrace.png', 'Терраса — сгенерированная иллюстрация'],
 ];
 
 export function CultureGallery() {

@@ -1,0 +1,20 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import {resolveLocale,localizedUrl} from '../src/locale-utils.js';
+test('URL language wins; invalid URL falls through',()=>{assert.equal(resolveLocale({search:'?lang=it',languages:['en']}),'it');assert.equal(resolveLocale({search:'?lang=de',languages:['en-US']}),'en')});
+test('browser preference order normalizes scripts and regions',()=>{assert.equal(resolveLocale({languages:['fr','it-IT','en']}),'it');assert.equal(resolveLocale({languages:['EN-latn-US']}),'en');assert.equal(resolveLocale({language:'it-CH'}),'it')});
+test('unsupported or missing preferences fall back to Russian',()=>{assert.equal(resolveLocale({languages:['de']}),'ru');assert.equal(resolveLocale({}),'ru');assert.equal(resolveLocale(),'ru')});
+test('manual selection preserves query and hash',()=>{assert.equal(localizedUrl('/?utm=abc#quiz','it'),'/?utm=abc&lang=it#quiz');assert.equal(localizedUrl('./privacy.html?x=1&lang=ru#note','en'),'./privacy.html?x=1&lang=en#note')});
+import ru from '../src/locales/ru.js';
+import {content,config} from '../src/content.js';
+import {Q} from '../src/quiz-data.js';
+import {reviews} from '../src/reviews-data.js';
+import {readFile} from 'node:fs/promises';
+import {parse} from '@babel/parser';
+import traverseModule from '@babel/traverse';
+const traverse=traverseModule.default;
+test('Russian dictionary is the exact accepted source data',()=>{assert.deepEqual(ru.content,content);assert.deepEqual(ru.faqAnswers,Object.values(config.faqAnswers));assert.deepEqual(ru.questions,Q);assert.deepEqual(ru.reviews,reviews)});
+function shape(value){if(Array.isArray(value))return value.map(shape);if(value&&typeof value==='object')return Object.fromEntries(Object.entries(value).map(([k,v])=>[k,shape(v)]));return typeof value}
+for(const locale of ['en','it']) test(`${locale} is complete and preserves assessment facts`,async()=>{const {default:d}=await import(`../src/locales/${locale}.js`);assert.deepEqual(shape({...d,heroLines:[]}),shape({...ru,heroLines:[]}));assert.ok(d.heroLines.every(line=>typeof line==='string'&&line.length>0));assert.equal(d.heroLines.join(' '),d.content.hero);d.questions.forEach((q,i)=>{for(const key of ['l','s','o','k'])assert.deepEqual(q[key],Q[i][key]);assert.equal((q.q+q.t+q.w).match(/[А-Яа-яЁё]/),null)});for(const [key,value] of Object.entries(d.ui)){assert.deepEqual(value.match(/\{\d+\}/g)||[],key.match(/\{\d+\}/g)||[])};assert.deepEqual(d.privacy.paragraphs.join('').match(/href="[^"]+"/g),ru.privacy.paragraphs.join('').match(/href="[^"]+"/g))});
+test('every static UI lookup exists in the source dictionary',async()=>{for(const file of ['SiteV9.jsx','Quiz.jsx','ReviewsSection.jsx','CultureSection.jsx','MaterialsSection.jsx','MiroViewer.jsx','LocaleProvider.jsx']){const ast=parse(await readFile(new URL('../src/'+file,import.meta.url),'utf8'),{sourceType:'module',plugins:['jsx']});traverse(ast,{CallExpression(p){if(p.node.callee.name==='t'&&p.node.arguments[0]?.type==='StringLiteral')assert.ok(Object.hasOwn(ru.ui,p.node.arguments[0].value),file+': '+p.node.arguments[0].value)}})}});
+test('language plumbing has no browser storage or cookies writes',async()=>{for(const file of ['LocaleProvider.jsx','locale-utils.js','Privacy.jsx'])assert.doesNotMatch(await readFile(new URL('../src/'+file,import.meta.url),'utf8'),/localStorage|sessionStorage|document\.cookie/)});

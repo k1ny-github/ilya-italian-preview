@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 import { useBelowHeroImages } from "./useBelowHeroImages.js";
 const frames = [["C8-02-pisa-tower-and-cathedral", "Пизанская башня и собор"], ["C8-06-apollo-daphne-marble-detail", "Мраморный профиль Дафны"], ["C9-light-italian-church-interior", "Светлый интерьер церкви"], ["C8-03-bologna-terracotta-rooftops", "Красные крыши Болоньи"], ["C8-04-bologna-archiginnasio-courtyard", "Двор Аркиджинназио"], ["C8-05-light-italian-gallery", "Светлая итальянская галерея"], ["C8-07-italian-painted-vault", "Расписной свод"], ["C8-01-colosseum-daylight", "Колизей"]];
 const mod = n => (n % frames.length + frames.length) % frames.length;
-const imageUrl = n => `/ilya-italian-preview/images/culture-slider/${frames[mod(n)][0]}.webp`;
+const imageUrl = n => `/images/culture-slider/${frames[mod(n)][0]}.webp`;
 export default function CultureSection({
   title,
   text,
@@ -148,9 +148,9 @@ export default function CultureSection({
       </div>
       <div ref={regionRef} className="c16-slider" role="region" aria-label={t("Иллюстративная галерея культуры Италии")} aria-roledescription={t("карусель")}>
         <div className="c16-photos" data-image-surface="">
-          <figure className="c16-main"><img data-c16-image src={imagesReady ? imageUrl(0) : undefined} width="1254" height="1254" alt={t("Иллюстрация: {0}", t(frames[0][1]))} loading="lazy" decoding="async" /></figure>
+          <figure className="c16-main"><img data-c16-image src={imageUrl(0)} width="1254" height="1254" alt={t("Иллюстрация: {0}", t(frames[0][1]))} loading="lazy" decoding="async" /></figure>
           {[1, 2].map((n, k) => <div key={n} className={`c16-small ${k ? "c16-second" : ""}`}>
-            <img data-c16-image src={imagesReady ? imageUrl(n) : undefined} width="1254" height="1254" alt={t("Иллюстрация: {0}", t(frames[n][1]))} loading="lazy" decoding="async" />
+            <img data-c16-image src={imageUrl(n)} width="1254" height="1254" alt={t("Иллюстрация: {0}", t(frames[n][1]))} loading="lazy" decoding="async" />
           </div>)}
         </div>
         <span className="c16-counter" hidden aria-live="off">1 / 8</span>
