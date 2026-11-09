@@ -1,7 +1,7 @@
 {
-  "release": "seo-launch-2026-11-09",
-  "sourceCheckpoint": "014723bb02674f0c5b2a9f6131de7b6f5dc79b83",
-  "previousPublicCommit": "f0ffc5df40a93b44535758a2fcf87c056ad109d0",
-  "purpose": "owner-approved-indexing",
+  "release": "final-mobile-2026-11-10",
+  "sourceCheckpoint": "095388d2951961c71e2dcaab7f4e30d3ed3a47f4",
+  "previousPublicCommit": "eff98cfbdf5a3b6aad90f6d14f9bd2b0151b47ee",
+  "purpose": "owner-approved-mobile-polish",
   "indexing": "open"
 }
