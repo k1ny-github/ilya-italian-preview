@@ -11,9 +11,9 @@ export default {
     "intro": "Learn with a linguist and translator who holds a CILS C1 certificate and has used Italian for 15 years",
     "cta": "Book a lesson",
     "bullets": [
-      "An assessment of your current level",
-      "An introduction to your teacher",
-      "An overview of the method and materials",
+      "Assessment of your current level",
+      "Introduction to your teacher",
+      "Overview of the method and materials",
       "Answers to your questions about lessons"
     ],
     "trust": [
@@ -52,7 +52,7 @@ export default {
     "approachTitle": "My approach",
     "approach": [
       [
-        "A proven method",
+        "Proven method",
         "I teach using official Italian textbooks, drawing on them to build a programme around your goal. That way, you can always see where you are and what comes next."
       ],
       [
@@ -60,7 +60,7 @@ export default {
         "Videos, audio and texts about everyday life in Italy. We listen to how Italians themselves speak and work through situations you’ll encounter."
       ],
       [
-        "A focus on communication",
+        "Focus on communication",
         "We start communicating in Italian from the very first lesson. There’s one aim: to get you talking. The fear of making mistakes fades, and speaking Italian becomes natural for you."
       ],
       [
@@ -71,7 +71,7 @@ export default {
     "materialsTitle": "Access to materials after the lesson",
     "materials": [
       [
-        "A shared board",
+        "Shared board",
         "We work on a shared Miro board, so I can help you with tasks as we talk."
       ],
       [
