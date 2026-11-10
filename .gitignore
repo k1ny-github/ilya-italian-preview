@@ -2,3 +2,5 @@ source/current/node_modules/
 source/current/dist/
 *.log
 .env*
+
+/_site/
