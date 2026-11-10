@@ -60,12 +60,18 @@
 .v9 .h01-header .v9-flag::after {
   content: "";
   position: absolute;
-  inset: 5px;
-  border: 1px solid #8796a5;
-  border-radius: 3px;
+  top: 5px;
+  left: 5px;
+  width: calc(200% - 20px);
+  height: calc(200% - 20px);
+  box-sizing: border-box;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  transform: scale(0.5);
+  transform-origin: top left;
   pointer-events: none;
 }
 
 @media (width < 640px) {
-  .v9 .h01-header .v9-flag::after { inset: 4px; }
+  .v9 .h01-header .v9-flag::after { top: 4px; left: 4px; width: calc(200% - 16px); height: calc(200% - 16px); }
 }
