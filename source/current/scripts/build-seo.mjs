@@ -25,6 +25,9 @@ try {
   page=page.replace('</head>',extra+'</head>');
   const markup=html.replaceAll('\"/images/', '\"'+base+'images/').replaceAll(', /images/', ', '+base+'images/');
   page=page.replace('<div id="root"></div>',`<div id="root">${markup}</div>`).replace('</head>',`<link rel="canonical" href="${canonical}" />${alternates}<meta property="og:title" content="${escape(metadata.title)}" /><meta property="og:description" content="${escape(metadata.description)}" /><meta property="og:type" content="website" /><meta property="og:url" content="${canonical}" /><meta property="og:locale" content="${{ru:'ru_RU',en:'en_US',it:'it_IT'}[locale]}" /><script type="application/ld+json">${JSON.stringify(graphFor(locale,metadata,site.href)).replaceAll('<','\\u003c')}</script></head>`);
+  // Without JavaScript, show only the normal images once they load: transparent
+  // leaves must not retain a low-resolution background beneath their edges.
+  page=page.replace('</head>','<noscript><style>.h01-hero img{background-image:none!important}</style></noscript></head>');
   await writeFile(path.join(out,locale+'.html'),page);
   if(locale==='ru')await writeFile(path.join(out,'index.html'),page);
  }

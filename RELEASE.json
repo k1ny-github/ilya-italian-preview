@@ -1,6 +1,7 @@
 {
-  "release": "header-cta-release-2026-11-10",
-  "sourceCheckpoint": "fbcf3a34688ecae5396cba1375fba16fc42fe686",
+  "release": "hero-preview-release-2026-11-10",
+  "sourceCheckpoint": "49511ceecc75447853b88bf06f5a4f587f8bcf61",
   "indexing": "open",
-  "design": "approved white compact header/footer and gradient darkening without movement"
+  "quality": "original image bytes and responsive sources unchanged",
+  "previews": "inline SSR only, removed after decode; no delay"
 }
