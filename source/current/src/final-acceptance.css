@@ -1,13 +1,13 @@
 /* Owner-selected A composition: retain alignment, strengthen primary actions. */
-.v9 :is(.h01-primary, .f07-button, .q08-button, .c16-cta),
-.v9 #booking .b11-calendar {
+.v9 main#main :is(.h01-primary, .f07-button, .q08-button, .c16-cta),
+.v9 main#main #booking .b11-calendar {
   min-height: 56px;
   box-sizing: border-box;
 }
 @media (width < 640px) {
   .v9 .h01-art { --h01-photo-width: min(308px, calc(100vw - 64px)); }
-  .v9 :is(.h01-primary, .f07-button, .q08-button, .c16-cta),
-  .v9 #booking .b11-calendar {
+  .v9 main#main :is(.h01-primary, .f07-button, .q08-button, .c16-cta),
+  .v9 main#main #booking .b11-calendar {
     display: inline-flex;
     align-items: center;
     justify-content: center;
