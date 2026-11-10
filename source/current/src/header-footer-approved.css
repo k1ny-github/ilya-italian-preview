@@ -55,23 +55,14 @@
   .v9 footer.c13-footer .c13-footer-inner { padding-block: 8px; }
 }
 
-/* Header flag keeps its size and spacing without the white badge. */
-.v9 .h01-header .v9-flag { position: relative; background: transparent; box-shadow: none; }
-.v9 .h01-header .v9-flag::after {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  width: calc(200% - 20px);
-  height: calc(200% - 20px);
-  box-sizing: border-box;
-  border: 1px solid #30363d;
-  border-radius: 6px;
-  transform: scale(0.5);
-  transform-origin: top left;
-  pointer-events: none;
+/* Approved: a single 33 x 22 SVG flag, no badge or shadow. */
+.v9 .h01-header .v9-flag {
+  display: grid;
+  place-items: center;
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
+  overflow: visible;
 }
-
-@media (width < 640px) {
-  .v9 .h01-header .v9-flag::after { top: 4px; left: 4px; width: calc(200% - 16px); height: calc(200% - 16px); }
-}
+.v9 .h01-header .v9-flag::after { content: none; }
+.v9 .h01-header .v9-flag-svg { display: block; width: 33px; height: 22px; flex: none; }

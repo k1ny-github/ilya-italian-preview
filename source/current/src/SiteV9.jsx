@@ -66,7 +66,7 @@ function Brand() {
     locale
   } = useLocale();
   const c = dictionary.content;
-  return <a className="v9-brand" href="#top" aria-label={t("{0} — в начало", c.name)}><span className="v9-flag" aria-hidden="true"><i /><i /><i /></span><span><strong>{c.name}</strong><small>{c.role}</small></span></a>;
+  return <a className="v9-brand" href="#top" aria-label={t("{0} — в начало", c.name)}><span className="v9-flag" aria-hidden="true"><svg className="v9-flag-svg" width="33" height="22" viewBox="0 0 33 22" focusable="false"><defs><clipPath id="brand-italy-flag-clip"><rect width="33" height="22" rx="2" /></clipPath></defs><g clipPath="url(#brand-italy-flag-clip)"><path fill="#fff" d="M0 0h33v22H0z" /><path fill="#00a769" d="M0 0h11v22H0z" /><path fill="#ec1641" d="M22 0h11v22H22z" /></g><rect x="0.25" y="0.25" width="32.5" height="21.5" rx="1.75" fill="none" stroke="#9ba4ad" strokeWidth="0.5" /></svg></span><span><strong>{c.name}</strong><small>{c.role}</small></span></a>;
 }
 function OliveBranch({
   className = ""
