@@ -54,3 +54,6 @@
   .v9 .h01-header { min-height: 64px; padding-block: 8px; }
   .v9 footer.c13-footer .c13-footer-inner { padding-block: 8px; }
 }
+
+/* Header flag keeps its size and spacing without the white badge. */
+.v9 .h01-header .v9-flag { background: transparent; box-shadow: none; }
