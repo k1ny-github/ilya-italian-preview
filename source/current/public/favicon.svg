@@ -1,1 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path fill="#009246" d="M8 16h16v32H8z"/><path fill="#fff" d="M24 16h16v32H24z"/><path fill="#ce2b37" d="M40 16h16v32H40z"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30"><defs><clipPath id="flag"><rect width="30" height="30" rx="3"/></clipPath></defs><g clip-path="url(#flag)"><path fill="#009246" d="M0 0h10v30H0z"/><path fill="#fff" d="M10 0h10v30H10z"/><path fill="#ce2b37" d="M20 0h10v30H20z"/></g></svg>
