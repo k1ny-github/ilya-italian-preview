@@ -14,6 +14,7 @@ export function LocaleProvider({children, initialLocale}) {
   const dictionary = dictionaries[locale];
   useEffect(()=>{
     const sync=()=>setLocale(browserLocale());
+    sync();
     addEventListener('popstate',sync);
     return ()=>removeEventListener('popstate',sync);
   },[]);
