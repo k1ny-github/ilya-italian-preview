@@ -1,3 +1,4 @@
+import { useSectionReveal } from "./useSectionReveal.js";
 import { ProgressiveHeroImage } from "./ProgressiveHeroImage.jsx";
 import { localizedUrl } from "./locale-utils.js";
 import { useLocale } from "./LocaleProvider.jsx";
@@ -152,6 +153,7 @@ export function SiteV9() {
   } = useLocale();
   const c = dictionary.content;
   useInertImages();
+  useSectionReveal(locale);
   const [menuOpen, setMenuOpen] = useState(false);
   const menuToggleRef = useRef(null);
   const [modal, setModal] = useState(null);
