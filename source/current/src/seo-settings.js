@@ -12,7 +12,7 @@ export function syncPageSeo(doc,locale,metadata,origin=currentSiteUrl){
  for(const [property,value] of Object.entries(social))doc.querySelector(`meta[property="og:${property}"]`)?.setAttribute('content',value);
  for(const [name,value] of Object.entries(supplementaryMetadata(locale)))doc.querySelector(`meta[name="${name}"]`)?.setAttribute('content',value);
 }
-export const russianMetadata={title:'Илья Хорьков — репетитор итальянского языка онлайн',description:'Индивидуальные онлайн-занятия итальянским языком с Ильёй Хорьковым: от нуля до C1. Бесплатный ознакомительный урок.'};
+export const russianMetadata={title:'Илья Хорьков — репетитор итальянского языка онлайн',description:'Индивидуальные онлайн-занятия по итальянскому языку с Ильёй Хорьковым: бесплатный ознакомительный урок для любого уровня от нуля до C1.'};
 export function canonicalUrl(locale,origin=currentSiteUrl){
  if(!['ru','en','it'].includes(locale))throw new Error('Unsupported locale');
  const root=new URL(origin);if(!root.pathname.endsWith('/'))root.pathname+='/';
