@@ -1,4 +1,4 @@
-import {canonicalUrl,russianMetadata,currentSiteUrl} from './seo-settings.js';
+import {syncPageSeo,russianMetadata,currentSiteUrl} from './seo-settings.js';
 import {createContext, useContext, useEffect, useMemo, useState} from 'react';
 import ru from './locales/ru.js';
 import en from './locales/en.js';
@@ -19,11 +19,10 @@ export function LocaleProvider({children, initialLocale}) {
   },[]);
   useEffect(()=>{
     document.documentElement.lang=locale;
-    const canonical=document.querySelector('link[rel=canonical]');
     const siteUrl=import.meta.env.VITE_SITE_URL || currentSiteUrl;
-    if(canonical && !location.pathname.endsWith('/privacy.html'))canonical.href=canonicalUrl(locale,siteUrl);
     const privacy=location.pathname.endsWith('/privacy.html');
     const metadata=locale==='ru' ? russianMetadata : dictionary.metadata;
+    if(!privacy)syncPageSeo(document,locale,metadata,siteUrl);
     document.title=privacy ? dictionary.metadata.privacyTitle : metadata.title;
     document.querySelector('meta[name="description"]')?.setAttribute('content',privacy ? dictionary.privacy.paragraphs[0] : metadata.description);
   },[locale,dictionary]);

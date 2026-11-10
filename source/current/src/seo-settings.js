@@ -1,4 +1,13 @@
 export const currentSiteUrl='https://k1ny-github.github.io/ilya-italian-preview/';
+export function syncPageSeo(doc,locale,metadata,origin=currentSiteUrl){
+ const canonical=canonicalUrl(locale,origin);
+ const link=doc.querySelector('link[rel=canonical]');
+ if(link)link.href=canonical;
+ const graph=doc.querySelector('script[type="application/ld+json"]');
+ if(graph)graph.textContent=JSON.stringify(graphFor(locale,metadata,origin)).replaceAll('<','\\u003c');
+ const social={title:metadata.title,description:metadata.description,url:canonical,locale:{ru:'ru_RU',en:'en_US',it:'it_IT'}[locale]};
+ for(const [property,value] of Object.entries(social))doc.querySelector(`meta[property="og:${property}"]`)?.setAttribute('content',value);
+}
 export const russianMetadata={title:'Илья Хорьков — репетитор итальянского языка онлайн',description:'Индивидуальные онлайн-занятия итальянским языком с Ильёй Хорьковым: от нуля до C1. Бесплатный ознакомительный урок. Связь с преподавателем в Telegram.'};
 export function canonicalUrl(locale,origin=currentSiteUrl){
  if(!['ru','en','it'].includes(locale))throw new Error('Unsupported locale');

@@ -1,7 +1,5 @@
 {
-  "release": "final-mobile-2026-11-10",
-  "sourceCheckpoint": "3aaf26b657396eb22529e7222d171cade19011ef",
-  "previousPublicCommit": "bfadf7ea8a61b0ad9b1d8eb8b9d7347da0d6f968",
-  "purpose": "owner-approved-mobile-polish",
+  "release": "seo-language-sync-2026-11-10",
+  "sourceCheckpoint": "7cf5d5d98faeffb904396b2f4d638c4d63a16308",
   "indexing": "open"
 }
