@@ -56,4 +56,16 @@
 }
 
 /* Header flag keeps its size and spacing without the white badge. */
-.v9 .h01-header .v9-flag { background: transparent; box-shadow: none; }
+.v9 .h01-header .v9-flag { position: relative; background: transparent; box-shadow: none; }
+.v9 .h01-header .v9-flag::after {
+  content: "";
+  position: absolute;
+  inset: 5px;
+  border: 1px solid #d7dde2;
+  border-radius: 3px;
+  pointer-events: none;
+}
+
+@media (width < 640px) {
+  .v9 .h01-header .v9-flag::after { inset: 4px; }
+}
