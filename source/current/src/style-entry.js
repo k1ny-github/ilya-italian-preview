@@ -21,3 +21,5 @@ import './image-inert.css';
 import './miro-fplus.css';
 import './locale.css';
 import './final-acceptance.css';
+import './header-footer-approved.css';
+import './cta-gradients-approved.css';

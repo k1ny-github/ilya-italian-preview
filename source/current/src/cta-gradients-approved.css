@@ -1,0 +1,49 @@
+/* Owner-approved header, footer and CTA treatment: 10 November 2026. */
+@property --ilya-cta-start {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: #098fff;
+}
+@property --ilya-cta-end {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: #075df2;
+}
+.v9 header.v9-header .h01-header a.v9-header-telegram,
+.v9 main#main :is(a.v9-primary,button.v9-primary,button.q08-button,a.f07-button) {
+  --ilya-cta-start: #098fff;
+  --ilya-cta-end: #075df2;
+  background: linear-gradient(115deg,var(--ilya-cta-start),var(--ilya-cta-end));
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  color: #fff;
+  border-color: transparent;
+  transform: none;
+  translate: none;
+  scale: none;
+  filter: none;
+  text-decoration: none;
+  transition: --ilya-cta-start 180ms ease-out, --ilya-cta-end 180ms ease-out;
+}
+.v9 header.v9-header .h01-header a.v9-header-telegram:is(:hover,:focus-visible,:active),
+.v9 main#main :is(a.v9-primary,button.v9-primary,button.q08-button,a.f07-button):not(:disabled):not([aria-disabled="true"]):is(:hover,:focus-visible,:active) {
+  --ilya-cta-start: #087be5;
+  --ilya-cta-end: #054cd2;
+  background-image: linear-gradient(115deg,var(--ilya-cta-start),var(--ilya-cta-end));
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  color: #fff;
+  border-color: transparent;
+  transform: none;
+  translate: none;
+  scale: none;
+  filter: none;
+  text-decoration: none;
+}
+/* A white keyline keeps the action distinct on the already blue format card. */
+.v9 main#main a.f07-button-light,
+.v9 main#main a.f07-button-light:is(:hover,:focus-visible,:active) { border-color: #fff; }
+@media (prefers-reduced-motion: reduce) {
+  .v9 header.v9-header .h01-header a.v9-header-telegram,
+  .v9 main#main :is(a.v9-primary,button.v9-primary,button.q08-button,a.f07-button) { transition: none; }
+}
