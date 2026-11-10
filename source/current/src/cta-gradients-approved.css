@@ -40,9 +40,20 @@
   filter: none;
   text-decoration: none;
 }
-/* A white keyline keeps the action distinct on the already blue format card. */
-.v9 main#main a.f07-button-light,
-.v9 main#main a.f07-button-light:is(:hover,:focus-visible,:active) { border-color: #fff; }
+/* White action stays distinct on the blue individual-format card. */
+.v9 main#main a.f07-button.f07-button-light,
+.v9 main#main a.f07-button.f07-button-light:not(:disabled):not([aria-disabled="true"]):is(:hover,:focus-visible,:active) {
+  background: #fff;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  border-color: #fff;
+  color: #075df2;
+  transition: background-color 180ms ease-out, border-color 180ms ease-out;
+}
+.v9 main#main a.f07-button.f07-button-light:not(:disabled):not([aria-disabled="true"]):is(:hover,:focus-visible,:active) {
+  background-color: #edf5ff;
+  border-color: #edf5ff;
+}
 @media (prefers-reduced-motion: reduce) {
   .v9 header.v9-header .h01-header a.v9-header-telegram,
   .v9 main#main :is(a.v9-primary,button.v9-primary,button.q08-button,a.f07-button) { transition: none; }
