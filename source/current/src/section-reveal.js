@@ -9,8 +9,8 @@ export function startSectionReveals(main, { Observer, media, viewportHeight }) {
       observer.unobserve(target);
       if (media.matches || typeof target.animate !== 'function') continue;
       // No hidden CSS state: SSR, disabled JS and failed animations stay readable.
-      const animation = target.animate([{ opacity: 0 }, { opacity: 1 }], {
-        duration: 420,
+      const animation = target.animate([{ opacity: 0, transform: 'translateY(20px)' }, { opacity: 1, transform: 'translateY(0px)' }], {
+        duration: 520,
         easing: 'cubic-bezier(0.16, 1, 0.3, 1)',
       });
       active.add(animation);
