@@ -1,7 +1,7 @@
 import {createServer} from 'vite';
 import {readFile,writeFile,mkdir,rm} from 'node:fs/promises';
 import path from 'node:path';
-import {canonicalUrl,graphFor,russianMetadata} from '../src/seo-settings.js';
+import {canonicalUrl,graphFor,russianMetadata,supplementaryMetadata} from '../src/seo-settings.js';
 import {indexingPolicy,applyPublicRobots} from './indexing-policy.mjs';
 const policy=indexingPolicy(process.env);
 const indexing=policy.indexing;
@@ -19,8 +19,10 @@ try {
   const result=render(locale);
   const html=result.html;
   const metadata=locale==='ru' ? russianMetadata : result.metadata;
+  const extra=Object.entries(supplementaryMetadata(locale)).map(([name,value])=>`<meta name="${name}" content="${escape(value)}" />`).join('');
   const canonical=canonicalUrl(locale,site.href);
   let page=applyPublicRobots(template,policy).replace('lang="ru"',`lang="${locale}"`).replace(/<title>[^<]*<\/title>/,`<title>${escape(metadata.title)}</title>`).replace(/<meta name="description" content="[^"]*"/,`<meta name="description" content="${escape(metadata.description)}"`);
+  page=page.replace('</head>',extra+'</head>');
   const markup=html.replaceAll('\"/images/', '\"'+base+'images/').replaceAll(', /images/', ', '+base+'images/');
   page=page.replace('<div id="root"></div>',`<div id="root">${markup}</div>`).replace('</head>',`<link rel="canonical" href="${canonical}" />${alternates}<meta property="og:title" content="${escape(metadata.title)}" /><meta property="og:description" content="${escape(metadata.description)}" /><meta property="og:type" content="website" /><meta property="og:url" content="${canonical}" /><meta property="og:locale" content="${{ru:'ru_RU',en:'en_US',it:'it_IT'}[locale]}" /><script type="application/ld+json">${JSON.stringify(graphFor(locale,metadata,site.href)).replaceAll('<','\\u003c')}</script></head>`);
   await writeFile(path.join(out,locale+'.html'),page);

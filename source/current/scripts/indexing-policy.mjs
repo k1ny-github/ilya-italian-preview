@@ -10,7 +10,7 @@ export function indexingPolicy(env={}) {
  return {
   indexing,siteUrl:site.href,
   robots:indexing ? `User-agent: *\nAllow: /\n\nSitemap: ${new URL('sitemap.xml',site)}\n` : 'User-agent: *\nDisallow: /\n',
-  publicRobots:indexing ? null : 'noindex, nofollow',
+  publicRobots:indexing ? 'index, follow' : 'noindex, nofollow',
   privateRobots:'noindex, nofollow',
  };
 }

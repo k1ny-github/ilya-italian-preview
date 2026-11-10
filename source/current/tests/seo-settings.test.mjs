@@ -1,6 +1,16 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {canonicalUrl,graphFor,syncPageSeo} from '../src/seo-settings.js';
+import {canonicalUrl,graphFor,syncPageSeo,supplementaryMetadata,russianMetadata} from '../src/seo-settings.js';
+test('Russian snippet is concise without Telegram and supplemental metadata is localized',()=>{
+ assert.doesNotMatch(russianMetadata.description,/Telegram|Телеграм/);
+ assert.ok(russianMetadata.description.length<=160);
+ for(const locale of ['ru','en','it']){
+  const meta=supplementaryMetadata(locale);
+  assert.ok(meta.author.length>0);
+  assert.ok(meta.keywords.split(',').length<=6);
+  assert.ok(meta.keywords.includes(locale==='ru'?'итальянский':'italian')||meta.keywords.includes('Italian'));
+ }
+});
 test('language overrides keep canonical, JSON-LD and social metadata consistent',()=>{
  const nodes=new Map();
  for(const key of ['link[rel=canonical]','script[type="application/ld+json"]',...['title','description','url','locale'].map(p=>`meta[property="og:${p}"]`)])nodes.set(key,{setAttribute(name,value){this[name]=value;}});

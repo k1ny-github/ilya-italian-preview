@@ -16,7 +16,7 @@ test('approved release still needs an explicit final URL',()=>{
 test('open policy allows crawling and points at the exact chosen sitemap',()=>{
  const policy=indexingPolicy({SEO_INDEXING:'true',SEO_RELEASE_APPROVED:'true',VITE_SITE_URL:'https://ilyakhorkov.example.org/site/'});
  assert.equal(policy.robots,'User-agent: *\nAllow: /\n\nSitemap: https://ilyakhorkov.example.org/site/sitemap.xml\n');
- assert.equal(policy.publicRobots,null);
+ assert.equal(policy.publicRobots,'index, follow');
  assert.equal(policy.privateRobots,'noindex, nofollow');
  assert.doesNotMatch(policy.robots,/Disallow|assets|images|css|javascript/);
 });

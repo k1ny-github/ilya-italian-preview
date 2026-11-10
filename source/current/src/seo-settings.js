@@ -1,4 +1,7 @@
 export const currentSiteUrl='https://k1ny-github.github.io/ilya-italian-preview/';
+export function supplementaryMetadata(locale){
+ return {author:locale==='ru'?'Илья Хорьков':'Ilya Khorkov',keywords:{ru:'итальянский язык онлайн, репетитор итальянского языка, индивидуальные занятия итальянским, бесплатный урок итальянского, Илья Хорьков',en:'Italian lessons online, Italian tutor, individual Italian lessons, free Italian lesson, Ilya Khorkov',it:'lezioni di italiano online, insegnante di italiano, lezioni individuali, lezione gratuita, Ilya Khorkov'}[locale]};
+}
 export function syncPageSeo(doc,locale,metadata,origin=currentSiteUrl){
  const canonical=canonicalUrl(locale,origin);
  const link=doc.querySelector('link[rel=canonical]');
@@ -7,8 +10,9 @@ export function syncPageSeo(doc,locale,metadata,origin=currentSiteUrl){
  if(graph)graph.textContent=JSON.stringify(graphFor(locale,metadata,origin)).replaceAll('<','\\u003c');
  const social={title:metadata.title,description:metadata.description,url:canonical,locale:{ru:'ru_RU',en:'en_US',it:'it_IT'}[locale]};
  for(const [property,value] of Object.entries(social))doc.querySelector(`meta[property="og:${property}"]`)?.setAttribute('content',value);
+ for(const [name,value] of Object.entries(supplementaryMetadata(locale)))doc.querySelector(`meta[name="${name}"]`)?.setAttribute('content',value);
 }
-export const russianMetadata={title:'Илья Хорьков — репетитор итальянского языка онлайн',description:'Индивидуальные онлайн-занятия итальянским языком с Ильёй Хорьковым: от нуля до C1. Бесплатный ознакомительный урок. Связь с преподавателем в Telegram.'};
+export const russianMetadata={title:'Илья Хорьков — репетитор итальянского языка онлайн',description:'Индивидуальные онлайн-занятия итальянским языком с Ильёй Хорьковым: от нуля до C1. Бесплатный ознакомительный урок.'};
 export function canonicalUrl(locale,origin=currentSiteUrl){
  if(!['ru','en','it'].includes(locale))throw new Error('Unsupported locale');
  const root=new URL(origin);if(!root.pathname.endsWith('/'))root.pathname+='/';
