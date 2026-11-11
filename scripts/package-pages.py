@@ -3,7 +3,7 @@ import shutil, json, os, re
 root=Path(__file__).resolve().parents[1]
 out=root/'_site'
 out.mkdir(exist_ok=True)
-for name in ['index.html','ru.html','en.html','it.html','privacy.html','robots.txt','sitemap.xml','favicon.svg','.nojekyll']:
+for name in ['index.html','ru.html','en.html','it.html','privacy.html','robots.txt','sitemap.xml','favicon.svg','.nojekyll','THIRD-PARTY-NOTICES.txt']:
     shutil.copy2(root/name,out/name)
 for name in ['assets','images']:
     shutil.copytree(root/name,out/name,dirs_exist_ok=True)

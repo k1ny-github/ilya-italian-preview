@@ -20,7 +20,16 @@
 
 ## Воспроизведение текущего интерфейса
 
-В source/current/: npm ci, затем npm run build.
-Статический результат: dist/client/, project base /ilya-italian-preview/.
-Размещать содержимое этой папки в корне существующего GitHub Pages project.
-Не публиковать node_modules, локальные журналы или workspace.
+В папке `source/current/` выполните `npm ci`. Для локального предпросмотра из корня достаточно `npm run build`. Готовые страницы лежат в `dist/client/`.
+
+Для повторения текущего выпуска GitHub Pages в PowerShell задайте адрес проекта и режим индексации перед сборкой:
+
+```powershell
+$env:SITE_BASE = '/ilya-italian-preview/'
+$env:VITE_SITE_URL = 'https://k1ny-github.github.io/ilya-italian-preview/'
+$env:SEO_INDEXING = 'true'
+$env:SEO_RELEASE_APPROVED = 'true'
+npm run build
+```
+
+Команда собирает файлы локально. Для публикации проект использует готовые HTML, ресурсы и SEO-файлы в корне репозитория; список публикуемых файлов определён в `scripts/package-pages.py`. После переноса укажите актуальные адрес и путь проекта при сборке.

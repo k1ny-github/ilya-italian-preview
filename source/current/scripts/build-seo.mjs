@@ -40,8 +40,6 @@ try {
  await writeFile(path.join(review,'sitemap.xml'),sitemap);
  if(indexing)await writeFile(path.join(out,'sitemap.xml'),sitemap);
  else await rm(path.join(out,'sitemap.xml'),{force:true});
- // Exclude the pre-existing, unapproved license draft from distributable output.
- await rm(path.join(out,'THIRD-PARTY-NOTICES.txt'),{force:true});
  await writeFile(path.join(review,'http-release-notes.txt'),'GitHub Pages cannot set arbitrary X-Robots-Tag or query-based redirects. Current noindex is in HTML. Retain noindex until an approved release. Sites worker SPA fallback is unchanged; assess 404s again on the chosen final host.');
  console.log('Indexing: '+(indexing ? 'OPEN' : 'CLOSED'));
  console.log('SEO: rendered RU/EN/IT, canonical, hreflang, sitemap, robots for '+site);

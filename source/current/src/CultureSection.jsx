@@ -1,9 +1,13 @@
 import { useLocale } from "./LocaleProvider.jsx";
 import { useEffect, useRef } from "react";
-import { useBelowHeroImages } from "./useBelowHeroImages.js";
 const frames = [["C8-02-pisa-tower-and-cathedral", "Пизанская башня и собор"], ["C8-06-apollo-daphne-marble-detail", "Мраморный профиль Дафны"], ["C9-light-italian-church-interior", "Светлый интерьер церкви"], ["C8-03-bologna-terracotta-rooftops", "Красные крыши Болоньи"], ["C8-04-bologna-archiginnasio-courtyard", "Двор Аркиджинназио"], ["C8-05-light-italian-gallery", "Светлая итальянская галерея"], ["C8-07-italian-painted-vault", "Расписной свод"], ["C8-01-colosseum-daylight", "Колизей"]];
 const mod = n => (n % frames.length + frames.length) % frames.length;
-const imageUrl = n => `/images/culture-slider/${frames[mod(n)][0]}.webp`;
+const imageUrl = n => `./images/culture-slider/${frames[mod(n)][0]}.webp`;
+const imageSrcSet = n => [320, 448, 1254].map(width => {
+  const original = imageUrl(n);
+  const url = width === 1254 ? original : original.replace(".webp", `-${width}.webp`);
+  return `${url} ${width}w`;
+}).join(", ");
 export default function CultureSection({
   title,
   text,
@@ -17,7 +21,6 @@ export default function CultureSection({
   } = useLocale();
   const regionRef = useRef(null);
   const activeIndex = useRef(0);
-  const imagesReady = useBelowHeroImages(regionRef);
   useEffect(() => {
     const region = regionRef.current;
     const images = [...region.querySelectorAll("[data-c16-image]")];
@@ -35,17 +38,22 @@ export default function CultureSection({
       loading = false,
       visible = false,
       disposed = false;
-    function load(n) {
+    function load(n, slotIndex) {
       n = mod(n);
-      if (!loaded.has(n)) {
+      const slotWidth = images[slotIndex].clientWidth;
+      if (!slotWidth) return Promise.resolve();
+      const key = `${n}/${slotWidth}/${window.devicePixelRatio}`;
+      if (!loaded.has(key)) {
         const image = new Image();
+        image.sizes = `${slotWidth}px`;
+        image.srcset = imageSrcSet(n);
         image.src = imageUrl(n);
-        loaded.set(n, image.decode().catch(error => {
-          loaded.delete(n);
+        loaded.set(key, image.decode().catch(error => {
+          loaded.delete(key);
           throw error;
         }));
       }
-      return loaded.get(n);
+      return loaded.get(key);
     }
     function schedule() {
       clearTimeout(timer);
@@ -63,7 +71,7 @@ export default function CultureSection({
       const token = ++request;
       const nextIndex = mod(target);
       try {
-        await Promise.all([0, 1, 2].map(k => load(nextIndex + k)));
+        await Promise.all(images.map((_, k) => load(nextIndex + k, k)));
       } catch {
         if (!disposed && token === request) {
           playing = false;
@@ -82,6 +90,7 @@ export default function CultureSection({
         old.setAttribute("aria-hidden", "true");
         old.className = "c16-outgoing";
         if (!motion.matches) image.parentElement.append(old);
+        image.srcset = imageSrcSet(index + k);
         image.src = imageUrl(index + k);
         image.alt = t("Иллюстрация: {0}", t(frames[mod(index + k)][1]));
         if (!motion.matches) {
@@ -103,7 +112,6 @@ export default function CultureSection({
       });
       counter.textContent = `${index + 1} / ${frames.length}`;
       schedule();
-      load(index + 3).catch(() => {});
     }
     const changedMotion = () => {
       playing = !motion.matches;
@@ -114,12 +122,11 @@ export default function CultureSection({
       if (started || loading || disposed) return;
       loading = true;
       try {
-        await Promise.all([0, 1, 2].map(load));
+        await Promise.all(images.map((_, k) => load(index + k, k)));
         if (disposed) return;
         loading = false;
         started = true;
         schedule();
-        load(3).catch(() => {});
       } catch {
         loading = false;
         if (!disposed) playing = false;
@@ -148,9 +155,9 @@ export default function CultureSection({
       </div>
       <div ref={regionRef} className="c16-slider" role="region" aria-label={t("Иллюстративная галерея культуры Италии")} aria-roledescription={t("карусель")}>
         <div className="c16-photos" data-image-surface="">
-          <figure className="c16-main"><img data-c16-image src={imageUrl(0)} width="1254" height="1254" alt={t("Иллюстрация: {0}", t(frames[0][1]))} loading="lazy" decoding="async" /></figure>
+          <figure className="c16-main"><img data-c16-image src={imageUrl(0)} srcSet={imageSrcSet(0)} sizes="auto, 100vw" width="1254" height="1254" alt={t("Иллюстрация: {0}", t(frames[0][1]))} loading="lazy" decoding="async" /></figure>
           {[1, 2].map((n, k) => <div key={n} className={`c16-small ${k ? "c16-second" : ""}`}>
-            <img data-c16-image src={imageUrl(n)} width="1254" height="1254" alt={t("Иллюстрация: {0}", t(frames[n][1]))} loading="lazy" decoding="async" />
+            <img data-c16-image src={imageUrl(n)} srcSet={imageSrcSet(n)} sizes="auto, 50vw" width="1254" height="1254" alt={t("Иллюстрация: {0}", t(frames[n][1]))} loading="lazy" decoding="async" />
           </div>)}
         </div>
         <span className="c16-counter" hidden aria-live="off">1 / 8</span>

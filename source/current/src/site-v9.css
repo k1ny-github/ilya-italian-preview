@@ -238,7 +238,7 @@
 .v9 .s05-card{position:relative;min-width:0;display:grid;grid-template-columns:42px minmax(0,1fr);gap:22px;padding:0 0 22px}
 .v9 .s05-card:last-child{padding-bottom:0}
 .v9 .s05-number{position:relative;z-index:1;display:grid;place-items:center;width:42px;height:42px;font-size:18px;font-weight:700;color:#1768d3;background:#e4f0ff;border-radius:50%;border:0;box-shadow:none}
-.v9 .s05-card:last-child .s05-number{background:#2b7ef8;color:#fff}
+.v9 .s05-card:last-child .s05-number{background:#1768d3;color:#fff}
 .v9 .s05-copy{padding:3px 0 18px;border-bottom:1px solid #d9e8f4}
 .v9 .s05-card:last-child .s05-copy{border:0;padding-bottom:0}
 .v9 .s05-card h3{text-wrap:wrap;font-size:19px;line-height:1.22;letter-spacing:-.025em;font-weight:700;color:#000;margin:0 0 6px}
